@@ -1,0 +1,216 @@
+{
+    "accents": [
+    ], 
+    "consonants": [
+        {
+            "ipa": "b",
+            "host_example": "बीस",
+            "english_approximation": "bitter"
+        },
+        {
+            "ipa": "bʱ",
+            "host_example": "भालू",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "d",
+            "host_example": "दाल",
+            "english_approximation": "duck"
+        },
+        {
+            "ipa": "dʱ",
+            "host_example": "धूप",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "dʒ",
+            "host_example": "जान",
+            "english_approximation": "jug"
+        },
+        {
+            "ipa": "dʒʱ",
+            "host_example": "झड़ना",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "ɖ",
+            "host_example": "डालना",
+            "english_approximation": "garden\n(Rhotic dialects)"
+        },
+        {
+            "ipa": "ɖʱ",
+            "host_example": "ढक्कन",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "f",
+            "host_example": "ख़िलाफ़",
+            "english_approximation": "fuss"
+        },
+        {
+            "ipa": "ɡ",
+            "host_example": "गोल",
+            "english_approximation": "gut"
+        },
+        {
+            "ipa": "ɡʱ",
+            "host_example": "घर",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "ɣ",
+            "host_example": "बाग़",
+            "english_approximation": "similar to a French r"
+        },
+        {
+            "ipa": "ɦ",
+            "host_example": "हम , हुक्म",
+            "english_approximation": "ahead"
+        },
+        {
+            "ipa": "j",
+            "host_example": "याद",
+            "english_approximation": "yuck"
+        },
+        {
+            "ipa": "k",
+            "host_example": "कमज़ोर",
+            "english_approximation": "scab"
+        },
+        {
+            "ipa": "kʰ",
+            "host_example": "खाल",
+            "english_approximation": "cab"
+        },
+        {
+            "ipa": "l",
+            "host_example": "लब",
+            "english_approximation": "leaf"
+        },
+        {
+            "ipa": "m",
+            "host_example": "मगर",
+            "english_approximation": "much"
+        },
+        {
+            "ipa": "n",
+            "host_example": "नहीं",
+            "english_approximation": "not"
+        },
+        {
+            "ipa": "ɳ",
+            "host_example": "चरण",
+            "english_approximation": "burn"
+        },
+        {
+            "ipa": "ŋ",
+            "host_example": "रङ्ग",
+            "english_approximation": "bang"
+        },
+        {
+            "ipa": "p",
+            "host_example": "पल",
+            "english_approximation": "spot"
+        },
+        {
+            "ipa": "pʰ",
+            "host_example": "फल",
+            "english_approximation": "pot"
+        },
+        {
+            "ipa": "q",
+            "host_example": "क़रीब",
+            "english_approximation": "somewhat like caught"
+        },
+        {
+            "ipa": "r",
+            "host_example": "रस , ज़र्रा",
+            "english_approximation": "Trilled R"
+        },
+        {
+            "ipa": "ɾ",
+            "host_example": "ज़रा",
+            "english_approximation": "American butter"
+        },
+        {
+            "ipa": "ɽ",
+            "host_example": "लड़ना",
+            "english_approximation": "garter (Rhotic dialects)"
+        },
+        {
+            "ipa": "ɽʱ",
+            "host_example": "पढ़ाई",
+            "english_approximation": "no English equivalent"
+        },
+        {
+            "ipa": "s",
+            "host_example": "सब , साफ़ , साबित",
+            "english_approximation": "sun"
+        },
+        {
+            "ipa": "ʂ",
+            "host_example": "नष्ट",
+            "english_approximation": "shrew"
+        },
+        {
+            "ipa": "ʃ",
+            "host_example": "काश",
+            "english_approximation": "shoe"
+        },
+        {
+            "ipa": "t",
+            "host_example": "तालाब",
+            "english_approximation": "stub"
+        },
+        {
+            "ipa": "tʰ",
+            "host_example": "थैला",
+            "english_approximation": "tub"
+        },
+        {
+            "ipa": "tʃ",
+            "host_example": "चोर",
+            "english_approximation": "catch"
+        },
+        {
+            "ipa": "tʃʰ",
+            "host_example": "छोड़ना",
+            "english_approximation": "choose"
+        },
+        {
+            "ipa": "ʈ",
+            "host_example": "टमाटर",
+            "english_approximation": "carts"
+        },
+        {
+            "ipa": "ʈʰ",
+            "host_example": "ठंड",
+            "english_approximation": "trip"
+        },
+        {
+            "ipa": "ʋ",
+            "host_example": "वर्ज़िश",
+            "english_approximation": "vat"
+        },
+        {
+            "ipa": "w",
+            "host_example": "पकवान",
+            "english_approximation": "well"
+        },
+        {
+            "ipa": "x",
+            "host_example": "ख़राब",
+            "english_approximation": "Scottish loch"
+        },
+        {
+            "ipa": "z",
+            "host_example": "काग़ज़",
+            "english_approximation": "zoo"
+        },
+        {
+            "ipa": "ʒ",
+            "host_example": "अझ़दहा",
+            "english_approximation": "pleasure"
+        }
+    ]
+}

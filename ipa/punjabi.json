@@ -1,0 +1,222 @@
+{
+    "accents": [
+    ], 
+    "consonants": [
+        {
+            "ipa": "b",
+            "host_example_1": "ਬਿਸਤਰਾ",
+            "host_example_2": "ابستر",
+            "english_approximation": "butter"
+        },
+        {
+            "ipa": "d",
+            "host_example_1": "ਦਿੱਤਾ",
+            "host_example_2": "دتّا",
+            "english_approximation": "duck"
+        },
+        {
+            "ipa": "dʒ",
+            "host_example_1": "ਜਦੋਂ",
+            "host_example_2": "جدوں",
+            "english_approximation": "jug"
+        },
+        {
+            "ipa": "ɖ",
+            "host_example_1": "ਡੰਗਰ",
+            "host_example_2": "ڈنگر",
+            "english_approximation": "guard\n(Rhotic dialects)"
+        },
+        {
+            "ipa": "f",
+            "host_example_1": "ਫ਼ੇਰ",
+            "host_example_2": "فیر",
+            "english_approximation": "fuss"
+        },
+        {
+            "ipa": "ɡ",
+            "host_example_1": "ਗੱਡੀ",
+            "host_example_2": "گڈّی",
+            "english_approximation": "gut"
+        },
+        {
+            "ipa": "ɣ",
+            "host_example_1": "ਕਾਗ਼ਜ਼",
+            "host_example_2": "کاغذ",
+            "english_approximation": "similar to a French r"
+        },
+        {
+            "ipa": "ɦ",
+            "host_example_1": "ਹਾਏ",
+            "host_example_2": "ہائے",
+            "english_approximation": "ahead"
+        },
+        {
+            "ipa": "j",
+            "host_example_1": "ਯਾਰੀ",
+            "host_example_2": "یاری",
+            "english_approximation": "yuck"
+        },
+        {
+            "ipa": "k",
+            "host_example_1": "ਘਰ",
+            "host_example_2": "گھر",
+            "english_approximation": "scab"
+        },
+        {
+            "ipa": "kʰ",
+            "host_example_1": "ਔਖਾ",
+            "host_example_2": "اوکھا",
+            "english_approximation": "cab"
+        },
+        {
+            "ipa": "l",
+            "host_example_1": "ਲਾਂਬਾ",
+            "host_example_2": "لامبا",
+            "english_approximation": "leaf"
+        },
+        {
+            "ipa": "ɭ",
+            "host_example_1": "ਰੌਲ਼ਾ",
+            "host_example_2": "رَوࣇا",
+            "english_approximation": "garlic\n(Rhotic dialects)"
+        },
+        {
+            "ipa": "m",
+            "host_example_1": "ਮਸੀਤ",
+            "host_example_2": "مسیت",
+            "english_approximation": "much"
+        },
+        {
+            "ipa": "n",
+            "host_example_1": "ਨੂਹ",
+            "host_example_2": "نوہ",
+            "english_approximation": "not"
+        },
+        {
+            "ipa": "ɳ",
+            "host_example_1": "ਸੋਹਣਾ",
+            "host_example_2": "سوہݨا",
+            "english_approximation": "burn"
+        },
+        {
+            "ipa": "ɲ",
+            "host_example_1": "ਉਂਞ",
+            "host_example_2": "انج",
+            "english_approximation": "canyon"
+        },
+        {
+            "ipa": "ŋ",
+            "host_example_1": "ਕੰਙਣ",
+            "host_example_2": "کنگݨ",
+            "english_approximation": "bang"
+        },
+        {
+            "ipa": "p",
+            "host_example_1": "ਭਰਿਆ",
+            "host_example_2": "بھریا",
+            "english_approximation": "spot"
+        },
+        {
+            "ipa": "pʰ",
+            "host_example_1": "ਫੁੱਲ",
+            "host_example_2": "پھلّ‎",
+            "english_approximation": "pot"
+        },
+        {
+            "ipa": "q",
+            "host_example_1": "ਕ਼ਲਮ",
+            "host_example_2": "قلم",
+            "english_approximation": "somewhat like caught"
+        },
+        {
+            "ipa": "r",
+            "host_example_1": "ਮੁਕ਼ੱਰਰ",
+            "host_example_2": "مقرّر",
+            "english_approximation": "Trilled R"
+        },
+        {
+            "ipa": "ɾ",
+            "host_example_1": "ਵਾਰੀ",
+            "host_example_2": "واری",
+            "english_approximation": "American butter"
+        },
+        {
+            "ipa": "ɽ",
+            "host_example_1": "ਕੂੜ",
+            "host_example_2": "کوڑ",
+            "english_approximation": "garter (Rhotic dialects)"
+        },
+        {
+            "ipa": "ɽʱ",
+            "host_example_1": "ਉਲੇੜ੍ਹ",
+            "host_example_2": "الیڑھ",
+            "english_approximation": "no English equivalent"
+        },
+        {
+            "ipa": "s",
+            "host_example_1": "ਸਾਡਾ",
+            "host_example_2": "ساڈا",
+            "english_approximation": "sun"
+        },
+        {
+            "ipa": "ʃ",
+            "host_example_1": "ਹੋਸ਼",
+            "host_example_2": "ہوش",
+            "english_approximation": "shoe"
+        },
+        {
+            "ipa": "t",
+            "host_example_1": "ਤਿੱਲੜ",
+            "host_example_2": "تلّڑ",
+            "english_approximation": "stub"
+        },
+        {
+            "ipa": "tʰ",
+            "host_example_1": "ਓਥੇ",
+            "host_example_2": "اوتھے",
+            "english_approximation": "tub"
+        },
+        {
+            "ipa": "tʃ",
+            "host_example_1": "ਚੜ੍ਹਦਾ,\nਝੂਠ",
+            "host_example_2": "چڑھدا،جھوٹھ",
+            "english_approximation": "catch"
+        },
+        {
+            "ipa": "tʃʰ",
+            "host_example_1": "ਛੱਡ",
+            "host_example_2": "چھڈّ‎",
+            "english_approximation": "choose"
+        },
+        {
+            "ipa": "ʈ",
+            "host_example_1": "ਸੱਟ,\nਢੀਠ",
+            "host_example_2": "سٹّ،ڈھیٹھ",
+            "english_approximation": "carts"
+        },
+        {
+            "ipa": "ʈʰ",
+            "host_example_1": "ਕਾਠ",
+            "host_example_2": "کاٹھ",
+            "english_approximation": "trip"
+        },
+        {
+            "ipa": "ʋ",
+            "host_example_1": "ਵਹੁਟੀ",
+            "host_example_2": "ووہٹی",
+            "english_approximation": "vat"
+        },
+        {
+            "ipa": "x",
+            "host_example_1": "ਖ਼ਾਲਿਸ",
+            "host_example_2": "خالص",
+            "english_approximation": "Scottish Loch"
+        },
+        {
+            "ipa": "z",
+            "host_example_1": "ਹਜ਼ਾਰ",
+            "host_example_2": "ہزار",
+            "english_approximation": "zoo"
+        }
+    ]
+}

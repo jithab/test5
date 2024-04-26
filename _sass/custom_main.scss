@@ -1,0 +1,42 @@
+.post {
+  h1 {
+    text-align: center;
+    color: #204080;
+  }
+  li {
+    color: #102030;
+  }
+  @media only screen and (min-width: 768px) {
+    ol {
+      width: 768px;
+      margin: 0 auto;
+    }
+    li {
+      font-size: 18px;
+      line-height: 1.5;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.abi {
+  white-space: pre-wrap;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.abi-title {
+  font-family: "Brush Script MT", cursive, serif;
+}
+
+.pro-notes-subtitle {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: large;
+}
+
+ul + figure > pre {
+  margin-left: 32px;
+  margin-bottom: 32px;
+}

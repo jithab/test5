@@ -1,0 +1,475 @@
+[
+    {
+        "symbol": "p",
+        "manner": "plosive",
+        "place": "bilabial",
+        "phonation": "voiceless",
+        "RP": "yes"
+    },
+    {
+        "symbol": "b",
+        "manner": "plosive",
+        "place": "bilabial",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+
+    {
+        "symbol": "t",
+        "manner": "plosive",
+        "place": "alveolar",
+        "phonation": "voiceless",
+        "RP": "yes"
+    },
+    {
+        "symbol": "d",
+        "manner": "plosive",
+        "place": "alveolar",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+
+    {
+        "symbol": "ʈ",
+        "manner": "plosive",
+        "place": "retro­flex",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "ɖ",
+        "manner": "plosive",
+        "place": "retro­flex",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "c",
+        "manner": "plosive",
+        "place": "palatal",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "ɟ",
+        "manner": "plosive",
+        "place": "palatal",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "k",
+        "manner": "plosive",
+        "place": "velar",
+        "phonation": "voiceless",
+        "RP": "yes"
+    },
+    {
+        "symbol": "ɡ",
+        "manner": "plosive",
+        "place": "velar",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+
+    {
+        "symbol": "q",
+        "manner": "plosive",
+        "place": "uvular",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "ɢ",
+        "manner": "plosive",
+        "place": "uvular",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "ʔ",
+        "manner": "plosive",
+        "place": "glottal",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+
+
+
+    {
+        "symbol": "m",
+        "manner": "nasal",
+        "place": "bilabial",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "ɱ",
+        "manner": "nasal",
+        "place": "labio­dental",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "n",
+        "manner": "nasal",
+        "place": "alveolar",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "ɳ",
+        "manner": "nasal",
+        "place": "retro­flex",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ɲ",
+        "manner": "nasal",
+        "place": "palatal",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ŋ",
+        "manner": "nasal",
+        "place": "velar",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "ɴ",
+        "manner": "nasal",
+        "place": "uvular",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "ʙ",
+        "manner": "trill",
+        "place": "bilabial",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "r",
+        "manner": "trill",
+        "place": "alveolar",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "ʀ",
+        "manner": "trill",
+        "place": "uvular",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "ⱱ",
+        "manner": "tap or flap",
+        "place": "labio­dental",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "ɾ",
+        "manner": "tap or flap",
+        "place": "alveolar",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "ɽ",
+        "manner": "tap or flap",
+        "place": "retro­flex",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "ɸ",
+        "manner": "fricative",
+        "place": "bilabial",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "β",
+        "manner": "fricative",
+        "place": "bilabial",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "f",
+        "manner": "fricative",
+        "place": "labio­dental",
+        "phonation": "voiceless",
+        "RP": "yes"
+    },
+    {
+        "symbol": "v",
+        "manner": "fricative",
+        "place": "labio­dental",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "θ",
+        "manner": "fricative",
+        "place": "dental",
+        "phonation": "voiceless",
+        "RP": "yes"
+    },
+    {
+        "symbol": "ð",
+        "manner": "fricative",
+        "place": "dental",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "s",
+        "manner": "fricative",
+        "place": "alveolar",
+        "phonation": "voiceless",
+        "RP": "yes"
+    },
+    {
+        "symbol": "z",
+        "manner": "fricative",
+        "place": "alveolar",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "ʃ",
+        "manner": "fricative",
+        "place": "post­alveolar",
+        "phonation": "voiceless",
+        "RP": "yes"
+    },
+    {
+        "symbol": "ʒ",
+        "manner": "fricative",
+        "place": "post­alveolar",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "ʂ",
+        "manner": "fricative",
+        "place": "retro­flex",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "ʐ",
+        "manner": "fricative",
+        "place": "retro­flex",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ç",
+        "manner": "fricative",
+        "place": "palatal",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "ʝ",
+        "manner": "fricative",
+        "place": "palatal",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "x",
+        "manner": "fricative",
+        "place": "velar",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "ɣ",
+        "manner": "fricative",
+        "place": "velar",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "χ",
+        "manner": "fricative",
+        "place": "uvular",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "ʁ",
+        "manner": "fricative",
+        "place": "uvular",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ħ",
+        "manner": "fricative",
+        "place": "pharyngeal",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+    {
+        "symbol": "ʕ",
+        "manner": "fricative",
+        "place": "pharyngeal",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "h",
+        "manner": "fricative",
+        "place": "glottal",
+        "phonation": "voiceless",
+        "RP": "yes"
+    },
+    {
+        "symbol": "ɦ",
+        "manner": "fricative",
+        "place": "glottal",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "ɬ",
+        "manner": "lateral fricative",
+        "place": "alveolar",
+        "phonation": "voiceless",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ɮ",
+        "manner": "lateral fricative",
+        "place": "alveolar",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+    {
+        "symbol": "ʋ",
+        "manner": "approximant",
+        "place": "labio­dental",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ɹ",
+        "manner": "approximant",
+        "place": "alveolar",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ɻ",
+        "manner": "approximant",
+        "place": "retro­flex",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "j",
+        "manner": "approximant",
+        "place": "palatal",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "ɰ",
+        "manner": "approximant",
+        "place": "velar",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+
+
+
+    {
+        "symbol": "l",
+        "manner": "lateral approximant",
+        "place": "alveolar",
+        "phonation": "voiced",
+        "RP": "yes"
+    },
+
+    {
+        "symbol": "ɭ",
+        "manner": "lateral approximant",
+        "place": "retro­flex",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ʎ",
+        "manner": "lateral approximant",
+        "place": "palatal",
+        "phonation": "voiced",
+        "RP": "no"
+    },
+
+    {
+        "symbol": "ʟ",
+        "manner": "lateral approximant",
+        "place": "velar",
+        "phonation": "voiced",
+        "RP": "no"
+    }
+
+]

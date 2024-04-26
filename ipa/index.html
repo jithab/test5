@@ -1,0 +1,195 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8' /><title>For the English Accent</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    font-size: 24px;
+    width:128px;
+    padding: 5px;
+    text-align: center;
+}
+th{
+    font-size: 12px;
+}
+
+.rp {
+    background-color: #ff9090;
+    font-weight: bold;
+}
+.host {
+    background-color: #ffff90;
+}
+.rp.host {
+    background-color: #90ff90;
+}
+select {
+    height: 50px;
+    font-size: 30px;
+}
+</style>
+<script src="/jquery-3.6.0.min.js"></script>
+
+
+</head><body>
+
+<h1>For the English Accent</h1>
+<div style="width:400px">
+    One of the characteristics of an accent is to approximate sounds of English 
+    with similar sounds of their mother tongue.</div> 
+<p>&nbsp;</p>
+
+<b>Select your mother tongue <br/> to know the English sounds <br/> you may have difficulty.</b>
+<br/>
+<select id="lanselect">
+    <option value="malayalam">Malayalam</option>
+    <option value="tamil">Tamil</option>
+    <option value="telugu">Telugu</option>
+    <option value="hindi">Hindi</option>
+    <option value="urdu">Urdu</option>
+    <option value="punjabi">Punjabi</option>
+    <option value="japanese">Japanese</option>
+    <option value="english">English</option>
+    <option value="spanish">Spanish</option>
+</select>
+<p>(This project is in the infancy stage.)</p>
+<div id="tab" style="margin-top:50px"></div>
+<br/>
+<div><span style="color:#00ff00">Green</span>: The english sound is available in the language.</div>
+<div><span style="color:#ff0000">Red</span>: The english sound is NOT available in the language.</div>
+<div><span style="color:#ffff00">Yellow</span>: Other sounds available in the language.</div>
+<div>&nbsp;</div>
+<div id="lantab" style="margin-top:50px"></div>
+<div id="lanrowcount"></div>
+<script>
+
+function createtable() {
+
+    let manners = [
+        "plosive",
+        "nasal",
+        "trill",
+        "tap or flap",
+        "fricative",
+        "lateral fricative",
+        "approximant",
+        "lateral approximant"
+    ];
+
+
+    let places = [
+        "bilabial",
+        "labio­dental",
+        "dental",
+        "alveolar",
+        "post­alveolar",
+        "retro­flex",
+        "palatal",
+        "velar",
+        "uvular",
+        "pharyngeal",
+        "glottal"
+    ];
+
+    let t = "<table><tr><td></td>";
+    places.forEach(function(item) {
+        t += "<th colspan='2'>" + item + "</th>";
+    });
+    t += "</tr>";
+    manners.forEach(function(mannerItem) {
+        t += "<tr><th class='placeClass'>" + mannerItem + "</th>";
+        places.forEach(function(placeItem) {
+            t += '<td id="' + idGen(placeItem, mannerItem, "voiceless") + '"></td>';
+            t += '<td id="' + idGen(placeItem, mannerItem, "voiced") + '"></td>';
+        });
+        t += "</tr>";
+    });
+
+
+    t += "</tr></table>";
+    $("#tab").html(t);
+}
+
+function idGen(placeName, mannerName, phonationName) { 
+    let placeClass = placeName.replaceAll(" ", "_");
+    let mannerClass = mannerName.replaceAll(" ", "_");
+    return `${placeClass}__${mannerClass}_${phonationName}`;
+}
+
+createtable();
+
+let ipas = []
+$.getJSON( "./ipa.json", function( sounds ) {
+    ipas = sounds;
+    sounds.forEach(function (sound) {
+        let idG = idGen(sound.place, sound.manner, sound.phonation);
+        $(`#${idG}`).text(sound.symbol);
+        if(sound.RP=="yes") {
+            $(`#${idG}`).addClass("rp");
+        }
+    });
+
+    $("#lanselect").change();
+});
+
+
+function lanshow(lan) {
+    $("#tab td").removeClass("host");
+    $.getJSON( `${lan}.json`, function( data ) {
+        let sounds = data.consonants;
+        $("#lanrowcount").text(sounds.length + " rows");
+        let varLetter = sounds[0].hasOwnProperty("letter");
+        let varEnApr = sounds[0].hasOwnProperty("english_approximation");
+        let varHer = sounds[0].hasOwnProperty("host_example_romanization");
+
+        let varHost = sounds[0].hasOwnProperty("host_example") || sounds[0].hasOwnProperty("host_example_2");
+        let t = "<table><tr><th>IPA</th>";
+        if(varLetter) {
+            t += "<th>Letter</th>";
+        }
+        if(varHost) {
+            t += "<th>Example</th>";
+        }
+        if(varHer) {
+            t += "<th>Example Romanization</th>";
+        }
+        if(varEnApr) {
+            t += "<th>English Approximation</th>";
+        }
+        t += "</tr>"
+
+        sounds.forEach(function (sound) {
+            t += `<tr><td>${sound.ipa}</td>`;
+            if(varLetter) {
+                t += `<td>${sound.letter}</td>`
+            }
+            if(varHost) {
+                he = sound.host_example_2 ? `${sound.host_example_1} | ${sound.host_example_2}` : sound.host_example;
+                t += `<td>${he}</td>`
+            }
+            if(varHer) {
+                t += `<td>${sound.host_example_romanization}</td>`
+            }
+            if(varEnApr) {
+                t += `<td>${sound.english_approximation}</td>`
+            }
+            t += `</tr>`
+            ipas.forEach(function (ipa) {
+                let idG = idGen(ipa.place, ipa.manner, ipa.phonation);
+                if(sound.ipa.includes(ipa.symbol)) {
+                    $(`#${idG}`).addClass("host");
+                }
+            });
+        });
+        t += "</table>"
+        $("#lantab").html(t);
+    });
+}
+
+$("#lanselect").change(function () {
+    lanshow($(this).val());
+});
+</script>
+</body></html>
+

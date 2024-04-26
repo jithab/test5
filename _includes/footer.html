@@ -1,0 +1,47 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+      <!--<h2 class="footer-heading">{{ site.title | escape }}</h2>-->
+
+    
+    <div class="footer-col-wrapper" style="text-align:center">
+      {% if page.type == "pronotes"   %}
+        <p style="text-align:center">
+          <span class="title">Let me know if there are any errors or omissions via </span>
+          lab&#64;perwad.<span style="display :none">g</span>in
+        </p>
+      {% elsif page.type != "coding" and page.type != "abi"   %}
+        <p>The sentences are taken from <b>The Guardian</b>.
+          If possible, consider <a href="https://support.theguardian.com/int/contribute?INTCMP=perwad.in">supporting</a> the newspaper.</p>
+      {% endif %}
+      
+      <!--
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+    
+      <div class="footer-col footer-col-3">
+       
+      </div>-->
+    </div>
+  </div>
+
+</footer>

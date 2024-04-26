@@ -1,0 +1,146 @@
+https://en.wikipedia.org/wiki/Help:IPA/Malayalam
+
+// consonant
+t = [];
+$("#con tr").find("td").closest("tr").each(function(_index) {
+        let tr = $(this);
+        let ipa = $(this).children().eq(0).text().trim();
+        let letter = $(this).children().eq(1).text().trim();
+        let english_example = $(this).children().eq(3).html().trim();
+        
+        t.push({
+        	"ipa": ipa,
+        	"letter": letter,
+        	"english_example": english_example
+        	
+        });
+        //let letter = $(this);
+        //let tr = $(this);
+        //let tr = $(this);
+        
+});
+console.log(JSON.stringify(t, null, 4););
+
+
+https://en.wikipedia.org/wiki/Help:IPA/Japanese
+t = [];
+$("#con tr").find("td").closest("tr").each(function(_index) {
+        let tr = $(this);
+        let ipa = $(this).children().eq(0).text().trim();
+        let host_example = $(this).children().eq(1).text().trim();
+        let host_example_romanization = $(this).children().eq(2).text().trim();
+        let english_approximation = $(this).children().eq(3).html().trim();
+
+        t.push({
+        	"ipa": ipa,
+        	"letter": null,
+        	"host_example" : host_example,
+        	"english_approximation": english_approximation,
+        	"host_example_romanization": host_example_romanization
+
+        });
+        //let letter = $(this);
+        //let tr = $(this);
+        //let tr = $(this);
+
+});
+console.log(JSON.stringify(t, null, 4));
+
+
+https://en.wikipedia.org/wiki/Help:IPA/English
+t = [];
+$("#con tr").find("td").closest("tr").each(function(_index) {
+        let tr = $(this);
+        let ipa = $(this).children().eq(0).text().trim();
+        let host_example = $(this).children().eq(1).text().trim();
+        
+        t.push({
+        	"ipa": ipa,
+        	"letter": null,
+        	"host_example" : host_example,
+        	"english_approximation": null
+        	
+        });
+        //let letter = $(this);
+        //let tr = $(this);
+        //let tr = $(this);
+        
+});
+console.log(JSON.stringify(t, null, 4));
+console.log("Delete Marginal segments");
+
+
+https://en.wikipedia.org/wiki/Help:IPA/Hindi_and_Urdu
+t = [];
+$("#con tr").find("td").closest("tr").each(function(_index) {
+        let tr = $(this);
+        let ipa = $(this).children().eq(0).text().trim();
+        //let host_example = $(this).children().eq(1).text().trim();
+        let host_example = $(this).children().eq(2).text().trim();
+        let english_approximation = $(this).children().eq(4).text().trim();
+        
+        t.push({
+        	"ipa": ipa,
+        	"letter": null,
+        	"host_example" : host_example,
+        	"english_approximation": english_approximation
+        	
+        });
+        //let letter = $(this);
+        //let tr = $(this);
+        //let tr = $(this);
+        
+});
+console.log(JSON.stringify(t, null, 4));
+
+
+https://en.wikipedia.org/wiki/Help:IPA/Tamil
+t = [];
+$("#con tr").find("td").closest("tr").each(function(_index) {
+        let tr = $(this);
+        let ipa = $(this).children().eq(0).text().trim().replaceAll(/\[\d+\]/g, '');
+        //let host_example = $(this).children().eq(1).text().trim();
+        let host_example = $(this).children().eq(2).text().trim().replaceAll(/\[\d+\]/g, '');
+        let english_approximation = $(this).children().eq(3).text().trim().replaceAll(/\[\d+\]/g, '');
+        
+        t.push({
+        	"ipa": ipa,
+        	"letter": null,
+        	"host_example" : host_example,
+        	"english_approximation": english_approximation
+        	
+        });
+        //let letter = $(this);
+        //let tr = $(this);
+        //let tr = $(this);
+        
+});
+console.log(JSON.stringify(t, null, 4));
+
+
+https://en.wikipedia.org/wiki/Help:IPA/Punjabi
+
+t = [];
+$("#con tr").find("td").closest("tr").each(function(_index) {
+        let tr = $(this);
+        let ipa = $(this).children().eq(0).text().trim().replaceAll(/\[\d+\]/g, '');
+        let host_example_1 = $(this).children().eq(1).text().trim();
+        let host_example_2 = $(this).children().eq(2).text().trim().replaceAll(/\[\d+\]/g, '');
+        let english_approximation = $(this).children().eq(4).text().trim().replaceAll(/\[\d+\]/g, '');
+        
+        t.push({
+        	"ipa": ipa,
+        	"host_example_1" : host_example_1,
+        	"host_example_2" : host_example_2,
+        	"english_approximation": english_approximation
+        	
+        });
+        //let letter = $(this);
+        //let tr = $(this);
+        //let tr = $(this);
+        
+});
+console.log(JSON.stringify(t, null, 4));
+
+
+

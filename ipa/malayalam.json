@@ -1,0 +1,191 @@
+{
+    "accents": [
+    ], 
+    "consonants": [
+        {
+            "ipa": "k",
+            "letter": "ക",
+            "english_approximation": "s<b>k</b>y"
+        },
+        {
+            "ipa": "kʰ",
+            "letter": "ഖ",
+            "english_approximation": "<b>kh</b>an"
+        },
+        {
+            "ipa": "ɡ",
+            "letter": "ഗ",
+            "english_approximation": "<b>g</b>o"
+        },
+        {
+            "ipa": "ɡʱ",
+            "letter": "ഘ",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "t͡ʃ",
+            "letter": "ച",
+            "english_approximation": "chur<b>ch</b>"
+        },
+        {
+            "ipa": "t͡ʃʰ",
+            "letter": "ഛ",
+            "english_approximation": "whi<b>ch h</b>and"
+        },
+        {
+            "ipa": "ɟ",
+            "letter": "ജ",
+            "english_approximation": "<b>j</b>unior"
+        },
+        {
+            "ipa": "ɟʱ",
+            "letter": "ഝ",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "ʈ",
+            "letter": "ട",
+            "english_approximation": "<b>t</b>ide but retroflex"
+        },
+        {
+            "ipa": "ʈʰ",
+            "letter": "ഠ",
+            "english_approximation": "go<b>t t</b>he but retroflex"
+        },
+        {
+            "ipa": "ɖ",
+            "letter": "ഡ",
+            "english_approximation": "<b>d</b>og but retroflex"
+        },
+        {
+            "ipa": "ɖʱ",
+            "letter": "ഢ",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "t",
+            "letter": "ത",
+            "english_approximation": "earthe<b>d</b>"
+        },
+        {
+            "ipa": "tʰ",
+            "letter": "ഥ",
+            "english_approximation": "ge<b>t d</b>own"
+        },
+        {
+            "ipa": "d",
+            "letter": "ദ",
+            "english_approximation": "<b>d</b>ad"
+        },
+        {
+            "ipa": "dʱ",
+            "letter": "ധ",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "p",
+            "letter": "പ",
+            "english_approximation": "<b>p</b>ain"
+        },
+        {
+            "ipa": "f/pʰ",
+            "letter": "ഫ",
+            "english_approximation": "Has two pronunciations, either as <b>f</b>ootball or <b>p</b>an"
+        },
+        {
+            "ipa": "b",
+            "letter": "ബ",
+            "english_approximation": "<b>b</b>ig"
+        },
+        {
+            "ipa": "bʱ",
+            "letter": "ഭ",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "ŋ",
+            "letter": "ങ",
+            "english_approximation": "si<b>ng</b>"
+        },
+        {
+            "ipa": "ɲ",
+            "letter": "ഞ",
+            "english_approximation": "co<b>gna</b>c"
+        },
+        {
+            "ipa": "ɳ",
+            "letter": "ണ",
+            "english_approximation": "Hindi Varu<b>n</b>a"
+        },
+        {
+            "ipa": "n̪",
+            "letter": "ന",
+            "english_approximation": "mo<b>n</b>th"
+        },
+        {
+            "ipa": "m",
+            "letter": "മ",
+            "english_approximation": "<b>m</b>all"
+        },
+        {
+            "ipa": "j",
+            "letter": "യ",
+            "english_approximation": "<b>y</b>es"
+        },
+        {
+            "ipa": "ɾ",
+            "letter": "ര",
+            "english_approximation": "Spanish t<b>r</b>es"
+        },
+        {
+            "ipa": "l",
+            "letter": "ല",
+            "english_approximation": "<b>l</b>isten"
+        },
+        {
+            "ipa": "ʋ",
+            "letter": "വ",
+            "english_approximation": "cur<b>v</b>e"
+        },
+        {
+            "ipa": "ʃ",
+            "letter": "ശ",
+            "english_approximation": "<b>s</b>ugar"
+        },
+        {
+            "ipa": "ʂ",
+            "letter": "ഷ",
+            "english_approximation": "<b>sh</b>un"
+        },
+        {
+            "ipa": "s",
+            "letter": "സ",
+            "english_approximation": "<b>s</b>o"
+        },
+        {
+            "ipa": "h",
+            "letter": "ഹ",
+            "english_approximation": "<b>h</b>ead"
+        },
+        {
+            "ipa": "ɭ",
+            "letter": "ള",
+            "english_approximation": "Swedish so<b>rl</b>"
+        },
+        {
+            "ipa": "ɻ",
+            "letter": "ഴ",
+            "english_approximation": "<b>r</b>un (rhotic r, as in American English)"
+        },
+        {
+            "ipa": "r",
+            "letter": "റ",
+            "english_approximation": "Spanish <b>r</b>ojo"
+        },
+        {
+            "ipa": "n",
+            "letter": "ഩ",
+            "english_approximation": "<b>n</b>ot"
+        }
+    ]
+}

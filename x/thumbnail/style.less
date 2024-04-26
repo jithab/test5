@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+}
+#form {
+  padding: 100px;
+  > div {
+    padding: 20px;
+  }
+
+}
+
+.ccolumn {
+  text-align: center;
+}
+.lcolumn {
+  padding-left: 32px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.rcolumn {
+  padding-right: 32px;
+  text-align: right;
+  color: #ffffff;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  font-size: 96px;
+  line-height: 192px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 128, 0.6);
+}
+
+#title {
+  border: 32px solid white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#container {
+  z-index: 10;;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#content {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 300px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 128px;
+  color: orange;
+  text-shadow: 4px 4px 2px rgba(0, 0, 128, 0.6);
+
+    &.single_line {
+        line-height: 500px;
+    }
+    &.two_lines {
+    line-height: 256px;
+    }
+}
+
+
+@python: #158cba;
+.python { 
+    #title {
+        border-color: @python !important;
+         .row {
+            background-color: @python;
+        }
+    }
+}
+
+@rtt: #0f2040;
+.rtt { 
+    #title {
+        border-color: @rtt !important;
+         .row {
+            background-color: @rtt;
+        }
+    }
+}
+
+@taa: #9f2b68;
+.taa { 
+    #title {
+        border-color: @taa !important;
+         .row {
+            background-color: @taa;
+        }
+    }
+}
+
+@gcl: #DC143C;
+.gcl { 
+    #title {
+        border-color: @gcl !important;
+         .row {
+            background-color: @gcl;
+        }
+    }
+}
+
+
+@jekyll: #2B2B2B;
+.jekyll { 
+    &#container {
+      background-color: #444444;
+    }
+    #title {
+        border-color: @jekyll !important;
+         .row {
+            background-color: @jekyll;
+            #content div {
+              color: #fc0;
+            }
+        }
+    }
+}

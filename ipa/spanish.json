@@ -1,0 +1,141 @@
+{
+    "accents": [
+    ], 
+    "consonants": [
+        {
+            "ipa": "b",
+            "host_example": "bestia, embuste, vaca, envidia, fútbol",
+            "english_approximation": "about"
+        },
+        {
+            "ipa": "β",
+            "host_example": "bebé, obtuso, vivir, curva, apto",
+            "english_approximation": "about, but without the lips completely closed"
+        },
+        {
+            "ipa": "d",
+            "host_example": "dedo, cuando, aldaba",
+            "english_approximation": "today"
+        },
+        {
+            "ipa": "ð",
+            "host_example": "dádiva, arder, admirar, atmósfera",
+            "english_approximation": "this"
+        },
+        {
+            "ipa": "f",
+            "host_example": "fase",
+            "english_approximation": "face"
+        },
+        {
+            "ipa": "ɡ",
+            "host_example": "gato, lengua, guerra",
+            "english_approximation": "again"
+        },
+        {
+            "ipa": "ɣ",
+            "host_example": "trigo, amargo, signo, doctor",
+            "english_approximation": "again, but without the tongue touching the roof of the mouth"
+        },
+        {
+            "ipa": "ʝ",
+            "host_example": "ayuno",
+            "english_approximation": "you"
+        },
+        {
+            "ipa": "ɟʝ",
+            "host_example": "cónyuge, yermo",
+            "english_approximation": "Not found in English; something like jeep"
+        },
+        {
+            "ipa": "k",
+            "host_example": "caña, quise, kilo",
+            "english_approximation": "scan"
+        },
+        {
+            "ipa": "l",
+            "host_example": "lino",
+            "english_approximation": "lean"
+        },
+        {
+            "ipa": "ʎ",
+            "host_example": "llave, pollo",
+            "english_approximation": "million"
+        },
+        {
+            "ipa": "m",
+            "host_example": "madre, campo",
+            "english_approximation": "mother"
+        },
+        {
+            "ipa": "ɱ",
+            "host_example": "anfibio",
+            "english_approximation": "comfort"
+        },
+        {
+            "ipa": "n",
+            "host_example": "nido, sin, álbum",
+            "english_approximation": "need"
+        },
+        {
+            "ipa": "ɲ",
+            "host_example": "ñandú, cónyuge",
+            "english_approximation": "canyon"
+        },
+        {
+            "ipa": "ŋ",
+            "host_example": "cinco, venga",
+            "english_approximation": "sing"
+        },
+        {
+            "ipa": "p",
+            "host_example": "pozo",
+            "english_approximation": "spouse"
+        },
+        {
+            "ipa": "r",
+            "host_example": "rumbo, carro, honra, subrayar",
+            "english_approximation": "trilled r"
+        },
+        {
+            "ipa": "ɾ",
+            "host_example": "caro, bravo, partir",
+            "english_approximation": "autumn (with flapping)"
+        },
+        {
+            "ipa": "s",
+            "host_example": "saco, espita, xenón",
+            "english_approximation": "sack"
+        },
+        {
+            "ipa": "θ",
+            "host_example": "cereal, encima, zorro, jazmín",
+            "english_approximation": "thing"
+        },
+        {
+            "ipa": "t",
+            "host_example": "tamiz",
+            "english_approximation": "stand"
+        },
+        {
+            "ipa": "tʃ",
+            "host_example": "chubasco",
+            "english_approximation": "choose"
+        },
+        {
+            "ipa": "v",
+            "host_example": "afgano",
+            "english_approximation": "van"
+        },
+        {
+            "ipa": "x",
+            "host_example": "jamón, general, México, hámster",
+            "english_approximation": "Scottish loch"
+        },
+        {
+            "ipa": "z",
+            "host_example": "isla, mismo, riesgo",
+            "english_approximation": "zoo"
+        }
+    ]
+}

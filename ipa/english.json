@@ -1,0 +1,134 @@
+{
+    "accents": [
+    ], 
+    "consonants": [
+        {
+            "ipa": "b",
+            "host_example": "buy, cab"
+        },
+        {
+            "ipa": "d",
+            "host_example": "dye, cad, ladder"
+        },
+        {
+            "ipa": "dj",
+            "host_example": "dew"
+        },
+        {
+            "ipa": "dʒ",
+            "host_example": "giant, badge"
+        },
+        {
+            "ipa": "ð",
+            "host_example": "thy, breathe, father"
+        },
+        {
+            "ipa": "f",
+            "host_example": "fan, leaf"
+        },
+        {
+            "ipa": "ɡ",
+            "host_example": "guy, bag"
+        },
+        {
+            "ipa": "h",
+            "host_example": "high, ahead"
+        },
+        {
+            "ipa": "hw",
+            "host_example": "whine"
+        },
+        {
+            "ipa": "j",
+            "host_example": "yes, hallelujah"
+        },
+        {
+            "ipa": "k",
+            "host_example": "sky, crack"
+        },
+        {
+            "ipa": "l",
+            "host_example": "lie, sly, gal"
+        },
+        {
+            "ipa": "lj",
+            "host_example": "lute"
+        },
+        {
+            "ipa": "m",
+            "host_example": "my, smile, cam"
+        },
+        {
+            "ipa": "n",
+            "host_example": "nigh, snide, can"
+        },
+        {
+            "ipa": "nj",
+            "host_example": "new"
+        },
+        {
+            "ipa": "ŋ",
+            "host_example": "sang, sink, singer"
+        },
+        {
+            "ipa": "p",
+            "host_example": "pie, spy, cap"
+        },
+        {
+            "ipa": "r",
+            "host_example": "rye, try, very"
+        },
+        {
+            "ipa": "s",
+            "host_example": "sigh, mass"
+        },
+        {
+            "ipa": "sj",
+            "host_example": "consume"
+        },
+        {
+            "ipa": "ʃ",
+            "host_example": "shy, cash, emotion"
+        },
+        {
+            "ipa": "t",
+            "host_example": "tie, sty, cat, latter"
+        },
+        {
+            "ipa": "tj",
+            "host_example": "tune"
+        },
+        {
+            "ipa": "tʃ",
+            "host_example": "China, catch"
+        },
+        {
+            "ipa": "θ",
+            "host_example": "thigh, path"
+        },
+        {
+            "ipa": "θj",
+            "host_example": "enthuse"
+        },
+        {
+            "ipa": "v",
+            "host_example": "vine, leave"
+        },
+        {
+            "ipa": "w",
+            "host_example": "wine, swine"
+        },
+        {
+            "ipa": "z",
+            "host_example": "zoo, has"
+        },
+        {
+            "ipa": "zj",
+            "host_example": "Zeus"
+        },
+        {
+            "ipa": "ʒ",
+            "host_example": "pleasure, beige"
+        }
+    ]
+}

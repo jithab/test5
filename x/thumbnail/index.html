@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet/less" type="text/css" href="./style.less" />
+  </head>
+  <body>
+    <div id="form">
+      <div><b>Thumbnail Generator</b></div>
+      <div>
+        <label>
+          Vide Type:
+          <select id="video_type">
+            <option value="python">Python</option>
+            <option value="taa">Java</option>
+            <option value="gcl">git command</option>
+            <option value="jekyll">Jekyll</option>
+            <option value="react">React</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label>Title Line 1: <input id="line1" /></label>
+      </div>
+      <div>
+        <label>Title Line 2: <input id="line2" /></label>
+      </div>
+      <div><button id="submit">Show Thumbail</button></div>
+      <div>Press F11 for full screen and then take screenshot!</div>
+    </div>
+    <img
+      src="/img/me.png"
+      style="display: none; position: fixed; right: 32px; bottom: 32px"
+    />
+    <div id="container">
+      <div id="title">
+        <div class="row">
+          <div class="column lcolumn" id="vtype_title">(Video Type))</div>
+          <div class="column rcolumn">TutorialShore</div>
+        </div>
+      </div>
+      <div id="content">
+        <span style="font-weight: bold">Video Title</span>
+      </div>
+    </div>
+    <script src="/jquery-3.6.0.min.js"></script>
+    <script src="/js/less.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

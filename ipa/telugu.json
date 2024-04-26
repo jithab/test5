@@ -1,0 +1,216 @@
+{
+    "accents": [
+    ], 
+    "consonants": [
+        {
+            "ipa": "b",
+            "letter": "బ",
+            "host_example": "బలం",
+            "english_approximation": "abash"
+        },
+        {
+            "ipa": "bʱ",
+            "letter": "భ",
+            "host_example": "భ‌ద్ర‌తా",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "d",
+            "letter": "ద",
+            "host_example": "దాహం",
+            "english_approximation": "do (dental), the (Th-stopping)"
+        },
+        {
+            "ipa": "dʱ",
+            "letter": "ధ​",
+            "host_example": "ధర",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "ɖ",
+            "letter": "డ",
+            "host_example": "డబ్బు",
+            "english_approximation": "guard"
+        },
+        {
+            "ipa": "ɖʱ",
+            "letter": "ఢ",
+            "host_example": "ఢీకొను",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "dʒ",
+            "letter": "జ",
+            "host_example": "జగత్తు",
+            "english_approximation": "jest"
+        },
+        {
+            "ipa": "j",
+            "letter": "య​",
+            "host_example": "యథార్థం",
+            "english_approximation": "yak"
+        },
+        {
+            "ipa": "dʒʱ",
+            "letter": "ఝ",
+            "host_example": "ఝర్షణ",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "ɡ",
+            "letter": "గ",
+            "host_example": "గోధుమ",
+            "english_approximation": "agate"
+        },
+        {
+            "ipa": "ɡʱ",
+            "letter": "ఘ",
+            "host_example": "ఘాటు",
+            "english_approximation": "No English equivalent"
+        },
+        {
+            "ipa": "ɦ",
+            "letter": "హ",
+            "host_example": "హరితం",
+            "english_approximation": "head"
+        },
+        {
+            "ipa": "k",
+            "letter": "క​",
+            "host_example": "కబురు",
+            "english_approximation": "scan"
+        },
+        {
+            "ipa": "kʰ",
+            "letter": "ఖ​",
+            "host_example": "ఖరారు",
+            "english_approximation": "can"
+        },
+        {
+            "ipa": "l",
+            "letter": "ల",
+            "host_example": "లబ్ధి",
+            "english_approximation": "leaf"
+        },
+        {
+            "ipa": "ɭ",
+            "letter": "ళ",
+            "host_example": "మళ్ళీ",
+            "english_approximation": "Southern US: parlor"
+        },
+        {
+            "ipa": "m",
+            "letter": "మ",
+            "host_example": "మనస్సు",
+            "english_approximation": "much"
+        },
+        {
+            "ipa": "n",
+            "letter": "న",
+            "host_example": "నైరుతి",
+            "english_approximation": "not"
+        },
+        {
+            "ipa": "ɳ",
+            "letter": "ణ",
+            "host_example": "గణితం",
+            "english_approximation": "Southern US: internet"
+        },
+        {
+            "ipa": "ɲ",
+            "letter": "ఞ",
+            "host_example": "జ్ఞానం(combination of జ and ఞ)",
+            "english_approximation": "canyon"
+        },
+        {
+            "ipa": "ŋ",
+            "letter": "ఙ",
+            "host_example": "",
+            "english_approximation": "wing"
+        },
+        {
+            "ipa": "p",
+            "letter": "ప",
+            "host_example": "పోరాటం",
+            "english_approximation": "span"
+        },
+        {
+            "ipa": "pʰ",
+            "letter": "ఫ",
+            "host_example": "ఫలితము",
+            "english_approximation": "pin"
+        },
+        {
+            "ipa": "ɾ",
+            "letter": "ర",
+            "host_example": "రుజువు",
+            "english_approximation": "North American: butter"
+        },
+        {
+            "ipa": "r",
+            "letter": "ఱ",
+            "host_example": "ఎఱుగు",
+            "english_approximation": "Scottish: curd"
+        },
+        {
+            "ipa": "ɽʱ",
+            "letter": "ఢ",
+            "host_example": "ధృఢమైన",
+            "english_approximation": "North American: larder"
+        },
+        {
+            "ipa": "s",
+            "letter": "స",
+            "host_example": "సజావు",
+            "english_approximation": "sue"
+        },
+        {
+            "ipa": "ʃ",
+            "letter": "శ",
+            "host_example": "శరీరం",
+            "english_approximation": "shoe"
+        },
+        {
+            "ipa": "ʂ",
+            "letter": "ష",
+            "host_example": "పరిషత్",
+            "english_approximation": "mosh"
+        },
+        {
+            "ipa": "t",
+            "letter": "త",
+            "host_example": "తరువాత",
+            "english_approximation": "at (dental), think (Th-stopping)"
+        },
+        {
+            "ipa": "tʰ",
+            "letter": "థ​",
+            "host_example": "కథ​నం",
+            "english_approximation": "tip (dental), thought (Th-stopping)"
+        },
+        {
+            "ipa": "ʈ",
+            "letter": "ట",
+            "host_example": "బాట",
+            "english_approximation": "art"
+        },
+        {
+            "ipa": "ʈʰ",
+            "letter": "ఠ",
+            "host_example": "ఠీవి",
+            "english_approximation": "Southern US: carts"
+        },
+        {
+            "ipa": "tʃ",
+            "letter": "చ​",
+            "host_example": "చనువు",
+            "english_approximation": "catch"
+        },
+        {
+            "ipa": "tʃʰ",
+            "letter": "ఛ",
+            "host_example": "ఛాయ",
+            "english_approximation": "choose"
+        }
+    ]
+}

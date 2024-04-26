@@ -1,0 +1,204 @@
+{
+    "accents": [
+    ], 
+    "consonants": [
+        {
+            "ipa": "b",
+            "host_example": "ばしょ, かびん, ヴァージョン",
+            "english_approximation": "<i><b>b</b>ug</i>",
+            "host_example_romanization": "basho, kabin, vājon"
+        },
+        {
+            "ipa": "bʲ",
+            "host_example": "びょうき",
+            "english_approximation": "<i><b>b</b>eauty</i>",
+            "host_example_romanization": "byōki"
+        },
+        {
+            "ipa": "ç",
+            "host_example": "ひと, ひょう",
+            "english_approximation": "<i><b>h</b>ue</i>",
+            "host_example_romanization": "hito, hyō"
+        },
+        {
+            "ipa": "ɕ",
+            "host_example": "した, いっしょう",
+            "english_approximation": "<i> <b>sh</b>eep</i>",
+            "host_example_romanization": "shita, isshō"
+        },
+        {
+            "ipa": "d",
+            "host_example": "どうも, どうどう",
+            "english_approximation": "<i><b>d</b>octor</i>",
+            "host_example_romanization": "dōmo, dōdō"
+        },
+        {
+            "ipa": "dz",
+            "host_example": "ずっと, ぜんぜん, キッズ",
+            "english_approximation": "<i>car<b>ds</b> </i>",
+            "host_example_romanization": "zutto, zenzen, kizzu"
+        },
+        {
+            "ipa": "dʑ",
+            "host_example": "じぶん, じょじょ, エッジ",
+            "english_approximation": "<i><b>j</b>eep</i>",
+            "host_example_romanization": "jibun, jojo, ejji"
+        },
+        {
+            "ipa": "ɸ",
+            "host_example": "ふじ",
+            "english_approximation": "roughly like <i><b>ph</b>ew!</i>",
+            "host_example_romanization": "fuji"
+        },
+        {
+            "ipa": "ɡ",
+            "host_example": "がっこう, りんご, ぎんこう",
+            "english_approximation": "<i><b>g</b>oat</i>",
+            "host_example_romanization": "gakkō, ringo, ginkō"
+        },
+        {
+            "ipa": "ɡʲ",
+            "host_example": "きぎょう",
+            "english_approximation": "<i>ar<b>g</b>ue</i>",
+            "host_example_romanization": "kigyō"
+        },
+        {
+            "ipa": "h",
+            "host_example": "ほん, はは",
+            "english_approximation": "<i><b>h</b>at</i>",
+            "host_example_romanization": "hon, haha"
+        },
+        {
+            "ipa": "j",
+            "host_example": "やくしゃ, ゆず",
+            "english_approximation": "<i><b>y</b>acht</i>",
+            "host_example_romanization": "yakusha, yuzu"
+        },
+        {
+            "ipa": "k",
+            "host_example": "くる, はっき",
+            "english_approximation": "<i>s<b>k</b>ate</i>",
+            "host_example_romanization": "kuru, hakki"
+        },
+        {
+            "ipa": "kʲ",
+            "host_example": "きょうかい, けっきょく",
+            "english_approximation": "<i>s<b>k</b>ew</i>",
+            "host_example_romanization": "kyōkai, kekkyoku"
+        },
+        {
+            "ipa": "m",
+            "host_example": "みかん, せんぱい, もんもん",
+            "english_approximation": "<i><b>m</b>uch</i>",
+            "host_example_romanization": "mikan, senpai, monmon"
+        },
+        {
+            "ipa": "mʲ",
+            "host_example": "みゃく",
+            "english_approximation": "<i><b>m</b>ute</i>",
+            "host_example_romanization": "myaku"
+        },
+        {
+            "ipa": "n",
+            "host_example": "なっとう, かんたん",
+            "english_approximation": "<i><b>n</b>ot</i>",
+            "host_example_romanization": "nattō, kantan"
+        },
+        {
+            "ipa": "ɲ",
+            "host_example": "にわ, こんにゃく, きんちょう",
+            "english_approximation": "<i>ca<b>ny</b>on</i>",
+            "host_example_romanization": "niwa, konnyaku, kinchō"
+        },
+        {
+            "ipa": "ŋ",
+            "host_example": "りんご, なんきょく",
+            "english_approximation": "<i>pi<b>n</b>k</i>",
+            "host_example_romanization": "ringo, nankyoku"
+        },
+        {
+            "ipa": "ɴ",
+            "host_example": "にほん",
+            "english_approximation": "roughly like <i>lo<b>ng</b></i>",
+            "host_example_romanization": "nihon"
+        },
+        {
+            "ipa": "p",
+            "host_example": "パン, たんぽぽ",
+            "english_approximation": "<i>s<b>p</b>an</i>",
+            "host_example_romanization": "pan, tanpopo"
+        },
+        {
+            "ipa": "pʲ",
+            "host_example": "はっぴょう",
+            "english_approximation": "<i>s<b>p</b>ew</i>",
+            "host_example_romanization": "happyō"
+        },
+        {
+            "ipa": "ɾ",
+            "host_example": "ろく, そら",
+            "english_approximation": "American <i>be<b>tt</b>er</i>",
+            "host_example_romanization": "roku, sora"
+        },
+        {
+            "ipa": "ɾʲ",
+            "host_example": "りょうり",
+            "english_approximation": "American <i>par<b>t</b>y</i>",
+            "host_example_romanization": "ryōri"
+        },
+        {
+            "ipa": "s",
+            "host_example": "する, さっそう",
+            "english_approximation": "<i><b>s</b>oup</i>",
+            "host_example_romanization": "suru, sassō"
+        },
+        {
+            "ipa": "t",
+            "host_example": "たべる, とって",
+            "english_approximation": "<i>s<b>t</b>op</i>",
+            "host_example_romanization": "taberu, totte"
+        },
+        {
+            "ipa": "tɕ",
+            "host_example": "ちかい, けっちゃく",
+            "english_approximation": "<i>i<b>tch</b>y</i>",
+            "host_example_romanization": "chikai, ketchaku"
+        },
+        {
+            "ipa": "ts",
+            "host_example": "つなみ, いっつい",
+            "english_approximation": "<i>ca<b>ts</b></i>",
+            "host_example_romanization": "tsunami, ittsui"
+        },
+        {
+            "ipa": "ɰ",
+            "host_example": "わさび",
+            "english_approximation": "roughly like <i><b>w</b>as</i>",
+            "host_example_romanization": "wasabi"
+        },
+        {
+            "ipa": "ɰ̃",
+            "host_example": "ふんいき, でんわ, あんしん",
+            "english_approximation": "<i>s<b>i</b>n</i>",
+            "host_example_romanization": "fun'iki, denwa, anshin"
+        },
+        {
+            "ipa": "z",
+            "host_example": "あざ, つづく",
+            "english_approximation": "<i><b>z</b>oo</i>",
+            "host_example_romanization": "aza, tsuzuku"
+        },
+        {
+            "ipa": "ʑ",
+            "host_example": "みじかい, じょじょ",
+            "english_approximation": "<i>vi<b>si</b>on</i>",
+            "host_example_romanization": "mijikai, jojo"
+        },
+        {
+            "ipa": "ʔ",
+            "host_example": "あつっ！",
+            "english_approximation": "<i>uh<b>-</b>oh</i>",
+            "host_example_romanization": "atsu'!"
+        }
+    ]
+}

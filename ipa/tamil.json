@@ -1,0 +1,151 @@
+{
+    "accents": [
+    ], 
+    "consonants": [
+        {
+            "ipa": "b",
+            "host_example": "தம்பி, ஆபத்து, அன்பு",
+            "english_approximation": "band"
+        },
+        {
+            "ipa": "ɕ",
+            "host_example": "ஶிவா",
+            "english_approximation": "sheep"
+        },
+        {
+            "ipa": "d̪",
+            "host_example": "பந்து",
+            "english_approximation": "do"
+        },
+        {
+            "ipa": "ɖ",
+            "host_example": "வண்டி, படி",
+            "english_approximation": "drab"
+        },
+        {
+            "ipa": "ð",
+            "host_example": "நல்லது",
+            "english_approximation": "other"
+        },
+        {
+            "ipa": "dʑ",
+            "host_example": "இஞ்சி, ஜானகி",
+            "english_approximation": "hedge"
+        },
+        {
+            "ipa": "ɡ",
+            "host_example": "அங்கே, பாகு",
+            "english_approximation": "gate"
+        },
+        {
+            "ipa": "h",
+            "host_example": "மகா, ஹரி",
+            "english_approximation": "heat"
+        },
+        {
+            "ipa": "j",
+            "host_example": "யானை, உய்ய",
+            "english_approximation": "yak"
+        },
+        {
+            "ipa": "k",
+            "host_example": "கால், மக்கள், கற்க",
+            "english_approximation": "skate"
+        },
+        {
+            "ipa": "l",
+            "host_example": "வலி, வல்லி, இலங்கை, வந்தால்",
+            "english_approximation": "let"
+        },
+        {
+            "ipa": "ɭ",
+            "host_example": "வளி, வள்ளி, வந்தாள்",
+            "english_approximation": "somewhat like carl (American English)"
+        },
+        {
+            "ipa": "m",
+            "host_example": "மலை, அம்மாள், தம்பி, வண்ணம்",
+            "english_approximation": "much"
+        },
+        {
+            "ipa": "n",
+            "host_example": "பன்றி, சின்ன, வந்தான்",
+            "english_approximation": "ten"
+        },
+        {
+            "ipa": "n̪",
+            "host_example": "நயம், பந்து, நன்றி, எந்நன்றி",
+            "english_approximation": "tenth"
+        },
+        {
+            "ipa": "ɲ",
+            "host_example": "ஞானம், அஞ்ஞானம், இஞ்சி",
+            "english_approximation": "canyon"
+        },
+        {
+            "ipa": "ɳ",
+            "host_example": "வண்டி, வண்ணம்",
+            "english_approximation": "corn (American English)"
+        },
+        {
+            "ipa": "ŋ",
+            "host_example": "அங்கே, அங்ஙனம்",
+            "english_approximation": "song"
+        },
+        {
+            "ipa": "r",
+            "host_example": "கறி, பற்றினார், பன்றி",
+            "english_approximation": "trilled r"
+        },
+        {
+            "ipa": "ɾ",
+            "host_example": "கரி, பரி, இரவி, வந்தார்",
+            "english_approximation": "butter (American English)"
+        },
+        {
+            "ipa": "ɽ",
+            "host_example": "தமிழ்நாடு",
+            "english_approximation": "porter (American English)"
+        },
+        {
+            "ipa": "ɻ",
+            "host_example": "வழி",
+            "english_approximation": "right"
+        },
+        {
+            "ipa": "s",
+            "host_example": "பாசம், ஸந்தியா",
+            "english_approximation": "sum"
+        },
+        {
+            "ipa": "ʂ",
+            "host_example": "உஷா",
+            "english_approximation": "shrimp"
+        },
+        {
+            "ipa": "t̪",
+            "host_example": "தனி, பத்து, யுக்தி",
+            "english_approximation": "stop"
+        },
+        {
+            "ipa": "ʈ",
+            "host_example": "பட்டு",
+            "english_approximation": "strength"
+        },
+        {
+            "ipa": "tɕ",
+            "host_example": "சின்ன, பேச்சு,  கட்சி",
+            "english_approximation": "catch"
+        },
+        {
+            "ipa": "ʋ",
+            "host_example": "வழி, அவ்வழி",
+            "english_approximation": "between w and v"
+        },
+        {
+            "ipa": "x",
+            "host_example": "எஃகு, அஃறிணை",
+            "english_approximation": "Scottish loch or German Bach"
+        }
+    ]
+}
