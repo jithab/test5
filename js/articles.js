@@ -95,6 +95,45 @@ let books = [
       },
     ],
   },
+  ,
+  {
+    country: "Qatar",
+    weight: 5 * 4,
+    chapters: [
+      {
+        name: "Al Jazeera",
+        url: "https://www.aljazeera.com/",
+        weight: 4,
+      },
+      {
+        name: "Opinion",
+        url: "https://www.aljazeera.com/opinion/",
+        weight: 5,
+      },
+    ],
+  },
+  {
+    country: "Singapore",
+    weight: 5 * 3,
+    chapters: [
+      {
+        name: "The Straits Times Opinion",
+        url: "https://www.straitstimes.com/opinion",
+        weight: 5,
+      },
+    ],
+  },
+  {
+    country: "China",
+    weight: 3 * 3,
+    chapters: [
+      {
+        name: "Global Times Opinion",
+        url: "https://www.globaltimes.cn/opinion/index.html",
+        weight: 5,
+      },
+    ],
+  },
 ];
 
 let processedList = [];
@@ -133,6 +172,7 @@ function processList() {
         endRange: endRange,
         url: chapter.url,
         target: book.chapters[0].name,
+        country: book.country,
       });
     });
     booksWeightStart += book.weight;
@@ -153,6 +193,7 @@ function shuffleArray(array) {
   return shuffledArray;
 }
 processList();
+let country = document.getElementById("country");
 let main = document.getElementsByTagName("h1")[0];
 while (main.firstChild) {
   main.removeChild(main.firstChild);
@@ -166,6 +207,10 @@ shuffled.forEach(function (item, index) {
   aTag.innerText = item.name;
   let li = document.createElement("li");
   li.appendChild(aTag);
-  if (index == 0) main.appendChild(aTag);
-  else ul.appendChild(li);
+  if (index == 0) {
+    main.appendChild(aTag);
+    country.appendChild(document.createTextNode(item.country));
+  } else {
+    ul.appendChild(li);
+  }
 });
