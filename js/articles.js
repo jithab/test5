@@ -153,6 +153,10 @@ function shuffleArray(array) {
   return shuffledArray;
 }
 processList();
+let main = document.getElementsByTagName("h1")[0];
+while (main.firstChild) {
+  main.removeChild(main.firstChild);
+}
 let ul = document.getElementById("list");
 let shuffled = shuffleArray(processedList);
 shuffled.forEach(function (item, index) {
@@ -162,5 +166,6 @@ shuffled.forEach(function (item, index) {
   aTag.innerText = item.name;
   let li = document.createElement("li");
   li.appendChild(aTag);
-  ul.appendChild(li);
+  if (index == 0) main.appendChild(aTag);
+  else ul.appendChild(li);
 });
