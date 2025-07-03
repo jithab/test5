@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MP3 + VTT Subtitle Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 1rem;
+        margin: 0;
+        background-color: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+
+      .subtitle {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #333;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      audio {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .controls {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+
+      button {
+        flex: 1;
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #copyMsg {
+        font-size: 1rem;
+        color: green;
+        text-align: center;
+        margin-top: 0.5rem;
+      }
+
+      @media (max-width: 600px) {
+        .subtitle {
+          font-size: 1.2em;
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="subtitle" id="subtitleText">Subtitle will appear here</div>
+
+    <audio id="audio" controls></audio>
+
+    <div class="controls">
+      <button id="prevBtn">⏮ Prev</button>
+      <button id="copyBtn">📋 Copy</button>
+      <button id="nextBtn">⏭ Next</button>
+    </div>
+
+    <div id="copyMsg"></div>
+
+    <script>
+      let subtitles = [];
+      let currentIndex = 0;
+      let checkTimer = null;
+
+      const audio = document.getElementById("audio");
+      const subtitleText = document.getElementById("subtitleText");
+      const copyMsg = document.getElementById("copyMsg");
+
+      function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          audio: params.get("audio"),
+          subtitle: params.get("subtitle"),
+        };
+      }
+
+      async function loadSubtitleFile(url) {
+        const response = await fetch(url);
+        const text = await response.text();
+        return parseVTT(text);
+      }
+
+      function parseVTT(data) {
+        const entries = [];
+        const blocks = data.split(/\n\n+/);
+        for (let block of blocks) {
+          const lines = block.trim().split("\n");
+          if (lines.length >= 2) {
+            const timeLine = lines.find((line) => line.includes("-->"));
+            if (!timeLine) continue;
+            const [start, end] = timeLine.split(" --> ").map(toSeconds);
+            const text = lines.slice(lines.indexOf(timeLine) + 1).join(" ");
+            entries.push({ start, end, text });
+          }
+        }
+        return entries;
+      }
+
+      function toSeconds(timeStr) {
+        const parts = timeStr.replace(",", ".").split(":");
+        return (
+          Number(parts[0]) * 3600 + Number(parts[1]) * 60 + parseFloat(parts[2])
+        );
+      }
+      function showSubtitle(index) {
+        if (!subtitles.length) return;
+        const sub = subtitles[index];
+        subtitleText.textContent = sub.text;
+        console.log(sub);
+        clearInterval(checkTimer);
+        audio.pause();
+
+        // Wait for audio metadata to be ready
+        const seekAndPlay = () => {
+          try {
+            audio.currentTime = sub.start;
+
+            // Wait briefly after setting currentTime
+            setTimeout(() => {
+              audio
+                .play()
+                .then(() => {
+                  checkTimer = setInterval(() => {
+                    if (audio.currentTime >= sub.end) {
+                      audio.pause();
+                      clearInterval(checkTimer);
+                    }
+                  }, 100);
+                })
+                .catch((err) => {
+                  console.warn("Play failed:", err.message);
+                });
+            }, 100); // Small delay helps some browsers
+          } catch (err) {
+            console.error("Error seeking:", err.message);
+          }
+        };
+
+        if (audio.readyState >= 1) {
+          seekAndPlay();
+        } else {
+          audio.addEventListener("loadedmetadata", seekAndPlay, { once: true });
+        }
+      }
+
+      document.getElementById("prevBtn").addEventListener("click", () => {
+        if (currentIndex > 0) currentIndex--;
+        showSubtitle(currentIndex);
+      });
+
+      document.getElementById("nextBtn").addEventListener("click", () => {
+        if (currentIndex < subtitles.length - 1) currentIndex++;
+        showSubtitle(currentIndex);
+      });
+
+      document.getElementById("copyBtn").addEventListener("click", async () => {
+        if (!subtitles.length) return;
+        const german_text = subtitles[currentIndex].text;
+
+        const text = `
+${german_text}
+
+Translate the German text using this format:
+
+**[German sentence]**  
+[English translation]*  
+
+---
+**[German word]** [English meaning] [IPA without slash] 
+→[grammar explanation if needed]  
+---
+
+(repeat for key vocabulary)
+`;
+        try {
+          await navigator.clipboard.writeText(text);
+          copyMsg.textContent = text;
+          setTimeout(() => (copyMsg.textContent = ""), 3000);
+        } catch (err) {
+          copyMsg.textContent = "Failed to copy.";
+        }
+      });
+
+      (async function init() {
+        const { audio: audioFile, subtitle: subtitleFile } = getQueryParams();
+        if (audioFile) {
+          audio.src = audioFile;
+        }
+        if (subtitleFile) {
+          try {
+            subtitles = await loadSubtitleFile(subtitleFile);
+            currentIndex = 0;
+            //showSubtitle(currentIndex);
+          } catch (err) {
+            subtitleText.textContent = "⚠️ Failed to load subtitle file.";
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
