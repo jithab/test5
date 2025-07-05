@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>MP3 + VTT Subtitle Player</title>
+    <title>MP3 + JSON Subtitle Player</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
@@ -25,6 +25,9 @@
         background-color: #fff;
         border-radius: 0.5rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .subtitle p {
+        font-size: 0.6em;
       }
 
       audio {
@@ -107,46 +110,29 @@
 
       async function loadSubtitleFile(url) {
         const response = await fetch(url);
-        const text = await response.text();
-        return parseVTT(text);
+        const data = await response.json(); // expecting JSON array
+        return data.map((entry) => ({
+          start: entry.start,
+          end: entry.end,
+          sent: entry.sent,
+          tran: entry.tran,
+        }));
       }
 
-      function parseVTT(data) {
-        const entries = [];
-        const blocks = data.split(/\n\n+/);
-        for (let block of blocks) {
-          const lines = block.trim().split("\n");
-          if (lines.length >= 2) {
-            const timeLine = lines.find((line) => line.includes("-->"));
-            if (!timeLine) continue;
-            const [start, end] = timeLine.split(" --> ").map(toSeconds);
-            const text = lines.slice(lines.indexOf(timeLine) + 1).join(" ");
-            entries.push({ start, end, text });
-          }
-        }
-        return entries;
-      }
-
-      function toSeconds(timeStr) {
-        const parts = timeStr.replace(",", ".").split(":");
-        return (
-          Number(parts[0]) * 3600 + Number(parts[1]) * 60 + parseFloat(parts[2])
-        );
-      }
       function showSubtitle(index) {
         if (!subtitles.length) return;
         const sub = subtitles[index];
-        subtitleText.textContent = sub.text;
+        subtitleText.innerHTML = `
+          <strong>${sub.sent}</strong><br />
+          <p>${sub.tran}</p>
+        `;
         console.log(sub);
         clearInterval(checkTimer);
         audio.pause();
 
-        // Wait for audio metadata to be ready
         const seekAndPlay = () => {
           try {
             audio.currentTime = sub.start;
-
-            // Wait briefly after setting currentTime
             setTimeout(() => {
               audio
                 .play()
@@ -161,7 +147,7 @@
                 .catch((err) => {
                   console.warn("Play failed:", err.message);
                 });
-            }, 100); // Small delay helps some browsers
+            }, 100);
           } catch (err) {
             console.error("Error seeking:", err.message);
           }
@@ -186,7 +172,7 @@
 
       document.getElementById("copyBtn").addEventListener("click", async () => {
         if (!subtitles.length) return;
-        const german_text = subtitles[currentIndex].text;
+        const german_text = subtitles[currentIndex].sent;
 
         const text = `
 ${german_text}
@@ -205,7 +191,7 @@ Translate the German text using this format:
 `;
         try {
           await navigator.clipboard.writeText(text);
-          copyMsg.textContent = text;
+          copyMsg.textContent = "✅ Copied to clipboard!";
           setTimeout(() => (copyMsg.textContent = ""), 3000);
         } catch (err) {
           copyMsg.textContent = "Failed to copy.";
@@ -221,7 +207,8 @@ Translate the German text using this format:
           try {
             subtitles = await loadSubtitleFile(subtitleFile);
             currentIndex = 0;
-            //showSubtitle(currentIndex);
+            // You may show first subtitle on load:
+            // showSubtitle(currentIndex);
           } catch (err) {
             subtitleText.textContent = "⚠️ Failed to load subtitle file.";
           }
