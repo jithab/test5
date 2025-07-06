@@ -33,8 +33,8 @@
       }
 
       .controls {
-        margin-top: auto;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
         display: flex;
         justify-content: space-between;
         gap: 0.5rem;
@@ -56,6 +56,19 @@
         background-color: #0056b3;
       }
 
+      #copyLink {
+        font-size: 0.9rem;
+        color: #007bff;
+        text-align: center;
+        display: block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+      }
+
+      #copyLink:hover {
+        text-decoration: underline;
+      }
+
       #copyMsg {
         font-size: 1rem;
         color: green;
@@ -66,6 +79,34 @@
       em {
         font-style: italic;
         color: #555;
+      }
+
+      .word-text {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .word-pron,
+      .word-mean {
+        opacity: 0;
+        pointer-events: auto;
+        transition: opacity 0.3s;
+      }
+
+      .word-pron.visible,
+      .word-mean.visible {
+        opacity: 1;
+      }
+
+      .word-pron {
+        color: #666;
+        font-style: italic;
+      }
+
+      .word-mean {
+        color: #444;
+        display: block;
+        margin-top: 0.2rem;
       }
 
       @media (max-width: 600px) {
@@ -85,13 +126,15 @@
 
     <audio id="audio" controls></audio>
 
-    <div id="wordDisplay" class="subtitle"></div>
-
     <div class="controls">
       <button id="prevBtn">⏮ Prev</button>
-      <button id="copyBtn">📋 Copy</button>
+      <button id="replayBtn">🔁 Play Current</button>
       <button id="nextBtn">⏭ Next</button>
     </div>
+
+    <a id="copyLink" href="#">📋 Copy Current Subtitle</a>
+
+    <div id="wordDisplay" class="subtitle"></div>
 
     <div id="copyMsg"></div>
 
@@ -133,17 +176,18 @@
         <strong>${sub.sent}</strong><br />
         <em>${sub.tran}</em>
       `;
-        console.log(sub.words);
-        // Show word breakdown
+
         const words = sub.words || [];
         let wordHtml = "";
         words.forEach((w) => {
           if (!w.w) return;
           wordHtml += `
-          <div>
-            <div><b>${w.w}</b> &nbsp; ${w.p}</div>
-            <em>${w.m || ""}</em>
-            <br /><br />
+          <div class="word-block">
+            <div>
+              <span class="word-text">${w.w}</span> &nbsp;
+              <span class="word-pron">${w.p}</span>
+            </div>
+            <span class="word-mean"><em>${w.m || ""}</em></span>
           </div>
         `;
         });
@@ -156,19 +200,14 @@
           try {
             audio.currentTime = sub.start;
             setTimeout(() => {
-              audio
-                .play()
-                .then(() => {
-                  checkTimer = setInterval(() => {
-                    if (audio.currentTime >= sub.end) {
-                      audio.pause();
-                      clearInterval(checkTimer);
-                    }
-                  }, 100);
-                })
-                .catch((err) => {
-                  console.warn("Play failed:", err.message);
-                });
+              audio.play().then(() => {
+                checkTimer = setInterval(() => {
+                  if (audio.currentTime >= sub.end) {
+                    audio.pause();
+                    clearInterval(checkTimer);
+                  }
+                }, 100);
+              });
             }, 100);
           } catch (err) {
             console.error("Error seeking:", err.message);
@@ -192,11 +231,46 @@
         showSubtitle(currentIndex);
       });
 
-      document.getElementById("copyBtn").addEventListener("click", async () => {
+      document.getElementById("replayBtn").addEventListener("click", () => {
         if (!subtitles.length) return;
-        const german_text = subtitles[currentIndex].sent;
+        const sub = subtitles[currentIndex];
 
-        const text = `
+        clearInterval(checkTimer);
+        audio.pause();
+
+        const playSegment = () => {
+          try {
+            audio.currentTime = sub.start;
+            setTimeout(() => {
+              audio.play().then(() => {
+                checkTimer = setInterval(() => {
+                  if (audio.currentTime >= sub.end) {
+                    audio.pause();
+                    clearInterval(checkTimer);
+                  }
+                }, 100);
+              });
+            }, 100);
+          } catch (err) {
+            console.error("Replay error:", err.message);
+          }
+        };
+
+        if (audio.readyState >= 1) {
+          playSegment();
+        } else {
+          audio.addEventListener("loadedmetadata", playSegment, { once: true });
+        }
+      });
+
+      document
+        .getElementById("copyLink")
+        .addEventListener("click", async (e) => {
+          e.preventDefault();
+          if (!subtitles.length) return;
+
+          const german_text = subtitles[currentIndex].sent;
+          const text = `
 ${german_text}
 
 Translate the German text using this format:
@@ -211,12 +285,22 @@ Translate the German text using this format:
 
 (repeat for key vocabulary)
 `;
-        try {
-          await navigator.clipboard.writeText(text);
-          copyMsg.textContent = "✅ Copied to clipboard!";
-          setTimeout(() => (copyMsg.textContent = ""), 3000);
-        } catch (err) {
-          copyMsg.textContent = "Failed to copy.";
+          try {
+            await navigator.clipboard.writeText(text);
+            copyMsg.textContent = "✅ Copied to clipboard!";
+            setTimeout(() => (copyMsg.textContent = ""), 3000);
+          } catch (err) {
+            copyMsg.textContent = "Failed to copy.";
+          }
+        });
+
+      // Toggle visibility only on the clicked span
+      document.getElementById("wordDisplay").addEventListener("click", (e) => {
+        if (
+          e.target.classList.contains("word-pron") ||
+          e.target.classList.contains("word-mean")
+        ) {
+          e.target.classList.toggle("visible");
         }
       });
 
@@ -229,7 +313,7 @@ Translate the German text using this format:
           try {
             subtitles = await loadSubtitleFile(subtitleFile);
             currentIndex = 0;
-            // Uncomment to show first subtitle on load:
+            // Optionally show the first subtitle
             // showSubtitle(currentIndex);
           } catch (err) {
             subtitleText.textContent = "⚠️ Failed to load subtitle file.";
