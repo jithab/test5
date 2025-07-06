@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>MP3 + JSON Subtitle Player</title>
+    <title>Audio + JSON Subtitle Player</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
@@ -17,17 +17,14 @@
       }
 
       .subtitle {
-        font-size: 1.5em;
-        text-align: center;
-        margin-bottom: 1rem;
+        font-size: 1.2em;
+        text-align: left;
+        margin: 1rem 0;
         color: #333;
         padding: 1rem;
         background-color: #fff;
         border-radius: 0.5rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .subtitle p {
-        font-size: 0.6em;
       }
 
       audio {
@@ -37,7 +34,7 @@
 
       .controls {
         margin-top: auto;
-        margin-bottom: 20%;
+        margin-bottom: 2rem;
         display: flex;
         justify-content: space-between;
         gap: 0.5rem;
@@ -66,9 +63,14 @@
         margin-top: 0.5rem;
       }
 
+      em {
+        font-style: italic;
+        color: #555;
+      }
+
       @media (max-width: 600px) {
         .subtitle {
-          font-size: 1.2em;
+          font-size: 1em;
         }
 
         button {
@@ -82,6 +84,8 @@
     <div class="subtitle" id="subtitleText">Subtitle will appear here</div>
 
     <audio id="audio" controls></audio>
+
+    <div id="wordDisplay" class="subtitle"></div>
 
     <div class="controls">
       <button id="prevBtn">⏮ Prev</button>
@@ -98,6 +102,7 @@
 
       const audio = document.getElementById("audio");
       const subtitleText = document.getElementById("subtitleText");
+      const wordDisplay = document.getElementById("wordDisplay");
       const copyMsg = document.getElementById("copyMsg");
 
       function getQueryParams() {
@@ -110,23 +115,40 @@
 
       async function loadSubtitleFile(url) {
         const response = await fetch(url);
-        const data = await response.json(); // expecting JSON array
+        const data = await response.json();
         return data.map((entry) => ({
           start: entry.start,
           end: entry.end,
           sent: entry.sent,
           tran: entry.tran,
+          words: entry.words || [],
         }));
       }
 
       function showSubtitle(index) {
         if (!subtitles.length) return;
         const sub = subtitles[index];
+
         subtitleText.innerHTML = `
-          <strong>${sub.sent}</strong><br />
-          <p>${sub.tran}</p>
+        <strong>${sub.sent}</strong><br />
+        <em>${sub.tran}</em>
+      `;
+        console.log(sub.words);
+        // Show word breakdown
+        const words = sub.words || [];
+        let wordHtml = "";
+        words.forEach((w) => {
+          if (!w.w) return;
+          wordHtml += `
+          <div>
+            <div><b>${w.w}</b> &nbsp; ${w.p}</div>
+            <em>${w.m || ""}</em>
+            <br /><br />
+          </div>
         `;
-        console.log(sub);
+        });
+        wordDisplay.innerHTML = wordHtml;
+
         clearInterval(checkTimer);
         audio.pause();
 
@@ -207,7 +229,7 @@ Translate the German text using this format:
           try {
             subtitles = await loadSubtitleFile(subtitleFile);
             currentIndex = 0;
-            // You may show first subtitle on load:
+            // Uncomment to show first subtitle on load:
             // showSubtitle(currentIndex);
           } catch (err) {
             subtitleText.textContent = "⚠️ Failed to load subtitle file.";

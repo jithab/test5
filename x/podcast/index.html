@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Favorite Podcasts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mobile support -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-top: 40px;
+        color: #34495e;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        font-size: 1.4em;
+      }
+
+      ul.podcast-list {
+        max-width: 800px;
+        margin: 10px auto 30px auto;
+        padding: 0 10px;
+        list-style-type: none;
+      }
+
+      ul.podcast-list li {
+        background-color: #ffffff;
+        margin-bottom: 12px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease;
+      }
+
+      ul.podcast-list li:hover {
+        transform: scale(1.02);
+      }
+
+      .podcast-title {
+        font-size: 1.1em;
+        margin: 0;
+      }
+
+      .podcast-title a {
+        text-decoration: none;
+        color: #2980b9;
+      }
+
+      .podcast-title a:hover {
+        text-decoration: underline;
+      }
+
+      .podcast-description {
+        margin-top: 5px;
+        font-size: 0.95em;
+        color: #555;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+        }
+
+        h2 {
+          font-size: 1.2em;
+        }
+
+        .podcast-title {
+          font-size: 1em;
+        }
+
+        .podcast-description {
+          font-size: 0.9em;
+        }
+
+        ul.podcast-list {
+          padding: 0 5px;
+        }
+
+        ul.podcast-list li {
+          padding: 12px 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎧 My Podcasts Hub</h1>
+
+    <h2>Explore Podcasts</h2>
+    <ul class="podcast-list">
+      <li>
+        <p class="podcast-title">
+          <a href="https://fourble.co.uk/" target="_blank">Fourble</a>
+        </p>
+        <p class="podcast-description">
+          Fourble turns lists of .mp3 files into podcasts.
+        </p>
+      </li>
+    </ul>
+  </body>
+</html>

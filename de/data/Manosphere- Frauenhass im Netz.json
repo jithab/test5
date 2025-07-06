@@ -6,9 +6,22 @@
     "tran": "DW Learn German with the Top Topic",
     "words": [
       {
-        "w": "",
-        "m": "",
-        "e": ""
+        "w": "DW Deutsch",
+        "m": "DW German",
+        "p": "deː veː dɔʏ̯tʃ",
+        "e": null
+      },
+      {
+        "w": "lernen",
+        "m": "to learn",
+        "p": "lɛʁnən",
+        "e": null
+      },
+      {
+        "w": "mit dem Top-Thema",
+        "m": "with the Top-Thema",
+        "p": "mɪt deːm tɔp ˈteːma",
+        "e": null
       }
     ]
   },
@@ -19,9 +32,22 @@
     "tran": "Manosphere: Hatred of women on the internet",
     "words": [
       {
-        "w": "",
-        "m": "",
-        "e": ""
+        "w": "Manosphere",
+        "m": "manosphere",
+        "p": "ˈmɛnəsfiːɐ̯",
+        "e": null
+      },
+      {
+        "w": "Frauenhass",
+        "m": "hatred of women",
+        "p": "ˈfʁaʊ̯ənˌhas",
+        "e": null
+      },
+      {
+        "w": "im Netz",
+        "m": "in the internet",
+        "p": "ɪm nɛts",
+        "e": null
       }
     ]
   },
@@ -32,9 +58,40 @@
     "tran": "On the internet, there is an increasingly strong anti-feminist movement, the so-called “manosphere.”",
     "words": [
       {
-        "w": "",
-        "m": "",
-        "e": ""
+        "w": "Im Internet",
+        "m": "in the internet",
+        "p": "ɪm ˈɪntɐnɛt",
+        "e": null
+      },
+      {
+        "w": "gibt es",
+        "m": "there is/are",
+        "p": "ɡɪpt ʔɛs",
+        "e": null
+      },
+      {
+        "w": "immer stärker werdende",
+        "m": "increasingly strong (always stronger becoming)",
+        "p": "ɪmɐ ˈʃtɛʁkɐ ˈveːɐ̯dn̩də",
+        "e": null
+      },
+      {
+        "w": "eine Bewegung",
+        "m": "a movement",
+        "p": "ˈaɪ̯nə bəˈveːɡʊŋ",
+        "e": null
+      },
+      {
+        "w": "die sogenannte",
+        "m": "the so-called",
+        "p": "diː ˈzoːɡənanntə",
+        "e": null
+      },
+      {
+        "w": "Manosphere",
+        "m": "manosphere",
+        "p": "ˈmɛnəsfiːɐ̯",
+        "e": null
       }
     ]
   },
@@ -45,9 +102,34 @@
     "tran": "There, men see themselves as victims of feminism and spread misogynistic content.",
     "words": [
       {
-        "w": "",
-        "m": "",
-        "e": ""
+        "w": "Dort",
+        "m": "there",
+        "p": "dɔʁt",
+        "e": null
+      },
+      {
+        "w": "sehen sich",
+        "m": "see themselves",
+        "p": "ˈzeːən zɪç",
+        "e": null
+      },
+      {
+        "w": "Männer",
+        "m": "men",
+        "p": "ˈmɛnɐ",
+        "e": null
+      },
+      {
+        "w": "als Opfer des Feminismus",
+        "m": "as victim(s) of the feminism",
+        "p": "als ɔpfɐ dɛs feːmiˈnɪsmʊs",
+        "e": null
+      },
+      {
+        "w": "frauenfeindliche Inhalte",
+        "m": "misogynistic (women hostile) content(s)",
+        "p": "ˈfʁaʊ̯ənˌfaɪ̯ndlɪçə ˈɪnˌhaltə",
+        "e": null
       }
     ]
   },
@@ -60,6 +142,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -73,6 +156,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -86,6 +170,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -99,6 +184,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -112,6 +198,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -125,6 +212,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -138,6 +226,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -151,6 +240,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -164,6 +254,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -177,6 +268,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -190,6 +282,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -203,6 +296,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -216,6 +310,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -229,6 +324,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -242,6 +338,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -255,6 +352,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -268,6 +366,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -281,6 +380,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -294,6 +394,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -307,6 +408,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -320,6 +422,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -333,6 +436,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -346,6 +450,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -359,6 +464,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
@@ -372,6 +478,7 @@
       {
         "w": "",
         "m": "",
+        "p": "",
         "e": ""
       }
     ]
