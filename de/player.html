@@ -15,72 +15,33 @@
         height: 100vh;
         box-sizing: border-box;
         user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
       }
-      .word-block {
-        padding-bottom: 1rem;
-      }
+
       .subtitle {
         font-size: 1.2em;
         text-align: left;
         color: #333;
-        padding: 0.1rem;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        transition: background-color 0.2s;
       }
 
       audio {
         width: 100%;
-        margin-bottom: 1rem;
-        opacity: 0.5;
+        opacity: 0;
+        height: 0;
+        pointer-events: none;
       }
 
-      .controls {
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 0.5rem;
-      }
-
-      button {
-        flex: 1;
-        padding: 1rem;
-        font-size: 1.2rem;
-        color: white;
-        border: none;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        transition: background-color 0.2s;
-      }
-
-      button:hover {
-        background-color: #0056b3;
-      }
-
-      #copyLink {
-        font-size: 0.9rem;
-        color: #007bff;
+      #timeDisplay {
         text-align: center;
-        display: block;
-        margin-top: 0.5rem;
-        text-decoration: none;
-      }
-
-      #copyLink:hover {
-        text-decoration: underline;
-      }
-
-      #copyMsg {
-        font-size: 1rem;
-        color: green;
-        text-align: center;
-        margin-top: 0.5rem;
-      }
-
-      em {
-        font-style: italic;
+        font-size: 0.95rem;
         color: #555;
+        margin-bottom: 1rem;
+      }
+
+      .word-block {
+        padding-bottom: 1rem;
       }
 
       .word-text {
@@ -109,14 +70,14 @@
         margin-top: 0.2rem;
       }
 
+      em {
+        font-style: italic;
+        color: #555;
+      }
+
       @media (max-width: 600px) {
         .subtitle {
           font-size: 1em;
-        }
-
-        button {
-          font-size: 1rem;
-          padding: 0.8rem;
         }
       }
     </style>
@@ -124,18 +85,10 @@
   <body>
     <div class="subtitle" id="subtitleText">Subtitle will appear here</div>
 
-    <audio id="audio" controls></audio>
-
-    <div class="controls">
-      <button id="prevBtn">Prev</button>
-      <button id="nextBtn">Next</button>
-    </div>
-
-    <a id="copyLink" href="#">Copy</a>
+    <audio id="audio"></audio>
+    <div id="timeDisplay">00:00 / 00:00</div>
 
     <div id="wordDisplay" class="subtitle"></div>
-
-    <div id="copyMsg"></div>
 
     <script>
       let subtitles = [];
@@ -145,7 +98,7 @@
       const audio = document.getElementById("audio");
       const subtitleText = document.getElementById("subtitleText");
       const wordDisplay = document.getElementById("wordDisplay");
-      const copyMsg = document.getElementById("copyMsg");
+      const timeDisplay = document.getElementById("timeDisplay");
 
       function getQueryParams() {
         const params = new URLSearchParams(window.location.search);
@@ -167,26 +120,47 @@
         }));
       }
 
+      function formatTime(seconds) {
+        if (isNaN(seconds)) return "00:00";
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${String(mins).padStart(2, "0")}:${String(secs).padStart(
+          2,
+          "0"
+        )}`;
+      }
+
+      audio.addEventListener("timeupdate", () => {
+        const current = formatTime(audio.currentTime);
+        const total = formatTime(audio.duration);
+        timeDisplay.textContent = `${current} / ${total}`;
+      });
+
+      audio.addEventListener("loadedmetadata", () => {
+        const total = formatTime(audio.duration);
+        timeDisplay.textContent = `00:00 / ${total}`;
+      });
+
       function showSubtitle(index) {
         if (!subtitles.length) return;
         const sub = subtitles[index];
 
         subtitleText.innerHTML = `
-        <strong>${sub.sent}</strong><br />
-        <em>${sub.tran}</em>
-      `;
+          <strong>${sub.sent}</strong><br />
+          <em>${sub.tran}</em>
+        `;
 
         const words = sub.words || [];
         let wordHtml = "";
         words.forEach((w) => {
           if (!w.w) return;
           wordHtml += `
-          <div class="word-block">
+            <div class="word-block">
               <div class="word-text">${w.w}</div>
               <div class="word-pron">${w.p}</div>
-            <div class="word-mean">${w.m || ""}</div>
-          </div>
-        `;
+              <div class="word-mean">${w.m || ""}</div>
+            </div>
+          `;
         });
         wordDisplay.innerHTML = wordHtml;
 
@@ -218,17 +192,8 @@
         }
       }
 
-      document.getElementById("prevBtn").addEventListener("click", () => {
-        if (currentIndex > 0) currentIndex--;
-        showSubtitle(currentIndex);
-      });
-
-      document.getElementById("nextBtn").addEventListener("click", () => {
-        if (currentIndex < subtitles.length - 1) currentIndex++;
-        showSubtitle(currentIndex);
-      });
-
-      document.getElementById("subtitleText").addEventListener("click", () => {
+      // Tap to replay
+      subtitleText.addEventListener("click", () => {
         if (!subtitles.length) return;
         const sub = subtitles[currentIndex];
 
@@ -260,14 +225,17 @@
         }
       });
 
-      document
-        .getElementById("copyLink")
-        .addEventListener("click", async (e) => {
-          e.preventDefault();
-          if (!subtitles.length) return;
+      // Long press to copy
+      let longTouchTimer = null;
+      const longTouchDuration = 700;
 
-          const german_text = subtitles[currentIndex].sent;
-          const text = `
+      function onLongPress() {
+        if (!subtitles.length) return;
+
+        const sub = subtitles[currentIndex];
+        const german_text = sub.sent;
+
+        const text = `
 ${german_text}
 
 Translate the German text using this format:
@@ -282,17 +250,64 @@ Translate the German text using this format:
 
 (repeat for key vocabulary)
 `;
-          try {
-            await navigator.clipboard.writeText(text);
-            copyMsg.textContent = "✅ Copied to clipboard!";
-            setTimeout(() => (copyMsg.textContent = ""), 3000);
-          } catch (err) {
-            copyMsg.textContent = "Failed to copy.";
-          }
-        });
 
-      // Toggle visibility only on the clicked span
-      document.getElementById("wordDisplay").addEventListener("click", (e) => {
+        navigator.clipboard.writeText(text).then(() => {
+          subtitleText.style.backgroundColor = "#d4edda";
+          setTimeout(() => {
+            subtitleText.style.backgroundColor = "";
+          }, 500);
+        });
+      }
+
+      subtitleText.addEventListener("touchstart", () => {
+        longTouchTimer = setTimeout(onLongPress, longTouchDuration);
+      });
+
+      subtitleText.addEventListener("touchend", () => {
+        clearTimeout(longTouchTimer);
+      });
+
+      subtitleText.addEventListener("touchmove", () => {
+        clearTimeout(longTouchTimer);
+      });
+
+      subtitleText.addEventListener("mousedown", () => {
+        longTouchTimer = setTimeout(onLongPress, longTouchDuration);
+      });
+
+      subtitleText.addEventListener("mouseup", () => {
+        clearTimeout(longTouchTimer);
+      });
+
+      subtitleText.addEventListener("mouseleave", () => {
+        clearTimeout(longTouchTimer);
+      });
+
+      // Swipe support (only on subtitleText)
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      subtitleText.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+
+      subtitleText.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const threshold = 50;
+        if (
+          touchEndX < touchStartX - threshold &&
+          currentIndex < subtitles.length - 1
+        ) {
+          currentIndex++;
+          showSubtitle(currentIndex);
+        } else if (touchEndX > touchStartX + threshold && currentIndex > 0) {
+          currentIndex--;
+          showSubtitle(currentIndex);
+        }
+      });
+
+      // Toggle word meaning/pronunciation
+      wordDisplay.addEventListener("click", (e) => {
         if (e.target.classList.contains("word-text")) {
           e.target
             .closest(".word-block")
@@ -314,8 +329,7 @@ Translate the German text using this format:
           try {
             subtitles = await loadSubtitleFile(subtitleFile);
             currentIndex = 0;
-            // Optionally show the first subtitle
-            // showSubtitle(currentIndex);
+            showSubtitle(currentIndex);
           } catch (err) {
             subtitleText.textContent = "⚠️ Failed to load subtitle file.";
           }
