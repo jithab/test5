@@ -131,15 +131,6 @@ Translate the German text using this format:
 
 (repeat for key vocabulary)
 
-At the end i need <json-format> for all word/phrase in a json list:
-
-The <json-format> is:
-{
-    "w": "[German word/phrase]",
-    "m": "[English meaning]",
-    "p": "[IPA without slash]",
-    "e": <just set null here dont add explanation here>
-},
 `;
         return text;
       }
@@ -180,7 +171,20 @@ The <json-format> is:
       function showSubtitle(index) {
         if (!subtitles.length) return;
         const sub = subtitles[index];
-        console.log(getText(index));
+
+        const text = `
+At the end i need <json-format> for all word/phrase in a json list:
+
+The <json-format> is:
+{
+    "w": "[German word/phrase]",
+    "m": "[English meaning]",
+    "p": "[IPA without slash]",
+    "e": <just set null here dont add explanation here>
+},
+`;
+
+        console.log(getText(index) + text);
         subtitleText.innerHTML = `
           <strong>${sub.sent}</strong><br />
           <em>${sub.tran}</em>
