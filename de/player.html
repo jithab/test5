@@ -350,6 +350,7 @@ The <json-format> is:
             currentIndex = 0;
             showSubtitle(currentIndex);
           } catch (err) {
+            console.log(err);
             subtitleText.textContent = "⚠️ Failed to load subtitle file.";
           }
         }

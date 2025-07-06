@@ -433,39 +433,38 @@
     "end": 56.82,
     "sent": "Englisch wird in Deutschland immer populärer.",
     "tran": "English is becoming increasingly popular in Germany.",
-    [
-        {
-          "w": "Englisch",
-          "m": "English",
-          "p": "ˈɛŋlɪʃ",
-          "e": null
-        },
-        {
-          "w": "wird",
-          "m": "is becoming",
-          "p": "vɪʁt",
-          "e": null
-        },
-        {
-          "w": "in Deutschland",
-          "m": "in Germany",
-          "p": "ɪn ˈdɔʏ̯tʃlant",
-          "e": null
-        },
-        {
-          "w": "immer",
-          "m": "increasingly / more and more",
-          "p": "ˈɪmɐ",
-          "e": null
-        },
-        {
-          "w": "populärer",
-          "m": "more popular",
-          "p": "popuˈlɛːʁɐ",
-          "e": null
-        }
-      ]
-      
+    "words": [
+      {
+        "w": "Englisch",
+        "m": "English",
+        "p": "ˈɛŋlɪʃ",
+        "e": null
+      },
+      {
+        "w": "wird",
+        "m": "is becoming",
+        "p": "vɪʁt",
+        "e": null
+      },
+      {
+        "w": "in Deutschland",
+        "m": "in Germany",
+        "p": "ɪn ˈdɔʏ̯tʃlant",
+        "e": null
+      },
+      {
+        "w": "immer",
+        "m": "increasingly / more and more",
+        "p": "ˈɪmɐ",
+        "e": null
+      },
+      {
+        "w": "populärer",
+        "m": "more popular",
+        "p": "popuˈlɛːʁɐ",
+        "e": null
+      }
+    ]
   },
   {
     "start": 57.76,
