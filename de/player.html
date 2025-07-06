@@ -172,8 +172,15 @@ Translate the German text using this format:
         if (!subtitles.length) return;
         const sub = subtitles[index];
 
+        const german_text = sub.sent;
+
         const text = `
-At the end i need <json-format> for all word/phrase in a json list:
+${german_text}
+
+
+- Divide the sentence into subject, predicate, and verb placement, and explain the word order.
+- Join preposition, article with its word.
+Translate the German text and I need <json-format> for all word/phrase in a json list:
 
 The <json-format> is:
 {
@@ -184,7 +191,7 @@ The <json-format> is:
 },
 `;
 
-        console.log(getText(index) + text);
+        console.log(text);
         subtitleText.innerHTML = `
           <strong>${sub.sent}</strong><br />
           <em>${sub.tran}</em>
