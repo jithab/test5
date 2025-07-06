@@ -107,6 +107,42 @@
           subtitle: params.get("subtitle"),
         };
       }
+      function getText(currentIndex) {
+        if (!subtitles.length) return;
+
+        const sub = subtitles[currentIndex];
+        const german_text = sub.sent;
+
+        const text = `
+${german_text}
+
+
+- Divide the sentence into subject, predicate, and verb placement, and explain the word order.
+- Join preposition, article with its word.
+Translate the German text using this format:
+
+**[German sentence]**  
+[English translation]*  
+
+---
+**[German word/phrase]** [English meaning] [IPA without slash] 
+→[grammar explanation if needed] 
+---
+
+(repeat for key vocabulary)
+
+At the end i need <json-format> for all word/phrase in a json list:
+
+The <json-format> is:
+{
+    "w": "[German word/phrase]",
+    "m": "[English meaning]",
+    "p": "[IPA without slash]",
+    "e": <just set null here dont add explanation here>
+},
+`;
+        return text;
+      }
 
       async function loadSubtitleFile(url) {
         const response = await fetch(url);
@@ -144,7 +180,7 @@
       function showSubtitle(index) {
         if (!subtitles.length) return;
         const sub = subtitles[index];
-
+        console.log(getText(index));
         subtitleText.innerHTML = `
           <strong>${sub.sent}</strong><br />
           <em>${sub.tran}</em>
@@ -232,24 +268,7 @@
       function onLongPress() {
         if (!subtitles.length) return;
 
-        const sub = subtitles[currentIndex];
-        const german_text = sub.sent;
-
-        const text = `
-${german_text}
-
-Translate the German text using this format:
-
-**[German sentence]**  
-[English translation]*  
-
----
-**[German word]** [English meaning] [IPA without slash] 
-→[grammar explanation if needed]  
----
-
-(repeat for key vocabulary)
-`;
+        const text = getText(currentIndex);
 
         navigator.clipboard.writeText(text).then(() => {
           subtitleText.style.backgroundColor = "#d4edda";

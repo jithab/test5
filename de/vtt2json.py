@@ -4,16 +4,24 @@ import sys
 import os
 
 def parse_timestamp(ts):
-    """Convert WebVTT timestamp (hh:mm:ss.mmm) to seconds."""
+    """Convert WebVTT timestamp (hh:mm:ss.mmm or mm:ss.mmm) to seconds."""
     parts = ts.strip().split(':')
-    if len(parts) != 3:
+
+    if len(parts) == 3:
+        hours = int(parts[0])
+        minutes = int(parts[1])
+    elif len(parts) == 2:
+        hours = 0
+        minutes = int(parts[0])
+    else:
         raise ValueError(f"Invalid timestamp format: {ts}")
-    
-    hours = int(parts[0])
-    minutes = int(parts[1])
-    secs_parts = parts[2].split('.')
+
+    secs_parts = parts[-1].split('.')
+    if len(secs_parts) != 2:
+        raise ValueError(f"Invalid seconds format in timestamp: {ts}")
+
     seconds = int(secs_parts[0])
-    milliseconds = int(secs_parts[1]) if len(secs_parts) > 1 else 0
+    milliseconds = int(secs_parts[1])
 
     return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000
 
@@ -69,6 +77,9 @@ if __name__ == "__main__":
         print(f"Error: File '{vtt_path}' does not exist.")
         sys.exit(1)
 
-    subtitles = read_vtt(vtt_path)
-    print(json.dumps(subtitles, indent=4, ensure_ascii=False))
-
+    try:
+        subtitles = read_vtt(vtt_path)
+        print(json.dumps(subtitles, indent=4, ensure_ascii=False))
+    except ValueError as e:
+        print(f"Error: {e}")
+        sys.exit(1)
