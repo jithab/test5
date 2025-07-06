@@ -14,22 +14,25 @@
         flex-direction: column;
         height: 100vh;
         box-sizing: border-box;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
       }
-
+      .word-block {
+        padding-bottom: 1rem;
+      }
       .subtitle {
         font-size: 1.2em;
         text-align: left;
-        margin: 1rem 0;
         color: #333;
-        padding: 1rem;
-        background-color: #fff;
-        border-radius: 0.5rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 0.1rem;
       }
 
       audio {
         width: 100%;
         margin-bottom: 1rem;
+        opacity: 0.5;
       }
 
       .controls {
@@ -44,7 +47,6 @@
         flex: 1;
         padding: 1rem;
         font-size: 1.2rem;
-        background-color: #007bff;
         color: white;
         border: none;
         border-radius: 0.5rem;
@@ -88,14 +90,13 @@
 
       .word-pron,
       .word-mean {
-        opacity: 0;
+        display: none;
         pointer-events: auto;
-        transition: opacity 0.3s;
       }
 
       .word-pron.visible,
       .word-mean.visible {
-        opacity: 1;
+        display: block;
       }
 
       .word-pron {
@@ -105,7 +106,6 @@
 
       .word-mean {
         color: #444;
-        display: block;
         margin-top: 0.2rem;
       }
 
@@ -127,12 +127,11 @@
     <audio id="audio" controls></audio>
 
     <div class="controls">
-      <button id="prevBtn">⏮ Prev</button>
-      <button id="replayBtn">🔁 Play Current</button>
-      <button id="nextBtn">⏭ Next</button>
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
     </div>
 
-    <a id="copyLink" href="#">📋 Copy Current Subtitle</a>
+    <a id="copyLink" href="#">Copy</a>
 
     <div id="wordDisplay" class="subtitle"></div>
 
@@ -183,11 +182,9 @@
           if (!w.w) return;
           wordHtml += `
           <div class="word-block">
-            <div>
-              <span class="word-text">${w.w}</span> &nbsp;
-              <span class="word-pron">${w.p}</span>
-            </div>
-            <span class="word-mean"><em>${w.m || ""}</em></span>
+              <div class="word-text">${w.w}</div>
+              <div class="word-pron">${w.p}</div>
+            <div class="word-mean">${w.m || ""}</div>
           </div>
         `;
         });
@@ -231,7 +228,7 @@
         showSubtitle(currentIndex);
       });
 
-      document.getElementById("replayBtn").addEventListener("click", () => {
+      document.getElementById("subtitleText").addEventListener("click", () => {
         if (!subtitles.length) return;
         const sub = subtitles[currentIndex];
 
@@ -296,11 +293,15 @@ Translate the German text using this format:
 
       // Toggle visibility only on the clicked span
       document.getElementById("wordDisplay").addEventListener("click", (e) => {
-        if (
-          e.target.classList.contains("word-pron") ||
-          e.target.classList.contains("word-mean")
-        ) {
-          e.target.classList.toggle("visible");
+        if (e.target.classList.contains("word-text")) {
+          e.target
+            .closest(".word-block")
+            .querySelector(".word-mean")
+            .classList.toggle("visible");
+          e.target
+            .closest(".word-block")
+            .querySelector(".word-pron")
+            .classList.toggle("visible");
         }
       });
 
