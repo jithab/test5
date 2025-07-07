@@ -51,9 +51,9 @@
     "tran": "Whether in politics, in business life, or in everyday life:",
     "words": [
       {
-        "w": "Ob",
-        "m": "Whether",
-        "p": "ɔp",
+        "w": "Ob … oder …",
+        "m": "Whether … or …",
+        "p": "ɔp … oːdɐ …",
         "e": null
       },
       {
@@ -66,12 +66,6 @@
         "w": "im Geschäftsleben",
         "m": "in business life",
         "p": "ɪm ɡəˈʃɛftsˌleːbn̩",
-        "e": null
-      },
-      {
-        "w": "oder",
-        "m": "or",
-        "p": "ˈoːdɐ",
         "e": null
       },
       {
@@ -567,21 +561,15 @@
         "e": null
       },
       {
-        "w": "will",
-        "m": "wants to",
-        "p": "vɪl",
+        "w": "will … holen",
+        "m": "wants to bring",
+        "p": "vɪl … ˈhoːlən",
         "e": null
       },
       {
-        "w": "auch",
-        "m": "also",
-        "p": "aʊ̯x",
-        "e": null
-      },
-      {
-        "w": "Fachkräfte",
-        "m": "skilled workers",
-        "p": "ˈfaxˌkʁɛftə",
+        "w": "auch Fachkräfte",
+        "m": "also skilled workers",
+        "p": "aʊ̯x ˈfaxˌkʁɛftə",
         "e": null
       },
       {
@@ -595,12 +583,6 @@
         "m": "into the country",
         "p": "ɪns lant",
         "e": null
-      },
-      {
-        "w": "holen",
-        "m": "to bring",
-        "p": "ˈhoːlən",
-        "e": null
       }
     ]
   },
@@ -611,21 +593,15 @@
     "tran": "But how can one attract foreign workers?",
     "words": [
       {
-        "w": "Aber",
-        "m": "But",
-        "p": "ˈaːbɐ",
+        "w": "Aber wie",
+        "m": "But how",
+        "p": "ˈaːbɐ viː",
         "e": null
       },
       {
-        "w": "wie",
-        "m": "how",
-        "p": "viː",
-        "e": null
-      },
-      {
-        "w": "kann",
-        "m": "can",
-        "p": "kan",
+        "w": "kann … anlocken",
+        "m": "can attract",
+        "p": "kan ˈanˌlɔkn̩",
         "e": null
       },
       {
@@ -638,12 +614,6 @@
         "w": "ausländische Arbeitskräfte",
         "m": "foreign workers",
         "p": "ˈaʊ̯slɛndɪʃə ˈaʁbaɪ̯t͡skʁɛftə",
-        "e": null
-      },
-      {
-        "w": "anlocken",
-        "m": "to attract",
-        "p": "ˈanˌlɔkn̩",
         "e": null
       }
     ]
@@ -673,15 +643,9 @@
         "e": null
       },
       {
-        "w": "nur",
-        "m": "only",
-        "p": "nuːɐ̯",
-        "e": null
-      },
-      {
-        "w": "auf Deutsch",
-        "m": "in German",
-        "p": "aʊ̯f dɔʏ̯tʃ",
+        "w": "nur auf Deutsch",
+        "m": "only in German",
+        "p": "nuːɐ̯ aʊ̯f dɔʏ̯tʃ",
         "e": null
       },
       {
@@ -699,15 +663,9 @@
     "tran": "and they only accept forms if they have been translated into German?",
     "words": [
       {
-        "w": "und",
-        "m": "and",
-        "p": "ʊnt",
-        "e": null
-      },
-      {
-        "w": "sie",
-        "m": "they",
-        "p": "ziː",
+        "w": "und sie",
+        "m": "and they",
+        "p": "ʊnt ziː",
         "e": null
       },
       {
@@ -717,27 +675,15 @@
         "e": null
       },
       {
-        "w": "nur",
-        "m": "only",
-        "p": "nuːɐ̯",
+        "w": "nur akzeptieren",
+        "m": "only to accept",
+        "p": "nuːɐ̯ aktsɛpˈtiːʁən",
         "e": null
       },
       {
-        "w": "akzeptieren",
-        "m": "to accept",
-        "p": "aktsɛpˈtiːʁən",
-        "e": null
-      },
-      {
-        "w": "wenn",
-        "m": "if / when",
-        "p": "vɛn",
-        "e": null
-      },
-      {
-        "w": "sie",
-        "m": "they",
-        "p": "ziː",
+        "w": "wenn sie",
+        "m": "if / when they",
+        "p": "vɛn ziː",
         "e": null
       },
       {
@@ -747,15 +693,9 @@
         "e": null
       },
       {
-        "w": "übersetzt",
-        "m": "translated",
-        "p": "yːbɐˈzɛtst",
-        "e": null
-      },
-      {
-        "w": "wurden",
-        "m": "were",
-        "p": "ˈvʊʁdən",
+        "w": "übersetzt wurden",
+        "m": "translated were",
+        "p": "yːbɐˈzɛtst ˈvʊʁdən",
         "e": null
       }
     ]
@@ -773,15 +713,9 @@
         "e": null
       },
       {
-        "w": "kann",
-        "m": "can",
-        "p": "kan",
-        "e": null
-      },
-      {
-        "w": "sich",
-        "m": "oneself / itself",
-        "p": "zɪç",
+        "w": "kann sich … vorstellen",
+        "m": "can oneself / itself … imagine",
+        "p": "kan zɪç … ˈfoːɐˌʃtɛlən",
         "e": null
       },
       {
@@ -797,27 +731,15 @@
         "e": null
       },
       {
-        "w": "Englisch",
-        "m": "English",
-        "p": "ˈɛŋlɪʃ",
-        "e": null
-      },
-      {
-        "w": "als Zweitsprache",
-        "m": "as a second language",
-        "p": "als ˈtsvaɪ̯tˌʃpʁaːxə",
+        "w": "Englisch als Zweitsprache",
+        "m": "English as a second language",
+        "p": "ˈɛŋlɪʃ als ˈtsvaɪ̯tˌʃpʁaːxə",
         "e": null
       },
       {
         "w": "in der Verwaltung",
         "m": "in public administration",
         "p": "ɪn deːɐ fɛɐ̯ˈvaltʊŋ",
-        "e": null
-      },
-      {
-        "w": "vorstellen",
-        "m": "to imagine",
-        "p": "ˈfoːɐˌʃtɛlən",
         "e": null
       }
     ]
@@ -873,33 +795,21 @@
     "tran": "and a legislative amendment would take years.",
     "words": [
       {
-        "w": "und",
-        "m": "and",
-        "p": "ʊnt",
+        "w": "und eine Gesetzesänderung",
+        "m": "and a legislative amendment",
+        "p": "ʊnt ˈaɪ̯nə ɡəˈzɛt͡səsˌʔɛndəʁʊŋ",
         "e": null
       },
       {
-        "w": "eine Gesetzesänderung",
-        "m": "a legislative amendment",
-        "p": "ˈaɪ̯nə ɡəˈzɛt͡səsˌʔɛndəʁʊŋ",
-        "e": null
-      },
-      {
-        "w": "würde",
-        "m": "would",
-        "p": "ˈvʏʁdə",
+        "w": "würde … dauern",
+        "m": "would … take / last",
+        "p": "ˈvʏʁdə … ˈdaʊ̯ɐn",
         "e": null
       },
       {
         "w": "Jahre",
         "m": "years",
         "p": "ˈjaːʁə",
-        "e": null
-      },
-      {
-        "w": "dauern",
-        "m": "to take / to last",
-        "p": "ˈdaʊ̯ɐn",
         "e": null
       }
     ]
@@ -944,15 +854,9 @@
 
     "words": [
       {
-        "w": "dass",
-        "m": "that",
-        "p": "das",
-        "e": null
-      },
-      {
-        "w": "viele Kundinnen und Kunden",
-        "m": "many female and male clients",
-        "p": "ˈfiːlə ˈkʊndɪnən ʊnt ˈkʊndn̩",
+        "w": "dass viele Kundinnen und Kunden",
+        "m": "that many female and male clients",
+        "p": "das ˈfiːlə ˈkʊndɪnən ʊnt ˈkʊndn̩",
         "e": null
       },
       {
@@ -962,27 +866,9 @@
         "e": null
       },
       {
-        "w": "nur",
-        "m": "only",
-        "p": "nuːɐ̯",
-        "e": null
-      },
-      {
-        "w": "Französisch",
-        "m": "French",
-        "p": "fʁanˈtsøːzɪʃ",
-        "e": null
-      },
-      {
-        "w": "oder",
-        "m": "or",
-        "p": "ˈoːdɐ",
-        "e": null
-      },
-      {
-        "w": "Arabisch",
-        "m": "Arabic",
-        "p": "ʔaˈʁaːbɪʃ",
+        "w": "nur Französisch oder Arabisch",
+        "m": "only French or Arabic",
+        "p": "nuːɐ̯ fʁanˈtsøːzɪʃ ˈoːdɐ ʔaˈʁaːbɪʃ",
         "e": null
       },
       {
@@ -1008,33 +894,15 @@
         "e": null
       },
       {
-        "w": "hilft",
-        "m": "helps",
-        "p": "hɪlft",
+        "w": "hilft uns nicht",
+        "m": "helps us not",
+        "p": "hɪlft ʊns nɪçt",
         "e": null
       },
       {
-        "w": "uns",
-        "m": "us",
-        "p": "ʊns",
-        "e": null
-      },
-      {
-        "w": "nicht",
-        "m": "not",
-        "p": "nɪçt",
-        "e": null
-      },
-      {
-        "w": "sagt",
-        "m": "says",
-        "p": "zaːkt",
-        "e": null
-      },
-      {
-        "w": "er",
-        "m": "he",
-        "p": "eːɐ̯",
+        "w": "sagt er",
+        "m": "says he",
+        "p": "zaːkt eːɐ̯",
         "e": null
       }
     ]
@@ -1046,9 +914,9 @@
     "tran": "Whether English now officially belongs to Germany or not,",
     "words": [
       {
-        "w": "Ob",
-        "m": "Whether",
-        "p": "ʔɔp",
+        "w": "Ob … oder nicht",
+        "m": "Whether … or not",
+        "p": "ʔɔp … ˈoːdɐ nɪçt",
         "e": null
       },
       {
@@ -1058,15 +926,9 @@
         "e": null
       },
       {
-        "w": "nun",
-        "m": "now",
-        "p": "nuːn",
-        "e": null
-      },
-      {
-        "w": "offiziell",
-        "m": "officially",
-        "p": "ʔɔfɪtsiˈɛl",
+        "w": "nun offiziell",
+        "m": "now officially",
+        "p": "nuːn ʔɔfɪtsiˈɛl",
         "e": null
       },
       {
@@ -1079,18 +941,6 @@
         "w": "gehört",
         "m": "belongs",
         "p": "ɡəˈhøːɐ̯t",
-        "e": null
-      },
-      {
-        "w": "oder",
-        "m": "or",
-        "p": "ˈoːdɐ",
-        "e": null
-      },
-      {
-        "w": "nicht",
-        "m": "not",
-        "p": "nɪçt",
         "e": null
       }
     ]
@@ -1108,9 +958,9 @@
         "e": null
       },
       {
-        "w": "ist",
-        "m": "is / has (auxiliary for perfect)",
-        "p": "ɪst",
+        "w": "ist angekommen",
+        "m": "is / has arrived",
+        "p": "ɪst ˈanɡəˌkɔmən",
         "e": null
       },
       {
@@ -1123,12 +973,6 @@
         "w": "im Alltag",
         "m": "in everyday life",
         "p": "ɪm ˈaltˌtaːk",
-        "e": null
-      },
-      {
-        "w": "angekommen",
-        "m": "arrived",
-        "p": "ˈanɡəˌkɔmən",
         "e": null
       }
     ]
@@ -1146,27 +990,15 @@
         "e": null
       },
       {
-        "w": "wird",
-        "m": "is (passive auxiliary)",
-        "p": "vɪʁt",
+        "w": "wird … unterrichtet",
+        "m": "is (passive auxiliary) taught",
+        "p": "vɪʁt … ˌʊntɐˈʁɪçtət",
         "e": null
       },
       {
-        "w": "seit 2005",
-        "m": "since 2005",
-        "p": "zaɪ̯t ˈtsvaɪ̯taʊ̯znt ˈnʊl fʏnf",
-        "e": null
-      },
-      {
-        "w": "Englisch",
-        "m": "English",
-        "p": "ˈɛŋlɪʃ",
-        "e": null
-      },
-      {
-        "w": "unterrichtet",
-        "m": "taught",
-        "p": "ˌʊntɐˈʁɪçtət",
+        "w": "seit 2005 Englisch",
+        "m": "since 2005 English",
+        "p": "zaɪ̯t ˈtsvaɪ̯taʊ̯znt ˈnʊl fʏnf ˈɛŋlɪʃ",
         "e": null
       }
     ]
@@ -1248,27 +1080,9 @@
     "tran": "It bothers me that in some Berlin restaurants, the waitresses speak only English.",
     "words": [
       {
-        "w": "Es",
-        "m": "It",
-        "p": "ʔɛs",
-        "e": null
-      },
-      {
-        "w": "stört",
-        "m": "bothers",
-        "p": "ʃtøːɐ̯t",
-        "e": null
-      },
-      {
-        "w": "mich",
-        "m": "me",
-        "p": "mɪç",
-        "e": null
-      },
-      {
-        "w": "dass",
-        "m": "that",
-        "p": "das",
+        "w": "Es stört michdass",
+        "m": "It bothers me that ",
+        "p": "ʔɛs ʃtøːɐ̯t mɪç das",
         "e": null
       },
       {
@@ -1284,21 +1098,9 @@
         "e": null
       },
       {
-        "w": "nur",
-        "m": "only",
-        "p": "nuːɐ̯",
-        "e": null
-      },
-      {
-        "w": "Englisch",
-        "m": "English",
-        "p": "ˈɛŋ.lɪʃ",
-        "e": null
-      },
-      {
-        "w": "sprechen",
-        "m": "speak",
-        "p": "ˈʃpʁɛçn̩",
+        "w": "nur Englisch sprechen",
+        "m": "only English speak",
+        "p": "nuːɐ̯ ˈɛŋ.lɪʃ ˈʃpʁɛçn̩",
         "e": null
       }
     ]
@@ -1310,15 +1112,9 @@
     "tran": "He will probably have to get used to it.",
     "words": [
       {
-        "w": "Er",
-        "m": "He",
-        "p": "eːɐ̯",
-        "e": null
-      },
-      {
-        "w": "wird",
-        "m": "will",
-        "p": "vɪʁt",
+        "w": "Er wird",
+        "m": "He will",
+        "p": "eːɐ̯ vɪʁt",
         "e": null
       },
       {

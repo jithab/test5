@@ -174,7 +174,7 @@ Translate the German text using this format:
 
         const german_text = sub.sent;
 
-        const text = `
+        text = `
 ${german_text}
 
 
@@ -190,7 +190,7 @@ The <json-format> is:
     "e": <just set null here dont add explanation here>
 },
 `;
-
+        text = getText(index);
         console.log(text);
         subtitleText.innerHTML = `
           <strong>${sub.sent}</strong><br />
