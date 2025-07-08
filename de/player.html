@@ -138,7 +138,7 @@ Translate the German text using this format:
       async function loadSubtitleFile(url) {
         const response = await fetch(url);
         const data = await response.json();
-        return data.map((entry) => ({
+        return data.sents.map((entry) => ({
           start: entry.start,
           end: entry.end,
           sent: entry.sent,
