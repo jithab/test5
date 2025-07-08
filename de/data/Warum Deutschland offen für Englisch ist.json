@@ -218,8 +218,8 @@
       ]
     },
     {
-      "start": 33.68,
-      "end": 40.28,
+      "start": 33.28,
+      "end": 40.4,
       "sent": "Als ein britischer Journalist 2009 den damaligen Außenminister Guido Westerwelle bat, Englisch zu reden,",
       "tran": "When a British journalist in 2009 asked then Foreign Minister Guido Westerwelle to speak English,",
       "words": [
@@ -262,8 +262,8 @@
       ]
     },
     {
-      "start": 41.02,
-      "end": 47.46,
+      "start": 40.62,
+      "end": 47.54,
       "sent": "antwortete dieser: „So wie es in Großbritannien üblich ist, dass man dort selbstverständlich Englisch spricht,",
       "tran": "this one replied: \"Just as it is customary in Great Britain for people there to naturally speak English,\"",
       "words": [
@@ -330,7 +330,7 @@
       ]
     },
     {
-      "start": 48.06,
+      "start": 47.86,
       "end": 50.66,
       "sent": "so ist es in Deutschland üblich, dass man hier Deutsch spricht.“",
       "tran": "just as it is customary in Germany that people here speak German.",
@@ -462,7 +462,7 @@
       ]
     },
     {
-      "start": 57.76,
+      "start": 57.64,
       "end": 61.52,
       "sent": "Vor allem für die deutsche Wirtschaft ist Englisch die Sprache der Wahl.",
       "tran": "Above all, English is the language of choice, especially for the German economy.",
@@ -506,7 +506,7 @@
       ]
     },
     {
-      "start": 62.12,
+      "start": 61.72,
       "end": 65.62,
       "sent": "Denn sie arbeitet nicht nur mit internationalen Unternehmen zusammen,",
       "tran": "Because she not only works with international companies,",
@@ -550,8 +550,8 @@
       ]
     },
     {
-      "start": 66.24,
-      "end": 69.78,
+      "start": 65.92,
+      "end": 70,
       "sent": "sondern will auch Fachkräfte aus dem Ausland ins Land holen.",
       "tran": "but also wants to bring skilled workers from abroad into the country.",
       "words": [
@@ -588,8 +588,8 @@
       ]
     },
     {
-      "start": 70.82,
-      "end": 73.54,
+      "start": 70.6,
+      "end": 74,
       "sent": "Aber wie kann man ausländische Arbeitskräfte anlocken,",
       "tran": "But how can one attract foreign workers?",
       "words": [
@@ -620,7 +620,7 @@
       ]
     },
     {
-      "start": 74.6,
+      "start": 74.32,
       "end": 77.76,
       "sent": "wenn Ämter ihre Beratung nur auf Deutsch anbieten",
       "tran": "when public offices offer their consultation only in German",
@@ -659,7 +659,7 @@
     },
     {
       "start": 77.76,
-      "end": 82.42,
+      "end": 82.8,
       "sent": "und sie Formulare nur akzeptieren, wenn sie auf Deutsch übersetzt wurden?",
       "tran": "and they only accept forms if they have been translated into German?",
       "words": [
@@ -702,8 +702,8 @@
       ]
     },
     {
-      "start": 83.42,
-      "end": 90.66,
+      "start": 83.3,
+      "end": 90.8,
       "sent": "Als einzige Regierungspartei kann sich bisher die FDP Englisch als Zweitsprache in der Verwaltung vorstellen.",
       "tran": "As the only governing party, the FDP is so far the only one that can imagine English as a second language in public administration.",
       "words": [
@@ -746,7 +746,7 @@
       ]
     },
     {
-      "start": 91.82,
+      "start": 91.2,
       "end": 96.06,
       "sent": "Das deutsche Gesetzbuch schreibt jedoch Deutsch als einzige Amtssprache vor,",
       "tran": "The German code of law, however, prescribes German as the only official language.",
@@ -816,8 +816,8 @@
       ]
     },
     {
-      "start": 99.52,
-      "end": 104.36,
+      "start": 99.8,
+      "end": 104.6,
       "sent": "Ulrich Silberbach vom Deutschen Beamtenbund argumentiert außerdem,",
       "tran": "Ulrich Silberbach from the German Civil Servants' Association also argues,",
       "words": [
@@ -848,7 +848,7 @@
       ]
     },
     {
-      "start": 105.06,
+      "start": 104.6,
       "end": 109.94,
       "sent": "dass viele Kundinnen und Kunden der Ämter nur Französisch oder Arabisch sprechen.",
       "tran": "that many clients of the public offices speak only French or Arabic.",
@@ -880,7 +880,7 @@
       ]
     },
     {
-      "start": 110.76,
+      "start": 110,
       "end": 114.88,
       "sent": "„Eine pauschale Englischpflicht hilft uns nicht“, sagt er.",
       "tran": "\"A blanket English requirement does not help us,\" he says.",
@@ -906,7 +906,7 @@
       ]
     },
     {
-      "start": 114.88,
+      "start": 115,
       "end": 119.12,
       "sent": "Ob Englisch nun offiziell zu Deutschland gehört oder nicht,",
       "tran": "Whether English now officially belongs to Germany or not,",
@@ -944,7 +944,7 @@
       ]
     },
     {
-      "start": 119.7,
+      "start": 119.4,
       "end": 122.64,
       "sent": "die Sprache ist schon lange im Alltag angekommen.",
       "tran": "The language has long since arrived in everyday life.",
@@ -976,7 +976,7 @@
       ]
     },
     {
-      "start": 123.54,
+      "start": 123,
       "end": 127.26,
       "sent": "An deutschen Grundschulen wird seit 2005 Englisch unterrichtet,",
       "tran": "English has been taught at German primary schools since 2005.",
@@ -1046,7 +1046,7 @@
       ]
     },
     {
-      "start": 133.9,
+      "start": 133,
       "end": 137.3,
       "sent": "Schon 2017 klagte ein Berliner Politiker:",
       "tran": "As early as 2017, a Berlin politician filed a complaint:",
@@ -1072,7 +1072,7 @@
       ]
     },
     {
-      "start": 138.12,
+      "start": 137.6,
       "end": 143.26,
       "sent": "„Es stört mich, dass in manchen Berliner Restaurants die Kellnerinnen nur Englisch sprechen.“",
       "tran": "It bothers me that in some Berlin restaurants, the waitresses speak only English.",
