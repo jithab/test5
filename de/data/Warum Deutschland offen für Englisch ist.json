@@ -110,15 +110,9 @@
       "tran": "This is supposed to make the country more attractive for international companies and skilled workers.",
       "words": [
         {
-          "w": "das",
-          "m": "this",
-          "p": "das",
-          "e": null
-        },
-        {
-          "w": "soll machen",
-          "m": "is supposed to make",
-          "p": "zɔl ˈmaχən",
+          "w": "das soll machen",
+          "m": "this is supposed to make",
+          "p": "das zɔl ˈmaχən",
           "e": null
         },
         {
@@ -174,15 +168,9 @@
       "tran": "It’s not that long ago that German politicians refused to speak English.",
       "words": [
         {
-          "w": "Es",
-          "m": "it",
-          "p": "ɛs",
-          "e": null
-        },
-        {
-          "w": "ist her",
-          "m": "is ago",
-          "p": "ɪst heːɐ̯",
+          "w": "Es ist her",
+          "m": "It is ago",
+          "p": "ɛs ɪst heːɐ̯",
           "e": null
         },
         {
@@ -192,15 +180,9 @@
           "e": null
         },
         {
-          "w": "dass",
-          "m": "that",
-          "p": "das",
-          "e": null
-        },
-        {
-          "w": "deutsche Politiker",
-          "m": "German politicians",
-          "p": "ˈdɔʏtʃə poˈliːtɪkɐ",
+          "w": "dass deutsche Politiker",
+          "m": "that German politicians",
+          "p": "das ˈdɔʏtʃə poˈliːtɪkɐ",
           "e": null
         },
         {
@@ -224,15 +206,9 @@
       "tran": "When a British journalist in 2009 asked then Foreign Minister Guido Westerwelle to speak English,",
       "words": [
         {
-          "w": "Als",
-          "m": "when",
-          "p": "ʔals",
-          "e": null
-        },
-        {
-          "w": "ein britischer Journalist",
-          "m": "a British journalist",
-          "p": "ʔaɪn ˈbʁɪtɪʃɐ ʒʊʁnaˈlɪst",
+          "w": "Als ein britischer Journalist",
+          "m": "when a British journalist",
+          "p": "ʔals ʔaɪn ˈbʁɪtɪʃɐ ʒʊʁnaˈlɪst",
           "e": null
         },
         {
@@ -336,21 +312,9 @@
       "tran": "just as it is customary in Germany that people here speak German.",
       "words": [
         {
-          "w": "so",
-          "m": "so / just as",
-          "p": "zoː",
-          "e": null
-        },
-        {
-          "w": "ist",
-          "m": "is",
-          "p": "ʔɪst",
-          "e": null
-        },
-        {
-          "w": "es",
-          "m": "it",
-          "p": "ʔɛs",
+          "w": "so ist es",
+          "m": "so / just as is it",
+          "p": "zo ʔɪst ʔɛs",
           "e": null
         },
         {
@@ -366,21 +330,9 @@
           "e": null
         },
         {
-          "w": "dass",
-          "m": "that",
-          "p": "das",
-          "e": null
-        },
-        {
-          "w": "man",
-          "m": "people / one",
-          "p": "man",
-          "e": null
-        },
-        {
-          "w": "hier",
-          "m": "here",
-          "p": "hiːɐ̯",
+          "w": "dass man hier",
+          "m": "that people / one here",
+          "p": "das man hiːɐ̯",
           "e": null
         },
         {
@@ -398,27 +350,15 @@
       "tran": "But times are changing.",
       "words": [
         {
-          "w": "Doch",
-          "m": "but",
-          "p": "dɔx",
+          "w": "Doch die Zeiten",
+          "m": "but the times",
+          "p": "dɔx diː ˈt͡saɪ̯tn̩",
           "e": null
         },
         {
-          "w": "die Zeiten",
-          "m": "the times",
-          "p": "diː ˈt͡saɪ̯tn̩",
-          "e": null
-        },
-        {
-          "w": "ändern",
-          "m": "change / are changing",
-          "p": "ˈʔɛndɐn",
-          "e": null
-        },
-        {
-          "w": "sich",
-          "m": "themselves",
-          "p": "zɪç",
+          "w": "ändern sich",
+          "m": "change / are changing themselves",
+          "p": "ˈʔɛndɐn zɪç",
           "e": null
         }
       ]
@@ -430,15 +370,9 @@
       "tran": "English is becoming increasingly popular in Germany.",
       "words": [
         {
-          "w": "Englisch",
-          "m": "English",
-          "p": "ˈɛŋlɪʃ",
-          "e": null
-        },
-        {
-          "w": "wird",
-          "m": "is becoming",
-          "p": "vɪʁt",
+          "w": "Englisch wird",
+          "m": "English is becoming",
+          "p": "ˈɛŋlɪʃ vɪʁt",
           "e": null
         },
         {
@@ -448,15 +382,9 @@
           "e": null
         },
         {
-          "w": "immer",
-          "m": "increasingly / more and more",
-          "p": "ˈɪmɐ",
-          "e": null
-        },
-        {
-          "w": "populärer",
-          "m": "more popular",
-          "p": "popuˈlɛːʁɐ",
+          "w": "immer populärer",
+          "m": "increasingly / more and more more popular",
+          "p": "ˈɪmɐ popuˈlɛːʁɐ",
           "e": null
         }
       ]
@@ -480,27 +408,9 @@
           "e": null
         },
         {
-          "w": "ist",
-          "m": "is",
-          "p": "ɪst",
-          "e": null
-        },
-        {
-          "w": "Englisch",
-          "m": "English",
-          "p": "ˈɛŋlɪʃ",
-          "e": null
-        },
-        {
-          "w": "die Sprache",
-          "m": "the language",
-          "p": "diː ˈʃpʁaːxə",
-          "e": null
-        },
-        {
-          "w": "der Wahl",
-          "m": "of choice",
-          "p": "deːɐ̯ vaːl",
+          "w": "ist Englisch die Sprache der Wahl",
+          "m": "is English the language of choice",
+          "p": "ɪst ˈɛŋlɪʃ diː ˈʃpʁaːxə deːɐ̯ vaːl",
           "e": null
         }
       ]
@@ -512,21 +422,9 @@
       "tran": "Because she not only works with international companies,",
       "words": [
         {
-          "w": "Denn",
-          "m": "Because",
-          "p": "dɛn",
-          "e": null
-        },
-        {
-          "w": "sie",
-          "m": "she",
-          "p": "ziː",
-          "e": null
-        },
-        {
-          "w": "arbeitet",
-          "m": "works",
-          "p": "ˈaʁbaɪtɛt",
+          "w": "Denn sie arbeitet",
+          "m": "Because she works",
+          "p": "dɛn ziː ˈaʁbaɪtɛt",
           "e": null
         },
         {
@@ -626,15 +524,9 @@
       "tran": "when public offices offer their consultation only in German",
       "words": [
         {
-          "w": "wenn",
-          "m": "when / if",
-          "p": "vɛn",
-          "e": null
-        },
-        {
-          "w": "Ämter",
-          "m": "public offices",
-          "p": "ˈɛm.tɐ",
+          "w": "wenn Ämter",
+          "m": "when / if public offices",
+          "p": "vɛn ˈɛm.tɐ",
           "e": null
         },
         {
@@ -758,9 +650,9 @@
           "e": null
         },
         {
-          "w": "schreibt",
-          "m": "prescribes",
-          "p": "ʃʁaɪ̯pt",
+          "w": "schreibt ... vor",
+          "m": "prescribes (separable verb vorschreiben)",
+          "p": "ʃʁaɪ̯pt ... foːɐ̯",
           "e": null
         },
         {
@@ -770,21 +662,9 @@
           "e": null
         },
         {
-          "w": "Deutsch",
-          "m": "German",
-          "p": "dɔʏ̯tʃ",
-          "e": null
-        },
-        {
-          "w": "als einzige Amtssprache",
-          "m": "as the only official language",
-          "p": "als ˈaɪ̯n.tsɪɡə ˈamtʃˌʃpʁaːxə",
-          "e": null
-        },
-        {
-          "w": "vor",
-          "m": "prescribe (separable prefix)",
-          "p": "foːɐ̯",
+          "w": "Deutsch als einzige Amtssprache",
+          "m": "German as the only official language",
+          "p": "dɔʏ̯tʃ als ˈaɪ̯n.tsɪɡə ˈamtʃˌʃpʁaːxə",
           "e": null
         }
       ]
