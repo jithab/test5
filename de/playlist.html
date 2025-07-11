@@ -32,6 +32,12 @@
         font-size: 0.9em;
         margin-right: 8px;
       }
+      body {
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Standard syntax */
+      }
     </style>
   </head>
   <body>
@@ -81,17 +87,14 @@
           copyBtn.textContent = "copy";
           copyBtn.onclick = (e) => {
             e.stopPropagation();
-            const copied = `
-            
-            Explain the German sentence: ${line.de}
+            const copied = `Explain the German sentence: ${line.de}
 Provide:
 
 <German text>
 <English translation>
 <IPA transcription>
 
-Word-by-word breakdown with part of speech, case if relevant, and meaning
-Do not include any headings. 
+Word-by-word breakdown with IPA, part of speech, case if relevant, and meaning Do not include any headings. 
 Explain grammer`;
             navigator.clipboard.writeText(copied);
             copyBtn.textContent = "copied";
