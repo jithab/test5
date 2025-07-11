@@ -1,123 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Subtitle Viewer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    .subtitle-line {
-      margin-bottom: 15px;
-      cursor: pointer;
-      border-bottom: 1px solid #eee;
-      padding: 8px;
-    }
-    .subtitle-line:hover {
-      background-color: #f0f0f0;
-    }
-    .german {
-      font-weight: bold;
-    }
-    .copy-button {
-      margin-left: 10px;
-      cursor: pointer;
-      color: blue;
-      text-decoration: underline;
-      font-size: 0.9em;
-    }
-    .line-number {
-      color: gray;
-      font-size: 0.9em;
-      margin-right: 8px;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Subtitle Viewer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .subtitle-line {
+        margin-bottom: 15px;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+        padding: 8px;
+      }
+      .subtitle-line:hover {
+        background-color: #f0f0f0;
+      }
+      .german {
+        font-weight: bold;
+      }
+      .copy-button {
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 0.9em;
+        color: black;
+        text-decoration: none;
+      }
+      .line-number {
+        color: gray;
+        font-size: 0.9em;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Subtitle Viewer</h2>
+    <audio id="audio" controls style="width: 100%; margin-bottom: 20px"></audio>
+    <div id="subtitle-container"></div>
 
-  <h2>Subtitle Viewer</h2>
-  <audio id="audio" controls style="width: 100%; margin-bottom: 20px;"></audio>
-  <div id="subtitle-container"></div>
-
-  <script>
-    // Parse query parameters
-    function getQueryParams() {
-      const params = new URLSearchParams(window.location.search);
-      return {
-        jsonUrl: params.get('json'),
-        audioUrl: params.get('audio')
-      };
-    }
-
-    async function loadSubtitlesAndAudio() {
-      const { jsonUrl, audioUrl } = getQueryParams();
-      if (!jsonUrl || !audioUrl) {
-        document.getElementById('subtitle-container').innerText =
-          "Error: 'json' and 'audio' query parameters are required.";
-        return;
+    <script>
+      function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          jsonUrl: params.get("json"),
+          audioUrl: params.get("audio"),
+        };
       }
 
-      const response = await fetch(jsonUrl);
-      const data = await response.json();
+      async function loadSubtitlesAndAudio() {
+        const { jsonUrl, audioUrl } = getQueryParams();
+        if (!jsonUrl || !audioUrl) {
+          document.getElementById("subtitle-container").innerText =
+            "Error: 'json' and 'audio' query parameters are required.";
+          return;
+        }
 
-      const audio = document.getElementById('audio');
-      audio.src = audioUrl;
+        const response = await fetch(jsonUrl);
+        const data = await response.json();
 
-      const container = document.getElementById('subtitle-container');
+        const audio = document.getElementById("audio");
+        audio.src = audioUrl;
 
-      data.lines.forEach((line, index) => {
-        const div = document.createElement('div');
-        div.className = 'subtitle-line';
+        const container = document.getElementById("subtitle-container");
 
-        const lineNumber = document.createElement('span');
-        lineNumber.className = 'line-number';
-        lineNumber.textContent = `${index + 1}.`;
+        data.lines.forEach((line, index) => {
+          const div = document.createElement("div");
+          div.className = "subtitle-line";
 
-        const german = document.createElement('span');
-        german.className = 'german';
-        german.textContent = line.de;
+          const lineNumber = document.createElement("span");
+          lineNumber.className = "line-number";
+          lineNumber.textContent = `${index + 1}.`;
 
-        const copyBtn = document.createElement('span');
-        copyBtn.className = 'copy-button';
-        copyBtn.textContent = '[Copy]';
-        copyBtn.onclick = (e) => {
-          e.stopPropagation();
-          const copied = `Copied by you: ${line.de}`;
-          navigator.clipboard.writeText(copied);
-          copyBtn.textContent = '[Copied]';
-          setTimeout(() => copyBtn.textContent = '[Copy]', 1000);
-        };
+          const german = document.createElement("span");
+          german.className = "german";
+          german.textContent = line.de;
 
-        const english = document.createElement('div');
-        english.textContent = line.en;
+          const copyBtn = document.createElement("span");
+          copyBtn.className = "copy-button";
+          copyBtn.textContent = "copy";
+          copyBtn.onclick = (e) => {
+            e.stopPropagation();
+            const copied = `
+            
+            Explain the German sentence: ${line.de}
+Provide:
 
-        div.onclick = () => {
-          audio.currentTime = line.start;
-          audio.play();
+<German text>
+<English translation>
+<IPA transcription>
 
-          const playUntil = line.end;
-          const interval = setInterval(() => {
-            if (audio.currentTime >= playUntil || audio.paused) {
-              audio.pause();
-              clearInterval(interval);
-            }
-          }, 100);
-        };
+Word-by-word breakdown with part of speech, case if relevant, and meaning
+Do not include any headings. 
+Explain grammer`;
+            navigator.clipboard.writeText(copied);
+            copyBtn.textContent = "copied";
+            setTimeout(() => (copyBtn.textContent = "copy"), 1000);
+          };
 
-        div.appendChild(lineNumber);
-        div.appendChild(german);
-        div.appendChild(copyBtn);
-        div.appendChild(document.createElement('br'));
-        div.appendChild(english);
+          const english = document.createElement("div");
+          english.textContent = line.en;
 
-        container.appendChild(div);
-      });
-    }
+          div.onclick = () => {
+            audio.currentTime = line.start;
+            audio.play();
 
-    loadSubtitlesAndAudio();
-  </script>
+            const playUntil = line.end;
+            const interval = setInterval(() => {
+              if (audio.currentTime >= playUntil || audio.paused) {
+                audio.pause();
+                clearInterval(interval);
+              }
+            }, 100);
+          };
 
-</body>
+          // Order: line number, German (bold), copy, line break, English
+          div.appendChild(lineNumber);
+          div.appendChild(german);
+          div.appendChild(copyBtn);
+          div.appendChild(document.createElement("br"));
+          div.appendChild(english);
+
+          container.appendChild(div);
+        });
+      }
+
+      loadSubtitlesAndAudio();
+    </script>
+  </body>
 </html>
-
