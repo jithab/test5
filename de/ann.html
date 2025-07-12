@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Subtitle Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        margin: 0;
+        background: #fafafa;
+      }
+      h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      #controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+      select {
+        font-size: 1em;
+        padding: 6px 10px;
+        margin-top: 5px;
+      }
+      audio {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .subtitle {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+      }
+      .subtitle:hover {
+        background-color: #eee;
+      }
+      .german {
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      @media (hover: none) {
+        .subtitle:hover {
+          background-color: inherit;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Subtitle Viewer</h2>
+    <div id="controls">
+      <audio id="audio" controls></audio>
+      <label>
+        Speed:
+        <select id="speedSelect">
+          <option value="0.6">0.6x</option>
+          <option value="0.8">0.8x</option>
+          <option value="1.0" selected>1.0x</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="subtitles"></div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const jsonUrl = params.get("json");
+      const audioUrl = params.get("audio");
+
+      const audio = document.getElementById("audio");
+      const speedSelect = document.getElementById("speedSelect");
+      const subtitleContainer = document.getElementById("subtitles");
+      let subtitles = [];
+      let pressTimer;
+
+      // Playback speed change
+      speedSelect.addEventListener("change", () => {
+        audio.playbackRate = parseFloat(speedSelect.value);
+      });
+
+      async function loadContent() {
+        if (!jsonUrl || !audioUrl) {
+          alert("Missing 'json' or 'audio' URL parameter.");
+          return;
+        }
+
+        audio.src = audioUrl;
+
+        const response = await fetch(jsonUrl);
+        const data = await response.json();
+        subtitles = data.lines;
+        renderSubtitles();
+      }
+
+      function renderSubtitles() {
+        subtitles.forEach((sub, index) => {
+          const div = document.createElement("div");
+          div.className = "subtitle";
+          div.dataset.index = index;
+
+          const germanDiv = document.createElement("div");
+          germanDiv.className = "german";
+          germanDiv.textContent = sub.de;
+
+          const englishDiv = document.createElement("div");
+          englishDiv.textContent = sub.en;
+
+          div.appendChild(germanDiv);
+          div.appendChild(englishDiv);
+
+          // Click: play/pause or seek
+          div.addEventListener("click", () => handleSubtitleClick(index));
+
+          // Long press: copy german
+          div.addEventListener("touchstart", () => {
+            pressTimer = setTimeout(() => {
+              copyToClipboard(`german: ${sub.de}`);
+            }, 600);
+          });
+
+          div.addEventListener("touchend", () => clearTimeout(pressTimer));
+          div.addEventListener("mousedown", () => {
+            pressTimer = setTimeout(() => {
+              copyToClipboard(`german: ${sub.de}`);
+            }, 600);
+          });
+
+          div.addEventListener("mouseup", () => clearTimeout(pressTimer));
+          div.addEventListener("mouseleave", () => clearTimeout(pressTimer));
+
+          subtitleContainer.appendChild(div);
+        });
+      }
+
+      function handleSubtitleClick(index) {
+        const sub = subtitles[index];
+        const currentTime = audio.currentTime;
+
+        if (currentTime >= sub.start && currentTime <= sub.end) {
+          audio.paused ? audio.play() : audio.pause();
+        } else {
+          audio.currentTime = sub.start;
+          audio.play();
+        }
+      }
+
+      function copyToClipboard(text) {
+        navigator.clipboard
+          .writeText(text)
+          .then(() => alert(`Copied: ${text}`))
+          .catch(() => alert("Copy failed"));
+      }
+
+      loadContent();
+    </script>
+  </body>
+</html>
