@@ -119,6 +119,7 @@
         }
 
         audio.src = makeAbsolute(audioUrl);
+        audio.playbackRate = 0.8;
         audio.load();
 
         audio.onerror = () => {
