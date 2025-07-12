@@ -57,6 +57,9 @@
       .active {
         background-color: #d0ebff;
       }
+      .active .german {
+        color: blue;
+      }
 
       @media (hover: none) {
         .subtitle:hover {
@@ -130,13 +133,13 @@
           div.addEventListener("touchstart", () => {
             pressTimer = setTimeout(() => {
               copyToClipboard(sub.de);
-            }, 1000);
+            }, 800);
           });
           div.addEventListener("touchend", () => clearTimeout(pressTimer));
           div.addEventListener("mousedown", () => {
             pressTimer = setTimeout(() => {
               copyToClipboard(sub.de);
-            }, 1000);
+            }, 800);
           });
           div.addEventListener("mouseup", () => clearTimeout(pressTimer));
           div.addEventListener("mouseleave", () => clearTimeout(pressTimer));
@@ -145,8 +148,6 @@
         });
 
         audio.addEventListener("timeupdate", () => {
-          highlightCurrentSubtitle();
-
           if (stopAt !== null && audio.currentTime >= stopAt) {
             audio.pause();
             stopAt = null;
