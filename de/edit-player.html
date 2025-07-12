@@ -129,8 +129,8 @@
           const response = await fetch(makeAbsolute(jsonUrl));
           jsonData = await response.json();
 
-          if (!jsonData.sents || !Array.isArray(jsonData.sents)) {
-            throw new Error("Invalid JSON format: missing 'sents' array.");
+          if (!jsonData.lines || !Array.isArray(jsonData.lines)) {
+            throw new Error("Invalid JSON format: missing 'lines' array.");
           }
 
           renderSubtitles();
@@ -158,7 +158,7 @@
       function renderSubtitles() {
         subtitleList.innerHTML = "";
 
-        jsonData.sents.forEach((entry, index) => {
+        jsonData.lines.forEach((entry, index) => {
           const row = document.createElement("div");
           row.className = "subtitle-row";
 
@@ -232,7 +232,7 @@
 
           const sentText = document.createElement("div");
           sentText.className = "sent-text";
-          sentText.textContent = entry.sent || "";
+          sentText.textContent = entry.de || "";
 
           row.appendChild(number);
           row.appendChild(startGroup);
@@ -244,7 +244,7 @@
       }
 
       function download() {
-        jsonData.sents.forEach((entry) => {
+        jsonData.lines.forEach((entry) => {
           entry.start = Math.round(entry.start * 100) / 100;
           entry.end = Math.round(entry.end * 100) / 100;
         });
