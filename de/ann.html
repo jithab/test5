@@ -51,10 +51,11 @@
       }
 
       .active {
-        background-color: #d0ebff;
+        background-color: #f0f0f0;
+        color: blue;
       }
       .active .german {
-        color: blue;
+        color: #ff0000;
       }
     </style>
   </head>
@@ -136,6 +137,9 @@
 
           subtitleContainer.appendChild(div);
         });
+        window.addEventListener("scroll", () => {
+          clearTimeout(pressTimer);
+        });
 
         audio.addEventListener("timeupdate", () => {
           if (stopAt !== null && audio.currentTime >= stopAt) {
@@ -146,17 +150,20 @@
       }
 
       function handleSubtitleClick(index) {
-        const sub = subtitles[index];
-        audio.currentTime = sub.start;
-        stopAt = sub.end;
-        audio.play();
-        document.querySelector(".subtitle.active").classList.remove("active");
+        const existingElem = document.querySelector(".subtitle.active");
+        if (existingElem) {
+          existingElem.classList.remove("active");
+        }
         const currentElem = document.querySelector(
           `.subtitle[data-index="${index}"]`
         );
         if (currentElem) {
           currentElem.classList.add("active");
         }
+        const sub = subtitles[index];
+        audio.currentTime = sub.start;
+        stopAt = sub.end;
+        audio.play();
       }
 
       function copyToClipboard(text) {
