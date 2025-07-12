@@ -10,6 +10,7 @@
         margin: 0;
         padding: 0;
         background: #fafafa;
+        user-select: none; /* Disable text selection */
       }
 
       #header {
@@ -34,12 +35,14 @@
         padding: 6px 10px;
         margin-left: 10px;
         flex-shrink: 0;
+        cursor: pointer;
       }
 
       .subtitle {
         padding: 12px 15px;
         border-bottom: 1px solid #ddd;
         cursor: pointer;
+        user-select: none;
       }
 
       .subtitle:hover {
@@ -122,7 +125,6 @@
 
           div.addEventListener("click", () => handleSubtitleClick(index));
 
-          // Long press for copy
           div.addEventListener("touchstart", () => {
             pressTimer = setTimeout(() => {
               copyToClipboard(`german: ${sub.de}`);
@@ -173,7 +175,7 @@
             break;
           }
           if (currentTime >= sub.start) {
-            matchedIndex = i; // fallback to latest prior
+            matchedIndex = i;
           }
         }
 
@@ -184,10 +186,26 @@
           const currentElem = document.querySelector(
             `.subtitle[data-index="${matchedIndex}"]`
           );
-          if (currentElem) currentElem.classList.add("active");
+          if (currentElem) {
+            currentElem.classList.add("active");
+            if (!isFullyVisible(currentElem)) {
+              currentElem.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          }
 
           currentIndex = matchedIndex;
         }
+      }
+
+      function isFullyVisible(el) {
+        const rect = el.getBoundingClientRect();
+        const viewHeight =
+          window.innerHeight || document.documentElement.clientHeight;
+        const headerHeight = document.getElementById("header").offsetHeight;
+        return rect.top >= headerHeight && rect.bottom <= viewHeight;
       }
 
       loadContent();
