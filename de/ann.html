@@ -86,6 +86,7 @@
       let pressTimer;
       let currentIndex = -1;
       let currentSpeed = 1.0;
+      let stopAt = null;
 
       toggleSpeedBtn.addEventListener("click", () => {
         currentSpeed = currentSpeed === 1.0 ? 0.8 : 1.0;
@@ -135,7 +136,7 @@
           div.addEventListener("mousedown", () => {
             pressTimer = setTimeout(() => {
               copyToClipboard(sub.de);
-            }, 2000);
+            }, 1000);
           });
           div.addEventListener("mouseup", () => clearTimeout(pressTimer));
           div.addEventListener("mouseleave", () => clearTimeout(pressTimer));
@@ -143,19 +144,21 @@
           subtitleContainer.appendChild(div);
         });
 
-        audio.addEventListener("timeupdate", highlightCurrentSubtitle);
+        audio.addEventListener("timeupdate", () => {
+          highlightCurrentSubtitle();
+
+          if (stopAt !== null && audio.currentTime >= stopAt) {
+            audio.pause();
+            stopAt = null;
+          }
+        });
       }
 
       function handleSubtitleClick(index) {
         const sub = subtitles[index];
-        const currentTime = audio.currentTime;
-
-        if (currentTime >= sub.start && currentTime <= sub.end) {
-          audio.paused ? audio.play() : audio.pause();
-        } else {
-          audio.currentTime = sub.start;
-          audio.play();
-        }
+        audio.currentTime = sub.start;
+        stopAt = sub.end;
+        audio.play();
       }
 
       function copyToClipboard(text) {
