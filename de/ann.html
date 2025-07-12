@@ -160,6 +160,13 @@
         audio.currentTime = sub.start;
         stopAt = sub.end;
         audio.play();
+        document.querySelector(".subtitle.active").classList.remove("active");
+        const currentElem = document.querySelector(
+          `.subtitle[data-index="${index}"]`
+        );
+        if (currentElem) {
+          currentElem.classList.add("active");
+        }
       }
 
       function copyToClipboard(text) {
@@ -173,36 +180,6 @@ Make each German word or phrase bold. Provide IPA in parentheses. Group articles
 
 At the end, explain the overall grammar structure of the sentence: clause type, verb position, tense, case assignment (especially from prepositions), and word order. Avoid using section headings.`;
         navigator.clipboard.writeText(text2);
-      }
-
-      function highlightCurrentSubtitle() {
-        const currentTime = audio.currentTime;
-        let matchedIndex = -1;
-
-        for (let i = 0; i < subtitles.length; i++) {
-          const sub = subtitles[i];
-          if (currentTime >= sub.start && currentTime <= sub.end) {
-            matchedIndex = i;
-            break;
-          }
-          if (currentTime >= sub.start) {
-            matchedIndex = i;
-          }
-        }
-
-        if (matchedIndex !== currentIndex) {
-          const prev = document.querySelector(".subtitle.active");
-          if (prev) prev.classList.remove("active");
-
-          const currentElem = document.querySelector(
-            `.subtitle[data-index="${matchedIndex}"]`
-          );
-          if (currentElem) {
-            currentElem.classList.add("active");
-          }
-
-          currentIndex = matchedIndex;
-        }
       }
 
       loadContent();
