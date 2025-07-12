@@ -7,42 +7,54 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        padding: 15px;
         margin: 0;
+        padding: 0;
         background: #fafafa;
       }
-      h2 {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-      }
-      #controls {
+
+      #header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #ffffff;
+        padding: 10px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
       }
-      select {
+
+      audio {
+        width: calc(100% - 70px);
+        max-width: 100%;
+      }
+
+      #toggleSpeed {
         font-size: 1em;
         padding: 6px 10px;
-        margin-top: 5px;
+        margin-left: 10px;
+        flex-shrink: 0;
       }
-      audio {
-        width: 100%;
-        margin-bottom: 15px;
-      }
+
       .subtitle {
-        padding: 10px;
+        padding: 12px 15px;
         border-bottom: 1px solid #ddd;
         cursor: pointer;
       }
+
       .subtitle:hover {
         background-color: #eee;
       }
+
       .german {
         font-weight: bold;
         font-size: 1.1em;
       }
+
+      .active {
+        background-color: #d0ebff;
+      }
+
       @media (hover: none) {
         .subtitle:hover {
           background-color: inherit;
@@ -51,17 +63,9 @@
     </style>
   </head>
   <body>
-    <h2>Subtitle Viewer</h2>
-    <div id="controls">
+    <div id="header">
       <audio id="audio" controls></audio>
-      <label>
-        Speed:
-        <select id="speedSelect">
-          <option value="0.6">0.6x</option>
-          <option value="0.8">0.8x</option>
-          <option value="1.0" selected>1.0x</option>
-        </select>
-      </label>
+      <button id="toggleSpeed">1.0x</button>
     </div>
 
     <div id="subtitles"></div>
@@ -72,14 +76,18 @@
       const audioUrl = params.get("audio");
 
       const audio = document.getElementById("audio");
-      const speedSelect = document.getElementById("speedSelect");
+      const toggleSpeedBtn = document.getElementById("toggleSpeed");
       const subtitleContainer = document.getElementById("subtitles");
+
       let subtitles = [];
       let pressTimer;
+      let currentIndex = -1;
+      let currentSpeed = 1.0;
 
-      // Playback speed change
-      speedSelect.addEventListener("change", () => {
-        audio.playbackRate = parseFloat(speedSelect.value);
+      toggleSpeedBtn.addEventListener("click", () => {
+        currentSpeed = currentSpeed === 1.0 ? 0.8 : 1.0;
+        audio.playbackRate = currentSpeed;
+        toggleSpeedBtn.textContent = `${currentSpeed.toFixed(1)}x`;
       });
 
       async function loadContent() {
@@ -112,28 +120,27 @@
           div.appendChild(germanDiv);
           div.appendChild(englishDiv);
 
-          // Click: play/pause or seek
           div.addEventListener("click", () => handleSubtitleClick(index));
 
-          // Long press: copy german
+          // Long press for copy
           div.addEventListener("touchstart", () => {
             pressTimer = setTimeout(() => {
               copyToClipboard(`german: ${sub.de}`);
             }, 600);
           });
-
           div.addEventListener("touchend", () => clearTimeout(pressTimer));
           div.addEventListener("mousedown", () => {
             pressTimer = setTimeout(() => {
               copyToClipboard(`german: ${sub.de}`);
             }, 600);
           });
-
           div.addEventListener("mouseup", () => clearTimeout(pressTimer));
           div.addEventListener("mouseleave", () => clearTimeout(pressTimer));
 
           subtitleContainer.appendChild(div);
         });
+
+        audio.addEventListener("timeupdate", highlightCurrentSubtitle);
       }
 
       function handleSubtitleClick(index) {
@@ -153,6 +160,34 @@
           .writeText(text)
           .then(() => alert(`Copied: ${text}`))
           .catch(() => alert("Copy failed"));
+      }
+
+      function highlightCurrentSubtitle() {
+        const currentTime = audio.currentTime;
+
+        let matchedIndex = -1;
+        for (let i = 0; i < subtitles.length; i++) {
+          const sub = subtitles[i];
+          if (currentTime >= sub.start && currentTime <= sub.end) {
+            matchedIndex = i;
+            break;
+          }
+          if (currentTime >= sub.start) {
+            matchedIndex = i; // fallback to latest prior
+          }
+        }
+
+        if (matchedIndex !== currentIndex) {
+          const prev = document.querySelector(".subtitle.active");
+          if (prev) prev.classList.remove("active");
+
+          const currentElem = document.querySelector(
+            `.subtitle[data-index="${matchedIndex}"]`
+          );
+          if (currentElem) currentElem.classList.add("active");
+
+          currentIndex = matchedIndex;
+        }
       }
 
       loadContent();
