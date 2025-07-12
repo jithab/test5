@@ -1,184 +1,154 @@
 {
-    "lines": [
-        {
-            "start": 0.0,
-            "end": 2.48,
-            "de": "Die Frau, die Monopoly erfand",
-            "en": ""
-        },
-        {
-            "start": 2.48,
-            "end": 8.64,
-            "de": "Elisabeth McGee Phillips ist nicht sehr bekannt, ihre Erfindung aber schon.",
-            "en": ""
-        },
-        {
-            "start": 9.34,
-            "end": 11.02,
-            "de": "Das Brettspiel Monopoly.",
-            "en": ""
-        },
-        {
-            "start": 11.86,
-            "end": 18.3,
-            "de": "Doch diese Idee wurde ihr gestohlen und das Spiel, das sie eigentlich im Sinn hatte, wurde vergessen.",
-            "en": ""
-        },
-        {
-            "start": 19.48,
-            "end": 27.46,
-            "de": "Straßen kaufen, Mieten einnehmen, Hotels bauen und mit etwas Würfelglück gehört einem am Ende das ganze Geld.",
-            "en": ""
-        },
-        {
-            "start": 27.46,
-            "end": 29.56,
-            "de": "Und die Mitspieler sind bankrott.",
-            "en": ""
-        },
-        {
-            "start": 30.46,
-            "end": 34.78,
-            "de": "Millionen Menschen haben in ihrer Kindheit das Brettspiel Monopoly gespielt.",
-            "en": ""
-        },
-        {
-            "start": 35.58,
-            "end": 41.2,
-            "de": "Bis vor kurzem wusste allerdings kaum jemand, wer die Idee zu dem Spieleklassiker hatte.",
-            "en": ""
-        },
-        {
-            "start": 41.92,
-            "end": 45.6,
-            "de": "Und dass das Spiel eigentlich ganz anders konzipiert war.",
-            "en": ""
-        },
-        {
-            "start": 46.34,
-            "end": 49.34,
-            "de": "Denn die Erfinderin wurde um ihre Idee betrogen.",
-            "en": ""
-        },
-        {
-            "start": 49.58,
-            "end": 57.58,
-            "de": "Die US-amerikanische Autorin und Journalistin Mary Pilon hat die Geschichte in einem Buch aufgeschrieben.",
-            "en": ""
-        },
-        {
-            "start": 57.58,
-            "end": 66.34,
-            "de": "Monopoly stammt von der US-Amerikanerin Elisabeth McGee Phillips und sie nannte es zuerst The Landlord's Game.",
-            "en": ""
-        },
-        {
-            "start": 67.24,
-            "end": 73.12,
-            "de": "Phillips wurde 1866 geboren und lebte in der Zeit der Industrialisierung.",
-            "en": ""
-        },
-        {
-            "start": 73.76,
-            "end": 77.12,
-            "de": "Täglich sah sie Ungleichheit, Armut und Elend.",
-            "en": ""
-        },
-        {
-            "start": 77.12,
-            "end": 80.94,
-            "de": "Ihr Spiel sollte diese Zustände kritisieren.",
-            "en": ""
-        },
-        {
-            "start": 81.78,
-            "end": 85.1,
-            "de": "Phillips entwickelte deshalb zwei Regelwerke für ihr Spiel.",
-            "en": ""
-        },
-        {
-            "start": 86.12,
-            "end": 94.54,
-            "de": "Eins, in dem es darum ging, Monopole aufzubrechen, so Pilon, und eins, in dem es darum ging, zu zeigen, wie schädlich Monopole sind.",
-            "en": ""
-        },
-        {
-            "start": 94.54,
-            "end": 99.38,
-            "de": "1903 meldete Phillips ein Patent auf ihr Spiel an.",
-            "en": ""
-        },
-        {
-            "start": 99.8,
-            "end": 104.72,
-            "de": "Es war zunächst unter Studenten beliebt und bekam schließlich den Namen Monopoli.",
-            "en": ""
-        },
-        {
-            "start": 105.56,
-            "end": 110.76,
-            "de": "Doch in den 1930er Jahren kopierte der Verkäufer Charles Darrow ihr Spiel,",
-            "en": ""
-        },
-        {
-            "start": 111.26,
-            "end": 114.9,
-            "de": "übernahm aber nur das heute noch bekannte zweite Regelwerk.",
-            "en": ""
-        },
-        {
-            "start": 115.14,
-            "end": 123.2,
-            "de": "Er gab das Spiel als sein eigenes aus, verkaufte die Rechte an den Parker Brothers Spieleverlag und wurde Millionär.",
-            "en": ""
-        },
-        {
-            "start": 123.2,
-            "end": 132.46,
-            "de": "Über 275 Millionen Spiele hat Parker Brothers laut eigenen Angaben bis 2010 weltweit verkauft.",
-            "en": ""
-        },
-        {
-            "start": 132.96,
-            "end": 140.54,
-            "de": "Der schnelle Reichtum, den Phillips eigentlich kritisieren wollte, bei ihrem eigenen Spiel wurde er Wirklichkeit.",
-            "en": ""
-        },
-        {
-            "start": 141.5,
-            "end": 143.82,
-            "de": "Phillips selbst sah nichts von dem vielen Geld.",
-            "en": ""
-        },
-        {
-            "start": 144.92,
-            "end": 150.32,
-            "de": "Als sie von Charles Darrow's Erfolg erfuhr, machte sie die Presse auf ihre Geschichte aufmerksam.",
-            "en": ""
-        },
-        {
-            "start": 150.32,
-            "end": 158.7,
-            "de": "Daraufhin bot der Spieleverlag ihr an, zwei andere Spiele von ihr zu veröffentlichen, doch daraus wurde anscheinend nichts.",
-            "en": ""
-        },
-        {
-            "start": 159.82,
-            "end": 167.42,
-            "de": "Laut Pilon erkennt Parker Brothers bis heute nicht an, dass Elizabeth's McGee Phillips die Erfinderin von Monopoli ist.",
-            "en": ""
-        },
-        {
-            "start": 168.2,
-            "end": 172.42,
-            "de": "Auch Phillips selbst wurde nach ihrem Tod 1948 vergessen.",
-            "en": ""
-        },
-        {
-            "start": 172.96,
-            "end": 179.4,
-            "de": "Ihren späten Ruhm verdankt sie Mary Pilon, die fünf Jahre lang für ihr Buch recherchiert hat.",
-            "en": ""
-        }
-    ]
+  "lines": [
+    {
+      "start": 0.0,
+      "end": 2.48,
+      "de": "Die Frau, die Monopoly erfand",
+      "en": "The woman who invented Monopoly"
+    },
+    {
+      "start": 2.48,
+      "end": 11.02,
+      "de": "Elizabeth Magie Phillips ist nicht sehr bekannt – ihre Erfindung aber schon: das Brettspiel Monopoly.",
+      "en": "Elizabeth Magie Phillips is not very well known – but her invention is: the board game Monopoly."
+    },
+    {
+      "start": 11.86,
+      "end": 18.3,
+      "de": "Doch diese Idee wurde ihr gestohlen. Und das Spiel, das sie eigentlich im Sinn hatte, wurde vergessen.",
+      "en": "But her idea was stolen. And the game she originally intended was forgotten."
+    },
+    {
+      "start": 19.48,
+      "end": 29.56,
+      "de": "Straßen kaufen, Mieten einnehmen, Hotels bauen – und mit etwas Würfelglück gehört einem am Ende das ganze Geld – und die Mitspieler sind bankrott.",
+      "en": "Buy streets, collect rent, build hotels – and with a bit of dice luck, you end up with all the money – while your opponents go bankrupt."
+    },
+    {
+      "start": 30.46,
+      "end": 34.78,
+      "de": "Millionen Menschen haben in ihrer Kindheit das Brettspiel Monopoly gespielt.",
+      "en": "Millions of people played the board game Monopoly in their childhood."
+    },
+    {
+      "start": 35.58,
+      "end": 45.6,
+      "de": "Bis vor Kurzem wusste allerdings kaum jemand, wer die Idee zu dem Spieleklassiker hatte – und dass das Spiel eigentlich ganz anders konzipiert war.",
+      "en": "Until recently, hardly anyone knew who came up with the idea for the classic game – or that it was originally designed very differently."
+    },
+    {
+      "start": 46.34,
+      "end": 49.34,
+      "de": "Denn die Erfinderin wurde um ihre Idee betrogen.",
+      "en": "Because the inventor was cheated out of her idea."
+    },
+    {
+      "start": 49.58,
+      "end": 57.58,
+      "de": "Die US-amerikanische Autorin und Journalistin Mary Pilon hat die Geschichte in einem Buch aufgeschrieben.",
+      "en": "American author and journalist Mary Pilon documented the story in a book."
+    },
+    {
+      "start": 57.58,
+      "end": 66.34,
+      "de": "Monopoly stammt von der US-Amerikanerin Elizabeth Magie Phillips, und sie nannte es zuerst „The Landlord’s Game“.",
+      "en": "Monopoly was created by the American Elizabeth Magie Phillips, and she originally called it 'The Landlord’s Game.'"
+    },
+    {
+      "start": 67.24,
+      "end": 73.12,
+      "de": "Phillips wurde 1866 geboren und lebte in der Zeit der Industrialisierung.",
+      "en": "Phillips was born in 1866 and lived during the time of industrialization."
+    },
+    {
+      "start": 73.76,
+      "end": 77.12,
+      "de": "Täglich sah sie Ungleichheit, Armut und Elend.",
+      "en": "She witnessed inequality, poverty, and misery every day."
+    },
+    {
+      "start": 77.12,
+      "end": 80.94,
+      "de": "Ihr Spiel sollte diese Zustände kritisieren.",
+      "en": "Her game was intended to criticize these conditions."
+    },
+    {
+      "start": 81.78,
+      "end": 94.54,
+      "de": "Phillips entwickelte deshalb zwei Regelwerke für ihr Spiel: „Eins, in dem es darum ging, Monopole aufzubrechen“, so Pilon. „Und eins, in dem es darum ging, zu zeigen, wie schädlich Monopole sind.“",
+      "en": "Phillips therefore created two sets of rules for her game: 'One that was about breaking up monopolies,' says Pilon. 'And one that aimed to show how harmful monopolies are.'"
+    },
+    {
+      "start": 94.54,
+      "end": 99.38,
+      "de": "1903 meldete Phillips ein Patent auf ihr Spiel an.",
+      "en": "In 1903, Phillips filed a patent for her game."
+    },
+    {
+      "start": 99.8,
+      "end": 104.72,
+      "de": "Es war zunächst unter Studenten beliebt und bekam schließlich den Namen Monopoly.",
+      "en": "It was initially popular among students and eventually received the name Monopoly."
+    },
+    {
+      "start": 105.56,
+      "end": 114.9,
+      "de": "Doch in den 1930er-Jahren kopierte der Verkäufer Charles Darrow ihr Spiel, übernahm aber nur das heute noch bekannte zweite Regelwerk.",
+      "en": "But in the 1930s, salesman Charles Darrow copied her game, using only the second rule set – the one still known today."
+    },
+    {
+      "start": 115.14,
+      "end": 123.2,
+      "de": "Er gab das Spiel als sein eigenes aus, verkaufte die Rechte an den Parker-Brothers-Spieleverlag – und wurde Millionär.",
+      "en": "He claimed the game as his own, sold the rights to the Parker Brothers game publisher – and became a millionaire."
+    },
+    {
+      "start": 123.2,
+      "end": 132.46,
+      "de": "Über 275 Millionen Spiele hat Parker Brothers laut eigenen Angaben bis 2010 weltweit verkauft.",
+      "en": "According to their own figures, Parker Brothers sold over 275 million games worldwide by 2010."
+    },
+    {
+      "start": 132.96,
+      "end": 140.54,
+      "de": "Der schnelle Reichtum, den Phillips eigentlich kritisieren wollte – bei ihrem eigenen Spiel wurde er Wirklichkeit.",
+      "en": "The quick wealth Phillips wanted to criticize – became a reality in her own game."
+    },
+    {
+      "start": 141.5,
+      "end": 143.82,
+      "de": "Phillips selbst sah nichts von dem vielen Geld.",
+      "en": "Phillips herself saw none of the money."
+    },
+    {
+      "start": 144.92,
+      "end": 150.32,
+      "de": "Als sie von Charles Darrows Erfolg erfuhr, machte sie die Presse auf ihre Geschichte aufmerksam.",
+      "en": "When she learned of Charles Darrow’s success, she brought her story to the attention of the press."
+    },
+    {
+      "start": 150.32,
+      "end": 158.7,
+      "de": "Daraufhin bot der Spieleverlag ihr an, zwei andere Spiele von ihr zu veröffentlichen. Doch daraus wurde anscheinend nichts.",
+      "en": "The publisher then offered to release two of her other games. But apparently, nothing came of it."
+    },
+    {
+      "start": 159.82,
+      "end": 167.42,
+      "de": "Laut Pilon erkennt Parker Brothers bis heute nicht an, dass Elizabeth Magie Phillips die Erfinderin von Monopoly ist.",
+      "en": "According to Pilon, Parker Brothers still does not acknowledge that Elizabeth Magie Phillips is the inventor of Monopoly."
+    },
+    {
+      "start": 168.2,
+      "end": 172.42,
+      "de": "Auch Phillips selbst wurde nach ihrem Tod 1948 vergessen.",
+      "en": "Phillips herself was also forgotten after her death in 1948."
+    },
+    {
+      "start": 172.96,
+      "end": 179.4,
+      "de": "Ihren späten Ruhm verdankt sie Mary Pilon, die fünf Jahre lang für ihr Buch recherchiert hat.",
+      "en": "She owes her late recognition to Mary Pilon, who spent five years researching her book."
+    }
+  ]
 }
