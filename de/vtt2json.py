@@ -51,20 +51,13 @@ def read_vtt(file_path):
             entries.append({
                 "start": round(start_sec, 3),
                 "end": round(end_sec, 3),
-                "sent": sentence,
-                "tran": "",
-                "words": [
-                    {
-                        "w": "",
-                        "m": "",
-                        "e": ""
-                    }
-                ]
+                "de": sentence,
+                "en": ""
             })
         else:
             i += 1
 
-    return entries
+    return {"lines": entries}
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
