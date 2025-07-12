@@ -134,7 +134,17 @@
           div.addEventListener("touchend", () => clearTimeout(pressTimer));
           div.addEventListener("mousedown", () => {
             pressTimer = setTimeout(() => {
-              copyToClipboard(`german: ${sub.de}`);
+              copyToClipboard(`${sub.de}
+*[English translation]*
+
+Make each German word or phrase bold. Provide IPA in parentheses. Group articles, prepositions, and nouns together where appropriate.
+
+
+[German phrase] [English meaning] (IPA)  
+→ [Part of speech or grammatical function; include gender, case, number, tense, etc.; short explanation]
+
+
+At the end, explain the overall grammar structure of the sentence: clause type, verb position, tense, case assignment (especially from prepositions), and word order. Avoid using section headings.`);
             }, 600);
           });
           div.addEventListener("mouseup", () => clearTimeout(pressTimer));
@@ -159,10 +169,7 @@
       }
 
       function copyToClipboard(text) {
-        navigator.clipboard
-          .writeText(text)
-          .then(() => alert(`Copied: ${text}`))
-          .catch(() => alert("Copy failed"));
+        navigator.clipboard.writeText(text).catch(() => alert("Copy failed"));
       }
 
       function highlightCurrentSubtitle() {
