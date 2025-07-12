@@ -22,6 +22,14 @@ def merge_subtitle_lines(data):
             i += 1
     return {"lines": merged_lines}
 
+def calculate_total_duration(lines):
+    return sum(line["end"] - line["start"] for line in lines)
+
+def format_duration(seconds):
+    minutes = int(seconds) // 60
+    remaining_seconds = seconds - (minutes * 60)
+    return f"{minutes}m {remaining_seconds:.2f}s"
+
 def main():
     if len(sys.argv) != 2:
         print("Usage: python merge_subtitles.py <input_file.json>", file=sys.stderr)
@@ -37,8 +45,10 @@ def main():
         data = json.load(f)
 
     merged = merge_subtitle_lines(data)
+    total_duration = calculate_total_duration(merged["lines"])
+
     json.dump(merged, sys.stdout, ensure_ascii=False, indent=2)
+    print(f"\n\nTotal duration: {total_duration:.2f} seconds ({format_duration(total_duration)})", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
-
