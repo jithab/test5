@@ -129,7 +129,7 @@
           div.addEventListener("touchstart", () => {
             pressTimer = setTimeout(() => {
               copyToClipboard(sub.de);
-            }, 2000);
+            }, 1000);
           });
           div.addEventListener("touchend", () => clearTimeout(pressTimer));
           div.addEventListener("mousedown", () => {
@@ -195,72 +195,13 @@ At the end, explain the overall grammar structure of the sentence: clause type, 
           );
           if (currentElem) {
             currentElem.classList.add("active");
-
-            if (!isFullyVisible(currentElem)) {
-              scrollWithOffset(currentElem);
-            }
           }
 
           currentIndex = matchedIndex;
         }
-
-        // Auto-skip logic when gap ≥ 2 seconds
-        if (currentIndex >= 0 && currentIndex < subtitles.length - 1) {
-          const currentSub = subtitles[currentIndex];
-          const nextSub = subtitles[currentIndex + 1];
-          const timeToEnd = currentSub.end - currentTime;
-          const gapToNext = nextSub.start - currentSub.end;
-
-          if (timeToEnd <= 0.1 && gapToNext >= 2) {
-            audio.currentTime = nextSub.start;
-          }
-        }
-      }
-
-      function isFullyVisible(el) {
-        const rect = el.getBoundingClientRect();
-        const headerHeight = document.getElementById("header").offsetHeight;
-        const viewHeight =
-          window.innerHeight || document.documentElement.clientHeight;
-
-        return rect.top >= headerHeight && rect.bottom <= viewHeight;
-      }
-
-      function scrollWithOffset(el) {
-        const headerHeight = document.getElementById("header").offsetHeight;
-        const elTop = el.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({ top: elTop - headerHeight, behavior: "smooth" });
       }
 
       loadContent();
-
-      // === WAKE LOCK API ===
-      let wakeLock = null;
-
-      async function requestWakeLock() {
-        try {
-          wakeLock = await navigator.wakeLock.request("screen");
-          console.log("Screen Wake Lock active.");
-
-          wakeLock.addEventListener("release", () => {
-            console.log("Screen Wake Lock was released");
-          });
-        } catch (err) {
-          console.error("Wake Lock error:", err.name, err.message);
-        }
-      }
-
-      document.addEventListener("visibilitychange", () => {
-        if (document.visibilityState === "visible") {
-          requestWakeLock();
-        }
-      });
-
-      window.addEventListener("load", () => {
-        requestWakeLock();
-      });
-
-      document.addEventListener("click", requestWakeLock);
     </script>
   </body>
 </html>
