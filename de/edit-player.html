@@ -165,7 +165,7 @@
 
           const number = document.createElement("div");
           number.className = "line-number";
-          number.textContent = index + 1;
+          number.textContent = index + 1 + ". " + entry.de;
 
           // START Control
           const startGroup = document.createElement("div");
@@ -231,15 +231,10 @@
             playSegment(entry.start, entry.end);
           });
 
-          const sentText = document.createElement("div");
-          sentText.className = "sent-text";
-          sentText.textContent = entry.de || "";
-
           row.appendChild(number);
           row.appendChild(startGroup);
           row.appendChild(endGroup);
           row.appendChild(playBtn);
-          row.appendChild(sentText);
           subtitleList.appendChild(row);
         });
       }
