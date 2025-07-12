@@ -203,6 +203,18 @@ At the end, explain the overall grammar structure of the sentence: clause type, 
 
           currentIndex = matchedIndex;
         }
+
+        // Auto-skip logic when gap ≥ 2 seconds
+        if (currentIndex >= 0 && currentIndex < subtitles.length - 1) {
+          const currentSub = subtitles[currentIndex];
+          const nextSub = subtitles[currentIndex + 1];
+          const timeToEnd = currentSub.end - currentTime;
+          const gapToNext = nextSub.start - currentSub.end;
+
+          if (timeToEnd <= 0.1 && gapToNext >= 2) {
+            audio.currentTime = nextSub.start;
+          }
+        }
       }
 
       function isFullyVisible(el) {

@@ -1,18 +1,6 @@
 {
   "lines": [
     {
-      "start": 0.0,
-      "end": 1.0,
-      "en": ".",
-      "de": "."
-    },
-    {
-      "start": 1.08,
-      "end": 3.08,
-      "en": "Subtitles: BR 2025",
-      "de": "Untertitelung: BR 2025"
-    },
-    {
       "start": 17.24,
       "end": 18.68,
       "en": "Hello, everyone.",
@@ -221,12 +209,6 @@
       "end": 149.52,
       "en": "I meet Triops breeder Ben in his garden.",
       "de": "Ich treffe Triops-Züchter Ben in seinem Garten."
-    },
-    {
-      "start": 149.6,
-      "end": 152.08,
-      "en": "Hello, Ben. - Hi, Anna.",
-      "de": "Hallo, Ben. - Hi, Anna."
     },
     {
       "start": 152.16,
@@ -607,12 +589,6 @@
       "de": "50 sollen es sein. - Ungefähr."
     },
     {
-      "start": 360.64,
-      "end": 365.64,
-      "en": "Okay, 1, 2, 3, 4.",
-      "de": "Okay, 1, 2, 3, 4."
-    },
-    {
       "start": 366.04,
       "end": 369.2,
       "en": "Did I count the egg or not?",
@@ -635,12 +611,6 @@
       "end": 379.44,
       "en": "here's some great information for you about the triops eggs.",
       "de": "gibt's für euch noch tolle Infos über die Urzeitkrebs-Eier."
-    },
-    {
-      "start": 379.52,
-      "end": 381.84,
-      "en": "1, 2, 3, 4 ...",
-      "de": "1, 2, 3, 4 ..."
     },
     {
       "start": 383.0,
@@ -1055,12 +1025,6 @@
       "end": 609.04,
       "en": "Then we'll see each other again in a week.",
       "de": "Dann sehen wir uns in einer Woche wieder."
-    },
-    {
-      "start": 611.32,
-      "end": 612.4,
-      "en": "Hello. - Hi, Anna.",
-      "de": "Hallo. - Hi, Anna."
     },
     {
       "start": 612.48,
@@ -1481,12 +1445,6 @@
       "end": 853.68,
       "en": "Until then. Good bye.",
       "de": "Bis dahin. Servus."
-    },
-    {
-      "start": 854.0,
-      "end": 856.0,
-      "en": "Subtitling: BR 2025",
-      "de": "Untertitelung: BR 2025"
     }
   ]
 }
