@@ -13,21 +13,43 @@
         user-select: none;
       }
 
+      #titleBar {
+        background: #fff;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+      }
+
+      #titleBar h1 {
+        margin: 0;
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+
+      #author {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 5px;
+      }
+
+      #author a {
+        color: inherit;
+        text-decoration: none;
+        pointer-events: auto;
+      }
+
       #header {
-        position: sticky;
-        top: 0;
-        z-index: 10;
         background: #ffffff;
         padding: 10px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #ddd;
+        flex-wrap: wrap;
       }
 
       audio {
-        width: calc(100% - 70px);
-        max-width: 100%;
+        display: none;
       }
 
       #toggleSpeed {
@@ -36,6 +58,12 @@
         margin-left: 10px;
         flex-shrink: 0;
         cursor: pointer;
+      }
+
+      #timeDisplay {
+        margin-left: 10px;
+        font-size: 0.9em;
+        color: #333;
       }
 
       .subtitle {
@@ -50,35 +78,52 @@
         font-size: 1.1em;
       }
 
+      .english {
+        margin-top: 3px;
+        color: #333;
+      }
+
       .active {
         background-color: #f0f0f0;
         color: blue;
       }
+
       .active .german {
         color: #ff0000;
       }
     </style>
   </head>
   <body>
-    <div id="header">
-      <audio id="audio" controls></audio>
-      <button id="toggleSpeed">1.0x</button>
+    <!-- Title & Author -->
+    <div id="titleBar">
+      <h1 id="pageTitle"></h1>
+      <div id="author"></div>
     </div>
 
+    <!-- Hidden Audio and Controls -->
+    <div id="header">
+      <audio id="audio"></audio>
+      <button id="toggleSpeed">1.0x</button>
+      <div id="timeDisplay">Time: 0:00 / -0:00</div>
+    </div>
+
+    <!-- Subtitles -->
     <div id="subtitles"></div>
 
     <script>
       const params = new URLSearchParams(window.location.search);
-      const jsonUrl = params.get("json");
+      const dataUrl = params.get("data");
       const audioUrl = params.get("audio");
 
       const audio = document.getElementById("audio");
       const toggleSpeedBtn = document.getElementById("toggleSpeed");
+      const timeDisplay = document.getElementById("timeDisplay");
       const subtitleContainer = document.getElementById("subtitles");
+      const titleElement = document.getElementById("pageTitle");
+      const authorElement = document.getElementById("author");
 
       let subtitles = [];
       let pressTimer;
-      let currentIndex = -1;
       let currentSpeed = 1.0;
       let stopAt = null;
 
@@ -89,16 +134,23 @@
       });
 
       async function loadContent() {
-        if (!jsonUrl || !audioUrl) {
-          alert("Missing 'json' or 'audio' URL parameter.");
+        if (!dataUrl || !audioUrl) {
+          alert("Missing 'data' or 'audio' URL parameter.");
           return;
         }
 
         audio.src = audioUrl;
 
-        const response = await fetch(jsonUrl);
+        const response = await fetch(dataUrl);
         const data = await response.json();
-        subtitles = data.lines;
+        subtitles = data.lines || [];
+
+        // Set title and author
+        titleElement.textContent = data.title || "Subtitle Viewer";
+        if (data.author && data.author_url) {
+          authorElement.innerHTML = `<a href="${data.author_url}" target="_blank" rel="noopener noreferrer">${data.author}</a>`;
+        }
+
         renderSubtitles();
       }
 
@@ -113,14 +165,14 @@
           germanDiv.textContent = sub.de;
 
           const englishDiv = document.createElement("div");
-          englishDiv.textContent = sub.en;
+          englishDiv.className = "english";
+          englishDiv.textContent = `${index + 1}. ${sub.en}`;
 
           div.appendChild(germanDiv);
           div.appendChild(englishDiv);
 
           div.addEventListener("click", () => handleSubtitleClick(index));
 
-          // Long press to copy
           div.addEventListener("touchstart", () => {
             pressTimer = setTimeout(() => {
               copyToClipboard(sub.de);
@@ -137,6 +189,7 @@
 
           subtitleContainer.appendChild(div);
         });
+
         window.addEventListener("scroll", () => {
           clearTimeout(pressTimer);
         });
@@ -146,6 +199,15 @@
             audio.pause();
             stopAt = null;
           }
+
+          const current = audio.currentTime;
+          const remaining = audio.duration - current;
+
+          if (!isNaN(remaining)) {
+            timeDisplay.textContent = `Time: ${formatTime(
+              current
+            )} / -${formatTime(remaining)}`;
+          }
         });
       }
 
@@ -154,12 +216,14 @@
         if (existingElem) {
           existingElem.classList.remove("active");
         }
+
         const currentElem = document.querySelector(
           `.subtitle[data-index="${index}"]`
         );
         if (currentElem) {
           currentElem.classList.add("active");
         }
+
         const sub = subtitles[index];
         audio.currentTime = sub.start;
         stopAt = sub.end;
@@ -177,6 +241,12 @@ Make each German word or phrase bold. Provide IPA in parentheses. Group articles
 
 At the end, explain the overall grammar structure of the sentence: clause type, verb position, tense, case assignment (especially from prepositions), and word order. Avoid using section headings.`;
         navigator.clipboard.writeText(text2);
+      }
+
+      function formatTime(seconds) {
+        const m = Math.floor(seconds / 60);
+        const s = Math.floor(seconds % 60);
+        return `${m}:${s.toString().padStart(2, "0")}`;
       }
 
       loadContent();
