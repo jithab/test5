@@ -252,11 +252,10 @@
       function copyToClipboard(text) {
         const text2 = `${text}
 
-Make each German word or phrase bold. Group articles, prepositions, and nouns together where appropriate.
+Show each words in the above German text in the following format. include infinite form of verbs.  Result of this chatgpt query shouldn't be influenced by my past of preferences. Don't add introductory chat.
 
-<German phrase> <English meaning>  
-
-At the end, explain the overall grammar structure of the sentence: clause type. Avoid using section headings.`;
+<German word in bold font> . <ipa of the word>
+<English meaning>`;
         navigator.clipboard.writeText(text2);
       }
 
