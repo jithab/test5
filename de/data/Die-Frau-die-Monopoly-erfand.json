@@ -153,5 +153,622 @@
       "de": "Ihren späten Ruhm verdankt sie Mary Pilon, die fünf Jahre lang für ihr Buch recherchiert hat.",
       "en": "She owes her late recognition to Mary Pilon, who spent five years researching her book."
     }
+  ],
+  "words": [
+    {
+      "de": "aber",
+      "ipa": "ˈaːbɐ",
+      "en": "but"
+    },
+    {
+      "de": "allerdings",
+      "ipa": "alɐˈdɪŋs",
+      "en": "however"
+    },
+    {
+      "de": "Amerikanerin",
+      "ipa": "ameʁiˈkaːnəʁɪn",
+      "en": "American (female)"
+    },
+    {
+      "de": "amerikanisch",
+      "ipa": "ameʁiˈkaːnɪʃ",
+      "en": "American (adj.)"
+    },
+    {
+      "de": "anders",
+      "ipa": "ˈandɐs",
+      "en": "different"
+    },
+    {
+      "de": "Angabe",
+      "ipa": "ˈanˌɡaːbə",
+      "en": "information"
+    },
+    {
+      "de": "anscheinend",
+      "ipa": "ˈanˌʃaɪ̯nənt",
+      "en": "apparently"
+    },
+    {
+      "de": "Armut",
+      "ipa": "ˈaʁmuːt",
+      "en": "poverty"
+    },
+    {
+      "de": "auch",
+      "ipa": "aʊ̯x",
+      "en": "also"
+    },
+    {
+      "de": "aufbrechen",
+      "ipa": "ˈaʊ̯fˌbʁɛçn̩",
+      "en": "to break open / set off"
+    },
+    {
+      "de": "aufmerksam",
+      "ipa": "ˈaʊ̯fmɛʁkzaːm",
+      "en": "attentive"
+    },
+    {
+      "de": "aufschreiben",
+      "ipa": "ˈaʊ̯fˌʃʁaɪ̯bn̩",
+      "en": "to write down"
+    },
+    {
+      "de": "Autorin",
+      "ipa": "aʊ̯ˈtoːʁɪn",
+      "en": "author (female)"
+    },
+    {
+      "de": "bankrott",
+      "ipa": "baŋˈkʁɔt",
+      "en": "bankrupt"
+    },
+    {
+      "de": "bauen",
+      "ipa": "ˈbaʊ̯ən",
+      "en": "to build"
+    },
+    {
+      "de": "bekannt",
+      "ipa": "bəˈkant",
+      "en": "known / famous"
+    },
+    {
+      "de": "bekennen",
+      "ipa": "bəˈkɛnən",
+      "en": "to confess"
+    },
+    {
+      "de": "bekommen",
+      "ipa": "bəˈkɔmən",
+      "en": "to receive"
+    },
+    {
+      "de": "belieben",
+      "ipa": "bəˈliːbn̩",
+      "en": "to please / desire"
+    },
+    {
+      "de": "betrügen",
+      "ipa": "bəˈtʁyːɡn̩",
+      "en": "to cheat"
+    },
+    {
+      "de": "bieten",
+      "ipa": "ˈbiːtn̩",
+      "en": "to offer"
+    },
+    {
+      "de": "Brettspiel",
+      "ipa": "ˈbʁɛtˌʃpiːl",
+      "en": "board game"
+    },
+    {
+      "de": "Buch",
+      "ipa": "buːx",
+      "en": "book"
+    },
+    {
+      "de": "daraufhin",
+      "ipa": "daˈʁaʊ̯fˌhɪn",
+      "en": "thereupon / subsequently"
+    },
+    {
+      "de": "daraus",
+      "ipa": "daˈʁaʊ̯s",
+      "en": "from that"
+    },
+    {
+      "de": "darum",
+      "ipa": "daˈʁʊm",
+      "en": "therefore"
+    },
+    {
+      "de": "deshalb",
+      "ipa": "ˈdɛshalp",
+      "en": "that’s why"
+    },
+    {
+      "de": "doch",
+      "ipa": "dɔx",
+      "en": "yet / after all"
+    },
+    {
+      "de": "eigen",
+      "ipa": "ˈaɪ̯ɡn̩",
+      "en": "own"
+    },
+    {
+      "de": "eigentlich",
+      "ipa": "ˈaɪ̯ɡn̩tlɪç",
+      "en": "actually"
+    },
+    {
+      "de": "einnehmen",
+      "ipa": "ˈaɪ̯nˌneːmən",
+      "en": "to occupy / earn"
+    },
+    {
+      "de": "Eins",
+      "ipa": "aɪ̯ns",
+      "en": "one (number)"
+    },
+    {
+      "de": "Elend",
+      "ipa": "ˈeːlɛnt",
+      "en": "misery"
+    },
+    {
+      "de": "Ende",
+      "ipa": "ˈɛndə",
+      "en": "end"
+    },
+    {
+      "de": "entwickeln",
+      "ipa": "ɛntˈvɪkl̩n",
+      "en": "to develop"
+    },
+    {
+      "de": "erfahren",
+      "ipa": "ɛɐ̯ˈfaːʁən",
+      "en": "to experience"
+    },
+    {
+      "de": "erfinden",
+      "ipa": "ɛɐ̯ˈfɪndn̩",
+      "en": "to invent"
+    },
+    {
+      "de": "Erfinderin",
+      "ipa": "ɛɐ̯ˈfɪndəʁɪn",
+      "en": "inventor (female)"
+    },
+    {
+      "de": "Erfindung",
+      "ipa": "ɛɐ̯ˈfɪndʊŋ",
+      "en": "invention"
+    },
+    {
+      "de": "Erfolg",
+      "ipa": "ɛɐ̯ˈfɔlk",
+      "en": "success"
+    },
+    {
+      "de": "erkennen",
+      "ipa": "ɛɐ̯ˈkɛnən",
+      "en": "to recognize"
+    },
+    {
+      "de": "Frau",
+      "ipa": "fʁaʊ̯",
+      "en": "woman / wife"
+    },
+    {
+      "de": "ganz",
+      "ipa": "ɡants",
+      "en": "whole / quite"
+    },
+    {
+      "de": "geben",
+      "ipa": "ˈɡeːbn̩",
+      "en": "to give"
+    },
+    {
+      "de": "gebären",
+      "ipa": "ɡəˈbɛːʁən",
+      "en": "to give birth"
+    },
+    {
+      "de": "gehen",
+      "ipa": "ˈɡeːən",
+      "en": "to go"
+    },
+    {
+      "de": "gehören",
+      "ipa": "ɡəˈhøːʁən",
+      "en": "to belong"
+    },
+    {
+      "de": "Geld",
+      "ipa": "ɡɛlt",
+      "en": "money"
+    },
+    {
+      "de": "Geschichte",
+      "ipa": "ɡəˈʃɪçtə",
+      "en": "history / story"
+    },
+    {
+      "de": "haben",
+      "ipa": "ˈhaːbn̩",
+      "en": "to have"
+    },
+    {
+      "de": "heute",
+      "ipa": "ˈhɔɪ̯tə",
+      "en": "today"
+    },
+    {
+      "de": "Hotel",
+      "ipa": "hoˈtɛl",
+      "en": "hotel"
+    },
+    {
+      "de": "Idee",
+      "ipa": "iˈdeː",
+      "en": "idea"
+    },
+    {
+      "de": "Industrialisierung",
+      "ipa": "ɪndʊstʁialiˈziːʁʊŋ",
+      "en": "industrialization"
+    },
+    {
+      "de": "Jahr",
+      "ipa": "jaːʁ",
+      "en": "year"
+    },
+    {
+      "de": "Journalistin",
+      "ipa": "ʒʊʁnaˈlɪstɪn",
+      "en": "journalist (female)"
+    },
+    {
+      "de": "kaufen",
+      "ipa": "ˈkaʊ̯fn̩",
+      "en": "to buy"
+    },
+    {
+      "de": "kaum",
+      "ipa": "kaʊ̯m",
+      "en": "hardly"
+    },
+    {
+      "de": "Kindheit",
+      "ipa": "ˈkɪnthaɪ̯t",
+      "en": "childhood"
+    },
+    {
+      "de": "konzipieren",
+      "ipa": "kɔntsiˈpiːʁən",
+      "en": "to conceptualize"
+    },
+    {
+      "de": "kopieren",
+      "ipa": "koˈpiːʁən",
+      "en": "to copy"
+    },
+    {
+      "de": "kritisieren",
+      "ipa": "kʁitiˈziːʁən",
+      "en": "to criticize"
+    },
+    {
+      "de": "Kurze",
+      "ipa": "ˈkʊʁtsə",
+      "en": "short (fem. form)"
+    },
+    {
+      "de": "lang",
+      "ipa": "laŋ",
+      "en": "long"
+    },
+    {
+      "de": "leben",
+      "ipa": "ˈleːbn̩",
+      "en": "to live"
+    },
+    {
+      "de": "machen",
+      "ipa": "ˈmaxn̩",
+      "en": "to make / do"
+    },
+    {
+      "de": "melden",
+      "ipa": "ˈmɛldn̩",
+      "en": "to report"
+    },
+    {
+      "de": "Mensch",
+      "ipa": "mɛnʃ",
+      "en": "human / person"
+    },
+    {
+      "de": "Miete",
+      "ipa": "ˈmiːtə",
+      "en": "rent"
+    },
+    {
+      "de": "Million",
+      "ipa": "mɪˈli̯oːn",
+      "en": "million"
+    },
+    {
+      "de": "Millionär",
+      "ipa": "mɪli̯oˈnɛːʁ",
+      "en": "millionaire"
+    },
+    {
+      "de": "Mitspieler",
+      "ipa": "ˈmɪtˌʃpiːlɐ",
+      "en": "player (in a game)"
+    },
+    {
+      "de": "Monopol",
+      "ipa": "monoˈpoːl",
+      "en": "monopoly"
+    },
+    {
+      "de": "Name",
+      "ipa": "ˈnaːmə",
+      "en": "name"
+    },
+    {
+      "de": "nennen",
+      "ipa": "ˈnɛnən",
+      "en": "to name / call"
+    },
+    {
+      "de": "noch",
+      "ipa": "nɔx",
+      "en": "still / yet"
+    },
+    {
+      "de": "nur",
+      "ipa": "nuːʁ",
+      "en": "only"
+    },
+    {
+      "de": "Patent",
+      "ipa": "paˈtɛnt",
+      "en": "patent"
+    },
+    {
+      "de": "Presse",
+      "ipa": "ˈpʁɛsə",
+      "en": "press"
+    },
+    {
+      "de": "recherchieren",
+      "ipa": "ʁeʃɛʁˈʃiːʁən",
+      "en": "to research"
+    },
+    {
+      "de": "Recht",
+      "ipa": "ʁɛçt",
+      "en": "right / law"
+    },
+    {
+      "de": "Regelwerk",
+      "ipa": "ˈʁeːɡl̩ˌvɛʁk",
+      "en": "set of rules"
+    },
+    {
+      "de": "Reichtum",
+      "ipa": "ˈʁaɪ̯ctuːm",
+      "en": "wealth"
+    },
+    {
+      "de": "Ruhm",
+      "ipa": "ʁuːm",
+      "en": "fame"
+    },
+    {
+      "de": "schließlich",
+      "ipa": "ˈʃliːslɪç",
+      "en": "finally"
+    },
+    {
+      "de": "schnell",
+      "ipa": "ʃnɛl",
+      "en": "fast"
+    },
+    {
+      "de": "schon",
+      "ipa": "ʃoːn",
+      "en": "already"
+    },
+    {
+      "de": "schädlich",
+      "ipa": "ˈʃɛːtlɪç",
+      "en": "harmful"
+    },
+    {
+      "de": "sehen",
+      "ipa": "ˈzeːən",
+      "en": "to see"
+    },
+    {
+      "de": "sehr",
+      "ipa": "zeːʁ",
+      "en": "very"
+    },
+    {
+      "de": "selbst",
+      "ipa": "zɛlpst",
+      "en": "self / even"
+    },
+    {
+      "de": "Sinn",
+      "ipa": "zɪn",
+      "en": "sense / meaning"
+    },
+    {
+      "de": "so",
+      "ipa": "zoː",
+      "en": "so / thus"
+    },
+    {
+      "de": "Spiel",
+      "ipa": "ʃpiːl",
+      "en": "game"
+    },
+    {
+      "de": "Spieleklassiker",
+      "ipa": "ˈʃpiːləˌklasɪkɐ",
+      "en": "classic game"
+    },
+    {
+      "de": "spielen",
+      "ipa": "ˈʃpiːlən",
+      "en": "to play"
+    },
+    {
+      "de": "Spieleverlag",
+      "ipa": "ˈʃpiːləfɛɐ̯ˌlaːk",
+      "en": "game publisher"
+    },
+    {
+      "de": "spät",
+      "ipa": "ʃpɛːt",
+      "en": "late"
+    },
+    {
+      "de": "stammen",
+      "ipa": "ˈʃtamən",
+      "en": "to originate"
+    },
+    {
+      "de": "stehlen",
+      "ipa": "ˈʃteːlən",
+      "en": "to steal"
+    },
+    {
+      "de": "Straße",
+      "ipa": "ˈʃtʁaːsə",
+      "en": "street"
+    },
+    {
+      "de": "Student",
+      "ipa": "ʃtuˈdɛnt",
+      "en": "student (university)"
+    },
+    {
+      "de": "Tod",
+      "ipa": "toːt",
+      "en": "death"
+    },
+    {
+      "de": "täglich",
+      "ipa": "ˈtɛːklɪç",
+      "en": "daily"
+    },
+    {
+      "de": "Ungleichheit",
+      "ipa": "ˈʊnɡlaɪ̯çhaɪ̯t",
+      "en": "inequality"
+    },
+    {
+      "de": "verdanken",
+      "ipa": "fɛɐ̯ˈdaŋkn̩",
+      "en": "to owe (gratitude)"
+    },
+    {
+      "de": "vergessen",
+      "ipa": "fɛɐ̯ˈɡɛsn̩",
+      "en": "to forget"
+    },
+    {
+      "de": "verkaufen",
+      "ipa": "fɛɐ̯ˈkaʊ̯fn̩",
+      "en": "to sell"
+    },
+    {
+      "de": "Verkäufer",
+      "ipa": "fɛɐ̯ˈkɔɪ̯fɐ",
+      "en": "seller"
+    },
+    {
+      "de": "veröffentlichen",
+      "ipa": "fɛɐ̯ˈʔœfn̩tlɪçn̩",
+      "en": "to publish"
+    },
+    {
+      "de": "weltweit",
+      "ipa": "ˈvɛltvaɪ̯t",
+      "en": "worldwide"
+    },
+    {
+      "de": "werden",
+      "ipa": "ˈveːɐ̯dn̩",
+      "en": "to become / will (future tense)"
+    },
+    {
+      "de": "wie",
+      "ipa": "viː",
+      "en": "how / like"
+    },
+    {
+      "de": "Wirklichkeit",
+      "ipa": "ˈvɪʁklɪçkaɪ̯t",
+      "en": "reality"
+    },
+    {
+      "de": "wissen",
+      "ipa": "ˈvɪsn̩",
+      "en": "to know (a fact)"
+    },
+    {
+      "de": "Würfelglück",
+      "ipa": "ˈvʏʁfl̩ˌɡlʏk",
+      "en": "dice luck"
+    },
+    {
+      "de": "zeigen",
+      "ipa": "ˈtsaɪ̯ɡn̩",
+      "en": "to show"
+    },
+    {
+      "de": "Zeit",
+      "ipa": "tsaɪ̯t",
+      "en": "time"
+    },
+    {
+      "de": "zuerst",
+      "ipa": "ˈtsuːɐ̯st",
+      "en": "first / at first"
+    },
+    {
+      "de": "zunächst",
+      "ipa": "tsuˈnɛːçst",
+      "en": "initially"
+    },
+    {
+      "de": "Zustand",
+      "ipa": "ˈtsuːʃtant",
+      "en": "state / condition"
+    },
+    {
+      "de": "zweit",
+      "ipa": "tsvaɪ̯t",
+      "en": "second (ordinal)"
+    },
+    {
+      "de": "übernehmen",
+      "ipa": "ˈyːbɐˌneːmən",
+      "en": "to take over"
+    }
   ]
 }

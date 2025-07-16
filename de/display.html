@@ -20,6 +20,35 @@
         text-align: center;
       }
 
+      #wordsTableWrap {
+        padding: 20px;
+      }
+
+      #wordsTable td b {
+        line-height: 1.5em;
+        font-size: 1.2em;
+      }
+      #wordsTable td span {
+        line-height: 1.5em;
+        font-size: 1.1em;
+      }
+
+      #wordsTable td {
+        padding-right: 4px;
+        padding-left: 4px;
+      }
+      #wordsTable td:first-child {
+        color: #ddd;
+        vertical-align: middle;
+        padding-right: 0px;
+      }
+
+      #wordsTable td:last-child {
+        color: #000;
+        padding-left: 0px;
+        font-size: 0.8em;
+        vertical-align: middle;
+      }
       #titleBar h1 {
         margin: 0;
         font-size: 1.4em;
@@ -91,6 +120,7 @@
         font-size: 1.2em;
         display: none;
       }
+
       .active {
         background-color: #f0f0f0;
         color: blue;
@@ -98,6 +128,23 @@
 
       .active .german {
         color: #ff0000;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px 0px;
+        border-bottom: 1px solid #eee;
+        vertical-align: top;
+      }
+
+      th {
+        background-color: #eee;
       }
     </style>
   </head>
@@ -117,6 +164,13 @@
 
     <!-- Subtitles -->
     <div id="subtitles"></div>
+
+    <!-- Words Table -->
+    <div id="wordsTableWrap">
+      <table id="wordsTable">
+        <tbody></tbody>
+      </table>
+    </div>
 
     <script>
       const params = new URLSearchParams(window.location.search);
@@ -152,14 +206,16 @@
         const response = await fetch(dataUrl);
         const data = await response.json();
         subtitles = data.lines || [];
+        const words = data.words || [];
 
-        // Set title and author
         titleElement.textContent = data.title || "Subtitle Viewer";
+
         if (data.author && data.author_url) {
           authorElement.innerHTML = `<a href="${data.author_url}" target="_blank" rel="noopener noreferrer">${data.author}</a>`;
         }
 
         renderSubtitles();
+        renderWordsTable(words);
       }
 
       function renderSubtitles() {
@@ -175,9 +231,11 @@
           const englishDiv = document.createElement("div");
           englishDiv.className = "english";
           englishDiv.textContent = `${index + 1}. ${sub.en}`;
+
           const ipaDiv = document.createElement("div");
           ipaDiv.className = "ipa";
           ipaDiv.textContent = `${sub.ipa}`;
+
           div.appendChild(germanDiv);
           div.appendChild(englishDiv);
           div.appendChild(ipaDiv);
@@ -222,6 +280,30 @@
         });
       }
 
+      function renderWordsTable(words) {
+        const tableBody = document.querySelector("#wordsTable tbody");
+        tableBody.innerHTML = "";
+
+        words.forEach((word, index) => {
+          const row = document.createElement("tr");
+
+          const siCell = document.createElement("td");
+          siCell.textContent = index + 1;
+
+          const deIpaCell = document.createElement("td");
+          deIpaCell.innerHTML =
+            `<b>${word.de}</b><br/><span>${word.ipa}</span>`.trim();
+
+          const enCell = document.createElement("td");
+          enCell.textContent = word.en;
+
+          row.appendChild(siCell);
+          row.appendChild(deIpaCell);
+          row.appendChild(enCell);
+          tableBody.appendChild(row);
+        });
+      }
+
       function handleSubtitleClick(index) {
         document.querySelectorAll(".ipa").forEach((el) => {
           el.style.display = "none";
@@ -252,7 +334,7 @@
       function copyToClipboard(text) {
         const text2 = `${text}
 
-Show each words in the above German text in the following format. include infinite form of verbs.  Result of this chatgpt query shouldn't be influenced by my past of preferences. Don't add introductory chat.
+Show each word in the above German text in the following format. Include the infinitive form of verbs.
 
 <German word in bold font> . <ipa of the word>
 <English meaning>`;
