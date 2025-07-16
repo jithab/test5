@@ -288,7 +288,7 @@
           const row = document.createElement("tr");
 
           const siCell = document.createElement("td");
-          siCell.textContent = index + 1;
+          siCell.textContent = index % 5 == 4 ? index + 1 : "";
 
           const deIpaCell = document.createElement("td");
           deIpaCell.innerHTML =
