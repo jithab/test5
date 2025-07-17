@@ -5,14 +5,38 @@
     <title>German Flashcard Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      html,
       body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
         font-family: Arial, sans-serif;
         background-color: #f0f0f0;
         display: flex;
         flex-direction: column;
+      }
+
+      #main-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        margin: 0;
+        justify-content: center;
         padding: 20px;
+      }
+
+      #status {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #percentage {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      #remaining {
+        font-size: 20px;
       }
 
       #card {
@@ -23,7 +47,6 @@
         width: 90%;
         max-width: 400px;
         text-align: center;
-        margin-bottom: 30px;
       }
 
       #de {
@@ -53,6 +76,13 @@
 
       #reveal-section {
         margin-top: 15px;
+      }
+
+      #reveal-btn {
+        font-size: 64px;
+        background: none;
+        border: none;
+        cursor: pointer;
       }
 
       #controls {
@@ -97,14 +127,9 @@
 
       #reset-btn {
         display: none;
-        margin-top: 10px;
+        margin: 10px auto;
         background-color: #ff6666;
         color: white;
-      }
-
-      #progress {
-        margin-bottom: 10px;
-        font-weight: bold;
       }
 
       @media (max-width: 480px) {
@@ -112,7 +137,8 @@
           font-size: 48px;
         }
 
-        .face-btn {
+        .face-btn,
+        #reveal-btn {
           font-size: 56px;
         }
 
@@ -120,29 +146,42 @@
           flex-direction: column;
           gap: 10px;
         }
+
+        #percentage {
+          font-size: 24px;
+        }
+
+        #remaining {
+          font-size: 22px;
+        }
       }
     </style>
   </head>
   <body>
-    <div id="card">
-      <div id="de"></div>
-      <div id="ipa"></div>
-      <div id="en"></div>
-
-      <div id="reveal-section">
-        <button id="reveal-btn">Reveal</button>
+    <div id="main-container">
+      <div id="status">
+        <div id="percentage">Completed: 0%</div>
+        <div id="remaining">Remaining words: 0</div>
       </div>
 
-      <div id="controls">
-        <div id="controls-row">
-          <button id="learnt-btn" class="face-btn">😃</button>
-          <button id="next-btn" class="face-btn">😐</button>
-          <button id="notlearnt-btn" class="face-btn">😢</button>
+      <div id="card">
+        <div id="de"></div>
+        <div id="ipa"></div>
+        <div id="en"></div>
+
+        <div id="reveal-section">
+          <button id="reveal-btn">🧐</button>
+        </div>
+
+        <div id="controls">
+          <div id="controls-row">
+            <button id="learnt-btn" class="face-btn">😃</button>
+            <button id="notlearnt-btn" class="face-btn">😢</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="progress">Completed: 0% | Remaining words: 0</div>
     <button id="table-toggle">Show Table</button>
 
     <div id="word-table">
@@ -153,9 +192,7 @@
             <th>Count</th>
           </tr>
         </thead>
-        <tbody id="table-body">
-          <!-- Populated dynamically -->
-        </tbody>
+        <tbody id="table-body"></tbody>
       </table>
     </div>
 
@@ -164,7 +201,6 @@
     <script>
       const params = new URLSearchParams(window.location.search);
       const fileName = params.get("file");
-
       if (!fileName) {
         alert("Missing 'file' parameter in URL.");
         throw new Error("Missing file parameter.");
@@ -247,10 +283,6 @@
         nextWord();
       };
 
-      document.getElementById("next-btn").onclick = () => {
-        nextWord();
-      };
-
       document.getElementById("table-toggle").onclick = () => {
         const tableDiv = document.getElementById("word-table");
         const toggleBtn = document.getElementById("table-toggle");
@@ -292,9 +324,13 @@
           maxScore > 0
             ? Math.min((actualScore / maxScore) * 100, 100).toFixed(2)
             : "100.00";
+
         document.getElementById(
-          "progress"
-        ).textContent = `Completed: ${percentage}% | Remaining words: ${totalWords}`;
+          "percentage"
+        ).textContent = `Completed: ${percentage}%`;
+        document.getElementById(
+          "remaining"
+        ).textContent = `Remaining words: ${totalWords}`;
       }
 
       loadFromStorageOrFetch();
