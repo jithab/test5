@@ -48,6 +48,11 @@
         max-width: 400px;
         text-align: center;
       }
+      #finished {
+        font-size: 44px;
+        color: red;
+        font-weight: bold;
+      }
 
       #de {
         font-size: 44px;
@@ -58,12 +63,14 @@
       #ipa {
         margin-top: 10px;
         font-style: italic;
-        font-size: 20px;
+        font-size: 40px;
       }
 
       #en {
-        margin-top: 5px;
-        font-size: 20px;
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #0000a0;
       }
 
       button {
@@ -243,7 +250,7 @@
       function nextWord() {
         if (words.length === 0) {
           document.getElementById("card").innerHTML =
-            "<p>All words learnt! 🎉</p>";
+            "<p id='finished'>„Eines Tages werde ich Deutsch sprechen.“ <br/>🎉</p>";
           updateProgress();
           return;
         }
@@ -270,7 +277,7 @@
 
       document.getElementById("learnt-btn").onclick = () => {
         words[currentIndex].count += 1;
-        if (words[currentIndex].count > 5) {
+        if (words[currentIndex].count >= 3) {
           words.splice(currentIndex, 1);
         }
         saveToLocalStorage();
@@ -318,7 +325,7 @@
 
       function updateProgress() {
         const totalWords = words.length;
-        const maxScore = totalWords * 5;
+        const maxScore = totalWords * 3;
         const actualScore = words.reduce((sum, w) => sum + w.count, 0);
         const percentage =
           maxScore > 0
