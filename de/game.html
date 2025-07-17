@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>German Flashcard Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+      }
+
+      #card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      #de {
+        font-size: 44px;
+        font-weight: bold;
+        word-break: break-word;
+      }
+
+      #ipa {
+        margin-top: 10px;
+        font-style: italic;
+        font-size: 20px;
+      }
+
+      #en {
+        margin-top: 5px;
+        font-size: 20px;
+      }
+
+      button {
+        font-size: 18px;
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+      }
+
+      #reveal-section {
+        margin-top: 15px;
+      }
+
+      #controls {
+        display: none;
+        margin-top: 20px;
+      }
+
+      #controls-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+      }
+
+      .face-btn {
+        font-size: 64px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        flex: 1;
+      }
+
+      #table-toggle {
+        margin-bottom: 10px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 6px;
+        text-align: center;
+      }
+
+      #word-table {
+        display: none;
+      }
+
+      #reset-btn {
+        display: none;
+        margin-top: 10px;
+        background-color: #ff6666;
+        color: white;
+      }
+
+      #progress {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      @media (max-width: 480px) {
+        #de {
+          font-size: 48px;
+        }
+
+        .face-btn {
+          font-size: 56px;
+        }
+
+        #controls-row {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <div id="de"></div>
+      <div id="ipa"></div>
+      <div id="en"></div>
+
+      <div id="reveal-section">
+        <button id="reveal-btn">Reveal</button>
+      </div>
+
+      <div id="controls">
+        <div id="controls-row">
+          <button id="learnt-btn" class="face-btn">😃</button>
+          <button id="next-btn" class="face-btn">😐</button>
+          <button id="notlearnt-btn" class="face-btn">😢</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="progress">Completed: 0% | Remaining words: 0</div>
+    <button id="table-toggle">Show Table</button>
+
+    <div id="word-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Word (de)</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Populated dynamically -->
+        </tbody>
+      </table>
+    </div>
+
+    <button id="reset-btn">🔁 Reset Game</button>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const fileName = params.get("file");
+
+      if (!fileName) {
+        alert("Missing 'file' parameter in URL.");
+        throw new Error("Missing file parameter.");
+      }
+
+      let words = [];
+      let currentIndex = 0;
+
+      function loadFromStorageOrFetch() {
+        const stored = localStorage.getItem(fileName);
+        if (stored) {
+          words = JSON.parse(stored);
+          nextWord();
+          updateTable();
+          updateProgress();
+        } else {
+          fetch(fileName)
+            .then((res) => res.json())
+            .then((data) => {
+              if (!data.words)
+                throw new Error("Invalid JSON: Missing 'words' array.");
+              words = data.words.map((w) => ({ ...w, count: 0 }));
+              localStorage.setItem(fileName, JSON.stringify(words));
+              nextWord();
+              updateTable();
+              updateProgress();
+            })
+            .catch((err) => {
+              alert("Failed to load JSON: " + err.message);
+            });
+        }
+      }
+
+      function saveToLocalStorage() {
+        localStorage.setItem(fileName, JSON.stringify(words));
+        updateTable();
+        updateProgress();
+      }
+
+      function nextWord() {
+        if (words.length === 0) {
+          document.getElementById("card").innerHTML =
+            "<p>All words learnt! 🎉</p>";
+          updateProgress();
+          return;
+        }
+        currentIndex = Math.floor(Math.random() * words.length);
+        const word = words[currentIndex];
+        document.getElementById("de").textContent = word.de;
+        document.getElementById("ipa").textContent = word.ipa;
+        document.getElementById("en").textContent = word.en;
+
+        document.getElementById("ipa").style.display = "none";
+        document.getElementById("en").style.display = "none";
+        document.getElementById("reveal-section").style.display = "block";
+        document.getElementById("controls").style.display = "none";
+
+        updateProgress();
+      }
+
+      document.getElementById("reveal-btn").onclick = () => {
+        document.getElementById("ipa").style.display = "block";
+        document.getElementById("en").style.display = "block";
+        document.getElementById("reveal-section").style.display = "none";
+        document.getElementById("controls").style.display = "block";
+      };
+
+      document.getElementById("learnt-btn").onclick = () => {
+        words[currentIndex].count += 1;
+        if (words[currentIndex].count > 5) {
+          words.splice(currentIndex, 1);
+        }
+        saveToLocalStorage();
+        nextWord();
+      };
+
+      document.getElementById("notlearnt-btn").onclick = () => {
+        words[currentIndex].count = 0;
+        saveToLocalStorage();
+        nextWord();
+      };
+
+      document.getElementById("next-btn").onclick = () => {
+        nextWord();
+      };
+
+      document.getElementById("table-toggle").onclick = () => {
+        const tableDiv = document.getElementById("word-table");
+        const toggleBtn = document.getElementById("table-toggle");
+        const resetBtn = document.getElementById("reset-btn");
+        const isVisible = tableDiv.style.display === "block";
+
+        tableDiv.style.display = isVisible ? "none" : "block";
+        resetBtn.style.display = isVisible ? "none" : "block";
+        toggleBtn.textContent = isVisible ? "Show Table" : "Hide Table";
+      };
+
+      document.getElementById("reset-btn").onclick = () => {
+        if (confirm("Are you sure you want to reset progress?")) {
+          localStorage.removeItem(fileName);
+          location.reload();
+        }
+      };
+
+      function updateTable() {
+        const tableBody = document.getElementById("table-body");
+        tableBody.innerHTML = "";
+        words.forEach((word) => {
+          const row = document.createElement("tr");
+          const wordCell = document.createElement("td");
+          const countCell = document.createElement("td");
+          wordCell.textContent = word.de;
+          countCell.textContent = word.count;
+          row.appendChild(wordCell);
+          row.appendChild(countCell);
+          tableBody.appendChild(row);
+        });
+      }
+
+      function updateProgress() {
+        const totalWords = words.length;
+        const maxScore = totalWords * 5;
+        const actualScore = words.reduce((sum, w) => sum + w.count, 0);
+        const percentage =
+          maxScore > 0
+            ? Math.min((actualScore / maxScore) * 100, 100).toFixed(2)
+            : "100.00";
+        document.getElementById(
+          "progress"
+        ).textContent = `Completed: ${percentage}% | Remaining words: ${totalWords}`;
+      }
+
+      loadFromStorageOrFetch();
+    </script>
+  </body>
+</html>
