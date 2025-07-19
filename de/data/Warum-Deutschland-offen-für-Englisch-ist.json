@@ -166,11 +166,6 @@
       "en": "answer"
     },
     {
-      "de": "Arabisch",
-      "ipa": "aˈʁaːbɪʃ",
-      "en": "Arabic"
-    },
-    {
       "de": "arbeiten",
       "ipa": "ˈaʁbaɪ̯tən",
       "en": "work"
@@ -184,11 +179,6 @@
       "de": "argumentieren",
       "ipa": "aʁɡumɛnˈtiːʁən",
       "en": "argue"
-    },
-    {
-      "de": "attraktiv",
-      "ipa": "atʁakˈtiːf",
-      "en": "attractive"
     },
     {
       "de": "auch",
@@ -216,11 +206,6 @@
       "en": "moreover"
     },
     {
-      "de": "Beratung",
-      "ipa": "bəˈʁaːtʊŋ",
-      "en": "consultation"
-    },
-    {
       "de": "bisher",
       "ipa": "bɪsˈheːɐ̯",
       "en": "so far"
@@ -234,11 +219,6 @@
       "de": "brauchen",
       "ipa": "ˈbʁaʊ̯xn̩",
       "en": "need"
-    },
-    {
-      "de": "britisch",
-      "ipa": "ˈbʁiːtɪʃ",
-      "en": "British"
     },
     {
       "de": "damalig",
@@ -256,16 +236,6 @@
       "en": "last"
     },
     {
-      "de": "deutsch",
-      "ipa": "dɔɪ̯tʃ",
-      "en": "German"
-    },
-    {
-      "de": "Deutschkenntnis",
-      "ipa": "ˈdɔɪ̯tʃˌkɛntnɪs",
-      "en": "knowledge of German"
-    },
-    {
       "de": "doch",
       "ipa": "dɔx",
       "en": "however"
@@ -281,21 +251,6 @@
       "en": "only"
     },
     {
-      "de": "englisch",
-      "ipa": "ˈɛŋlɪʃ",
-      "en": "English"
-    },
-    {
-      "de": "Englisch",
-      "ipa": "ˈɛŋlɪʃ",
-      "en": "English"
-    },
-    {
-      "de": "Englischpflicht",
-      "ipa": "ˈɛŋlɪʃˌpflɪçt",
-      "en": "English language requirement"
-    },
-    {
       "de": "Fachkraft",
       "ipa": "ˈfaxˌkʁaft",
       "en": "skilled worker"
@@ -304,11 +259,6 @@
       "de": "Formular",
       "ipa": "fɔʁmuˈlaːɐ̯",
       "en": "form"
-    },
-    {
-      "de": "Französisch",
-      "ipa": "fʁanˈt͡søːzɪʃ",
-      "en": "French"
     },
     {
       "de": "gar",
@@ -329,11 +279,6 @@
       "de": "Gesetzbuch",
       "ipa": "ɡəˈzɛt͡sˌbuːx",
       "en": "legal code"
-    },
-    {
-      "de": "Gesetzesänderung",
-      "ipa": "ɡəˈzɛt͡səsˌʔɛndəʁʊŋ",
-      "en": "legal amendment"
     },
     {
       "de": "gewöhnen",
@@ -371,11 +316,6 @@
       "en": "always"
     },
     {
-      "de": "international",
-      "ipa": "ɪntɐnat͡si̯oˈnaːl",
-      "en": "international"
-    },
-    {
       "de": "Jahr",
       "ipa": "jaːɐ̯",
       "en": "year"
@@ -384,11 +324,6 @@
       "de": "jedoch",
       "ipa": "jeˈdɔx",
       "en": "however"
-    },
-    {
-      "de": "Journalist",
-      "ipa": "ʒʊʁnaˈlɪst",
-      "en": "journalist"
     },
     {
       "de": "Kellnerin",
@@ -461,11 +396,6 @@
       "en": "official"
     },
     {
-      "de": "pauschal",
-      "ipa": "paʊ̯ˈʃaːl",
-      "en": "flat-rate"
-    },
-    {
       "de": "Politik",
       "ipa": "poliˈtiːk",
       "en": "politics"
@@ -491,16 +421,6 @@
       "en": "talk"
     },
     {
-      "de": "Regierungspartei",
-      "ipa": "ʁeˈɡiːʁʊŋsˌpaʁtaɪ̯",
-      "en": "government party"
-    },
-    {
-      "de": "Restaurant",
-      "ipa": "ʁɛstoˈʁãː",
-      "en": "restaurant"
-    },
-    {
       "de": "rund",
       "ipa": "ʁʊnt",
       "en": "around"
@@ -521,16 +441,6 @@
       "en": "write"
     },
     {
-      "de": "selbstverständlich",
-      "ipa": "ˈzɛlpstfɛɐ̯ˌʃtɛntlɪç",
-      "en": "of course"
-    },
-    {
-      "de": "so",
-      "ipa": "zoː",
-      "en": "so"
-    },
-    {
       "de": "Sprache",
       "ipa": "ˈʃpʁaːxə",
       "en": "language"
@@ -539,11 +449,6 @@
       "de": "sprechen",
       "ipa": "ˈʃpʁɛçn̩",
       "en": "speak"
-    },
-    {
-      "de": "Studiengang",
-      "ipa": "ˈʃtuːdi̯ənˌɡaŋ",
-      "en": "degree program"
     },
     {
       "de": "stören",
@@ -561,11 +466,6 @@
       "en": "teach"
     },
     {
-      "de": "Verwaltung",
-      "ipa": "fɛɐ̯ˈvaltʊŋ",
-      "en": "administration"
-    },
-    {
       "de": "vorstellen",
       "ipa": "ˈfoːɐ̯ˌʃtɛlən",
       "en": "imagine"
@@ -576,11 +476,6 @@
       "en": "election"
     },
     {
-      "de": "warum",
-      "ipa": "vaˈʁʊm",
-      "en": "why"
-    },
-    {
       "de": "weigern",
       "ipa": "ˈvaɪ̯ɡɐn",
       "en": "refuse"
@@ -589,11 +484,6 @@
       "de": "werden",
       "ipa": "ˈveːɐ̯dn̩",
       "en": "become"
-    },
-    {
-      "de": "wie",
-      "ipa": "viː",
-      "en": "how"
     },
     {
       "de": "Wirtschaft",

@@ -25,18 +25,11 @@
         padding: 20px;
       }
 
-      #status {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      #percentage {
-        font-size: 22px;
-        font-weight: bold;
-      }
-
       #remaining {
-        font-size: 20px;
+        font-size: 60px;
+        line-height: 2;
+        color: #ddd;
+        text-align: center;
       }
 
       #card {
@@ -153,24 +146,12 @@
           flex-direction: column;
           gap: 10px;
         }
-
-        #percentage {
-          font-size: 24px;
-        }
-
-        #remaining {
-          font-size: 22px;
-        }
       }
     </style>
   </head>
   <body>
+    <div id="remaining"></div>
     <div id="main-container">
-      <div id="status">
-        <div id="percentage">Completed: 0%</div>
-        <div id="remaining">Remaining words: 0</div>
-      </div>
-
       <div id="card">
         <div id="de"></div>
         <div id="ipa"></div>
@@ -276,15 +257,12 @@
       };
 
       document.getElementById("learnt-btn").onclick = () => {
-        // Reset if needed.
-        if (words[currentIndex].count < 0) {
-          words[currentIndex].count = 0;
+        if (words[currentIndex].count >= 0) {
+          words.splice(currentIndex, 1);
+        } else {
+          words[currentIndex].count = 1;
         }
 
-        words[currentIndex].count += 1;
-        if (words[currentIndex].count >= 2) {
-          words.splice(currentIndex, 1);
-        }
         saveToLocalStorage();
         nextWord();
       };
@@ -336,20 +314,7 @@
       }
 
       function updateProgress() {
-        const totalWords = words.length;
-        const maxScore = totalWords * 3;
-        const actualScore = words.reduce((sum, w) => sum + w.count, 0);
-        const percentage =
-          maxScore > 0
-            ? Math.min((actualScore / maxScore) * 100, 100).toFixed(2)
-            : "100.00";
-
-        document.getElementById(
-          "percentage"
-        ).textContent = `Completed: ${percentage}%`;
-        document.getElementById(
-          "remaining"
-        ).textContent = `Remaining words: ${totalWords}`;
+        document.getElementById("remaining").textContent = `${words.length}`;
       }
 
       loadFromStorageOrFetch();
