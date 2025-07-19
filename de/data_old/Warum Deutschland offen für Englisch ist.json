@@ -3,1029 +3,188 @@
     {
       "start": 3,
       "end": 7.6,
-      "sent": "DW Deutsch lernen mit dem Top-Thema.",
-      "tran": "© Deutsche Welle",
-      "words": []
+      "de": "DW Deutsch lernen mit dem Top-Thema.",
+      "en": "© Deutsche Welle"
     },
     {
       "start": 9,
       "end": 11.56,
-      "sent": "Warum Deutschland offen für Englisch ist.",
-      "tran": "Why Germany is open to English.",
-      "words": [
-        {
-          "w": "Warum",
-          "m": "Why",
-          "p": "varʊm",
-          "e": null
-        },
-        {
-          "w": "Deutschland",
-          "m": "Germany",
-          "p": "ˈdɔʏtʃlant",
-          "e": null
-        },
-        {
-          "w": "offen",
-          "m": "open",
-          "p": "ˈɔfən",
-          "e": null
-        },
-        {
-          "w": "für Englisch",
-          "m": "for English",
-          "p": "fyːɐ̯ ˈɛŋlɪʃ",
-          "e": null
-        },
-        {
-          "w": "ist",
-          "m": "is",
-          "p": "ɪst",
-          "e": null
-        }
-      ]
+      "de": "Warum Deutschland offen für Englisch ist.",
+      "en": "Why Germany is open to English."
     },
     {
       "start": 12.18,
       "end": 16.5,
-      "sent": "Ob in der Politik, im Geschäftsleben oder im Alltag:",
-      "tran": "Whether in politics, in business life, or in everyday life:",
-      "words": [
-        {
-          "w": "Ob … oder …",
-          "m": "Whether … or …",
-          "p": "ɔp … oːdɐ …",
-          "e": null
-        },
-        {
-          "w": "in der Politik",
-          "m": "in politics",
-          "p": "ɪn deːɐ̯ poˈliːtɪk",
-          "e": null
-        },
-        {
-          "w": "im Geschäftsleben",
-          "m": "in business life",
-          "p": "ɪm ɡəˈʃɛftsˌleːbn̩",
-          "e": null
-        },
-        {
-          "w": "im Alltag",
-          "m": "in everyday life",
-          "p": "ɪm ˈʔalˌtaːk",
-          "e": null
-        }
-      ]
+      "de": "Ob in der Politik, im Geschäftsleben oder im Alltag:",
+      "en": "Whether in politics, in business life, or in everyday life:"
     },
     {
       "start": 16.7,
       "end": 19.74,
-      "sent": "Die englische Sprache ist in Deutschland angekommen.",
-      "tran": "The English language has arrived in Germany.",
-      "words": [
-        {
-          "w": "die englische Sprache",
-          "m": "the English language",
-          "p": "diː ɛŋlɪʃə ʃpʁaːxə",
-          "e": null
-        },
-        {
-          "w": "ist angekommen",
-          "m": "has arrived",
-          "p": "ɪst ˈanɡəkɔmən",
-          "e": null
-        },
-        {
-          "w": "in Deutschland",
-          "m": "in Germany",
-          "p": "ɪn ˈdɔʏtʃlant",
-          "e": null
-        }
-      ]
+      "de": "Die englische Sprache ist in Deutschland angekommen.",
+      "en": "The English language has arrived in Germany."
     },
     {
       "start": 19.7,
       "end": 25,
-      "sent": "Das soll das Land attraktiver für internationale Unternehmen und Fachkräfte machen.",
-      "tran": "This is supposed to make the country more attractive for international companies and skilled workers.",
-      "words": [
-        {
-          "w": "das soll machen",
-          "m": "this is supposed to make",
-          "p": "das zɔl ˈmaχən",
-          "e": null
-        },
-        {
-          "w": "das Land",
-          "m": "the country",
-          "p": "das lant",
-          "e": null
-        },
-        {
-          "w": "attraktiver",
-          "m": "more attractive",
-          "p": "atʁakˈtiːvɐ",
-          "e": null
-        },
-        {
-          "w": "für internationale Unternehmen",
-          "m": "for international companies",
-          "p": "fyːɐ̯ ɪntɐnaˈt͡si̯oːnaˌle ʊntɐˈneːmən",
-          "e": null
-        },
-        {
-          "w": "und Fachkräfte",
-          "m": "and skilled workers",
-          "p": "ʊnt ˈfaxˌkʁɛftə",
-          "e": null
-        }
-      ]
+      "de": "Das soll das Land attraktiver für internationale Unternehmen und Fachkräfte machen.",
+      "en": "This is supposed to make the country more attractive for international companies and skilled workers."
     },
     {
       "start": 25.32,
       "end": 26.08,
-      "sent": "Klappt das?",
-      "tran": "Does that work?",
-      "words": [
-        {
-          "w": "klappt",
-          "m": "works / succeeds",
-          "p": "klapt",
-          "e": null
-        },
-        {
-          "w": "das",
-          "m": "that",
-          "p": "das",
-          "e": null
-        }
-      ]
+      "de": "Klappt das?",
+      "en": "Does that work?"
     },
     {
       "start": 26.08,
       "end": 32.9,
-      "sent": "Es ist noch gar nicht so lange her, dass deutsche Politiker sich weigerten, Englisch zu sprechen.",
-      "tran": "It’s not that long ago that German politicians refused to speak English.",
-      "words": [
-        {
-          "w": "Es ist her",
-          "m": "It is ago",
-          "p": "ɛs ɪst heːɐ̯",
-          "e": null
-        },
-        {
-          "w": "noch gar nicht so lange",
-          "m": "not that long (yet)",
-          "p": "nɔx ɡaːɐ̯ nɪçt zoː ˈlaŋə",
-          "e": null
-        },
-        {
-          "w": "dass deutsche Politiker",
-          "m": "that German politicians",
-          "p": "das ˈdɔʏtʃə poˈliːtɪkɐ",
-          "e": null
-        },
-        {
-          "w": "sich weigerten",
-          "m": "refused",
-          "p": "zɪç ˈvaɪ̯ɡɐtən",
-          "e": null
-        },
-        {
-          "w": "Englisch zu sprechen",
-          "m": "to speak English",
-          "p": "ˈɛŋlɪʃ tsuː ˈʃpʁɛçən",
-          "e": null
-        }
-      ]
+      "de": "Es ist noch gar nicht so lange her, dass deutsche Politiker sich weigerten, Englisch zu sprechen.",
+      "en": "It’s not that long ago that German politicians refused to speak English."
     },
     {
       "start": 33.28,
       "end": 40.4,
-      "sent": "Als ein britischer Journalist 2009 den damaligen Außenminister Guido Westerwelle bat, Englisch zu reden,",
-      "tran": "When a British journalist in 2009 asked then Foreign Minister Guido Westerwelle to speak English,",
-      "words": [
-        {
-          "w": "Als ein britischer Journalist",
-          "m": "when a British journalist",
-          "p": "ʔals ʔaɪn ˈbʁɪtɪʃɐ ʒʊʁnaˈlɪst",
-          "e": null
-        },
-        {
-          "w": "2009",
-          "m": "in 2009",
-          "p": "tsvaɪ̯taʊ̯zn̩ nɔɪ̯nt͡sɛn",
-          "e": null
-        },
-        {
-          "w": "den damaligen Außenminister Guido Westerwelle",
-          "m": "the then Foreign Minister Guido Westerwelle",
-          "p": "deːn ˈdaːmaːlɪɡn̩ ˈʔaʊ̯sn̩mɪˌnɪstɐ ˈɡiːdo ˈvɛstɐˌvɛlə",
-          "e": null
-        },
-        {
-          "w": "bat",
-          "m": "asked",
-          "p": "baːt",
-          "e": null
-        },
-        {
-          "w": "Englisch zu reden",
-          "m": "to speak English",
-          "p": "ˈɛŋlɪʃ tsu ˈʁeːdn̩",
-          "e": null
-        }
-      ]
+      "de": "Als ein britischer Journalist 2009 den damaligen Außenminister Guido Westerwelle bat, Englisch zu reden,",
+      "en": "When a British journalist in 2009 asked then Foreign Minister Guido Westerwelle to speak English,"
     },
     {
       "start": 40.62,
       "end": 47.54,
-      "sent": "antwortete dieser: „So wie es in Großbritannien üblich ist, dass man dort selbstverständlich Englisch spricht,",
-      "tran": "this one replied: \"Just as it is customary in Great Britain for people there to naturally speak English,\"",
-      "words": [
-        {
-          "w": "antwortete dieser",
-          "m": "this one replied",
-          "p": "ʔantˌvɔʁtətə ˈdiːzɐ",
-          "e": null
-        },
-        {
-          "w": "So wie",
-          "m": "just as",
-          "p": "zoː viː",
-          "e": null
-        },
-        {
-          "w": "es",
-          "m": "it",
-          "p": "ʔɛs",
-          "e": null
-        },
-        {
-          "w": "in Großbritannien",
-          "m": "in Great Britain",
-          "p": "ʔɪn ɡʁoːsˈbʁɪtaːni̯ən",
-          "e": null
-        },
-        {
-          "w": "üblich ist",
-          "m": "is customary",
-          "p": "ˈyːblɪç ʔɪst",
-          "e": null
-        },
-        {
-          "w": "dass",
-          "m": "that",
-          "p": "das",
-          "e": null
-        },
-        {
-          "w": "man",
-          "m": "people / one",
-          "p": "man",
-          "e": null
-        },
-        {
-          "w": "dort",
-          "m": "there",
-          "p": "dɔʁt",
-          "e": null
-        },
-        {
-          "w": "selbstverständlich",
-          "m": "naturally / of course",
-          "p": "ˌzɛlbstvɛɐ̯ˈʃtɛntlɪç",
-          "e": null
-        },
-        {
-          "w": "Englisch spricht",
-          "m": "speaks English",
-          "p": "ˈɛŋlɪʃ ʃpʁɪçt",
-          "e": null
-        }
-      ]
+      "de": "antwortete dieser: „So wie es in Großbritannien üblich ist, dass man dort selbstverständlich Englisch spricht,",
+      "en": "this one replied: \"Just as it is customary in Great Britain for people there to naturally speak English,\""
     },
     {
       "start": 47.86,
       "end": 50.66,
-      "sent": "so ist es in Deutschland üblich, dass man hier Deutsch spricht.“",
-      "tran": "just as it is customary in Germany that people here speak German.",
-      "words": [
-        {
-          "w": "so ist es",
-          "m": "so / just as is it",
-          "p": "zo ʔɪst ʔɛs",
-          "e": null
-        },
-        {
-          "w": "in Deutschland",
-          "m": "in Germany",
-          "p": "ʔɪn ˈdɔʏ̯tʃlant",
-          "e": null
-        },
-        {
-          "w": "üblich",
-          "m": "customary / usual",
-          "p": "ˈyːblɪç",
-          "e": null
-        },
-        {
-          "w": "dass man hier",
-          "m": "that people / one here",
-          "p": "das man hiːɐ̯",
-          "e": null
-        },
-        {
-          "w": "Deutsch spricht",
-          "m": "speaks German",
-          "p": "dɔʏ̯tʃ ʃpʁɪçt",
-          "e": null
-        }
-      ]
+      "de": "so ist es in Deutschland üblich, dass man hier Deutsch spricht.“",
+      "en": "just as it is customary in Germany that people here speak German."
     },
     {
       "start": 51.42,
       "end": 53.78,
-      "sent": "Doch die Zeiten ändern sich.",
-      "tran": "But times are changing.",
-      "words": [
-        {
-          "w": "Doch die Zeiten",
-          "m": "but the times",
-          "p": "dɔx diː ˈt͡saɪ̯tn̩",
-          "e": null
-        },
-        {
-          "w": "ändern sich",
-          "m": "change / are changing themselves",
-          "p": "ˈʔɛndɐn zɪç",
-          "e": null
-        }
-      ]
+      "de": "Doch die Zeiten ändern sich.",
+      "en": "But times are changing."
     },
     {
       "start": 53.78,
       "end": 56.82,
-      "sent": "Englisch wird in Deutschland immer populärer.",
-      "tran": "English is becoming increasingly popular in Germany.",
-      "words": [
-        {
-          "w": "Englisch wird",
-          "m": "English is becoming",
-          "p": "ˈɛŋlɪʃ vɪʁt",
-          "e": null
-        },
-        {
-          "w": "in Deutschland",
-          "m": "in Germany",
-          "p": "ɪn ˈdɔʏ̯tʃlant",
-          "e": null
-        },
-        {
-          "w": "immer populärer",
-          "m": "increasingly / more and more more popular",
-          "p": "ˈɪmɐ popuˈlɛːʁɐ",
-          "e": null
-        }
-      ]
+      "de": "Englisch wird in Deutschland immer populärer.",
+      "en": "English is becoming increasingly popular in Germany."
     },
     {
       "start": 57.64,
       "end": 61.52,
-      "sent": "Vor allem für die deutsche Wirtschaft ist Englisch die Sprache der Wahl.",
-      "tran": "Above all, English is the language of choice, especially for the German economy.",
-      "words": [
-        {
-          "w": "Vor allem",
-          "m": "Above all",
-          "p": "foːɐ̯ ˈʔaləm",
-          "e": null
-        },
-        {
-          "w": "für die deutsche Wirtschaft",
-          "m": "for the German economy",
-          "p": "fyːɐ̯ diː ˈdɔʏtʃə ˈvɪʁtʃaft",
-          "e": null
-        },
-        {
-          "w": "ist Englisch die Sprache der Wahl",
-          "m": "is English the language of choice",
-          "p": "ɪst ˈɛŋlɪʃ diː ˈʃpʁaːxə deːɐ̯ vaːl",
-          "e": null
-        }
-      ]
+      "de": "Vor allem für die deutsche Wirtschaft ist Englisch die Sprache der Wahl.",
+      "en": "Above all, English is the language of choice, especially for the German economy."
     },
     {
       "start": 61.72,
       "end": 65.62,
-      "sent": "Denn sie arbeitet nicht nur mit internationalen Unternehmen zusammen,",
-      "tran": "Because she not only works with international companies,",
-      "words": [
-        {
-          "w": "Denn sie arbeitet",
-          "m": "Because she works",
-          "p": "dɛn ziː ˈaʁbaɪtɛt",
-          "e": null
-        },
-        {
-          "w": "nicht nur",
-          "m": "not only",
-          "p": "nɪçt nuːɐ̯",
-          "e": null
-        },
-        {
-          "w": "mit internationalen Unternehmen",
-          "m": "with international companies",
-          "p": "mɪt ɪntɛʁnatsjoˈnaːlən ʊntɐˈneːmən",
-          "e": null
-        },
-        {
-          "w": "zusammen",
-          "m": "together",
-          "p": "tsuˈzamən",
-          "e": null
-        }
-      ]
+      "de": "Denn sie arbeitet nicht nur mit internationalen Unternehmen zusammen,",
+      "en": "Because she not only works with international companies,"
     },
     {
       "start": 65.92,
       "end": 70,
-      "sent": "sondern will auch Fachkräfte aus dem Ausland ins Land holen.",
-      "tran": "but also wants to bring skilled workers from abroad into the country.",
-      "words": [
-        {
-          "w": "sondern",
-          "m": "but rather",
-          "p": "ˈzɔndɐn",
-          "e": null
-        },
-        {
-          "w": "will … holen",
-          "m": "wants to bring",
-          "p": "vɪl … ˈhoːlən",
-          "e": null
-        },
-        {
-          "w": "auch Fachkräfte",
-          "m": "also skilled workers",
-          "p": "aʊ̯x ˈfaxˌkʁɛftə",
-          "e": null
-        },
-        {
-          "w": "aus dem Ausland",
-          "m": "from abroad",
-          "p": "aʊ̯s deːm ˈaʊ̯sˌlant",
-          "e": null
-        },
-        {
-          "w": "ins Land",
-          "m": "into the country",
-          "p": "ɪns lant",
-          "e": null
-        }
-      ]
+      "de": "sondern will auch Fachkräfte aus dem Ausland ins Land holen.",
+      "en": "but also wants to bring skilled workers from abroad into the country."
     },
     {
       "start": 70.6,
       "end": 74,
-      "sent": "Aber wie kann man ausländische Arbeitskräfte anlocken,",
-      "tran": "But how can one attract foreign workers?",
-      "words": [
-        {
-          "w": "Aber wie",
-          "m": "But how",
-          "p": "ˈaːbɐ viː",
-          "e": null
-        },
-        {
-          "w": "kann … anlocken",
-          "m": "can attract",
-          "p": "kan ˈanˌlɔkn̩",
-          "e": null
-        },
-        {
-          "w": "man",
-          "m": "one / people",
-          "p": "man",
-          "e": null
-        },
-        {
-          "w": "ausländische Arbeitskräfte",
-          "m": "foreign workers",
-          "p": "ˈaʊ̯slɛndɪʃə ˈaʁbaɪ̯t͡skʁɛftə",
-          "e": null
-        }
-      ]
+      "de": "Aber wie kann man ausländische Arbeitskräfte anlocken,",
+      "en": "But how can one attract foreign workers?"
     },
     {
       "start": 74.32,
       "end": 77.76,
-      "sent": "wenn Ämter ihre Beratung nur auf Deutsch anbieten",
-      "tran": "when public offices offer their consultation only in German",
-      "words": [
-        {
-          "w": "wenn Ämter",
-          "m": "when / if public offices",
-          "p": "vɛn ˈɛm.tɐ",
-          "e": null
-        },
-        {
-          "w": "ihre Beratung",
-          "m": "their consultation",
-          "p": "ˈiːʁə bəˈʁaːtʊŋ",
-          "e": null
-        },
-        {
-          "w": "nur auf Deutsch",
-          "m": "only in German",
-          "p": "nuːɐ̯ aʊ̯f dɔʏ̯tʃ",
-          "e": null
-        },
-        {
-          "w": "anbieten",
-          "m": "to offer",
-          "p": "ˈanˌbiːtən",
-          "e": null
-        }
-      ]
+      "de": "wenn Ämter ihre Beratung nur auf Deutsch anbieten",
+      "en": "when public offices offer their consultation only in German"
     },
     {
       "start": 77.76,
       "end": 82.8,
-      "sent": "und sie Formulare nur akzeptieren, wenn sie auf Deutsch übersetzt wurden?",
-      "tran": "and they only accept forms if they have been translated into German?",
-      "words": [
-        {
-          "w": "und sie",
-          "m": "and they",
-          "p": "ʊnt ziː",
-          "e": null
-        },
-        {
-          "w": "Formulare",
-          "m": "forms",
-          "p": "fɔʁˈmuːlaːʁə",
-          "e": null
-        },
-        {
-          "w": "nur akzeptieren",
-          "m": "only to accept",
-          "p": "nuːɐ̯ aktsɛpˈtiːʁən",
-          "e": null
-        },
-        {
-          "w": "wenn sie",
-          "m": "if / when they",
-          "p": "vɛn ziː",
-          "e": null
-        },
-        {
-          "w": "auf Deutsch",
-          "m": "in German",
-          "p": "aʊ̯f dɔʏ̯tʃ",
-          "e": null
-        },
-        {
-          "w": "übersetzt wurden",
-          "m": "translated were",
-          "p": "yːbɐˈzɛtst ˈvʊʁdən",
-          "e": null
-        }
-      ]
+      "de": "und sie Formulare nur akzeptieren, wenn sie auf Deutsch übersetzt wurden?",
+      "en": "and they only accept forms if they have been translated into German?"
     },
     {
       "start": 83.3,
       "end": 90.8,
-      "sent": "Als einzige Regierungspartei kann sich bisher die FDP Englisch als Zweitsprache in der Verwaltung vorstellen.",
-      "tran": "As the only governing party, the FDP is so far the only one that can imagine English as a second language in public administration.",
-      "words": [
-        {
-          "w": "Als einzige Regierungspartei",
-          "m": "As the only governing party",
-          "p": "als ˈʔaɪn.tsɪɡə ʁeˈɡiːʁʊŋs.paʁˌtaɪ̯",
-          "e": null
-        },
-        {
-          "w": "kann sich … vorstellen",
-          "m": "can oneself / itself … imagine",
-          "p": "kan zɪç … ˈfoːɐˌʃtɛlən",
-          "e": null
-        },
-        {
-          "w": "bisher",
-          "m": "so far",
-          "p": "bɪsˈheːɐ̯",
-          "e": null
-        },
-        {
-          "w": "die FDP",
-          "m": "the FDP",
-          "p": "diː ʔɛf deː ˈpeː",
-          "e": null
-        },
-        {
-          "w": "Englisch als Zweitsprache",
-          "m": "English as a second language",
-          "p": "ˈɛŋlɪʃ als ˈtsvaɪ̯tˌʃpʁaːxə",
-          "e": null
-        },
-        {
-          "w": "in der Verwaltung",
-          "m": "in public administration",
-          "p": "ɪn deːɐ fɛɐ̯ˈvaltʊŋ",
-          "e": null
-        }
-      ]
+      "de": "Als einzige Regierungspartei kann sich bisher die FDP Englisch als Zweitsprache in der Verwaltung vorstellen.",
+      "en": "As the only governing party, the FDP is so far the only one that can imagine English as a second language in public administration."
     },
     {
       "start": 91.2,
       "end": 96.06,
-      "sent": "Das deutsche Gesetzbuch schreibt jedoch Deutsch als einzige Amtssprache vor,",
-      "tran": "The German code of law, however, prescribes German as the only official language.",
-      "words": [
-        {
-          "w": "Das deutsche Gesetzbuch",
-          "m": "The German code of law",
-          "p": "das ˈdɔʏtʃə ɡəˈzɛtsˌbuːx",
-          "e": null
-        },
-        {
-          "w": "schreibt ... vor",
-          "m": "prescribes (separable verb vorschreiben)",
-          "p": "ʃʁaɪ̯pt ... foːɐ̯",
-          "e": null
-        },
-        {
-          "w": "jedoch",
-          "m": "however",
-          "p": "jeˈdɔx",
-          "e": null
-        },
-        {
-          "w": "Deutsch als einzige Amtssprache",
-          "m": "German as the only official language",
-          "p": "dɔʏ̯tʃ als ˈaɪ̯n.tsɪɡə ˈamtʃˌʃpʁaːxə",
-          "e": null
-        }
-      ]
+      "de": "Das deutsche Gesetzbuch schreibt jedoch Deutsch als einzige Amtssprache vor,",
+      "en": "The German code of law, however, prescribes German as the only official language."
     },
     {
       "start": 96.06,
       "end": 99.52,
-      "sent": "und eine Gesetzesänderung würde Jahre dauern.",
-      "tran": "and a legislative amendment would take years.",
-      "words": [
-        {
-          "w": "und eine Gesetzesänderung",
-          "m": "and a legislative amendment",
-          "p": "ʊnt ˈaɪ̯nə ɡəˈzɛt͡səsˌʔɛndəʁʊŋ",
-          "e": null
-        },
-        {
-          "w": "würde … dauern",
-          "m": "would … take / last",
-          "p": "ˈvʏʁdə … ˈdaʊ̯ɐn",
-          "e": null
-        },
-        {
-          "w": "Jahre",
-          "m": "years",
-          "p": "ˈjaːʁə",
-          "e": null
-        }
-      ]
+      "de": "und eine Gesetzesänderung würde Jahre dauern.",
+      "en": "and a legislative amendment would take years."
     },
     {
       "start": 99.8,
       "end": 104.6,
-      "sent": "Ulrich Silberbach vom Deutschen Beamtenbund argumentiert außerdem,",
-      "tran": "Ulrich Silberbach from the German Civil Servants' Association also argues,",
-      "words": [
-        {
-          "w": "Ulrich Silberbach",
-          "m": "Ulrich Silberbach",
-          "p": "ˈʊlʁɪç ˈzɪlbɐbaχ",
-          "e": null
-        },
-        {
-          "w": "vom Deutschen Beamtenbund",
-          "m": "from the German Civil Servants' Association",
-          "p": "fɔm ˈdɔʏtʃn̩ bəˈʔamtn̩ˌbʊnt",
-          "e": null
-        },
-        {
-          "w": "argumentiert",
-          "m": "argues",
-          "p": "aʁɡuːmɛnˈtiːɐ̯t",
-          "e": null
-        },
-        {
-          "w": "außerdem",
-          "m": "also",
-          "p": "ˈʔaʊ̯sɐˌdeːm",
-          "e": null
-        }
-      ]
+      "de": "Ulrich Silberbach vom Deutschen Beamtenbund argumentiert außerdem,",
+      "en": "Ulrich Silberbach from the German Civil Servants' Association also argues,"
     },
     {
       "start": 104.6,
       "end": 109.94,
-      "sent": "dass viele Kundinnen und Kunden der Ämter nur Französisch oder Arabisch sprechen.",
-      "tran": "that many clients of the public offices speak only French or Arabic.",
-      "words": [
-        {
-          "w": "dass viele Kundinnen und Kunden",
-          "m": "that many female and male clients",
-          "p": "das ˈfiːlə ˈkʊndɪnən ʊnt ˈkʊndn̩",
-          "e": null
-        },
-        {
-          "w": "der Ämter",
-          "m": "of the offices",
-          "p": "deːɐ̯ ˈɛm.tɐ",
-          "e": null
-        },
-        {
-          "w": "nur Französisch oder Arabisch",
-          "m": "only French or Arabic",
-          "p": "nuːɐ̯ fʁanˈtsøːzɪʃ ˈoːdɐ ʔaˈʁaːbɪʃ",
-          "e": null
-        },
-        {
-          "w": "sprechen",
-          "m": "speak",
-          "p": "ˈʃpʁɛçn̩",
-          "e": null
-        }
-      ]
+      "de": "dass viele Kundinnen und Kunden der Ämter nur Französisch oder Arabisch sprechen.",
+      "en": "that many clients of the public offices speak only French or Arabic."
     },
     {
       "start": 110,
       "end": 114.88,
-      "sent": "„Eine pauschale Englischpflicht hilft uns nicht“, sagt er.",
-      "tran": "\"A blanket English requirement does not help us,\" he says.",
-      "words": [
-        {
-          "w": "Eine pauschale Englischpflicht",
-          "m": "A blanket English requirement",
-          "p": "ˈaɪ̯nə paʊ̯ˈʃaːlə ˈɛŋlɪʃˌpflɪçt",
-          "e": null
-        },
-        {
-          "w": "hilft uns nicht",
-          "m": "helps us not",
-          "p": "hɪlft ʊns nɪçt",
-          "e": null
-        },
-        {
-          "w": "sagt er",
-          "m": "says he",
-          "p": "zaːkt eːɐ̯",
-          "e": null
-        }
-      ]
+      "de": "„Eine pauschale Englischpflicht hilft uns nicht“, sagt er.",
+      "en": "\"A blanket English requirement does not help us,\" he says."
     },
     {
       "start": 115,
       "end": 119.12,
-      "sent": "Ob Englisch nun offiziell zu Deutschland gehört oder nicht,",
-      "tran": "Whether English now officially belongs to Germany or not,",
-      "words": [
-        {
-          "w": "Ob … oder nicht",
-          "m": "Whether … or not",
-          "p": "ʔɔp … ˈoːdɐ nɪçt",
-          "e": null
-        },
-        {
-          "w": "Englisch",
-          "m": "English",
-          "p": "ˈɛŋlɪʃ",
-          "e": null
-        },
-        {
-          "w": "nun offiziell",
-          "m": "now officially",
-          "p": "nuːn ʔɔfɪtsiˈɛl",
-          "e": null
-        },
-        {
-          "w": "zu Deutschland",
-          "m": "to Germany",
-          "p": "tsuː ˈdɔʏtʃlant",
-          "e": null
-        },
-        {
-          "w": "gehört",
-          "m": "belongs",
-          "p": "ɡəˈhøːɐ̯t",
-          "e": null
-        }
-      ]
+      "de": "Ob Englisch nun offiziell zu Deutschland gehört oder nicht,",
+      "en": "Whether English now officially belongs to Germany or not,"
     },
     {
       "start": 119.4,
       "end": 122.64,
-      "sent": "die Sprache ist schon lange im Alltag angekommen.",
-      "tran": "The language has long since arrived in everyday life.",
-      "words": [
-        {
-          "w": "die Sprache",
-          "m": "the language",
-          "p": "diː ˈʃpʁaːxə",
-          "e": null
-        },
-        {
-          "w": "ist angekommen",
-          "m": "is / has arrived",
-          "p": "ɪst ˈanɡəˌkɔmən",
-          "e": null
-        },
-        {
-          "w": "schon lange",
-          "m": "for a long time / long since",
-          "p": "ʃoːn ˈlaŋə",
-          "e": null
-        },
-        {
-          "w": "im Alltag",
-          "m": "in everyday life",
-          "p": "ɪm ˈaltˌtaːk",
-          "e": null
-        }
-      ]
+      "de": "die Sprache ist schon lange im Alltag angekommen.",
+      "en": "The language has long since arrived in everyday life."
     },
     {
       "start": 123,
       "end": 127.26,
-      "sent": "An deutschen Grundschulen wird seit 2005 Englisch unterrichtet,",
-      "tran": "English has been taught at German primary schools since 2005.",
-      "words": [
-        {
-          "w": "An deutschen Grundschulen",
-          "m": "At German primary schools",
-          "p": "an ˈdɔʏtʃn̩ ˈɡʁʊntˌʃuːlən",
-          "e": null
-        },
-        {
-          "w": "wird … unterrichtet",
-          "m": "is (passive auxiliary) taught",
-          "p": "vɪʁt … ˌʊntɐˈʁɪçtət",
-          "e": null
-        },
-        {
-          "w": "seit 2005 Englisch",
-          "m": "since 2005 English",
-          "p": "zaɪ̯t ˈtsvaɪ̯taʊ̯znt ˈnʊl fʏnf ˈɛŋlɪʃ",
-          "e": null
-        }
-      ]
+      "de": "An deutschen Grundschulen wird seit 2005 Englisch unterrichtet,",
+      "en": "English has been taught at German primary schools since 2005."
     },
     {
       "start": 127.26,
       "end": 132.96,
-      "sent": "und für rund zehn Prozent der Studiengänge braucht man gar keine Deutschkenntnisse mehr.",
-      "tran": "And for around ten percent of degree programs, you no longer need any German language skills.",
-      "words": [
-        {
-          "w": "und",
-          "m": "and",
-          "p": "ʊnt",
-          "e": null
-        },
-        {
-          "w": "für rund zehn Prozent der Studiengänge",
-          "m": "for around ten percent of degree programs",
-          "p": "fyːɐ̯ ʁʊnt tseːn pʁoˈtsɛnt deːɐ ˈʃtuːdiənˌɡɛŋə",
-          "e": null
-        },
-        {
-          "w": "braucht",
-          "m": "needs",
-          "p": "bʁaʊ̯xt",
-          "e": null
-        },
-        {
-          "w": "man",
-          "m": "one / you (impersonal)",
-          "p": "man",
-          "e": null
-        },
-        {
-          "w": "gar keine Deutschkenntnisse",
-          "m": "no German skills at all",
-          "p": "ɡaːɐ̯ ˈkaɪ̯nə ˈdɔʏtʃˌkɛntnɪsə",
-          "e": null
-        },
-        {
-          "w": "mehr",
-          "m": "anymore / no longer",
-          "p": "meːɐ̯",
-          "e": null
-        }
-      ]
+      "de": "und für rund zehn Prozent der Studiengänge braucht man gar keine Deutschkenntnisse mehr.",
+      "en": "And for around ten percent of degree programs, you no longer need any German language skills."
     },
     {
       "start": 133,
       "end": 137.3,
-      "sent": "Schon 2017 klagte ein Berliner Politiker:",
-      "tran": "As early as 2017, a Berlin politician filed a complaint:",
-      "words": [
-        {
-          "w": "Schon 2017",
-          "m": "As early as 2017",
-          "p": "ʃoːn tsvaɪ̯tˈtaʊ̯zn ˈzɪbnˈtseːn",
-          "e": null
-        },
-        {
-          "w": "klagte",
-          "m": "filed a complaint / complained",
-          "p": "ˈklaːktə",
-          "e": null
-        },
-        {
-          "w": "ein Berliner Politiker",
-          "m": "a Berlin politician",
-          "p": "aɪ̯n bɛʁˈliːnɐ pɔˈliːtɪkɐ",
-          "e": null
-        }
-      ]
+      "de": "Schon 2017 klagte ein Berliner Politiker:",
+      "en": "As early as 2017, a Berlin politician filed a complaint:"
     },
     {
       "start": 137.6,
       "end": 143.26,
-      "sent": "„Es stört mich, dass in manchen Berliner Restaurants die Kellnerinnen nur Englisch sprechen.“",
-      "tran": "It bothers me that in some Berlin restaurants, the waitresses speak only English.",
-      "words": [
-        {
-          "w": "Es stört michdass",
-          "m": "It bothers me that ",
-          "p": "ʔɛs ʃtøːɐ̯t mɪç das",
-          "e": null
-        },
-        {
-          "w": "in manchen Berliner Restaurants",
-          "m": "in some Berlin restaurants",
-          "p": "ɪn ˈmançn̩ bɛʁˈliːnɐ ʁɛstoˈʁɑ̃s",
-          "e": null
-        },
-        {
-          "w": "die Kellnerinnen",
-          "m": "the waitresses",
-          "p": "diː ˈkɛl.nə.ʁɪ.nən",
-          "e": null
-        },
-        {
-          "w": "nur Englisch sprechen",
-          "m": "only English speak",
-          "p": "nuːɐ̯ ˈɛŋ.lɪʃ ˈʃpʁɛçn̩",
-          "e": null
-        }
-      ]
+      "de": "„Es stört mich, dass in manchen Berliner Restaurants die Kellnerinnen nur Englisch sprechen.“",
+      "en": "It bothers me that in some Berlin restaurants, the waitresses speak only English."
     },
     {
       "start": 143.26,
       "end": 146.22,
-      "sent": "Er wird sich wohl daran gewöhnen müssen.",
-      "tran": "He will probably have to get used to it.",
-      "words": [
-        {
-          "w": "Er wird",
-          "m": "He will",
-          "p": "eːɐ̯ vɪʁt",
-          "e": null
-        },
-        {
-          "w": "sich",
-          "m": "himself (reflexive pronoun)",
-          "p": "zɪç",
-          "e": null
-        },
-        {
-          "w": "wohl",
-          "m": "probably / presumably",
-          "p": "voːl",
-          "e": null
-        },
-        {
-          "w": "daran",
-          "m": "to it / to that",
-          "p": "daˈʁan",
-          "e": null
-        },
-        {
-          "w": "gewöhnen",
-          "m": "to get used to",
-          "p": "ɡəˈvøːnən",
-          "e": null
-        },
-        {
-          "w": "müssen",
-          "m": "have to / must",
-          "p": "ˈmʏsn̩",
-          "e": null
-        }
-      ]
+      "de": "Er wird sich wohl daran gewöhnen müssen.",
+      "en": "He will probably have to get used to it."
     }
   ]
 }
