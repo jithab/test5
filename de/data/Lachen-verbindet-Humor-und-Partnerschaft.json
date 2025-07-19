@@ -4,100 +4,189 @@
   "author_url": "https://learngerman.dw.com/de/lachen-verbindet-humor-und-partnerschaft/l-66886635/",
   "lines": [
     {
-      "start": 0.0,
-      "end": 4.6,
+      "start": 0.4,
+      "end": 4.0,
       "de": "Lachen verbindet: Humor und Partnerschaft",
-      "en": ""
+      "en": "Laughter connects: Humor and partnership"
     },
     {
       "start": 4.8,
-      "end": 12.18,
-      "de": "Unser Humor verrät viel über unsere Persönlichkeit – und macht uns attraktiv für Menschen, die zu uns passen.",
-      "en": ""
+      "end": 8,
+      "de": "Unser Humor verrät viel über unsere Persönlichkeit – ",
+      "en": "Our humor reveals a lot about our personality – "
     },
     {
-      "start": 12.18,
-      "end": 19.02,
-      "de": "Denn zusammen zu lachen, schafft nicht nur Nähe. Es zeigt auch, mit wem wir etwas gemeinsam haben.",
-      "en": ""
+      "start": 8.2,
+      "end": 11.2,
+      "de": "und macht uns attraktiv für Menschen, die zu uns passen.",
+      "en": "and makes us attractive to people who are a good match for us."
     },
     {
-      "start": 19.02,
-      "end": 25.44,
-      "de": "Ein lustiger Kommentar, eine unerwartete Antwort, man lacht zusammen, und schon ist das Eis gebrochen.",
-      "en": ""
+      "start": 11.6,
+      "end": 14,
+      "de": "Denn zusammen zu lachen, schafft nicht nur Nähe.",
+      "en": "Because laughing together not only creates closeness."
     },
     {
-      "start": 25.44,
-      "end": 31.8,
+      "start": 14.8,
+      "end": 18,
+      "de": "Es zeigt auch, mit wem wir etwas gemeinsam haben.",
+      "en": "It also shows who we have something in common with."
+    },
+    {
+      "start": 18.4,
+      "end": 21.5,
+      "de": "Ein lustiger Kommentar, eine unerwartete Antwort,",
+      "en": "A funny comment, an unexpected reply,"
+    },
+    {
+      "start": 21.6,
+      "end": 22.7,
+      "de": "man lacht zusammen,",
+      "en": "you laugh together,"
+    },
+    {
+      "start": 22.8,
+      "end": 24.8,
+      "de": "und schon ist das Eis gebrochen.",
+      "en": "and the ice is broken."
+    },
+    {
+      "start": 25.4,
+      "end": 29.4,
       "de": "Das Gegenüber wirkt vertrauter und auch ein wenig attraktiver.",
-      "en": ""
+      "en": "The other person seems more familiar and also a little more attractive."
     },
     {
-      "start": 31.8,
-      "end": 37.92,
+      "start": 30,
+      "end": 34.8,
       "de": "Oft finden wir andere besonders anziehend, wenn sie einen Sinn für Humor haben.",
-      "en": ""
+      "en": "We often find others especially attractive when they have a sense of humor."
     },
     {
-      "start": 37.92,
-      "end": 51.46,
-      "de": "Denn schlagfertige Menschen, die uns mit ihren Geschichten zum Lachen bringen können, müssen eine gewisse Intelligenz, Kreativität und ein Gefühl für soziales Timing besitzen – Eigenschaften, die die Attraktivität erhöhen, wie die Psychologin Theresa DiDonato sagt.",
-      "en": ""
+      "start": 34.8,
+      "end": 36.8,
+      "de": "Denn schlagfertige Menschen,",
+      "en": "Because quick-witted people,"
     },
     {
-      "start": 51.46,
-      "end": 66.28,
-      "de": "Der Psychologe Kay Brauer meint: „Der Humor einer Person sagt uns auch etwas über ihr Menschenbild und ihre Werte“, und erklärt: „Meistens finden sich Menschen nach dem Prinzip der Ähnlichkeit.“",
-      "en": ""
+      "start": 36.8,
+      "end": 39.8,
+      "de": "die uns mit ihren Geschichten zum Lachen bringen können,",
+      "en": "who can make us laugh with their stories,"
     },
     {
-      "start": 66.28,
-      "end": 73.6,
+      "start": 39.8,
+      "end": 46.8,
+      "de": "müssen eine gewisse Intelligenz, Kreativität und ein Gefühl für soziales Timing besitzen –",
+      "en": "must possess a certain intelligence, creativity, and a sense of social timing –"
+    },
+    {
+      "start": 47.0,
+      "end": 50.1,
+      "de": "Eigenschaften, die die Attraktivität erhöhen,",
+      "en": "traits that increase attractiveness,"
+    },
+    {
+      "start": 50.2,
+      "end": 53.4,
+      "de": "wie die Psychologin Theresa DiDonato sagt.",
+      "en": "according to psychologist Theresa DiDonato."
+    },
+
+    {
+      "start": 55.4,
+      "end": 58.0,
+      "de": "Der Psychologe Kay Brauer meint:",
+      "en": "Psychologist Kay Brauer says:"
+    },
+    {
+      "start": 58.2,
+      "end": 63.0,
+      "de": "„Der Humor einer Person sagt uns auch etwas über ihr Menschenbild und ihre Werte“,",
+      "en": "\"A person's sense of humor also tells us something about their view of humanity and their values,\""
+    },
+    {
+      "start": 63.0,
+      "end": 64.2,
+      "de": "und erklärt:",
+      "en": "and explains:"
+    },
+    {
+      "start": 64.4,
+      "end": 68,
+      "de": "„Meistens finden sich Menschen nach dem Prinzip der Ähnlichkeit.“",
+      "en": "\"Most of the time, people connect based on the principle of similarity.\""
+    },
+
+    {
+      "start": 68.8,
+      "end": 74.8,
       "de": "Wer einen ähnlichen Humor hat, teilt demnach häufiger auch ein ähnliches Wertesystem.",
       "en": ""
     },
     {
-      "start": 73.6,
-      "end": 81.1,
+      "start": 75,
+      "end": 83.6,
       "de": "Und: „Menschen, denen Humor nicht so wichtig ist, haben eher Partner, die ebenfalls nicht so humorvoll sind“, so Brauer.",
       "en": ""
     },
     {
-      "start": 81.1,
-      "end": 89.02,
+      "start": 84.4,
+      "end": 93.4,
       "de": "Das bedeutet aber auch, dass zwei Personen, die den Humor der oder des anderen nicht verstehen, möglicherweise sehr unterschiedliche Ansichten haben.",
       "en": ""
     },
+
     {
-      "start": 89.02,
-      "end": 111.94,
-      "de": "Damit Humor für beide funktioniert, brauchen sie eine gemeinsame Basis und ähnliche Erwartungshaltungen an die Realität: „Der Kern des Humors ist ja die Pointe, also das Unerwartete, die Abweichung“, erklärt Brauer.",
-      "en": ""
+      "start": 94.2,
+      "end": 96.5,
+      "de": "Damit Humor für beide funktioniert,",
+      "en": "For humor to work for both people,"
     },
     {
-      "start": 111.94,
-      "end": 118.14,
+      "start": 96.5,
+      "end": 103,
+      "de": "brauchen sie eine gemeinsame Basis und ähnliche Erwartungshaltungen an die Realität:",
+      "en": "they need a common foundation and similar expectations of reality:"
+    },
+    {
+      "start": 103.6,
+      "end": 111.6,
+      "de": "„Der Kern des Humors ist ja die Pointe, also das Unerwartete, die Abweichung“, erklärt Brauer.",
+      "en": "\"The core of humor is the punchline, that is, the unexpected, the deviation,\" explains Brauer."
+    },
+    {
+      "start": 111.4,
+      "end": 117.4,
       "de": "Nicht nur beim Kennenlernen, sondern auch in einer Partnerschaft ist gemeinsames Lachen hilfreich.",
-      "en": ""
+      "en": "Shared laughter is helpful not only when getting to know someone, but also in a relationship."
+    },
+
+    {
+      "start": 117.8,
+      "end": 122.6,
+      "de": "Wenn zum Beispiel am Ende eines anstrengenden Tages ein Streit droht,",
+      "en": "For example, if an argument is looming at the end of a stressful day,"
     },
     {
-      "start": 118.14,
-      "end": 126.04,
-      "de": "Wenn zum Beispiel am Ende eines anstrengenden Tages ein Streit droht, genügt manchmal ein kleiner, lustiger Kommentar, um die Stimmung zu verbessern.",
-      "en": ""
+      "start": 122.6,
+      "end": 128,
+      "de": "genügt manchmal ein kleiner, lustiger Kommentar, um die Stimmung zu verbessern.",
+      "en": "sometimes a small, funny comment is enough to improve the mood."
     },
+
     {
-      "start": 126.04,
-      "end": 133.8,
+      "start": 128.4,
+      "end": 136.2,
       "de": "„Humor hat eine auflockernde, verspielte Komponente, die hilft, die Beziehung zu gestalten“, sagt Brauer.",
-      "en": ""
+      "en": "“Humor has a relaxing, playful component that helps shape the relationship,” says Brauer."
     },
     {
-      "start": 133.8,
-      "end": 141.88,
+      "start": 136.6,
+      "end": 142.8,
       "de": "Er kann dabei helfen, in stressigen Phasen zu entspannen oder Probleme zu lösen.",
-      "en": ""
+      "en": "It can help to relax during stressful times or to solve problems."
     }
   ],
   "words": [
