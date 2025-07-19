@@ -1,200 +1,194 @@
 {
-    "title": "https://learngerman.dw.com/de/warum-deutschland-offen-f%C3%BCr-englisch-ist/l-66685246",
-    "author": "© Deutsche Welle",
-    "author_url": "https://learngerman.dw.com/de/warum-deutschland-offen-f%C3%BCr-englisch-ist/l-66685246",
-    "lines": [
-        {
-            "start": 0.08,
-            "end": 3.02,
-            "de": "Warum Deutschland offen für Englisch ist.",
-            "en": "Why Germany is open to English."
-        },
-        {
-            "start": 4.16,
-            "end": 7.6,
-            "de": "Ob in der Politik, im Geschäftsleben oder im Alltag:",
-            "en": "Whether in politics, in business life, or in everyday life:"
-        },
-        {
-            "start": 8.16,
-            "end": 10.9,
+  "title": "Warum Deutschland offen für Englisch ist",
+  "author": "© Deutsche Welle",
+  "author_url": "https://learngerman.dw.com/de/warum-deutschland-offen-f%C3%BCr-englisch-ist/l-66685246",
+  "lines": [
+    {
+      "start": 0.08,
+      "end": 3.02,
+      "de": "Warum Deutschland offen für Englisch ist.",
+      "en": "Why Germany is open to English."
+    },
+    {
+      "start": 4.16,
+      "end": 7.6,
+      "de": "Ob in der Politik, im Geschäftsleben oder im Alltag:",
+      "en": "Whether in politics, in business life, or in everyday life:"
+    },
+    {
+      "start": 8.16,
+      "end": 10.9,
       "de": "Die englische Sprache ist in Deutschland angekommen.",
       "en": "The English language has arrived in Germany."
-        },
-        {
-            "start": 11.54,
-            "end": 16.16,
+    },
+    {
+      "start": 11.54,
+      "end": 16.16,
       "de": "Das soll das Land attraktiver für internationale Unternehmen und Fachkräfte machen.",
       "en": "This is supposed to make the country more attractive for international companies and skilled workers."
-        },
-        {
-            "start": 16.98,
-            "end": 17.54,
+    },
+    {
+      "start": 16.98,
+      "end": 17.54,
       "de": "Klappt das?",
       "en": "Does that work?"
-        },
-        {
-            "start": 18.66,
-            "end": 24.3,
+    },
+    {
+      "start": 18.66,
+      "end": 24.3,
       "de": "Es ist noch gar nicht so lange her, dass deutsche Politiker sich weigerten, Englisch zu sprechen.",
       "en": "It’s not that long ago that German politicians refused to speak English."
-        },
-        {
-            "start": 24.3,
-            "end": 31.74,
+    },
+    {
+      "start": 24.3,
+      "end": 31.74,
       "de": "Als ein britischer Journalist 2009 den damaligen Außenminister Guido Westerwelle bat, Englisch zu reden,",
       "en": "When a British journalist in 2009 asked then Foreign Minister Guido Westerwelle to speak English,"
-        },
-        {
-            "start": 32.46,
-            "end": 38.92,
+    },
+    {
+      "start": 32.46,
+      "end": 38.92,
       "de": "antwortete dieser: „So wie es in Großbritannien üblich ist, dass man dort selbstverständlich Englisch spricht,",
       "en": "this one replied: \"Just as it is customary in Great Britain for people there to naturally speak English,\""
-        },
-        {
-            "start": 39.54,
-            "end": 42.14,
+    },
+    {
+      "start": 39.54,
+      "end": 42.14,
       "de": "so ist es in Deutschland üblich, dass man hier Deutsch spricht.“",
       "en": "just as it is customary in Germany that people here speak German."
-        },
-        {
-            "start": 43.1,
-            "end": 45.24,
+    },
+    {
+      "start": 43.1,
+      "end": 45.24,
       "de": "Doch die Zeiten ändern sich.",
       "en": "But times are changing."
-        },
-        {
-            "start": 45.86,
-            "end": 48.3,
+    },
+    {
+      "start": 45.86,
+      "end": 48.3,
       "de": "Englisch wird in Deutschland immer populärer.",
       "en": "English is becoming increasingly popular in Germany."
-        },
-        {
-            "start": 49.26,
-            "end": 53.0,
+    },
+    {
+      "start": 49.26,
+      "end": 53.0,
       "de": "Vor allem für die deutsche Wirtschaft ist Englisch die Sprache der Wahl.",
       "en": "Above all, English is the language of choice, especially for the German economy."
-        },
-        {
-            "start": 53.0,
-            "end": 57.1,
+    },
+    {
+      "start": 53.0,
+      "end": 57.1,
       "de": "Denn sie arbeitet nicht nur mit internationalen Unternehmen zusammen,",
       "en": "Because she not only works with international companies,"
-        },
-        {
-            "start": 57.7,
-            "end": 61.26,
+    },
+    {
+      "start": 57.7,
+      "end": 61.26,
       "de": "sondern will auch Fachkräfte aus dem Ausland ins Land holen.",
       "en": "but also wants to bring skilled workers from abroad into the country."
-        },
-        {
-            "start": 62.28,
-            "end": 65.0,
+    },
+    {
+      "start": 62.28,
+      "end": 65.0,
       "de": "Aber wie kann man ausländische Arbeitskräfte anlocken,",
       "en": "But how can one attract foreign workers?"
-        },
-        {
-            "start": 66.06,
-            "end": 69.22,
+    },
+    {
+      "start": 66.06,
+      "end": 69.22,
       "de": "wenn Ämter ihre Beratung nur auf Deutsch anbieten",
       "en": "when public offices offer their consultation only in German"
-        },
-        {
-            "start": 69.22,
-            "end": 73.88,
+    },
+    {
+      "start": 69.22,
+      "end": 73.88,
       "de": "und sie Formulare nur akzeptieren, wenn sie auf Deutsch übersetzt wurden?",
       "en": "and they only accept forms if they have been translated into German?"
-        },
-        {
-            "start": 74.72,
-            "end": 82.1,
+    },
+    {
+      "start": 74.72,
+      "end": 82.1,
       "de": "Als einzige Regierungspartei kann sich bisher die FDP Englisch als Zweitsprache in der Verwaltung vorstellen.",
       "en": "As the only governing party, the FDP is so far the only one that can imagine English as a second language in public administration."
-        },
-        {
-            "start": 83.0,
-            "end": 87.52,
+    },
+    {
+      "start": 83.0,
+      "end": 87.52,
       "de": "Das deutsche Gesetzbuch schreibt jedoch Deutsch als einzige Amtssprache vor,",
       "en": "The German code of law, however, prescribes German as the only official language."
-        },
-        {
-            "start": 87.52,
-            "end": 91.0,
+    },
+    {
+      "start": 87.52,
+      "end": 91.0,
       "de": "und eine Gesetzesänderung würde Jahre dauern.",
       "en": "and a legislative amendment would take years."
-        },
-        {
-            "start": 92.2,
-            "end": 95.82,
+    },
+    {
+      "start": 92.2,
+      "end": 95.82,
       "de": "Ulrich Silberbach vom Deutschen Beamtenbund argumentiert außerdem,",
       "en": "Ulrich Silberbach from the German Civil Servants' Association also argues,"
-        },
-        {
-            "start": 96.52,
-            "end": 101.4,
+    },
+    {
+      "start": 96.52,
+      "end": 101.4,
       "de": "dass viele Kundinnen und Kunden der Ämter nur Französisch oder Arabisch sprechen.",
       "en": "that many clients of the public offices speak only French or Arabic."
-        },
-        {
-            "start": 102.26,
-            "end": 106.36,
+    },
+    {
+      "start": 102.26,
+      "end": 106.36,
       "de": "„Eine pauschale Englischpflicht hilft uns nicht“, sagt er.",
       "en": "\"A blanket English requirement does not help us,\" he says."
-        },
-        {
-            "start": 106.36,
-            "end": 110.58,
+    },
+    {
+      "start": 106.36,
+      "end": 110.58,
       "de": "Ob Englisch nun offiziell zu Deutschland gehört oder nicht,",
       "en": "Whether English now officially belongs to Germany or not,"
-        },
-        {
-            "start": 111.24,
-            "end": 114.1,
+    },
+    {
+      "start": 111.24,
+      "end": 114.1,
       "de": "die Sprache ist schon lange im Alltag angekommen.",
       "en": "The language has long since arrived in everyday life."
-        },
-        {
-            "start": 115.02,
-            "end": 118.74,
+    },
+    {
+      "start": 115.02,
+      "end": 118.74,
       "de": "An deutschen Grundschulen wird seit 2005 Englisch unterrichtet,",
       "en": "English has been taught at German primary schools since 2005."
-        },
-        {
-            "start": 118.74,
-            "end": 124.42,
+    },
+    {
+      "start": 118.74,
+      "end": 124.42,
       "de": "und für rund zehn Prozent der Studiengänge braucht man gar keine Deutschkenntnisse mehr.",
       "en": "And for around ten percent of degree programs, you no longer need any German language skills."
-        },
-        {
-            "start": 124.42,
-            "end": 128.78,
+    },
+    {
+      "start": 124.42,
+      "end": 128.78,
       "de": "Schon 2017 klagte ein Berliner Politiker:",
       "en": "As early as 2017, a Berlin politician filed a complaint:"
-        },
-        {
-            "start": 129.58,
-            "end": 134.74,
+    },
+    {
+      "start": 129.58,
+      "end": 134.74,
       "de": "„Es stört mich, dass in manchen Berliner Restaurants die Kellnerinnen nur Englisch sprechen.“",
       "en": "It bothers me that in some Berlin restaurants, the waitresses speak only English."
-        },
-        {
-            "start": 135.6,
-            "end": 137.62,
-            "de": "Er wird sich wohl daran gewöhnen müssen.",
-            "en": ""
-        },
-        {
-            "start": 137.62,
-            "end": 167.6,
+    },
+    {
+      "start": 135.6,
+      "end": 137.62,
       "de": "Er wird sich wohl daran gewöhnen müssen.",
       "en": "He will probably have to get used to it."
-        }
-    ],
-    "words": [
-        {
-            "de": "",
-            "ipa": "",
-            "en": ""
-        }
-    ]
+    }
+  ],
+  "words": [
+    {
+      "de": "",
+      "ipa": "",
+      "en": ""
+    }
+  ]
 }

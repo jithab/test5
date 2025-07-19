@@ -114,13 +114,6 @@
         margin-bottom: 0.5em;
       }
 
-      .ipa {
-        margin-top: 3px;
-        color: #222;
-        font-size: 1.2em;
-        display: none;
-      }
-
       .active {
         background-color: #f0f0f0;
         color: blue;
@@ -232,13 +225,8 @@
           englishDiv.className = "english";
           englishDiv.textContent = `${index + 1}. ${sub.en}`;
 
-          const ipaDiv = document.createElement("div");
-          ipaDiv.className = "ipa";
-          ipaDiv.textContent = `${sub.ipa}`;
-
           div.appendChild(germanDiv);
           div.appendChild(englishDiv);
-          div.appendChild(ipaDiv);
 
           div.addEventListener("click", () => handleSubtitleClick(index));
 
@@ -291,8 +279,7 @@
           siCell.textContent = index % 5 == 4 ? index + 1 : "";
 
           const deIpaCell = document.createElement("td");
-          deIpaCell.innerHTML =
-            `<b>${word.de}</b><br/><span>${word.ipa}</span>`.trim();
+          deIpaCell.innerHTML = `<b>${word.de}</b>`.trim();
 
           const enCell = document.createElement("td");
           enCell.textContent = word.en;
@@ -305,10 +292,6 @@
       }
 
       function handleSubtitleClick(index) {
-        document.querySelectorAll(".ipa").forEach((el) => {
-          el.style.display = "none";
-        });
-
         const existingElem = document.querySelector(".subtitle.active");
         if (existingElem) {
           existingElem.classList.remove("active");
@@ -319,10 +302,6 @@
         );
         if (currentElem) {
           currentElem.classList.add("active");
-          const cipa = currentElem.querySelector(".ipa");
-          if (cipa) {
-            cipa.style.display = "block";
-          }
         }
 
         const sub = subtitles[index];
