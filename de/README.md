@@ -3,7 +3,7 @@
 
 - Download Audio
 ```
-    yt-dlp  <url>
+yt-dlp -x --audio-format mp3  <url>
 ```
 - Cut Audio
 ```
