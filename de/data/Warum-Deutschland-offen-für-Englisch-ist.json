@@ -126,9 +126,514 @@
   ],
   "words": [
     {
-      "de": "",
-      "ipa": "",
-      "en": ""
+      "de": "akzeptieren",
+      "ipa": "akʦɛpˈtiːʁən",
+      "en": "accept"
+    },
+    {
+      "de": "Alltag",
+      "ipa": "ˈaltaːk",
+      "en": "everyday life"
+    },
+    {
+      "de": "Amt",
+      "ipa": "amt",
+      "en": "office"
+    },
+    {
+      "de": "Amtssprache",
+      "ipa": "ˈamt͡sˌʃpʁaːxə",
+      "en": "official language"
+    },
+    {
+      "de": "anbieten",
+      "ipa": "ˈanˌbiːtən",
+      "en": "offer"
+    },
+    {
+      "de": "ankommen",
+      "ipa": "ˈanˌkɔmən",
+      "en": "arrive"
+    },
+    {
+      "de": "anlocken",
+      "ipa": "ˈanˌlɔkən",
+      "en": "attract"
+    },
+    {
+      "de": "antworten",
+      "ipa": "ˈantˌvɔʁtən",
+      "en": "answer"
+    },
+    {
+      "de": "Arabisch",
+      "ipa": "aˈʁaːbɪʃ",
+      "en": "Arabic"
+    },
+    {
+      "de": "arbeiten",
+      "ipa": "ˈaʁbaɪ̯tən",
+      "en": "work"
+    },
+    {
+      "de": "Arbeitskraft",
+      "ipa": "ˈaʁbaɪ̯t͡sˌkʁaft",
+      "en": "workforce"
+    },
+    {
+      "de": "argumentieren",
+      "ipa": "aʁɡumɛnˈtiːʁən",
+      "en": "argue"
+    },
+    {
+      "de": "attraktiv",
+      "ipa": "atʁakˈtiːf",
+      "en": "attractive"
+    },
+    {
+      "de": "auch",
+      "ipa": "aʊ̯x",
+      "en": "also"
+    },
+    {
+      "de": "Ausland",
+      "ipa": "ˈaʊ̯slant",
+      "en": "foreign country"
+    },
+    {
+      "de": "ausländisch",
+      "ipa": "ˈaʊ̯sˌlɛndɪʃ",
+      "en": "foreign"
+    },
+    {
+      "de": "Außenminister",
+      "ipa": "ˈaʊ̯sn̩ˌmɪnɪstɐ",
+      "en": "foreign minister"
+    },
+    {
+      "de": "außerdem",
+      "ipa": "aʊ̯sɐˈdeːm",
+      "en": "moreover"
+    },
+    {
+      "de": "Beratung",
+      "ipa": "bəˈʁaːtʊŋ",
+      "en": "consultation"
+    },
+    {
+      "de": "bisher",
+      "ipa": "bɪsˈheːɐ̯",
+      "en": "so far"
+    },
+    {
+      "de": "bitten",
+      "ipa": "ˈbɪtn̩",
+      "en": "ask"
+    },
+    {
+      "de": "brauchen",
+      "ipa": "ˈbʁaʊ̯xn̩",
+      "en": "need"
+    },
+    {
+      "de": "britisch",
+      "ipa": "ˈbʁiːtɪʃ",
+      "en": "British"
+    },
+    {
+      "de": "damalig",
+      "ipa": "ˈdaːmaːlɪç",
+      "en": "former"
+    },
+    {
+      "de": "daran",
+      "ipa": "daˈʁan",
+      "en": "on it"
+    },
+    {
+      "de": "dauern",
+      "ipa": "ˈdaʊ̯ɐn",
+      "en": "last"
+    },
+    {
+      "de": "deutsch",
+      "ipa": "dɔɪ̯tʃ",
+      "en": "German"
+    },
+    {
+      "de": "Deutschkenntnis",
+      "ipa": "ˈdɔɪ̯tʃˌkɛntnɪs",
+      "en": "knowledge of German"
+    },
+    {
+      "de": "doch",
+      "ipa": "dɔx",
+      "en": "however"
+    },
+    {
+      "de": "dort",
+      "ipa": "dɔʁt",
+      "en": "there"
+    },
+    {
+      "de": "einzig",
+      "ipa": "ˈaɪ̯nt͡sɪç",
+      "en": "only"
+    },
+    {
+      "de": "englisch",
+      "ipa": "ˈɛŋlɪʃ",
+      "en": "English"
+    },
+    {
+      "de": "Englisch",
+      "ipa": "ˈɛŋlɪʃ",
+      "en": "English"
+    },
+    {
+      "de": "Englischpflicht",
+      "ipa": "ˈɛŋlɪʃˌpflɪçt",
+      "en": "English language requirement"
+    },
+    {
+      "de": "Fachkraft",
+      "ipa": "ˈfaxˌkʁaft",
+      "en": "skilled worker"
+    },
+    {
+      "de": "Formular",
+      "ipa": "fɔʁmuˈlaːɐ̯",
+      "en": "form"
+    },
+    {
+      "de": "Französisch",
+      "ipa": "fʁanˈt͡søːzɪʃ",
+      "en": "French"
+    },
+    {
+      "de": "gar",
+      "ipa": "ɡaːɐ̯",
+      "en": "even"
+    },
+    {
+      "de": "gehören",
+      "ipa": "ɡəˈhøːʁən",
+      "en": "belong"
+    },
+    {
+      "de": "Geschäftsleben",
+      "ipa": "ɡəˈʃɛft͡sˌleːbn̩",
+      "en": "business life"
+    },
+    {
+      "de": "Gesetzbuch",
+      "ipa": "ɡəˈzɛt͡sˌbuːx",
+      "en": "legal code"
+    },
+    {
+      "de": "Gesetzesänderung",
+      "ipa": "ɡəˈzɛt͡səsˌʔɛndəʁʊŋ",
+      "en": "legal amendment"
+    },
+    {
+      "de": "gewöhnen",
+      "ipa": "ɡəˈvøːnən",
+      "en": "get used to"
+    },
+    {
+      "de": "Grundschule",
+      "ipa": "ˈɡʁʊntˌʃuːlə",
+      "en": "elementary school"
+    },
+    {
+      "de": "helfen",
+      "ipa": "ˈhɛlfn̩",
+      "en": "help"
+    },
+    {
+      "de": "her",
+      "ipa": "heːɐ̯",
+      "en": "here"
+    },
+    {
+      "de": "hier",
+      "ipa": "hiːɐ̯",
+      "en": "here"
+    },
+    {
+      "de": "holen",
+      "ipa": "ˈhoːlən",
+      "en": "get"
+    },
+    {
+      "de": "immer",
+      "ipa": "ˈɪmɐ",
+      "en": "always"
+    },
+    {
+      "de": "international",
+      "ipa": "ɪntɐnat͡si̯oˈnaːl",
+      "en": "international"
+    },
+    {
+      "de": "Jahr",
+      "ipa": "jaːɐ̯",
+      "en": "year"
+    },
+    {
+      "de": "jedoch",
+      "ipa": "jeˈdɔx",
+      "en": "however"
+    },
+    {
+      "de": "Journalist",
+      "ipa": "ʒʊʁnaˈlɪst",
+      "en": "journalist"
+    },
+    {
+      "de": "Kellnerin",
+      "ipa": "ˈkɛlnɐʁɪn",
+      "en": "waitress"
+    },
+    {
+      "de": "klagen",
+      "ipa": "ˈklaːɡn̩",
+      "en": "complain"
+    },
+    {
+      "de": "klappen",
+      "ipa": "ˈklapn̩",
+      "en": "work out"
+    },
+    {
+      "de": "Kunde",
+      "ipa": "ˈkʊndə",
+      "en": "customer"
+    },
+    {
+      "de": "Kundin",
+      "ipa": "ˈkʊndɪn",
+      "en": "customer (female)"
+    },
+    {
+      "de": "Land",
+      "ipa": "lant",
+      "en": "country"
+    },
+    {
+      "de": "lange",
+      "ipa": "ˈlaŋə",
+      "en": "long"
+    },
+    {
+      "de": "machen",
+      "ipa": "ˈmaxn̩",
+      "en": "make"
+    },
+    {
+      "de": "mehr",
+      "ipa": "meːɐ̯",
+      "en": "more"
+    },
+    {
+      "de": "noch",
+      "ipa": "nɔx",
+      "en": "still"
+    },
+    {
+      "de": "nun",
+      "ipa": "nuːn",
+      "en": "now"
+    },
+    {
+      "de": "nur",
+      "ipa": "nuːɐ̯",
+      "en": "only"
+    },
+    {
+      "de": "offen",
+      "ipa": "ˈɔfn̩",
+      "en": "open"
+    },
+    {
+      "de": "offiziell",
+      "ipa": "ɔfiˈt͡si̯ɛl",
+      "en": "official"
+    },
+    {
+      "de": "pauschal",
+      "ipa": "paʊ̯ˈʃaːl",
+      "en": "flat-rate"
+    },
+    {
+      "de": "Politik",
+      "ipa": "poliˈtiːk",
+      "en": "politics"
+    },
+    {
+      "de": "Politiker",
+      "ipa": "poˈliːtɪkɐ",
+      "en": "politician"
+    },
+    {
+      "de": "populär",
+      "ipa": "popuˈlɛːɐ̯",
+      "en": "popular"
+    },
+    {
+      "de": "Prozent",
+      "ipa": "pʁoˈt͡sɛnt",
+      "en": "percent"
+    },
+    {
+      "de": "reden",
+      "ipa": "ˈʁeːdn̩",
+      "en": "talk"
+    },
+    {
+      "de": "Regierungspartei",
+      "ipa": "ʁeˈɡiːʁʊŋsˌpaʁtaɪ̯",
+      "en": "government party"
+    },
+    {
+      "de": "Restaurant",
+      "ipa": "ʁɛstoˈʁãː",
+      "en": "restaurant"
+    },
+    {
+      "de": "rund",
+      "ipa": "ʁʊnt",
+      "en": "around"
+    },
+    {
+      "de": "sagen",
+      "ipa": "ˈzaːɡn̩",
+      "en": "say"
+    },
+    {
+      "de": "schon",
+      "ipa": "ʃoːn",
+      "en": "already"
+    },
+    {
+      "de": "schreiben",
+      "ipa": "ˈʃʁaɪ̯bn̩",
+      "en": "write"
+    },
+    {
+      "de": "selbstverständlich",
+      "ipa": "ˈzɛlpstfɛɐ̯ˌʃtɛntlɪç",
+      "en": "of course"
+    },
+    {
+      "de": "so",
+      "ipa": "zoː",
+      "en": "so"
+    },
+    {
+      "de": "Sprache",
+      "ipa": "ˈʃpʁaːxə",
+      "en": "language"
+    },
+    {
+      "de": "sprechen",
+      "ipa": "ˈʃpʁɛçn̩",
+      "en": "speak"
+    },
+    {
+      "de": "Studiengang",
+      "ipa": "ˈʃtuːdi̯ənˌɡaŋ",
+      "en": "degree program"
+    },
+    {
+      "de": "stören",
+      "ipa": "ˈʃtøːʁən",
+      "en": "disturb"
+    },
+    {
+      "de": "Unternehmen",
+      "ipa": "ʊntɐˈneːmən",
+      "en": "company"
+    },
+    {
+      "de": "unterrichten",
+      "ipa": "ʊntɐˈʁɪçtn̩",
+      "en": "teach"
+    },
+    {
+      "de": "Verwaltung",
+      "ipa": "fɛɐ̯ˈvaltʊŋ",
+      "en": "administration"
+    },
+    {
+      "de": "vorstellen",
+      "ipa": "ˈfoːɐ̯ˌʃtɛlən",
+      "en": "imagine"
+    },
+    {
+      "de": "Wahl",
+      "ipa": "vaːl",
+      "en": "election"
+    },
+    {
+      "de": "warum",
+      "ipa": "vaˈʁʊm",
+      "en": "why"
+    },
+    {
+      "de": "weigern",
+      "ipa": "ˈvaɪ̯ɡɐn",
+      "en": "refuse"
+    },
+    {
+      "de": "werden",
+      "ipa": "ˈveːɐ̯dn̩",
+      "en": "become"
+    },
+    {
+      "de": "wie",
+      "ipa": "viː",
+      "en": "how"
+    },
+    {
+      "de": "Wirtschaft",
+      "ipa": "ˈvɪʁtʃaft",
+      "en": "economy"
+    },
+    {
+      "de": "wohl",
+      "ipa": "voːl",
+      "en": "probably"
+    },
+    {
+      "de": "Zeit",
+      "ipa": "t͡saɪ̯t",
+      "en": "time"
+    },
+    {
+      "de": "zusammen",
+      "ipa": "t͡suˈzamən",
+      "en": "together"
+    },
+    {
+      "de": "Zweitsprache",
+      "ipa": "ˈt͡svaɪ̯tˌʃpʁaːxə",
+      "en": "second language"
+    },
+    {
+      "de": "ändern",
+      "ipa": "ˈɛndɐn",
+      "en": "change"
+    },
+    {
+      "de": "übersetzen",
+      "ipa": "yːbɐˈzɛt͡sn̩",
+      "en": "translate"
+    },
+    {
+      "de": "üblich",
+      "ipa": "ˈyːplɪç",
+      "en": "usual"
     }
   ]
 }

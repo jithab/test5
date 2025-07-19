@@ -2,14 +2,15 @@ import json
 import sys
 import stanza
 
-# Initialize Stanza
-stanza.download('de')  # Only needed once
-nlp = stanza.Pipeline('de', processors='tokenize,pos,lemma', use_gpu=False)
 
 # Load input JSON file from first command-line argument
 if len(sys.argv) < 2:
     print("Usage: python script.py input.json")
     sys.exit(1)
+
+# Initialize Stanza
+stanza.download('de')  # Only needed once
+nlp = stanza.Pipeline('de', processors='tokenize,pos,lemma', use_gpu=False)
 
 input_path = sys.argv[1]
 
