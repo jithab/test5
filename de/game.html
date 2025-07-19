@@ -276,8 +276,13 @@
       };
 
       document.getElementById("learnt-btn").onclick = () => {
+        // Reset if needed.
+        if (words[currentIndex].count < 0) {
+          words[currentIndex].count = 0;
+        }
+
         words[currentIndex].count += 1;
-        if (words[currentIndex].count >= 3) {
+        if (words[currentIndex].count >= 2) {
           words.splice(currentIndex, 1);
         }
         saveToLocalStorage();
@@ -285,7 +290,14 @@
       };
 
       document.getElementById("notlearnt-btn").onclick = () => {
-        words[currentIndex].count = 0;
+        // Reset if needed.
+        if (words[currentIndex].count > 0) {
+          words[currentIndex].count = 0;
+        }
+        words[currentIndex].count -= 1;
+        if (words[currentIndex].count <= -3) {
+          words.splice(currentIndex, 1);
+        }
         saveToLocalStorage();
         nextWord();
       };
