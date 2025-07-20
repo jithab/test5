@@ -191,9 +191,404 @@
   ],
   "words": [
     {
-      "de": "",
-      "ipa": "",
-      "en": ""
+      "de": "also",
+      "ipa": "ˈalzoː",
+      "en": "so / thus"
+    },
+    {
+      "de": "Ansicht",
+      "ipa": "ˈanziçt",
+      "en": "View / Opinion"
+    },
+    {
+      "de": "anstrengend",
+      "ipa": "ˈanʃtʁɛŋənt",
+      "en": "Exhausting / Strenuous"
+    },
+    {
+      "de": "Antwort",
+      "ipa": "ˈantvɔʁt",
+      "en": "Answer"
+    },
+    {
+      "de": "anziehend",
+      "ipa": "ˈantsiːənt",
+      "en": "Attractive / Appealing"
+    },
+    {
+      "de": "Attraktivität",
+      "ipa": "atʁaktiˈviːtɛːt",
+      "en": "Attractiveness"
+    },
+    {
+      "de": "bedeuten",
+      "ipa": "bəˈdɔɪ̯tn̩",
+      "en": "Mean / Signify"
+    },
+    {
+      "de": "Beispiel",
+      "ipa": "ˈbaɪ̯ʃpiːl",
+      "en": "Example"
+    },
+    {
+      "de": "besitzen",
+      "ipa": "bəˈzɪtsn̩",
+      "en": "Possess / Own"
+    },
+    {
+      "de": "besonders",
+      "ipa": "bəˈzɔndɐs",
+      "en": "Especially / Particularly"
+    },
+    {
+      "de": "Beziehung",
+      "ipa": "bəˈtsiːʊŋ",
+      "en": "Relationship"
+    },
+    {
+      "de": "brauchen",
+      "ipa": "ˈbʁaʊ̯xn̩",
+      "en": "Need / Require"
+    },
+    {
+      "de": "brechen",
+      "ipa": "ˈbʁɛçn̩",
+      "en": "Break"
+    },
+    {
+      "de": "bringen",
+      "ipa": "ˈbʁɪŋən",
+      "en": "Bring"
+    },
+    {
+      "de": "dabei",
+      "ipa": "daˈbaɪ̯",
+      "en": "Thereby / In the process"
+    },
+    {
+      "de": "demnach",
+      "ipa": "deːmˈnaːx",
+      "en": "Accordingly / Therefore"
+    },
+    {
+      "de": "drohen",
+      "ipa": "ˈdʁoːən",
+      "en": "Threaten"
+    },
+    {
+      "de": "ebenfalls",
+      "ipa": "ˈeːbn̩fals",
+      "en": "Also / Likewise"
+    },
+    {
+      "de": "eher",
+      "ipa": "ˈeːɐ",
+      "en": "Rather / More likely"
+    },
+    {
+      "de": "Eigenschaft",
+      "ipa": "ˈaɪ̯ɡn̩ʃaft",
+      "en": "Characteristic / Trait"
+    },
+    {
+      "de": "Eis",
+      "ipa": "aɪ̯s",
+      "en": "Ice"
+    },
+    {
+      "de": "entspannen",
+      "ipa": "ɛntˈʃpanən",
+      "en": "Relax"
+    },
+    {
+      "de": "erhöhen",
+      "ipa": "ɛɐ̯ˈhøːən",
+      "en": "Increase / Enhance"
+    },
+    {
+      "de": "erklären",
+      "ipa": "ɛɐ̯ˈklɛːʁən",
+      "en": "Explain"
+    },
+    {
+      "de": "finden",
+      "ipa": "ˈfɪndn̩",
+      "en": "Find"
+    },
+    {
+      "de": "funktionieren",
+      "ipa": "fʊŋkt͡si̯oˈniːʁən",
+      "en": "Function / Work"
+    },
+    {
+      "de": "Gefühl",
+      "ipa": "ɡəˈfyːl",
+      "en": "Feeling"
+    },
+    {
+      "de": "Gegenüber",
+      "ipa": "ɡeːɡn̩ˈʔyːbɐ",
+      "en": "Opposite / Towards"
+    },
+    {
+      "de": "gemeinsam",
+      "ipa": "ɡəˈmaɪ̯nzaːm",
+      "en": "Together / Joint"
+    },
+    {
+      "de": "genügen",
+      "ipa": "ɡəˈnyːɡn̩",
+      "en": "Suffice / Be enough"
+    },
+    {
+      "de": "Geschichte",
+      "ipa": "ɡəˈʃɪçtə",
+      "en": "History / Story"
+    },
+    {
+      "de": "gestalten",
+      "ipa": "ɡəˈʃtaltn̩",
+      "en": "Shape / Design"
+    },
+    {
+      "de": "gewiß",
+      "ipa": "ɡəˈvɪs",
+      "en": "Certain / Sure"
+    },
+    {
+      "de": "helfen",
+      "ipa": "ˈhɛlfn̩",
+      "en": "Help"
+    },
+    {
+      "de": "hilfreich",
+      "ipa": "ˈhɪlfʁaɪ̯ç",
+      "en": "Helpful"
+    },
+    {
+      "de": "humorvoll",
+      "ipa": "huˈmoːɐ̯fɔl",
+      "en": "Humorous"
+    },
+    {
+      "de": "häufig",
+      "ipa": "ˈhɔɪ̯fɪç",
+      "en": "Frequent / Often"
+    },
+    {
+      "de": "Kern",
+      "ipa": "kɛʁn",
+      "en": "Core"
+    },
+    {
+      "de": "klein",
+      "ipa": "klaɪ̯n",
+      "en": "Small"
+    },
+    {
+      "de": "Kommentar",
+      "ipa": "kɔmɛnˈtaːɐ̯",
+      "en": "Comment"
+    },
+    {
+      "de": "Kreativität",
+      "ipa": "kʁeativiˈtɛːt",
+      "en": "Creativity"
+    },
+    {
+      "de": "Lachen",
+      "ipa": "ˈlaxn̩",
+      "en": "Laughter"
+    },
+    {
+      "de": "lachen",
+      "ipa": "ˈlaxn̩",
+      "en": "Laugh"
+    },
+    {
+      "de": "lustig",
+      "ipa": "ˈlʊstɪç",
+      "en": "Funny"
+    },
+    {
+      "de": "lösen",
+      "ipa": "ˈløːzn̩",
+      "en": "Solve / Release"
+    },
+    {
+      "de": "manchmal",
+      "ipa": "ˈmançmaːl",
+      "en": "Sometimes"
+    },
+    {
+      "de": "meinen",
+      "ipa": "ˈmaɪ̯nən",
+      "en": "Mean / Think"
+    },
+    {
+      "de": "meistens",
+      "ipa": "ˈmaɪ̯stn̩s",
+      "en": "Mostly / Usually"
+    },
+    {
+      "de": "Mensch",
+      "ipa": "mɛnʃ",
+      "en": "Person / Human"
+    },
+    {
+      "de": "möglicherweise",
+      "ipa": "ˈmøːklɪçɐˌvaɪ̯zə",
+      "en": "Possibly"
+    },
+    {
+      "de": "Nähe",
+      "ipa": "ˈnɛːə",
+      "en": "Proximity / Closeness"
+    },
+    {
+      "de": "passen",
+      "ipa": "ˈpasn̩",
+      "en": "Fit / Suit"
+    },
+    {
+      "de": "Persönlichkeit",
+      "ipa": "pɛʁˈzøːnlɪçkaɪ̯t",
+      "en": "Personality"
+    },
+    {
+      "de": "Pointe",
+      "ipa": "ˈpɔ̯ɛ̃ːtə",
+      "en": "Punchline"
+    },
+    {
+      "de": "Prinzip",
+      "ipa": "pʁɪnˈt͡siːp",
+      "en": "Principle"
+    },
+    {
+      "de": "Realität",
+      "ipa": "ʁealiˈtɛːt",
+      "en": "Reality"
+    },
+    {
+      "de": "schaffen",
+      "ipa": "ˈʃafn̩",
+      "en": "Create / Manage"
+    },
+    {
+      "de": "schon",
+      "ipa": "ʃoːn",
+      "en": "Already"
+    },
+    {
+      "de": "Sinn",
+      "ipa": "zɪn",
+      "en": "Meaning / Sense"
+    },
+    {
+      "de": "Stimmung",
+      "ipa": "ˈʃtɪmʊŋ",
+      "en": "Mood / Atmosphere"
+    },
+    {
+      "de": "Streit",
+      "ipa": "ʃtʁaɪ̯t",
+      "en": "Argument / Dispute"
+    },
+    {
+      "de": "stressig",
+      "ipa": "ˈʃtʁɛsɪç",
+      "en": "Stressful"
+    },
+    {
+      "de": "teilen",
+      "ipa": "ˈtaɪ̯lən",
+      "en": "Share / Divide"
+    },
+    {
+      "de": "unerwartet",
+      "ipa": "ˈʊnʔɛɐ̯ˌvaʁtət",
+      "en": "Unexpected"
+    },
+    {
+      "de": "unterschiedlich",
+      "ipa": "ˈʊntɐˌʃiːtlɪç",
+      "en": "Different / Varied"
+    },
+    {
+      "de": "verbessern",
+      "ipa": "fɛɐ̯ˈbɛsɐn",
+      "en": "Improve"
+    },
+    {
+      "de": "verbinden",
+      "ipa": "fɛɐ̯ˈbɪndn̩",
+      "en": "Connect / Combine"
+    },
+    {
+      "de": "verraten",
+      "ipa": "fɛɐ̯ˈʁaːtn̩",
+      "en": "Betray / Reveal"
+    },
+    {
+      "de": "verspielt",
+      "ipa": "fɛɐ̯ˈʃpiːlt",
+      "en": "Playful"
+    },
+    {
+      "de": "verstehen",
+      "ipa": "fɛɐ̯ˈʃteːən",
+      "en": "Understand"
+    },
+    {
+      "de": "vertraut",
+      "ipa": "fɛɐ̯ˈtʁaʊ̯t",
+      "en": "Familiar / Trusted"
+    },
+    {
+      "de": "wenig",
+      "ipa": "ˈveːnɪç",
+      "en": "Little / Few"
+    },
+    {
+      "de": "Wert",
+      "ipa": "veːɐ̯t",
+      "en": "Value / Worth"
+    },
+    {
+      "de": "Wertesystem",
+      "ipa": "ˈveːɐ̯təzʏsˌteːm",
+      "en": "Value system"
+    },
+    {
+      "de": "wichtig",
+      "ipa": "ˈvɪçtɪç",
+      "en": "Important"
+    },
+    {
+      "de": "wirken",
+      "ipa": "ˈvɪʁkən",
+      "en": "Act / Seem / Have an effect"
+    },
+    {
+      "de": "zeigen",
+      "ipa": "ˈt͡saɪ̯ɡn̩",
+      "en": "Show"
+    },
+    {
+      "de": "zusammen",
+      "ipa": "t͡suˈzamən",
+      "en": "Together"
+    },
+    {
+      "de": "ähnlich",
+      "ipa": "ˈɛːnlɪç",
+      "en": "Similar"
+    },
+    {
+      "de": "Ähnlichkeit",
+      "ipa": "ˈɛːnlɪçkaɪ̯t",
+      "en": "Similarity"
     }
   ]
 }
