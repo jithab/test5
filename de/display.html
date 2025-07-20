@@ -180,7 +180,6 @@
       let subtitles = [];
       let pressTimer;
       let currentSpeed = 1.0;
-      let stopAt = null;
 
       toggleSpeedBtn.addEventListener("click", () => {
         currentSpeed = currentSpeed === 1.0 ? 0.8 : 1.0;
@@ -196,7 +195,10 @@
 
         audio.src = audioUrl;
 
-        const response = await fetch(dataUrl);
+        const response = await fetch(dataUrl, {
+          method: "GET",
+          cache: "no-store",
+        });
         const data = await response.json();
         subtitles = data.lines || [];
         const words = data.words || [];
@@ -252,11 +254,6 @@
         });
 
         audio.addEventListener("timeupdate", () => {
-          if (stopAt !== null && audio.currentTime >= stopAt) {
-            audio.pause();
-            stopAt = null;
-          }
-
           const current = audio.currentTime;
           const remaining = audio.duration - current;
 
@@ -291,6 +288,15 @@
         });
       }
 
+      function playSegment(start, end) {
+        audio.currentTime = start;
+        audio.play();
+        const duration = (end - start) * 1000;
+        setTimeout(() => {
+          audio.pause();
+        }, duration);
+      }
+
       function handleSubtitleClick(index) {
         const existingElem = document.querySelector(".subtitle.active");
         if (existingElem) {
@@ -305,9 +311,7 @@
         }
 
         const sub = subtitles[index];
-        audio.currentTime = sub.start;
-        stopAt = sub.end;
-        audio.play();
+        playSegment(sub.start, sub.end);
       }
 
       function copyToClipboard(text) {
