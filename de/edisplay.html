@@ -10,11 +10,6 @@
         margin: 100px;
       }
 
-      audio {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
       .subtitle-row {
         gap: 8px;
         margin-bottom: 10px;
@@ -71,17 +66,20 @@
   <body>
     <h2>📼 Subtitle Editor</h2>
 
-    <audio id="audio" controls></audio>
-
     <div id="subtitleList"></div>
 
     <br />
     <button onclick="download()">⬇ Download JSON</button>
 
     <script>
-      const audio = document.getElementById("audio");
       const subtitleList = document.getElementById("subtitleList");
       let jsonData = null;
+
+      let audioContext;
+      let audioBuffer;
+      let sourceNode;
+      let currentSpeed = 1.0;
+      let playbackTimeout;
 
       function getParam(name) {
         const params = new URLSearchParams(window.location.search);
@@ -104,17 +102,21 @@
           return;
         }
 
-        audio.src = makeAbsolute(audioUrl);
-        audio.playbackRate = 0.8;
-        audio.load();
-
-        audio.onerror = () => {
-          alert("❌ Failed to load audio file. Check the URL or format.");
-        };
+        try {
+          audioContext = new (window.AudioContext ||
+            window.webkitAudioContext)();
+          const response = await fetch(makeAbsolute(audioUrl));
+          const arrayBuffer = await response.arrayBuffer();
+          audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+        } catch (e) {
+          alert("❌ Failed to load audio file: " + e.message);
+          return;
+        }
 
         try {
-          const abDataUrl = makeAbsolute(jsonUrl);
-          const response = await fetch(`${abDataUrl}?_=${Date.now()}`);
+          const response = await fetch(
+            `${makeAbsolute(jsonUrl)}?_=${Date.now()}`
+          );
           jsonData = await response.json();
 
           if (!jsonData.lines || !Array.isArray(jsonData.lines)) {
@@ -127,13 +129,36 @@
         }
       }
 
+      function stopPlayback() {
+        if (sourceNode) {
+          try {
+            sourceNode.stop();
+          } catch {}
+          sourceNode.disconnect();
+          sourceNode = null;
+        }
+        clearTimeout(playbackTimeout);
+      }
+
       function playSegment(start, end) {
-        audio.currentTime = start;
-        audio.play();
-        const duration = (end - start) * 1000;
-        setTimeout(() => {
-          audio.pause();
-        }, duration);
+        if (!audioBuffer) return;
+
+        stopPlayback();
+
+        const duration = (end - start) / currentSpeed;
+
+        sourceNode = audioContext.createBufferSource();
+        sourceNode.buffer = audioBuffer;
+        sourceNode.playbackRate.setValueAtTime(
+          currentSpeed,
+          audioContext.currentTime
+        );
+        sourceNode.connect(audioContext.destination);
+        sourceNode.start(0, start, duration);
+
+        playbackTimeout = setTimeout(() => {
+          stopPlayback();
+        }, duration * 1000);
       }
 
       function shiftTime(entry, field, delta, inputStart, inputEnd) {
@@ -154,7 +179,6 @@
           number.className = "line-number";
           number.textContent = index + 1 + ". " + entry.de;
 
-          // START Control
           const startGroup = document.createElement("div");
           startGroup.className = "control-group";
 
@@ -174,7 +198,6 @@
           startInc.className = "shift-btn";
           startInc.textContent = "▶";
 
-          // END Control
           const endGroup = document.createElement("div");
           endGroup.className = "control-group";
 

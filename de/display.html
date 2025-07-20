@@ -77,10 +77,6 @@
         flex-wrap: wrap;
       }
 
-      audio {
-        display: none;
-      }
-
       #toggleSpeed {
         font-size: 1em;
         padding: 6px 10px;
@@ -142,23 +138,18 @@
     </style>
   </head>
   <body>
-    <!-- Title & Author -->
     <div id="titleBar">
       <h1 id="pageTitle"></h1>
       <div id="author"></div>
     </div>
 
-    <!-- Hidden Audio and Controls -->
     <div id="header">
-      <audio id="audio"></audio>
       <button id="toggleSpeed">1.0x</button>
       <div id="timeDisplay">Time: 0:00 / -0:00</div>
     </div>
 
-    <!-- Subtitles -->
     <div id="subtitles"></div>
 
-    <!-- Words Table -->
     <div id="wordsTableWrap">
       <table id="wordsTable">
         <tbody></tbody>
@@ -170,7 +161,6 @@
       const dataUrl = params.get("data");
       const audioUrl = params.get("audio");
 
-      const audio = document.getElementById("audio");
       const toggleSpeedBtn = document.getElementById("toggleSpeed");
       const timeDisplay = document.getElementById("timeDisplay");
       const subtitleContainer = document.getElementById("subtitles");
@@ -181,9 +171,16 @@
       let pressTimer;
       let currentSpeed = 1.0;
 
+      let audioContext;
+      let audioBuffer;
+      let sourceNode;
+      let startTime = 0;
+      let playStartTime = 0;
+      let playing = false;
+      let playbackInterval = null;
+
       toggleSpeedBtn.addEventListener("click", () => {
         currentSpeed = currentSpeed === 1.0 ? 0.8 : 1.0;
-        audio.playbackRate = currentSpeed;
         toggleSpeedBtn.textContent = `${currentSpeed.toFixed(1)}x`;
       });
 
@@ -193,12 +190,12 @@
           return;
         }
 
-        audio.src = audioUrl;
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const audioResponse = await fetch(audioUrl, { cache: "no-store" });
+        const arrayBuffer = await audioResponse.arrayBuffer();
+        audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
 
-        const response = await fetch(`${dataUrl}?_=${Date.now()}`, {
-          method: "GET",
-        });
-
+        const response = await fetch(`${dataUrl}?_=${Date.now()}`);
         const data = await response.json();
         subtitles = data.lines || [];
         const words = data.words || [];
@@ -210,7 +207,18 @@
         }
 
         renderSubtitles();
-        // renderWordsTable(words);
+      }
+
+      function createSource() {
+        if (sourceNode) {
+          sourceNode.disconnect();
+        }
+
+        const src = audioContext.createBufferSource();
+        src.buffer = audioBuffer;
+        src.playbackRate.setValueAtTime(currentSpeed, audioContext.currentTime);
+        src.connect(audioContext.destination);
+        return src;
       }
 
       function renderSubtitles() {
@@ -233,15 +241,11 @@
           div.addEventListener("click", () => handleSubtitleClick(index));
 
           div.addEventListener("touchstart", () => {
-            pressTimer = setTimeout(() => {
-              copyToClipboard(sub.de);
-            }, 800);
+            pressTimer = setTimeout(() => copyToClipboard(sub.de), 800);
           });
           div.addEventListener("touchend", () => clearTimeout(pressTimer));
           div.addEventListener("mousedown", () => {
-            pressTimer = setTimeout(() => {
-              copyToClipboard(sub.de);
-            }, 800);
+            pressTimer = setTimeout(() => copyToClipboard(sub.de), 800);
           });
           div.addEventListener("mouseup", () => clearTimeout(pressTimer));
           div.addEventListener("mouseleave", () => clearTimeout(pressTimer));
@@ -249,52 +253,44 @@
           subtitleContainer.appendChild(div);
         });
 
-        window.addEventListener("scroll", () => {
-          clearTimeout(pressTimer);
-        });
-
-        audio.addEventListener("timeupdate", () => {
-          const current = audio.currentTime;
-          const remaining = audio.duration - current;
-
-          if (!isNaN(remaining)) {
-            timeDisplay.textContent = `Time: ${formatTime(
-              current
-            )} / -${formatTime(remaining)}`;
-          }
-        });
-      }
-
-      function renderWordsTable(words) {
-        const tableBody = document.querySelector("#wordsTable tbody");
-        tableBody.innerHTML = "";
-
-        words.forEach((word, index) => {
-          const row = document.createElement("tr");
-
-          const siCell = document.createElement("td");
-          siCell.textContent = index % 5 == 4 ? index + 1 : "";
-
-          const deIpaCell = document.createElement("td");
-          deIpaCell.innerHTML = `<b>${word.de}</b>`.trim();
-
-          const enCell = document.createElement("td");
-          enCell.textContent = word.en;
-
-          row.appendChild(siCell);
-          row.appendChild(deIpaCell);
-          row.appendChild(enCell);
-          tableBody.appendChild(row);
-        });
+        window.addEventListener("scroll", () => clearTimeout(pressTimer));
       }
 
       function playSegment(start, end) {
-        audio.currentTime = start;
-        audio.play();
-        const duration = (end - start) * 1000;
-        setTimeout(() => {
-          audio.pause();
-        }, duration);
+        if (!audioBuffer) return;
+
+        stopPlayback();
+
+        const duration = (end - start) / currentSpeed;
+        sourceNode = createSource();
+        sourceNode.start(0, start, duration);
+        startTime = start;
+        playStartTime = audioContext.currentTime;
+        playing = true;
+
+        setTimeout(() => stopPlayback(), duration * 1000);
+
+        clearInterval(playbackInterval);
+        playbackInterval = setInterval(() => {
+          const currentTime =
+            start + (audioContext.currentTime - playStartTime) * currentSpeed;
+          const remaining = audioBuffer.duration - currentTime;
+          if (!isNaN(remaining)) {
+            timeDisplay.textContent = `Time: ${formatTime(
+              currentTime
+            )} / -${formatTime(remaining)}`;
+          }
+        }, 100);
+      }
+
+      function stopPlayback() {
+        if (sourceNode) {
+          sourceNode.stop(0);
+          sourceNode.disconnect();
+          sourceNode = null;
+        }
+        clearInterval(playbackInterval);
+        playing = false;
       }
 
       function handleSubtitleClick(index) {
