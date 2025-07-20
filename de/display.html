@@ -195,10 +195,10 @@
 
         audio.src = audioUrl;
 
-        const response = await fetch(dataUrl, {
+        const response = await fetch(`${dataUrl}?_=${Date.now()}`, {
           method: "GET",
-          cache: "no-store",
         });
+
         const data = await response.json();
         subtitles = data.lines || [];
         const words = data.words || [];

@@ -113,7 +113,8 @@
         };
 
         try {
-          const response = await fetch(makeAbsolute(jsonUrl));
+          const abDataUrl = makeAbsolute(jsonUrl);
+          const response = await fetch(`${abDataUrl}?_=${Date.now()}`);
           jsonData = await response.json();
 
           if (!jsonData.lines || !Array.isArray(jsonData.lines)) {
