@@ -1,212 +1,547 @@
 {
-  "title": "<title>",
-  "author": "© <author>",
-  "author_url": "<author url>",
+  "title": "Bäume – Wunder der Natur",
+  "author": "© Deutsche Welle",
+  "author_url": "https://learngerman.dw.com/de/b%C3%A4ume-wunder-der-natur/l-69560250",
   "lines": [
     {
       "start": 0.22,
       "end": 2.34,
       "de": "Bäume – Wunder der Natur",
-      "en": ""
+      "en": "Trees – Wonders of Nature"
     },
     {
       "start": 2.34,
       "end": 5.14,
       "de": "Bäume sind richtige Alleskönner.",
-      "en": ""
+      "en": "Trees are real all-rounders."
     },
     {
       "start": 5.34,
       "end": 8.3,
       "de": "Sie versorgen uns mit Obst, Holz und Schatten,",
-      "en": ""
+      "en": "They provide us with fruit, wood, and shade."
     },
     {
       "start": 8.48,
       "end": 11.2,
       "de": "verwandeln CO2 in frische Atemluft",
-      "en": ""
+      "en": "transform CO₂ into fresh air."
     },
     {
       "start": 11.28,
       "end": 13.84,
       "de": "und tragen dazu bei, dass wir uns wohlfühlen.",
-      "en": ""
+      "en": "and contribute to us feeling comfortable."
     },
     {
       "start": 14.1,
       "end": 17.6,
       "de": "Für Mensch, Tier und Klima sind sie überlebenswichtig.",
-      "en": ""
+      "en": "For humans, animals, and the climate, they are vital for survival."
     },
     {
       "start": 18.9,
       "end": 21.2,
       "de": "Bäume und Wälder sehen nicht nur schön aus –",
-      "en": ""
+      "en": "Trees and forests not only look beautiful –"
     },
     {
       "start": 21.5,
       "end": 24.8,
       "de": "sie haben auch entscheidend zur Entwicklung der Menschheit beigetragen.",
-      "en": ""
+      "en": "They have also contributed significantly to the development of humanity."
     },
     {
       "start": 25.66,
       "end": 28.8,
-      "de": "Schon vor mehr als 5000 Jahren lief der berühmte Ötzi",
-      "en": ""
+      "de": "Schon vor mehr als fünftausend Jahren lief der berühmte Ötzi",
+      "en": "Already more than 5000 years ago, the famous Ötzi walked"
     },
     {
       "start": 29.1,
       "end": 31.1,
       "de": "mit einem Holzbogen durch die Alpen.",
-      "en": ""
+      "en": "with a wooden bow through the Alps."
     },
     {
       "start": 31.8,
       "end": 34.7,
       "de": "Ohne Holz hätten die Menschen das Feuer nicht entdeckt",
-      "en": ""
+      "en": "Without wood, humans would not have discovered fire."
     },
     {
       "start": 34.8,
       "end": 38.8,
       "de": "und auch spätere Erfindungen wie Boote, Möbelstücke oder Papier",
-      "en": ""
+      "en": "and also later inventions such as boats, pieces of furniture, or paper"
     },
     {
       "start": 39,
       "end": 41.8,
       "de": "wären ohne Bäume kaum möglich gewesen.",
-      "en": ""
+      "en": "would hardly have been possible without trees."
     },
     {
       "start": 42.9,
       "end": 46.6,
       "de": "Sie sind aber nicht nur praktisch, sondern auch überlebenswichtig:",
-      "en": ""
+      "en": "They are not only practical, but also vital for survival:"
     },
     {
       "start": 47,
       "end": 51.78,
       "de": "Denn Bäume produzieren den Sauerstoff (O2), den wir zum Atmen brauchen.",
-      "en": ""
+      "en": "Because trees produce the oxygen (O₂) that we need for breathing."
     },
     {
       "start": 52.08,
       "end": 57,
       "de": "Eine einzige Buche beispielsweise kann pro Jahr zehn Menschen damit versorgen.",
-      "en": ""
+      "en": "A single beech tree, for example, can supply ten people with it per year."
     },
     {
       "start": 57.1,
       "end": 61.38,
       "de": "Der Sauerstoff entsteht während der sogenannten Photosynthese:",
-      "en": ""
+      "en": "The oxygen is produced during the so-called photosynthesis:"
     },
     {
       "start": 61.84,
       "end": 67.06,
       "de": "Die Bäume nehmen mit ihren Blättern und Nadeln Kohlendioxid (CO2) aus der Luft auf.",
-      "en": ""
+      "en": "The trees absorb carbon dioxide (CO₂) from the air using their leaves and needles."
     },
     {
       "start": 67.88,
       "end": 72.98,
       "de": "Aus CO2, Sonnenlicht und Wasser entsteht Zucker, den die Bäume zum Wachsen brauchen, –",
-      "en": ""
+      "en": "From CO₂, sunlight, and water, sugar is formed, which the trees need for growing –"
     },
     {
       "start": 73.28,
       "end": 76.26,
       "de": "und Sauerstoff, der in die Luft abgegeben wird.",
-      "en": ""
+      "en": "and oxygen, which is released into the air."
     },
     {
       "start": 76.46,
       "end": 81.42,
       "de": "Für unser Klima ist die Aufnahme von CO2 durch die Bäume sehr wichtig.",
-      "en": ""
+      "en": "For our climate, the absorption of CO₂ by the trees is very important."
     },
     {
       "start": 81.42,
       "end": 87.96,
       "de": "Das CO2 wird dabei in ihrem Holz gebunden und gelangt außerdem über ihre Wurzeln in den Boden.",
-      "en": ""
+      "en": "The CO₂ is bound in their wood and also enters the soil through their roots."
     },
     {
       "start": 88.76,
       "end": 93.4,
       "de": "Leider steigen die menschengemachten CO2-Emissionen seit Jahrzehnten.",
-      "en": ""
+      "en": "Unfortunately, human-made CO₂ emissions have been rising for decades."
     },
     {
       "start": 93.7,
       "end": 98.4,
-      "de": "2023 waren es weltweit über 36 Milliarden Tonnen –",
-      "en": ""
+      "de": "Zweitausenddreiundzwanzig waren es weltweit über sechsunddreißig Milliarden Tonnen –",
+      "en": "In 2023, it was over 36 billion tons worldwide –"
     },
     {
       "start": 98.8,
       "end": 100.9,
       "de": "ein trauriger neuer Rekord.",
-      "en": ""
+      "en": "A sad new record."
     },
     {
       "start": 101.6,
       "end": 106.7,
       "de": "Alle Bäume auf der Welt zusammengenommen können nur einen Teil davon aktiv aufnehmen.",
-      "en": ""
+      "en": "All trees on Earth together can absorb only a part of it."
     },
     {
       "start": 106.9,
       "end": 110.9,
       "de": "Doch ohne sie würde sich die Erde noch viel schneller erwärmen.",
-      "en": ""
+      "en": "But without them, the Earth would warm up even much faster."
     },
     {
       "start": 111.8,
       "end": 115.8,
       "de": "Auch aus Rücksicht auf die Tiere sollten wir gut auf unsere Bäume achten,",
-      "en": ""
+      "en": "Also out of consideration for the animals, we should take good care of our trees,"
     },
     {
       "start": 116.2,
       "end": 119.2,
       "de": "denn Wälder stellen einen wichtigen Lebensraum für sie dar.",
-      "en": ""
+      "en": "Because forests represent an important habitat for them."
     },
     {
       "start": 120,
       "end": 126.8,
-      "de": "So bietet eine alte Buche Schutz für bis zu 200 Tierarten wie Spinnen, Insekten oder Vögel.",
-      "en": ""
+      "de": "So bietet eine alte Buche Schutz für bis zu zweihundert Tierarten wie Spinnen, Insekten oder Vögel.",
+      "en": "For example, an old beech tree provides shelter for up to 200 animal species such as spiders, insects, or birds."
     },
     {
       "start": 127.4,
       "end": 130.6,
       "de": "Und auch Menschen, die einen Wald bei sich in der Nähe haben,",
-      "en": ""
+      "en": "And people who have a forest nearby,"
     },
     {
       "start": 130.8,
       "end": 133.4,
       "de": "sollten sich ruhig öfter mal dort aufhalten.",
-      "en": ""
+      "en": "should calmly spend time there more often."
     },
     {
       "start": 133.74,
       "end": 139.2,
       "de": "Denn das sogenannte Waldbaden stärkt die Gesundheit und reduziert Stress.",
-      "en": ""
+      "en": "Because so-called forest bathing strengthens health and reduces stress."
     }
   ],
   "words": [
     {
-      "de": "",
-      "ipa": "",
-      "en": ""
+      "de": "achten",
+      "ipa": "ˈaxtn̩",
+      "en": "to pay attention / to respect"
+    },
+    {
+      "de": "Alleskonn",
+      "ipa": "ˈaləsˌkɔn",
+      "en": "know-it-all"
+    },
+    {
+      "de": "Atmen",
+      "ipa": "ˈaːtmən",
+      "en": "breathing"
+    },
+    {
+      "de": "aufhalten",
+      "ipa": "ˈaʊ̯fˌhaltn̩",
+      "en": "to stop / to delay"
+    },
+    {
+      "de": "außerdem",
+      "ipa": "aʊ̯sɐˈdeːm",
+      "en": "besides / moreover"
+    },
+    {
+      "de": "beispielsweise",
+      "ipa": "baɪ̯ˈʃpiːlsˌvaɪ̯zə",
+      "en": "for example"
+    },
+    {
+      "de": "beitragen",
+      "ipa": "ˈbaɪ̯ˌtʁaːɡn̩",
+      "en": "to contribute"
+    },
+    {
+      "de": "berühmt",
+      "ipa": "bəˈʁyːmt",
+      "en": "famous"
+    },
+    {
+      "de": "bieten",
+      "ipa": "ˈbiːtn̩",
+      "en": "to offer"
+    },
+    {
+      "de": "Blatt`",
+      "ipa": "blat",
+      "en": "leaf"
+    },
+    {
+      "de": "Boden",
+      "ipa": "ˈboːdn̩",
+      "en": "ground / soil"
+    },
+    {
+      "de": "dabei",
+      "ipa": "daˈbaɪ̯",
+      "en": "in the process / thereby"
+    },
+    {
+      "de": "damit",
+      "ipa": "daˈmɪt",
+      "en": "with it / so that"
+    },
+    {
+      "de": "dazu",
+      "ipa": "daˈt͡suː",
+      "en": "in addition / to it"
+    },
+    {
+      "de": "einzig",
+      "ipa": "ˈaɪ̯nt͡sɪç",
+      "en": "only / sole"
+    },
+    {
+      "de": "entdecken",
+      "ipa": "ɛntˈdɛkn̩",
+      "en": "to discover"
+    },
+    {
+      "de": "entscheidend",
+      "ipa": "ɛntˈʃaɪ̯dn̩t",
+      "en": "decisive / crucial"
+    },
+    {
+      "de": "entstehen",
+      "ipa": "ɛntˈʃteːən",
+      "en": "to arise / to emerge"
+    },
+    {
+      "de": "Entwicklung",
+      "ipa": "ɛntˈvɪklʊŋ",
+      "en": "development"
+    },
+    {
+      "de": "Erde",
+      "ipa": "ˈeːɐ̯də",
+      "en": "earth / soil"
+    },
+    {
+      "de": "Erfindung",
+      "ipa": "ɛɐ̯ˈfɪndʊŋ",
+      "en": "invention"
+    },
+    {
+      "de": "erwärmen",
+      "ipa": "ɛɐ̯ˈvɛʁmən",
+      "en": "to warm up"
+    },
+    {
+      "de": "Feuer",
+      "ipa": "ˈfɔɪ̯ɐ",
+      "en": "fire"
+    },
+    {
+      "de": "gelangen",
+      "ipa": "ɡəˈlaŋən",
+      "en": "to reach / to arrive"
+    },
+    {
+      "de": "Gesundheit",
+      "ipa": "ɡəˈzʊnthaɪ̯t",
+      "en": "health"
+    },
+    {
+      "de": "Holz",
+      "ipa": "hɔlt͡s",
+      "en": "wood"
+    },
+    {
+      "de": "Jahrzehnt",
+      "ipa": "jaːɐ̯ˈt͡seːnt",
+      "en": "decade"
+    },
+    {
+      "de": "kaum",
+      "ipa": "kaʊ̯m",
+      "en": "hardly / scarcely"
+    },
+    {
+      "de": "Klima",
+      "ipa": "ˈkliːma",
+      "en": "climate"
+    },
+    {
+      "de": "laufen",
+      "ipa": "ˈlaʊ̯fn̩",
+      "en": "to run / to walk"
+    },
+    {
+      "de": "Lebensraum",
+      "ipa": "ˈleːbn̩sˌʁaʊ̯m",
+      "en": "habitat / living space"
+    },
+    {
+      "de": "leider",
+      "ipa": "ˈlaɪ̯dɐ",
+      "en": "unfortunately"
+    },
+    {
+      "de": "Luft",
+      "ipa": "lʊft",
+      "en": "air"
+    },
+    {
+      "de": "mal",
+      "ipa": "maːl",
+      "en": "once / just (particle)"
+    },
+    {
+      "de": "menschengemachten",
+      "ipa": "ˈmɛnʃn̩ɡəˌmaxtn̩",
+      "en": "man-made"
+    },
+    {
+      "de": "Menschheit",
+      "ipa": "ˈmɛnʃhaɪ̯t",
+      "en": "humanity"
+    },
+    {
+      "de": "möglich",
+      "ipa": "ˈmøːklɪç",
+      "en": "possible"
+    },
+    {
+      "de": "Nadel",
+      "ipa": "ˈnaːdl̩",
+      "en": "needle"
+    },
+    {
+      "de": "nehmen",
+      "ipa": "ˈneːmən",
+      "en": "to take"
+    },
+    {
+      "de": "noch",
+      "ipa": "nɔx",
+      "en": "still / yet"
+    },
+    {
+      "de": "Nähe",
+      "ipa": "ˈnɛːə",
+      "en": "proximity / nearness"
+    },
+    {
+      "de": "Obst",
+      "ipa": "oːpst",
+      "en": "fruit"
+    },
+    {
+      "de": "reduzieren",
+      "ipa": "ʁeduˈt͡siːʁən",
+      "en": "to reduce"
+    },
+    {
+      "de": "richtig",
+      "ipa": "ˈʁɪçtɪç",
+      "en": "correct / right"
+    },
+    {
+      "de": "ruhig",
+      "ipa": "ˈʁuːɪç",
+      "en": "calm / quiet"
+    },
+    {
+      "de": "Rücksicht",
+      "ipa": "ˈʁʏkˌzɪçt",
+      "en": "consideration"
+    },
+    {
+      "de": "Sauerstoff",
+      "ipa": "ˈzaʊ̯ɐˌʃtɔf",
+      "en": "oxygen"
+    },
+    {
+      "de": "Schatten",
+      "ipa": "ˈʃatn̩",
+      "en": "shadow / shade"
+    },
+    {
+      "de": "Schutz",
+      "ipa": "ʃʊt͡s",
+      "en": "protection"
+    },
+    {
+      "de": "sogenannt",
+      "ipa": "ˈzoːɡəˌnant",
+      "en": "so-called"
+    },
+    {
+      "de": "Sonnenlicht",
+      "ipa": "ˈzɔnənˌlɪçt",
+      "en": "sunlight"
+    },
+    {
+      "de": "Spinne",
+      "ipa": "ˈʃpɪnə",
+      "en": "spider"
+    },
+    {
+      "de": "spät",
+      "ipa": "ʃpɛːt",
+      "en": "late"
+    },
+    {
+      "de": "steigen",
+      "ipa": "ˈʃtaɪ̯ɡn̩",
+      "en": "to climb / to rise"
+    },
+    {
+      "de": "stellen",
+      "ipa": "ˈʃtɛlən",
+      "en": "to place / to set"
+    },
+    {
+      "de": "stärken",
+      "ipa": "ˈʃtɛʁkn̩",
+      "en": "to strengthen"
+    },
+    {
+      "de": "Teil",
+      "ipa": "taɪ̯l",
+      "en": "part"
+    },
+    {
+      "de": "Tierart",
+      "ipa": "ˈtiːɐ̯ˌʔaːɐ̯t",
+      "en": "animal species"
+    },
+    {
+      "de": "tragen",
+      "ipa": "ˈtʁaːɡn̩",
+      "en": "to carry / to wear"
+    },
+    {
+      "de": "traurig",
+      "ipa": "ˈtʁaʊ̯ʁɪç",
+      "en": "sad"
+    },
+    {
+      "de": "versorgen",
+      "ipa": "fɛɐ̯ˈzɔʁɡn̩",
+      "en": "to supply / to care for"
+    },
+    {
+      "de": "verwandeln",
+      "ipa": "fɛɐ̯ˈvandln̩",
+      "en": "to transform"
+    },
+    {
+      "de": "Wachs",
+      "ipa": "vaks",
+      "en": "wax"
+    },
+    {
+      "de": "Wald",
+      "ipa": "valt",
+      "en": "forest"
+    },
+    {
+      "de": "wichtig",
+      "ipa": "ˈvɪçtɪç",
+      "en": "important"
+    },
+    {
+      "de": "wohlfühlen",
+      "ipa": "ˈvoːlˌfyːlən",
+      "en": "to feel comfortable"
+    },
+    {
+      "de": "Wurzel",
+      "ipa": "ˈvʊʁt͡sl̩",
+      "en": "root"
+    },
+    {
+      "de": "Zucker",
+      "ipa": "ˈt͡sʊkɐ",
+      "en": "sugar"
     }
   ]
 }
