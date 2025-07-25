@@ -13,5 +13,10 @@
     "title": "Lachen verbindet: Humor und Partnerschaft",
     "audio": "data/Lachen-verbindet-Humor-und-Partnerschaft.mp3",
     "data": "data/Lachen-verbindet-Humor-und-Partnerschaft.json"
+  },
+  {
+    "title": "Bäume – Wunder der Natur",
+    "audio": "data/Bäume–Wunder-der-Natur.mp3",
+    "data": "data/Bäume–Wunder-der-Natur.json"
   }
 ]
