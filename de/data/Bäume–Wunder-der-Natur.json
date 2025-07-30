@@ -206,342 +206,404 @@
     {
       "de": "achten",
       "ipa": "ˈaxtn̩",
-      "en": "to pay attention / to respect"
+      "en": "to pay attention / to respect",
+      "ps": "v"
     },
     {
       "de": "Alleskonn",
       "ipa": "ˈaləsˌkɔn",
-      "en": "know-it-all"
+      "en": "know-it-all",
+      "ps": "n"
     },
     {
       "de": "Atmen",
       "ipa": "ˈaːtmən",
-      "en": "breathing"
+      "en": "breathing",
+      "ps": "n"
     },
     {
       "de": "aufhalten",
       "ipa": "ˈaʊ̯fˌhaltn̩",
-      "en": "to stop / to delay"
+      "en": "to stop / to delay",
+      "ps": "v"
     },
     {
       "de": "außerdem",
       "ipa": "aʊ̯sɐˈdeːm",
-      "en": "besides / moreover"
+      "en": "besides / moreover",
+      "ps": "adv"
     },
     {
       "de": "beispielsweise",
       "ipa": "baɪ̯ˈʃpiːlsˌvaɪ̯zə",
-      "en": "for example"
+      "en": "for example",
+      "ps": "adv"
     },
     {
       "de": "beitragen",
       "ipa": "ˈbaɪ̯ˌtʁaːɡn̩",
-      "en": "to contribute"
+      "en": "to contribute",
+      "ps": "v"
     },
     {
       "de": "berühmt",
       "ipa": "bəˈʁyːmt",
-      "en": "famous"
+      "en": "famous",
+      "ps": "adj"
     },
     {
       "de": "bieten",
       "ipa": "ˈbiːtn̩",
-      "en": "to offer"
+      "en": "to offer",
+      "ps": "v"
     },
     {
       "de": "Blatt`",
       "ipa": "blat",
-      "en": "leaf"
+      "en": "leaf",
+      "ps": "n"
     },
     {
       "de": "Boden",
       "ipa": "ˈboːdn̩",
-      "en": "ground / soil"
+      "en": "ground / soil",
+      "ps": "n"
     },
     {
       "de": "dabei",
       "ipa": "daˈbaɪ̯",
-      "en": "in the process / thereby"
-    },
-    {
-      "de": "damit",
-      "ipa": "daˈmɪt",
-      "en": "with it / so that"
+      "en": "in the process / thereby",
+      "ps": "adv"
     },
     {
       "de": "dazu",
       "ipa": "daˈt͡suː",
-      "en": "in addition / to it"
+      "en": "in addition / to it",
+      "ps": "adv"
     },
     {
       "de": "einzig",
       "ipa": "ˈaɪ̯nt͡sɪç",
-      "en": "only / sole"
+      "en": "only / sole",
+      "ps": "adj"
     },
     {
       "de": "entdecken",
       "ipa": "ɛntˈdɛkn̩",
-      "en": "to discover"
+      "en": "to discover",
+      "ps": "v"
     },
     {
       "de": "entscheidend",
       "ipa": "ɛntˈʃaɪ̯dn̩t",
-      "en": "decisive / crucial"
+      "en": "decisive / crucial",
+      "ps": "adj"
     },
     {
       "de": "entstehen",
       "ipa": "ɛntˈʃteːən",
-      "en": "to arise / to emerge"
+      "en": "to arise / to emerge",
+      "ps": "v"
     },
     {
       "de": "Entwicklung",
       "ipa": "ɛntˈvɪklʊŋ",
-      "en": "development"
+      "en": "development",
+      "ps": "n"
     },
     {
       "de": "Erde",
       "ipa": "ˈeːɐ̯də",
-      "en": "earth / soil"
+      "en": "earth / soil",
+      "ps": "n"
     },
     {
       "de": "Erfindung",
       "ipa": "ɛɐ̯ˈfɪndʊŋ",
-      "en": "invention"
+      "en": "invention",
+      "ps": "n"
     },
     {
       "de": "erwärmen",
       "ipa": "ɛɐ̯ˈvɛʁmən",
-      "en": "to warm up"
+      "en": "to warm up",
+      "ps": "v"
     },
     {
       "de": "Feuer",
       "ipa": "ˈfɔɪ̯ɐ",
-      "en": "fire"
+      "en": "fire",
+      "ps": "n"
     },
     {
       "de": "gelangen",
       "ipa": "ɡəˈlaŋən",
-      "en": "to reach / to arrive"
+      "en": "to reach / to arrive",
+      "ps": "v"
     },
     {
       "de": "Gesundheit",
       "ipa": "ɡəˈzʊnthaɪ̯t",
-      "en": "health"
+      "en": "health",
+      "ps": "n"
     },
     {
       "de": "Holz",
       "ipa": "hɔlt͡s",
-      "en": "wood"
+      "en": "wood",
+      "ps": "n"
     },
     {
       "de": "Jahrzehnt",
       "ipa": "jaːɐ̯ˈt͡seːnt",
-      "en": "decade"
+      "en": "decade",
+      "ps": "n"
     },
     {
       "de": "kaum",
       "ipa": "kaʊ̯m",
-      "en": "hardly / scarcely"
+      "en": "hardly / scarcely",
+      "ps": "adv"
     },
     {
       "de": "Klima",
       "ipa": "ˈkliːma",
-      "en": "climate"
+      "en": "climate",
+      "ps": "n"
     },
     {
       "de": "laufen",
       "ipa": "ˈlaʊ̯fn̩",
-      "en": "to run / to walk"
+      "en": "to run / to walk",
+      "ps": "v"
     },
     {
       "de": "Lebensraum",
       "ipa": "ˈleːbn̩sˌʁaʊ̯m",
-      "en": "habitat / living space"
+      "en": "habitat / living space",
+      "ps": "n"
     },
     {
       "de": "leider",
       "ipa": "ˈlaɪ̯dɐ",
-      "en": "unfortunately"
+      "en": "unfortunately",
+      "ps": "adv"
     },
     {
       "de": "Luft",
       "ipa": "lʊft",
-      "en": "air"
+      "en": "air",
+      "ps": "n"
     },
     {
       "de": "mal",
       "ipa": "maːl",
-      "en": "once / just (particle)"
+      "en": "once / just (particle)",
+      "ps": "adv"
     },
     {
       "de": "menschengemachten",
       "ipa": "ˈmɛnʃn̩ɡəˌmaxtn̩",
-      "en": "man-made"
+      "en": "man-made",
+      "ps": "adj"
     },
     {
       "de": "Menschheit",
       "ipa": "ˈmɛnʃhaɪ̯t",
-      "en": "humanity"
+      "en": "humanity",
+      "ps": "n"
     },
     {
       "de": "möglich",
       "ipa": "ˈmøːklɪç",
-      "en": "possible"
+      "en": "possible",
+      "ps": "adj"
     },
     {
       "de": "Nadel",
       "ipa": "ˈnaːdl̩",
-      "en": "needle"
+      "en": "needle",
+      "ps": "n"
     },
     {
       "de": "nehmen",
       "ipa": "ˈneːmən",
-      "en": "to take"
+      "en": "to take",
+      "ps": "v"
     },
     {
       "de": "noch",
       "ipa": "nɔx",
-      "en": "still / yet"
+      "en": "still / yet",
+      "ps": "adv"
     },
     {
       "de": "Nähe",
       "ipa": "ˈnɛːə",
-      "en": "proximity / nearness"
+      "en": "proximity / nearness",
+      "ps": "n"
     },
     {
       "de": "Obst",
       "ipa": "oːpst",
-      "en": "fruit"
+      "en": "fruit",
+      "ps": "n"
     },
     {
       "de": "reduzieren",
       "ipa": "ʁeduˈt͡siːʁən",
-      "en": "to reduce"
+      "en": "to reduce",
+      "ps": "v"
     },
     {
       "de": "richtig",
       "ipa": "ˈʁɪçtɪç",
-      "en": "correct / right"
+      "en": "correct / right",
+      "ps": "adj"
     },
     {
       "de": "ruhig",
       "ipa": "ˈʁuːɪç",
-      "en": "calm / quiet"
+      "en": "calm / quiet",
+      "ps": "adj"
     },
     {
       "de": "Rücksicht",
       "ipa": "ˈʁʏkˌzɪçt",
-      "en": "consideration"
+      "en": "consideration",
+      "ps": "n"
     },
     {
       "de": "Sauerstoff",
       "ipa": "ˈzaʊ̯ɐˌʃtɔf",
-      "en": "oxygen"
+      "en": "oxygen",
+      "ps": "n"
     },
     {
       "de": "Schatten",
       "ipa": "ˈʃatn̩",
-      "en": "shadow / shade"
+      "en": "shadow / shade",
+      "ps": "n"
     },
     {
       "de": "Schutz",
       "ipa": "ʃʊt͡s",
-      "en": "protection"
+      "en": "protection",
+      "ps": "n"
     },
     {
       "de": "sogenannt",
       "ipa": "ˈzoːɡəˌnant",
-      "en": "so-called"
+      "en": "so-called",
+      "ps": "adj"
     },
     {
       "de": "Sonnenlicht",
       "ipa": "ˈzɔnənˌlɪçt",
-      "en": "sunlight"
+      "en": "sunlight",
+      "ps": "n"
     },
     {
       "de": "Spinne",
       "ipa": "ˈʃpɪnə",
-      "en": "spider"
+      "en": "spider",
+      "ps": "n"
     },
     {
       "de": "spät",
       "ipa": "ʃpɛːt",
-      "en": "late"
+      "en": "late",
+      "ps": "adj"
     },
     {
       "de": "steigen",
       "ipa": "ˈʃtaɪ̯ɡn̩",
-      "en": "to climb / to rise"
+      "en": "to climb / to rise",
+      "ps": "v"
     },
     {
       "de": "stellen",
       "ipa": "ˈʃtɛlən",
-      "en": "to place / to set"
+      "en": "to place / to set",
+      "ps": "v"
     },
     {
       "de": "stärken",
       "ipa": "ˈʃtɛʁkn̩",
-      "en": "to strengthen"
+      "en": "to strengthen",
+      "ps": "v"
     },
     {
       "de": "Teil",
       "ipa": "taɪ̯l",
-      "en": "part"
+      "en": "part",
+      "ps": "n"
     },
     {
       "de": "Tierart",
       "ipa": "ˈtiːɐ̯ˌʔaːɐ̯t",
-      "en": "animal species"
+      "en": "animal species",
+      "ps": "n"
     },
     {
       "de": "tragen",
       "ipa": "ˈtʁaːɡn̩",
-      "en": "to carry / to wear"
+      "en": "to carry / to wear",
+      "ps": "v"
     },
     {
       "de": "traurig",
       "ipa": "ˈtʁaʊ̯ʁɪç",
-      "en": "sad"
+      "en": "sad",
+      "ps": "adj"
     },
     {
       "de": "versorgen",
       "ipa": "fɛɐ̯ˈzɔʁɡn̩",
-      "en": "to supply / to care for"
+      "en": "to supply / to care for",
+      "ps": "v"
     },
     {
       "de": "verwandeln",
       "ipa": "fɛɐ̯ˈvandln̩",
-      "en": "to transform"
+      "en": "to transform",
+      "ps": "v"
     },
     {
       "de": "Wachs",
       "ipa": "vaks",
-      "en": "wax"
+      "en": "wax",
+      "ps": "n"
     },
     {
       "de": "Wald",
       "ipa": "valt",
-      "en": "forest"
+      "en": "forest",
+      "ps": "n"
     },
     {
       "de": "wichtig",
       "ipa": "ˈvɪçtɪç",
-      "en": "important"
+      "en": "important",
+      "ps": "adj"
     },
     {
       "de": "wohlfühlen",
       "ipa": "ˈvoːlˌfyːlən",
-      "en": "to feel comfortable"
+      "en": "to feel comfortable",
+      "ps": "v"
     },
     {
       "de": "Wurzel",
       "ipa": "ˈvʊʁt͡sl̩",
-      "en": "root"
+      "en": "root",
+      "ps": "n"
     },
     {
       "de": "Zucker",
       "ipa": "ˈt͡sʊkɐ",
-      "en": "sugar"
+      "en": "sugar",
+      "ps": "n"
     }
   ]
 }

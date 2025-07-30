@@ -41,6 +41,7 @@
         max-width: 400px;
         text-align: center;
       }
+
       #finished {
         font-size: 44px;
         color: red;
@@ -48,7 +49,7 @@
       }
 
       #de {
-        font-size: 44px;
+        font-size: 40px;
         font-weight: bold;
         word-break: break-word;
       }
@@ -56,56 +57,32 @@
       #ipa {
         margin-top: 10px;
         font-style: italic;
-        font-size: 40px;
+        font-size: 28px;
       }
 
-      #en {
-        margin-top: 10px;
-        font-size: 40px;
-        font-weight: bold;
-        color: #0000a0;
-      }
-
-      button {
-        font-size: 18px;
+      .meaning-option {
+        font-size: 20px;
+        margin: 10px;
         padding: 12px 20px;
         border-radius: 8px;
-        border: none;
+        border: 2px solid #ccc;
+        background-color: #ffffff;
         cursor: pointer;
+        width: 100%;
+        max-width: 300px;
       }
 
-      #reveal-section {
-        margin-top: 15px;
+      .meaning-option.correct {
+        background-color: #c8f7c5;
       }
 
-      #reveal-btn {
-        font-size: 64px;
-        background: none;
-        border: none;
-        cursor: pointer;
-      }
-
-      #controls {
-        display: none;
-        margin-top: 20px;
-      }
-
-      #controls-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 15px;
-      }
-
-      .face-btn {
-        font-size: 64px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        flex: 1;
+      .meaning-option.incorrect {
+        background-color: #f7c5c5;
       }
 
       #table-toggle {
         margin-bottom: 10px;
+        visibility: hidden;
       }
 
       table {
@@ -130,22 +107,10 @@
         margin: 10px auto;
         background-color: #ff6666;
         color: white;
-      }
-
-      @media (max-width: 480px) {
-        #de {
-          font-size: 48px;
-        }
-
-        .face-btn,
-        #reveal-btn {
-          font-size: 56px;
-        }
-
-        #controls-row {
-          flex-direction: column;
-          gap: 10px;
-        }
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -155,17 +120,10 @@
       <div id="card">
         <div id="de"></div>
         <div id="ipa"></div>
-        <div id="en"></div>
 
-        <div id="reveal-section">
-          <button id="reveal-btn">🧐</button>
-        </div>
-
-        <div id="controls">
-          <div id="controls-row">
-            <button id="learnt-btn" class="face-btn">😃</button>
-            <button id="notlearnt-btn" class="face-btn">😢</button>
-          </div>
+        <div id="choice-section" style="margin-top: 20px">
+          <button id="option1" class="meaning-option"></button>
+          <button id="option2" class="meaning-option"></button>
         </div>
       </div>
     </div>
@@ -229,55 +187,82 @@
       }
 
       function nextWord() {
+        clearTimeout(window.autoNextTimer);
+
+        document.getElementById("option1").disabled = false;
+        document.getElementById("option2").disabled = false;
+        document.getElementById("option1").className = "meaning-option";
+        document.getElementById("option2").className = "meaning-option";
+
         if (words.length === 0) {
           document.getElementById("card").innerHTML =
             "<p id='finished'>„Eines Tages werde ich Deutsch sprechen.“ <br/>🎉</p>";
           updateProgress();
           return;
         }
+
         currentIndex = Math.floor(Math.random() * words.length);
         const word = words[currentIndex];
+
         document.getElementById("de").textContent = word.de;
         document.getElementById("ipa").textContent = word.ipa;
-        document.getElementById("en").textContent = word.en;
+        document.getElementById("ipa").style.display = "block";
 
-        document.getElementById("ipa").style.display = "none";
-        document.getElementById("en").style.display = "none";
-        document.getElementById("reveal-section").style.display = "block";
-        document.getElementById("controls").style.display = "none";
+        // Select incorrect meaning from same part of speech
+        const samePOSWords = words.filter(
+          (w) => w.ps === word.ps && w.en !== word.en
+        );
+        let incorrectMeaning = "";
+
+        if (samePOSWords.length > 0) {
+          const random =
+            samePOSWords[Math.floor(Math.random() * samePOSWords.length)];
+          incorrectMeaning = random.en;
+        } else {
+          // Fallback: show same meaning again
+          incorrectMeaning = word.en;
+        }
+
+        const options = [word.en, incorrectMeaning].sort(
+          () => Math.random() - 0.5
+        );
+        document.getElementById("option1").textContent = options[0];
+        document.getElementById("option2").textContent = options[1];
 
         updateProgress();
       }
 
-      document.getElementById("reveal-btn").onclick = () => {
-        document.getElementById("ipa").style.display = "block";
-        document.getElementById("en").style.display = "block";
-        document.getElementById("reveal-section").style.display = "none";
-        document.getElementById("controls").style.display = "block";
-      };
+      function handleAnswer(selectedButton) {
+        const selected = selectedButton.textContent;
+        const correct = words[currentIndex].en;
+        const isCorrect = selected === correct;
 
-      document.getElementById("learnt-btn").onclick = () => {
-        if (words[currentIndex].count >= 0) {
+        if (isCorrect) {
+          selectedButton.classList.add("correct");
           words.splice(currentIndex, 1);
+          delay = 500;
         } else {
-          words[currentIndex].count = 1;
+          selectedButton.classList.add("incorrect");
+          if (words[currentIndex].count > 0) words[currentIndex].count = 0;
+          words[currentIndex].count -= 1;
+          if (words[currentIndex].count <= -3) words.splice(currentIndex, 1);
+          delay = 5000;
         }
 
         saveToLocalStorage();
-        nextWord();
+        document.getElementById("option1").disabled = true;
+        document.getElementById("option2").disabled = true;
+
+        window.autoNextTimer = setTimeout(() => {
+          nextWord();
+        }, delay);
+      }
+
+      document.getElementById("option1").onclick = function () {
+        handleAnswer(this);
       };
-
-      document.getElementById("notlearnt-btn").onclick = () => {
-        // Reset if needed.
-        if (words[currentIndex].count > 0) {
-          words[currentIndex].count = 0;
-        }
-        words[currentIndex].count -= 1;
-        if (words[currentIndex].count <= -3) {
-          words.splice(currentIndex, 1);
-        }
-        saveToLocalStorage();
-        nextWord();
+      document.getElementById("option2").onclick = function () {
+        handleAnswer(this);
       };
 
       document.getElementById("table-toggle").onclick = () => {
