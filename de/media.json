@@ -18,5 +18,10 @@
     "title": "Bäume – Wunder der Natur",
     "audio": "data/Bäume–Wunder-der-Natur.mp3",
     "data": "data/Bäume–Wunder-der-Natur.json"
+  },
+  {
+    "title": "Was passiert, wenn wir Sprachen erlernen?",
+    "audio": "data/Was-passiert-wenn-wir-Sprachen-erlernen.mp3",
+    "data": "data/Was-passiert-wenn-wir-Sprachen-erlernen.json"
   }
 ]
