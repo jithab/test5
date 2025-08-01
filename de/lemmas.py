@@ -21,19 +21,27 @@ with open(input_path, 'r', encoding='utf-8') as f:
 sentences = [line['de'] for line in data.get("lines", []) if "de" in line]
 
 # Collect unique verb lemmas
-lemmas = set()
+lemmas = dict()
+
+
+mytype = {
+    "NOUN": "n",
+    "VERB": "v",
+    "ADJ": "adj",
+    "ADV": "adv"
+}
 
 for sentence in sentences:
     doc = nlp(sentence)
     for sent in doc.sentences:
         for word in sent.words:
             if word.upos in ["NOUN", "VERB", "ADJ", "ADV"]:
-                lemmas.add(word.lemma)
+                lemmas[word.lemma]=mytype[word.upos]
 
 # Prepare output JSON array
 output = [
-    {"de": lemma, "ipa": "", "en": ""}
-    for lemma in sorted(lemmas, key=str.lower)
+    {"de": de, "ipa": "", "en": "", "ps": ps}
+    for de, ps in sorted(lemmas.items(), key=lambda x: x[0].lower())
 ]
 
 # Print output JSON

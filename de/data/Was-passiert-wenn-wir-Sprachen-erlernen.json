@@ -258,9 +258,484 @@
   ],
   "words": [
     {
-      "de": "",
-      "ipa": "",
-      "en": ""
+      "de": "Aktivität",
+      "ipa": "aktiˈviːtɛːt",
+      "en": "activity",
+      "ps": "n"
+    },
+    {
+      "de": "andererseits",
+      "ipa": "ˈandɐɐ̯ˌʔaɪ̯ts",
+      "en": "on the other hand",
+      "ps": "adv"
+    },
+    {
+      "de": "anders",
+      "ipa": "ˈandɐs",
+      "en": "different(ly)",
+      "ps": "adv"
+    },
+    {
+      "de": "anpassungsfähig",
+      "ipa": "ˈanpasʊŋsˌfɛːɪç",
+      "en": "adaptable",
+      "ps": "adj"
+    },
+    {
+      "de": "Arbeit",
+      "ipa": "ˈaʁbaɪ̯t",
+      "en": "work",
+      "ps": "n"
+    },
+    {
+      "de": "Aufgabe",
+      "ipa": "ˈaʊ̯fˌɡaːbə",
+      "en": "task",
+      "ps": "n"
+    },
+    {
+      "de": "Aufwand",
+      "ipa": "ˈaʊ̯fˌvant",
+      "en": "effort, expense",
+      "ps": "n"
+    },
+    {
+      "de": "Auswahl",
+      "ipa": "ˈaʊ̯sˌvaːl",
+      "en": "selection, choice",
+      "ps": "n"
+    },
+    {
+      "de": "Begriff",
+      "ipa": "bəˈɡʁɪf",
+      "en": "term, concept",
+      "ps": "n"
+    },
+    {
+      "de": "Beispiel",
+      "ipa": "ˈbaɪ̯ˌʃpiːl",
+      "en": "example",
+      "ps": "n"
+    },
+    {
+      "de": "Bereich",
+      "ipa": "bəˈʁaɪ̯ç",
+      "en": "area, field",
+      "ps": "n"
+    },
+    {
+      "de": "beschäftigen",
+      "ipa": "bəˈʃɛftɪɡən",
+      "en": "to occupy, engage",
+      "ps": "v"
+    },
+    {
+      "de": "bisher",
+      "ipa": "ˈbɪsˌheːɐ̯",
+      "en": "so far, up to now",
+      "ps": "adv"
+    },
+    {
+      "de": "dadurch",
+      "ipa": "ˈdaːdʊʁç",
+      "en": "through that, thereby",
+      "ps": "adv"
+    },
+    {
+      "de": "denken",
+      "ipa": "ˈdɛŋkən",
+      "en": "to think",
+      "ps": "v"
+    },
+    {
+      "de": "eigen",
+      "ipa": "ˈaɪ̯ɡən",
+      "en": "own",
+      "ps": "adj"
+    },
+    {
+      "de": "eigentlich",
+      "ipa": "ˈaɪ̯ɡəntlɪç",
+      "en": "actually",
+      "ps": "adv"
+    },
+    {
+      "de": "einerseits",
+      "ipa": "ˈaɪ̯nɐɐ̯ˌʔaɪ̯ts",
+      "en": "on one hand",
+      "ps": "adv"
+    },
+    {
+      "de": "einfach",
+      "ipa": "ˈaɪ̯nˌfax",
+      "en": "simple",
+      "ps": "adj"
+    },
+    {
+      "de": "einprägen",
+      "ipa": "ˈaɪ̯nˌpʁɛːɡən",
+      "en": "to memorize, imprint",
+      "ps": "v"
+    },
+    {
+      "de": "entstehen",
+      "ipa": "ɛntˈʃteːən",
+      "en": "to arise, emerge",
+      "ps": "v"
+    },
+    {
+      "de": "Erstsprache",
+      "ipa": "ˈeːɐ̯stˌʃpʁaːxə",
+      "en": "first language",
+      "ps": "n"
+    },
+    {
+      "de": "Erwachsenenalter",
+      "ipa": "ɛɐ̯ˈvaksnənˌʔaltɐ",
+      "en": "adulthood",
+      "ps": "n"
+    },
+    {
+      "de": "finden",
+      "ipa": "ˈfɪndən",
+      "en": "to find",
+      "ps": "v"
+    },
+    {
+      "de": "fremd",
+      "ipa": "fʁɛmt",
+      "en": "foreign, strange",
+      "ps": "adj"
+    },
+    {
+      "de": "Gedächtnis",
+      "ipa": "ɡəˈdɛçtnɪs",
+      "en": "memory",
+      "ps": "n"
+    },
+    {
+      "de": "Gehirn",
+      "ipa": "ɡəˈhɪʁn",
+      "en": "brain",
+      "ps": "n"
+    },
+    {
+      "de": "Gehirnbereich",
+      "ipa": "ɡəˈhɪʁnbəˌʁaɪ̯ç",
+      "en": "brain region",
+      "ps": "n"
+    },
+    {
+      "de": "gering",
+      "ipa": "ɡəˈʁɪŋ",
+      "en": "slight, small",
+      "ps": "adj"
+    },
+    {
+      "de": "geschehen",
+      "ipa": "ɡəˈʃeːən",
+      "en": "to happen",
+      "ps": "v"
+    },
+    {
+      "de": "gewöhnen",
+      "ipa": "ɡəˈvøːnən",
+      "en": "to get accustomed",
+      "ps": "v"
+    },
+    {
+      "de": "gleichbedeutend",
+      "ipa": "ˈɡlaɪ̯çbəˌdɔɪ̯tənt",
+      "en": "synonymous",
+      "ps": "adj"
+    },
+    {
+      "de": "grau",
+      "ipa": "ɡʁaʊ̯",
+      "en": "gray",
+      "ps": "adj"
+    },
+    {
+      "de": "hoch",
+      "ipa": "hoːx",
+      "en": "high",
+      "ps": "adj"
+    },
+    {
+      "de": "Hören",
+      "ipa": "ˈhøːʁən",
+      "en": "hearing",
+      "ps": "n"
+    },
+    {
+      "de": "hören",
+      "ipa": "ˈhøːʁən",
+      "en": "to hear",
+      "ps": "v"
+    },
+    {
+      "de": "Kindheit",
+      "ipa": "ˈkɪnthaɪ̯t",
+      "en": "childhood",
+      "ps": "n"
+    },
+    {
+      "de": "kompliziert",
+      "ipa": "kɔmpliˈt͡siːɐ̯t",
+      "en": "complicated",
+      "ps": "adj"
+    },
+    {
+      "de": "Laut",
+      "ipa": "laʊ̯t",
+      "en": "sound",
+      "ps": "n"
+    },
+    {
+      "de": "Laute",
+      "ipa": "ˈlaʊ̯tə",
+      "en": "sounds",
+      "ps": "n"
+    },
+    {
+      "de": "Lesen",
+      "ipa": "ˈleːzən",
+      "en": "reading",
+      "ps": "n"
+    },
+    {
+      "de": "Muster",
+      "ipa": "ˈmʊstɐ",
+      "en": "pattern",
+      "ps": "n"
+    },
+    {
+      "de": "Nervenzelle",
+      "ipa": "ˈnɛʁfn̩ˌt͡sɛlə",
+      "en": "nerve cell",
+      "ps": "n"
+    },
+    {
+      "de": "Neurowissenschaft",
+      "ipa": "ˈnɔɪ̯ʁoˌvɪsn̩ʃaft",
+      "en": "neuroscience",
+      "ps": "n"
+    },
+    {
+      "de": "notwendigerweise",
+      "ipa": "ˈnoːtvɛndɪɡɐˌvaɪ̯zə",
+      "en": "necessarily",
+      "ps": "adv"
+    },
+    {
+      "de": "passieren",
+      "ipa": "paˈsiːʁən",
+      "en": "to happen",
+      "ps": "v"
+    },
+    {
+      "de": "richtig",
+      "ipa": "ˈʁɪçtɪç",
+      "en": "correct",
+      "ps": "adj"
+    },
+    {
+      "de": "Satzstruktur",
+      "ipa": "ˈzat͡sˌʃtʁʊktʊʁ",
+      "en": "sentence structure",
+      "ps": "n"
+    },
+    {
+      "de": "schreiben",
+      "ipa": "ˈʃʁaɪ̯bn̩",
+      "en": "to write",
+      "ps": "v"
+    },
+    {
+      "de": "sicher",
+      "ipa": "ˈzɪçɐ",
+      "en": "safe, certain",
+      "ps": "adj"
+    },
+    {
+      "de": "sorgen",
+      "ipa": "ˈzɔʁɡn̩",
+      "en": "to care, worry",
+      "ps": "v"
+    },
+    {
+      "de": "Spaß",
+      "ipa": "ʃpaːs",
+      "en": "fun",
+      "ps": "n"
+    },
+    {
+      "de": "Sprachlaut",
+      "ipa": "ˈʃpʁaːxˌlaʊ̯t",
+      "en": "speech sound",
+      "ps": "n"
+    },
+    {
+      "de": "Sprachverarbeitung",
+      "ipa": "ˈʃpʁaːxfɛɐ̯ˌʔaʁbaɪ̯tʊŋ",
+      "en": "language processing",
+      "ps": "n"
+    },
+    {
+      "de": "Struktur",
+      "ipa": "ʃtʁʊkˈtuːɐ̯",
+      "en": "structure",
+      "ps": "n"
+    },
+    {
+      "de": "Studie|Studium",
+      "ipa": "ˈʃtuːdi̯ə]|[ˈʃtuːdi̯ʊm",
+      "en": "study",
+      "ps": "n"
+    },
+    {
+      "de": "Substanz",
+      "ipa": "zʊpˈstant͡s",
+      "en": "substance",
+      "ps": "n"
+    },
+    {
+      "de": "Teil",
+      "ipa": "taɪ̯l",
+      "en": "part",
+      "ps": "n"
+    },
+    {
+      "de": "testen",
+      "ipa": "ˈtɛstn̩",
+      "en": "to test",
+      "ps": "v"
+    },
+    {
+      "de": "tun",
+      "ipa": "tuːn",
+      "en": "to do",
+      "ps": "v"
+    },
+    {
+      "de": "unbekannt",
+      "ipa": "ˈʊnbəˌkant",
+      "en": "unknown",
+      "ps": "adj"
+    },
+    {
+      "de": "Untersuchung",
+      "ipa": "ʊntɐˈzuːxʊŋ",
+      "en": "examination, study",
+      "ps": "n"
+    },
+    {
+      "de": "verbessern",
+      "ipa": "fɛɐ̯ˈbɛsɐn",
+      "en": "to improve",
+      "ps": "v"
+    },
+    {
+      "de": "verbinden",
+      "ipa": "fɛɐ̯ˈbɪndn̩",
+      "en": "to connect",
+      "ps": "v"
+    },
+    {
+      "de": "Verbindung",
+      "ipa": "fɛɐ̯ˈbɪndʊŋ",
+      "en": "connection",
+      "ps": "n"
+    },
+    {
+      "de": "vergrößern",
+      "ipa": "fɛɐ̯ˈɡʁøːsɐn",
+      "en": "to enlarge",
+      "ps": "v"
+    },
+    {
+      "de": "verschieden",
+      "ipa": "fɛɐ̯ˈʃiːdn̩",
+      "en": "different",
+      "ps": "adj"
+    },
+    {
+      "de": "verändern",
+      "ipa": "fɛɐ̯ˈʔɛndɐn",
+      "en": "to change",
+      "ps": "v"
+    },
+    {
+      "de": "Vorgang",
+      "ipa": "ˈfoːɐ̯ˌɡaŋ",
+      "en": "process",
+      "ps": "n"
+    },
+    {
+      "de": "Wahrnehmung",
+      "ipa": "ˈvaːɐ̯ˌneːmʊŋ",
+      "en": "perception",
+      "ps": "n"
+    },
+    {
+      "de": "wechseln",
+      "ipa": "ˈvɛksl̩n",
+      "en": "to change, switch",
+      "ps": "v"
+    },
+    {
+      "de": "weit",
+      "ipa": "vaɪ̯t",
+      "en": "wide, far",
+      "ps": "adj"
+    },
+    {
+      "de": "wenden",
+      "ipa": "ˈvɛndn̩",
+      "en": "to turn",
+      "ps": "v"
+    },
+    {
+      "de": "werden",
+      "ipa": "ˈveːɐ̯dn̩",
+      "en": "to become",
+      "ps": "v"
+    },
+    {
+      "de": "wiedererkennen",
+      "ipa": "ˈviːdɐʔɛɐ̯ˌkɛnən",
+      "en": "to recognize",
+      "ps": "v"
+    },
+    {
+      "de": "Wort",
+      "ipa": "vɔʁt",
+      "en": "word",
+      "ps": "n"
+    },
+    {
+      "de": "zeigen",
+      "ipa": "ˈt͡saɪ̯ɡn̩",
+      "en": "to show",
+      "ps": "v"
+    },
+    {
+      "de": "zudem",
+      "ipa": "t͡suˈdeːm",
+      "en": "moreover",
+      "ps": "adv"
+    },
+    {
+      "de": "zusammenhängen",
+      "ipa": "t͡suˈzamənˌhɛŋən",
+      "en": "to be connected",
+      "ps": "v"
+    },
+    {
+      "de": "zwar",
+      "ipa": "t͡svaːɐ̯",
+      "en": "indeed, although",
+      "ps": "adv"
     }
   ]
 }
