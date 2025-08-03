@@ -241,11 +241,11 @@
           div.addEventListener("click", () => handleSubtitleClick(index));
 
           div.addEventListener("touchstart", () => {
-            pressTimer = setTimeout(() => copyToClipboard(sub.de), 800);
+            pressTimer = setTimeout(() => openChatgpt(sub.de), 400);
           });
           div.addEventListener("touchend", () => clearTimeout(pressTimer));
           div.addEventListener("mousedown", () => {
-            pressTimer = setTimeout(() => copyToClipboard(sub.de), 800);
+            pressTimer = setTimeout(() => openChatgpt(sub.de), 400);
           });
           div.addEventListener("mouseup", () => clearTimeout(pressTimer));
           div.addEventListener("mouseleave", () => clearTimeout(pressTimer));
@@ -308,6 +308,17 @@
 
         const sub = subtitles[index];
         playSegment(sub.start, sub.end);
+      }
+      function openChatgpt(text) {
+        const query = `${text}
+
+Show each word in the above German text in the following format. Include the infinitive form of verbs.
+
+<German word in bold font> . <ipa of the word>
+<English meaning>`;
+        const encoded = encodeURIComponent(query);
+        const url = `https://chat.openai.com/?q=${encoded}`;
+        window.open(url, "_blank");
       }
 
       function copyToClipboard(text) {
