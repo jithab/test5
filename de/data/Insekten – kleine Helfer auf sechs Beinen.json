@@ -210,9 +210,484 @@
   ],
   "words": [
     {
-      "de": "",
-      "ipa": "",
-      "en": ""
+      "de": "allerdings",
+      "ipa": "ˈalɐdɪŋs",
+      "en": "however",
+      "ps": "adv"
+    },
+    {
+      "de": "also",
+      "ipa": "ˈalzoː",
+      "en": "so, therefore",
+      "ps": "adv"
+    },
+    {
+      "de": "anziehen",
+      "ipa": "ˈantsiːən",
+      "en": "to put on (clothes), to attract",
+      "ps": "v"
+    },
+    {
+      "de": "außerdem",
+      "ipa": "ˈaʊsədeːm",
+      "en": "moreover, besides",
+      "ps": "adv"
+    },
+    {
+      "de": "Bein",
+      "ipa": "baɪ̯n",
+      "en": "leg",
+      "ps": "n"
+    },
+    {
+      "de": "bekennen",
+      "ipa": "bəˈkɛnən",
+      "en": "to confess",
+      "ps": "v"
+    },
+    {
+      "de": "besonders",
+      "ipa": "bəˈzɔndɐs",
+      "en": "especially",
+      "ps": "adv"
+    },
+    {
+      "de": "bestäuben",
+      "ipa": "bəˈʃtɔʏbən",
+      "en": "to pollinate, to dust",
+      "ps": "v"
+    },
+    {
+      "de": "Biene",
+      "ipa": "ˈbiːnə",
+      "en": "bee",
+      "ps": "n"
+    },
+    {
+      "de": "Blut",
+      "ipa": "bluːt",
+      "en": "blood",
+      "ps": "n"
+    },
+    {
+      "de": "Blüte",
+      "ipa": "ˈblyːtə",
+      "en": "blossom, flower",
+      "ps": "n"
+    },
+    {
+      "de": "dafür",
+      "ipa": "daˈfyːɐ̯",
+      "en": "for that, in return",
+      "ps": "adv"
+    },
+    {
+      "de": "damit",
+      "ipa": "daˈmɪt",
+      "en": "with it, so that",
+      "ps": "adv"
+    },
+    {
+      "de": "dienen",
+      "ipa": "ˈdiːnən",
+      "en": "to serve",
+      "ps": "v"
+    },
+    {
+      "de": "Ding",
+      "ipa": "dɪŋ",
+      "en": "thing",
+      "ps": "n"
+    },
+    {
+      "de": "doch",
+      "ipa": "dɔx",
+      "en": "yet, but, after all",
+      "ps": "adv"
+    },
+    {
+      "de": "eher",
+      "ipa": "ˈeːɐ̯",
+      "en": "rather, sooner",
+      "ps": "adv"
+    },
+    {
+      "de": "eindrucksvoll",
+      "ipa": "ˈaɪ̯ndrʊksˌfɔl",
+      "en": "impressive",
+      "ps": "adj"
+    },
+    {
+      "de": "einzig",
+      "ipa": "ˈaɪ̯ntsɪç",
+      "en": "only, sole",
+      "ps": "adj"
+    },
+    {
+      "de": "Eiweiß",
+      "ipa": "ˈaɪ̯vaɪ̯s",
+      "en": "protein, egg white",
+      "ps": "n"
+    },
+    {
+      "de": "entfernen",
+      "ipa": "ɛntˈfɛʁnən",
+      "en": "to remove",
+      "ps": "v"
+    },
+    {
+      "de": "erbeuten",
+      "ipa": "ɛɐ̯ˈbɔʏ̯tən",
+      "en": "to capture, to obtain",
+      "ps": "v"
+    },
+    {
+      "de": "Ergebnis",
+      "ipa": "ɛɐ̯ˈɡeːpnɪs",
+      "en": "result",
+      "ps": "n"
+    },
+    {
+      "de": "Ernte",
+      "ipa": "ˈɛʁntə",
+      "en": "harvest",
+      "ps": "n"
+    },
+    {
+      "de": "ernähren",
+      "ipa": "ɛɐ̯ˈnɛːʁən",
+      "en": "to nourish, to feed",
+      "ps": "v"
+    },
+    {
+      "de": "Essen",
+      "ipa": "ˈɛsən",
+      "en": "food, meal",
+      "ps": "n"
+    },
+    {
+      "de": "fehlen",
+      "ipa": "ˈfeːlən",
+      "en": "to be missing, to lack",
+      "ps": "v"
+    },
+    {
+      "de": "Fliege",
+      "ipa": "ˈfliːɡə",
+      "en": "fly (insect)",
+      "ps": "n"
+    },
+    {
+      "de": "fliegen",
+      "ipa": "ˈfliːɡən",
+      "en": "to fly",
+      "ps": "v"
+    },
+    {
+      "de": "füttern",
+      "ipa": "ˈfʏtɐn",
+      "en": "to feed (animals)",
+      "ps": "v"
+    },
+    {
+      "de": "gar",
+      "ipa": "ɡaːɐ̯",
+      "en": "even, at all",
+      "ps": "adv"
+    },
+    {
+      "de": "geben",
+      "ipa": "ˈɡeːbən",
+      "en": "to give",
+      "ps": "v"
+    },
+    {
+      "de": "gehen",
+      "ipa": "ˈɡeːən",
+      "en": "to go, to walk",
+      "ps": "v"
+    },
+    {
+      "de": "Getränk",
+      "ipa": "ɡəˈtʁɛŋk",
+      "en": "drink, beverage",
+      "ps": "n"
+    },
+    {
+      "de": "Grund",
+      "ipa": "ɡʁʊnt",
+      "en": "reason, ground",
+      "ps": "n"
+    },
+    {
+      "de": "heißen",
+      "ipa": "ˈhaɪ̯sən",
+      "en": "to be called",
+      "ps": "v"
+    },
+    {
+      "de": "Helfer",
+      "ipa": "ˈhɛlfɐ",
+      "en": "helper",
+      "ps": "n"
+    },
+    {
+      "de": "herum",
+      "ipa": "hɛˈʁʊm",
+      "en": "around, about",
+      "ps": "adv"
+    },
+    {
+      "de": "herumstehen",
+      "ipa": "hɛˈʁʊmˌʃteːən",
+      "en": "to stand around",
+      "ps": "v"
+    },
+    {
+      "de": "Hälfte",
+      "ipa": "ˈhɛlftə",
+      "en": "half",
+      "ps": "n"
+    },
+    {
+      "de": "kaum",
+      "ipa": "kaʊ̯m",
+      "en": "hardly, scarcely",
+      "ps": "adv"
+    },
+    {
+      "de": "Krankheit",
+      "ipa": "ˈkʁaŋkhaɪ̯t",
+      "en": "disease, illness",
+      "ps": "n"
+    },
+    {
+      "de": "Käfer",
+      "ipa": "ˈkɛːfɐ",
+      "en": "beetle",
+      "ps": "n"
+    },
+    {
+      "de": "lassen",
+      "ipa": "ˈlasn̩",
+      "en": "to let, to allow",
+      "ps": "v"
+    },
+    {
+      "de": "Lebensmittel",
+      "ipa": "ˈleːbənsˌmɪtl̩",
+      "en": "food, groceries",
+      "ps": "n"
+    },
+    {
+      "de": "Mücke",
+      "ipa": "ˈmʏkə",
+      "en": "mosquito, midge",
+      "ps": "n"
+    },
+    {
+      "de": "Nachwuchs",
+      "ipa": "ˈnaːxvuːks",
+      "en": "offspring, new generation",
+      "ps": "n"
+    },
+    {
+      "de": "nah",
+      "ipa": "naː",
+      "en": "near, close",
+      "ps": "adj"
+    },
+    {
+      "de": "Nahrung",
+      "ipa": "ˈnaːʁʊŋ",
+      "en": "food, nourishment",
+      "ps": "n"
+    },
+    {
+      "de": "natürlich",
+      "ipa": "naˈtyːɐ̯lɪç",
+      "en": "naturally, of course",
+      "ps": "adv"
+    },
+    {
+      "de": "normalerweise",
+      "ipa": "nɔʁˈmaːlɐˌvaɪ̯zə",
+      "en": "normally, usually",
+      "ps": "adv"
+    },
+    {
+      "de": "Nutzpflanze",
+      "ipa": "ˈnʊtsˌpflantsə",
+      "en": "useful plant, crop",
+      "ps": "n"
+    },
+    {
+      "de": "nützlich",
+      "ipa": "ˈnʏtslɪç",
+      "en": "useful",
+      "ps": "adj"
+    },
+    {
+      "de": "Pollen",
+      "ipa": "ˈpɔlən",
+      "en": "pollen",
+      "ps": "n"
+    },
+    {
+      "de": "sammeln",
+      "ipa": "ˈzaml̩n",
+      "en": "to collect",
+      "ps": "v"
+    },
+    {
+      "de": "saugen",
+      "ipa": "ˈzaʊ̯ɡən",
+      "en": "to suck, to vacuum",
+      "ps": "v"
+    },
+    {
+      "de": "schaden",
+      "ipa": "ˈʃaːdn̩",
+      "en": "to harm, to damage",
+      "ps": "v"
+    },
+    {
+      "de": "schlecht",
+      "ipa": "ʃlɛçt",
+      "en": "bad",
+      "ps": "adj"
+    },
+    {
+      "de": "schätzungsweise",
+      "ipa": "ˈʃɛtsʊŋsˌvaɪ̯zə",
+      "en": "approximately, estimated",
+      "ps": "adv"
+    },
+    {
+      "de": "sicher",
+      "ipa": "ˈzɪçɐ",
+      "en": "safe, certain",
+      "ps": "adj"
+    },
+    {
+      "de": "sogar",
+      "ipa": "zoˈɡaːɐ̯",
+      "en": "even",
+      "ps": "adv"
+    },
+    {
+      "de": "sonst",
+      "ipa": "zɔnst",
+      "en": "otherwise, else",
+      "ps": "adv"
+    },
+    {
+      "de": "stechen",
+      "ipa": "ˈʃtɛçən",
+      "en": "to sting, to prick",
+      "ps": "v"
+    },
+    {
+      "de": "Stechmücke",
+      "ipa": "ˈʃtɛçˌmʏkə",
+      "en": "mosquito",
+      "ps": "n"
+    },
+    {
+      "de": "Stich",
+      "ipa": "ʃtɪç",
+      "en": "sting, puncture",
+      "ps": "n"
+    },
+    {
+      "de": "stören",
+      "ipa": "ˈʃtøːʁən",
+      "en": "to disturb",
+      "ps": "v"
+    },
+    {
+      "de": "süß",
+      "ipa": "zyːs",
+      "en": "sweet",
+      "ps": "adj"
+    },
+    {
+      "de": "Tierart",
+      "ipa": "ˈtiːɐ̯ˌʔaːɐ̯t",
+      "en": "animal species",
+      "ps": "n"
+    },
+    {
+      "de": "tierisch",
+      "ipa": "ˈtiːʁɪʃ",
+      "en": "animal (adj.), beastly",
+      "ps": "adj"
+    },
+    {
+      "de": "tropisch",
+      "ipa": "ˈtʁoːpɪʃ",
+      "en": "tropical",
+      "ps": "adj"
+    },
+    {
+      "de": "unbeliebt",
+      "ipa": "ˈʊnbəˌliːpt",
+      "en": "unpopular",
+      "ps": "adj"
+    },
+    {
+      "de": "Untersuchung",
+      "ipa": "ˌʊntɐˈzuːxʊŋ",
+      "en": "examination, investigation",
+      "ps": "n"
+    },
+    {
+      "de": "verantwortlich",
+      "ipa": "fɛɐ̯ˈʔantvɔʁtlɪç",
+      "en": "responsible",
+      "ps": "adj"
+    },
+    {
+      "de": "verlieren",
+      "ipa": "fɛɐ̯ˈliːʁən",
+      "en": "to lose",
+      "ps": "v"
+    },
+    {
+      "de": "verschwinden",
+      "ipa": "fɛɐ̯ˈʃvɪndn̩",
+      "en": "to disappear",
+      "ps": "v"
+    },
+    {
+      "de": "Verwandte|Verwandter",
+      "ipa": "fɛɐ̯ˈvantə|fɛɐ̯ˈvantɐ",
+      "en": "relative (female/male)",
+      "ps": "n"
+    },
+    {
+      "de": "wachsen",
+      "ipa": "ˈvaksn̩",
+      "en": "to grow",
+      "ps": "v"
+    },
+    {
+      "de": "wünschen",
+      "ipa": "ˈvʏnʃn̩",
+      "en": "to wish",
+      "ps": "v"
+    },
+    {
+      "de": "zahlreich",
+      "ipa": "ˈt͡saːlʁaɪ̯ç",
+      "en": "numerous",
+      "ps": "adj"
+    },
+    {
+      "de": "übertragen",
+      "ipa": "ˌyːbɐˈtʁaːɡən",
+      "en": "to transfer, to transmit",
+      "ps": "v"
     }
   ]
 }
