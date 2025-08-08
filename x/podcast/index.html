@@ -2,117 +2,122 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Favorite Podcasts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Mobile support -->
+    <title>My Favorite Podcasts</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
-        color: #333;
         margin: 0;
-        padding: 20px;
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 16px;
       }
 
       h1 {
         text-align: center;
-        color: #2c3e50;
-        font-size: 2em;
-        margin-bottom: 10px;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
       }
 
-      h2 {
-        margin-top: 40px;
-        color: #34495e;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 5px;
-        font-size: 1.4em;
+      .podcast-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 600px;
+        margin: 0 auto;
       }
 
-      ul.podcast-list {
-        max-width: 800px;
-        margin: 10px auto 30px auto;
-        padding: 0 10px;
-        list-style-type: none;
-      }
-
-      ul.podcast-list li {
-        background-color: #ffffff;
-        margin-bottom: 12px;
-        padding: 15px 20px;
+      .podcast-card {
+        background-color: white;
         border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-        transition: transform 0.2s ease;
-      }
-
-      ul.podcast-list li:hover {
-        transform: scale(1.02);
-      }
-
-      .podcast-title {
-        font-size: 1.1em;
-        margin: 0;
+        padding: 16px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
 
       .podcast-title a {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #1a73e8;
         text-decoration: none;
-        color: #2980b9;
       }
 
       .podcast-title a:hover {
         text-decoration: underline;
       }
 
-      .podcast-description {
-        margin-top: 5px;
-        font-size: 0.95em;
-        color: #555;
+      .podcast-author {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 8px;
       }
 
-      @media (max-width: 600px) {
-        body {
-          padding: 10px;
-        }
-
-        h1 {
-          font-size: 1.5em;
-        }
-
-        h2 {
-          font-size: 1.2em;
-        }
-
-        .podcast-title {
-          font-size: 1em;
-        }
-
-        .podcast-description {
-          font-size: 0.9em;
-        }
-
-        ul.podcast-list {
-          padding: 0 5px;
-        }
-
-        ul.podcast-list li {
-          padding: 12px 15px;
-        }
+      .podcast-description {
+        font-size: 0.95rem;
       }
     </style>
   </head>
   <body>
-    <h1>🎧 My Podcasts Hub</h1>
+    <h1>🎙️ My Favorite Podcasts</h1>
 
-    <h2>Explore Podcasts</h2>
-    <ul class="podcast-list">
-      <li>
-        <p class="podcast-title">
-          <a href="https://fourble.co.uk/" target="_blank">Fourble</a>
-        </p>
-        <p class="podcast-description">
-          Fourble turns lists of .mp3 files into podcasts.
-        </p>
-      </li>
-    </ul>
+    <div id="podcastList" class="podcast-list">
+      <!-- JavaScript will populate this -->
+    </div>
+
+    <script>
+      const podcasts = [
+        {
+          name: "Heretic in the House",
+          author: "Naomi Seidman. Shalom Hartman Institute of North America",
+          description:
+            "The popular depictions of Hasidic Jews don’t tell the whole story; they just tell the story the public wants to hear.",
+          url: "https://podcasts.apple.com/us/podcast/heretic-in-the-house/id1653818756",
+        },
+        {
+          name: "Morality in the 21st Century",
+          author: "BBC Radio 4",
+          description:
+            "Rabbi Lord Jonathan Sacks explores what morality means in the 21st Century. He speaks to some of the world’s leading thinkers.",
+          url: "https://podcasts.apple.com/us/podcast/morality-in-the-21st-century/id1434829453",
+        },
+        {
+          name: "How I Found My Voice",
+          author: "Samira Ahmed. Intelligence Squared",
+          description:
+            "It explores how some of the world’s greatest artists and thinkers became such compelling – and unique – communicators.",
+          url: "https://podcasts.apple.com/us/podcast/how-i-found-my-voice/id1455089930",
+        },
+        {
+          name: "The Masterclass Podcast",
+          author: "Louisa Lim. University of Melbourne",
+          description:
+            "Learning Through Listening: Lessons in audio from some of the best audio journalists in the world.",
+          url: "https://podcasts.apple.com/au/podcast/the-masterclass-podcast/id1350641953",
+        },
+        {
+          name: "One to One",
+          author: "BBC Radio 4",
+          description:
+            "Series of interviews in which broadcasters follow their personal passions by talking to the people whose stories interest them most.",
+          url: "https://podcasts.apple.com/us/podcast/one-to-one/id470508065",
+        },
+      ];
+
+      const podcastList = document.getElementById("podcastList");
+
+      podcasts.forEach((podcast) => {
+        const card = document.createElement("div");
+        card.className = "podcast-card";
+
+        card.innerHTML = `
+        <div class="podcast-title">
+          <a href="${podcast.url}" target="_blank" rel="noopener noreferrer">${podcast.name}</a>
+        </div>
+        <div class="podcast-author">${podcast.author}</div>
+        <div class="podcast-description">${podcast.description}</div>
+      `;
+
+        podcastList.appendChild(card);
+      });
+    </script>
   </body>
 </html>
