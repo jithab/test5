@@ -1,212 +1,212 @@
 {
-    "title": "<title>",
-    "author": "© <author>",
-    "author_url": "<author url>",
-    "lines": [
-        {
-            "start": 0.42,
-            "end": 3.84,
-            "de": "Insekten, kleine Helfer auf sechs Beinen.",
-            "en": ""
-        },
-        {
-            "start": 4.98,
-            "end": 8.56,
-            "de": "Wespen und Mücken haben ein eher schlechtes Image.",
-            "en": ""
-        },
-        {
-            "start": 9.5,
-            "end": 13.86,
-            "de": "Sie fliegen an heißen Sommertagen um uns herum und können uns stechen.",
-            "en": ""
-        },
-        {
-            "start": 14.9,
-            "end": 17.86,
-            "de": "Dabei sind die kleinen Tiere extrem wichtig.",
-            "en": ""
-        },
-        {
-            "start": 18.42,
-            "end": 21.3,
-            "de": "Ohne sie würden uns viele Lebensmittel fehlen.",
-            "en": ""
-        },
-        {
-            "start": 22.32,
-            "end": 24.26,
-            "de": "Stechmücken, die unser Blut saugen.",
-            "en": ""
-        },
-        {
-            "start": 24.7,
-            "end": 26.58,
-            "de": "Wespen, die uns beim Picknick stören.",
-            "en": ""
-        },
-        {
-            "start": 26.58,
-            "end": 32.02,
-            "de": "Wer hat sich nicht schon gewünscht, dass die kleinen Plagegeister für immer verschwinden?",
-            "en": ""
-        },
-        {
-            "start": 32.76,
-            "end": 37.58,
-            "de": "Doch ohne diese und andere Insekten würden uns viele wichtige Dinge fehlen.",
-            "en": ""
-        },
-        {
-            "start": 39.52,
-            "end": 43.58,
-            "de": "Umweltorganisationen haben das vor einiger Zeit eindrucksvoll gezeigt.",
-            "en": ""
-        },
-        {
-            "start": 44.34,
-            "end": 50.04,
-            "de": "Aus einem Supermarkt wurden alle Produkte entfernt, die es ohne Insekten nicht geben würde.",
-            "en": ""
-        },
-        {
-            "start": 50.64,
-            "end": 54.72,
-            "de": "Das Ergebnis, mehr als die Hälfte des Sortiments, fehlte nun.",
-            "en": ""
-        },
-        {
-            "start": 54.72,
-            "end": 62.44,
-            "de": "Bienen sammeln Nektar und Pollen von Blütenpflanzen, fliegen damit zur nächsten Blüte und bestäuben sie.",
-            "en": ""
-        },
-        {
-            "start": 63.28,
-            "end": 69.66,
-            "de": "Für bis zu 50 Prozent aller Blütenbesuche sind Bienen allerdings gar nicht verantwortlich,",
-            "en": ""
-        },
-        {
-            "start": 70.22,
-            "end": 72.42,
-            "de": "wie internationale Untersuchungen zeigen.",
-            "en": ""
-        },
-        {
-            "start": 72.42,
-            "end": 79.18,
-            "de": "Denn auch Wespen, Fliegen, Käfer und sogar Mücken sammeln Nektar und bestäuben Blüten.",
-            "en": ""
-        },
-        {
-            "start": 79.18,
-            "end": 84.82,
-            "de": "Ohne all diese Tiere könnten zahlreiche Nutzpflanzen nicht wachsen.",
-            "en": ""
-        },
-        {
-            "start": 85.58,
-            "end": 89.96,
-            "de": "Bis zu 90 Prozent aller Ernten würden schätzungsweise verloren gehen.",
-            "en": ""
-        },
-        {
-            "start": 91.54,
-            "end": 95.9,
-            "de": "Mücken gehen uns im Sommer mit ihrem Gesumme und ihren Stichen auf die Nerven.",
-            "en": ""
-        },
-        {
-            "start": 95.9,
-            "end": 102.96,
-            "de": "Wenig bekannt ist, dass die Stechmücke nur eine von 28 Mückenfamilien in Deutschland ist",
-            "en": ""
-        },
-        {
-            "start": 102.96,
-            "end": 106.36,
-            "de": "und die anderen 27 nicht stechen.",
-            "en": ""
-        },
-        {
-            "start": 107.18,
-            "end": 109.46,
-            "de": "Sie dienen Fischen und Vögeln als Nahrung.",
-            "en": ""
-        },
-        {
-            "start": 110.38,
-            "end": 115.62,
-            "de": "Außerdem bestäuben ihre tropischen Verwandten als einzige Tierart die Kakaopflanze.",
-            "en": ""
-        },
-        {
-            "start": 116.38,
-            "end": 119.56,
-            "de": "Ohne Mücken hätten wir also keine Schokolade.",
-            "en": ""
-        },
-        {
-            "start": 119.56,
-            "end": 123.44,
-            "de": "Wespen sind besonders unbeliebt.",
-            "en": ""
-        },
-        {
-            "start": 124.08,
-            "end": 126.38,
-            "de": "Kaum eine Gartenparty ist vor ihnen sicher.",
-            "en": ""
-        },
-        {
-            "start": 127.1,
-            "end": 131.06,
-            "de": "Doch sie werden aus gutem Grund von Fleisch und süßen Getränken angezogen.",
-            "en": ""
-        },
-        {
-            "start": 131.82,
-            "end": 134.16,
-            "de": "Den Zucker brauchen sie, um sich zu ernähren.",
-            "en": ""
-        },
-        {
-            "start": 134.16,
-            "end": 137.86,
-            "de": "Und mit dem tierischen Eiweiß füttern sie ihren Nachwuchs.",
-            "en": ""
-        },
-        {
-            "start": 139.08,
-            "end": 142.4,
-            "de": "Normalerweise erbeuten Wespen dafür kleinere Insekten,",
-            "en": ""
-        },
-        {
-            "start": 142.78,
-            "end": 146.18,
-            "de": "die uns sonst Schaden oder sogar Krankheiten übertragen können.",
-            "en": ""
-        },
-        {
-            "start": 146.98,
-            "end": 149.18,
-            "de": "Dann sind sie extrem nützlich.",
-            "en": ""
-        },
-        {
-            "start": 149.56,
-            "end": 154.26,
-            "de": "Aber natürlich nur, wenn wir unser Essen nicht offen herumstehen lassen.",
-            "en": ""
-        }
-    ],
-    "words": [
-        {
-            "de": "",
-            "ipa": "",
-            "en": ""
-        }
-    ]
+  "title": "<title>",
+  "author": "© <author>",
+  "author_url": "<author url>",
+  "lines": [
+    {
+      "start": 0.4,
+      "end": 4,
+      "de": "Insekten – kleine Helfer auf sechs Beinen.",
+      "en": ""
+    },
+    {
+      "start": 4.6,
+      "end": 9.0,
+      "de": "Wespen und Mücken haben ein eher schlechtes Image.",
+      "en": ""
+    },
+    {
+      "start": 9.2,
+      "end": 13.9,
+      "de": "Sie fliegen an heißen Sommertagen um uns herum und können uns stechen.",
+      "en": ""
+    },
+    {
+      "start": 14.6,
+      "end": 18,
+      "de": "Dabei sind die kleinen Tiere extrem wichtig:",
+      "en": ""
+    },
+    {
+      "start": 18.3,
+      "end": 21.4,
+      "de": "Ohne sie würden uns viele Lebensmittel fehlen.",
+      "en": ""
+    },
+    {
+      "start": 22.0,
+      "end": 24.3,
+      "de": "Stechmücken, die unser Blut saugen.",
+      "en": ""
+    },
+    {
+      "start": 24.7,
+      "end": 26.7,
+      "de": "Wespen, die uns beim Picknick stören.",
+      "en": ""
+    },
+    {
+      "start": 26.8,
+      "end": 32.2,
+      "de": "Wer hat sich nicht schon gewünscht, dass die kleinen Plagegeister für immer verschwinden.",
+      "en": ""
+    },
+    {
+      "start": 32.9,
+      "end": 37.6,
+      "de": "Doch ohne diese und andere Insekten würden uns viele wichtige Dinge fehlen.",
+      "en": ""
+    },
+    {
+      "start": 38.6,
+      "end": 43.8,
+      "de": "Umweltorganisationen haben das vor einiger Zeit eindrucksvoll gezeigt:",
+      "en": ""
+    },
+    {
+      "start": 44.2,
+      "end": 50.4,
+      "de": "Aus einem Supermarkt wurden alle Produkte entfernt, die es ohne Insekten nicht geben würde.",
+      "en": ""
+    },
+    {
+      "start": 50.6,
+      "end": 54.9,
+      "de": "Das Ergebnis: Mehr als die Hälfte des Sortiments fehlte nun.",
+      "en": ""
+    },
+    {
+      "start": 55,
+      "end": 62.8,
+      "de": "Bienen sammeln Nektar und Pollen von Blütenpflanzen, fliegen damit zur nächsten Blüte und bestäuben sie.",
+      "en": ""
+    },
+    {
+      "start": 63,
+      "end": 69.8,
+      "de": "Für bis zu 50 Prozent aller Blütenbesuche sind Bienen allerdings gar nicht verantwortlich,",
+      "en": ""
+    },
+    {
+      "start": 70.1,
+      "end": 72.5,
+      "de": "wie internationale Untersuchungen zeigen.",
+      "en": ""
+    },
+    {
+      "start": 72.6,
+      "end": 79.2,
+      "de": "Denn auch Wespen, Fliegen, Käfer und sogar Mücken sammeln Nektar und bestäuben Blüten.",
+      "en": ""
+    },
+    {
+      "start": 80,
+      "end": 85,
+      "de": "Ohne all diese Tiere könnten zahlreiche Nutzpflanzen nicht wachsen,",
+      "en": ""
+    },
+    {
+      "start": 85.4,
+      "end": 91.2,
+      "de": "bis zu 90 Prozent aller Ernten würden schätzungsweise verloren gehen.",
+      "en": ""
+    },
+    {
+      "start": 91.4,
+      "end": 96,
+      "de": "Mücken gehen uns im Sommer mit ihrem Gesumme und ihren Stichen auf die Nerven.",
+      "en": ""
+    },
+    {
+      "start": 96.8,
+      "end": 103,
+      "de": "Wenig bekannt ist, dass die Stechmücke nur eine von 28 Mückenfamilien in Deutschland ist –",
+      "en": ""
+    },
+    {
+      "start": 103.6,
+      "end": 106.8,
+      "de": "und die anderen 27 nicht stechen.",
+      "en": ""
+    },
+    {
+      "start": 107.2,
+      "end": 109.5,
+      "de": "Sie dienen Fischen und Vögeln als Nahrung.",
+      "en": ""
+    },
+    {
+      "start": 110.2,
+      "end": 115.8,
+      "de": "Außerdem bestäuben ihre tropischen Verwandten als einzige Tierart die Kakaopflanze.",
+      "en": ""
+    },
+    {
+      "start": 116.2,
+      "end": 119.6,
+      "de": "Ohne Mücken hätten wir also keine Schokolade.",
+      "en": ""
+    },
+    {
+      "start": 120.6,
+      "end": 123.6,
+      "de": "Wespen sind besonders unbeliebt:",
+      "en": ""
+    },
+    {
+      "start": 124.0,
+      "end": 126.6,
+      "de": "Kaum eine Gartenparty ist vor ihnen sicher.",
+      "en": ""
+    },
+    {
+      "start": 127.0,
+      "end": 131.2,
+      "de": "Doch sie werden aus gutem Grund von Fleisch und süßen Getränken angezogen.",
+      "en": ""
+    },
+    {
+      "start": 131.6,
+      "end": 134.2,
+      "de": "Den Zucker brauchen sie, um sich zu ernähren –",
+      "en": ""
+    },
+    {
+      "start": 134.5,
+      "end": 137.9,
+      "de": "und mit dem tierischen Eiweiß füttern sie ihren Nachwuchs.",
+      "en": ""
+    },
+    {
+      "start": 138.8,
+      "end": 142.6,
+      "de": "Normalerweise erbeuten Wespen dafür kleinere Insekten,",
+      "en": ""
+    },
+    {
+      "start": 142.7,
+      "end": 146.6,
+      "de": "die uns sonst schaden oder sogar Krankheiten übertragen können.",
+      "en": ""
+    },
+    {
+      "start": 147,
+      "end": 149.4,
+      "de": "Dann sind sie extrem nützlich –",
+      "en": ""
+    },
+    {
+      "start": 149.7,
+      "end": 154.4,
+      "de": "aber natürlich nur, wenn wir unser Essen nicht offen herumstehen lassen.",
+      "en": ""
+    }
+  ],
+  "words": [
+    {
+      "de": "",
+      "ipa": "",
+      "en": ""
+    }
+  ]
 }
