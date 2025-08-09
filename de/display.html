@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Subtitle Viewer</title>
+    <title>Audio Subtitle view</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
@@ -200,7 +200,7 @@
         subtitles = data.lines || [];
         const words = data.words || [];
 
-        titleElement.textContent = data.title || "Subtitle Viewer";
+        document.title = titleElement.textContent = data.title;
 
         if (data.author && data.author_url) {
           authorElement.innerHTML = `<a href="${data.author_url}" target="_blank" rel="noopener noreferrer">${data.author}</a>`;
