@@ -198,9 +198,484 @@
   ],
   "words": [
     {
-      "de": "",
-      "ipa": "",
-      "en": ""
+      "de": "akzeptieren",
+      "ipa": "akˈt͡sɛptɪʁən",
+      "en": "accept",
+      "ps": "v"
+    },
+    {
+      "de": "allein",
+      "ipa": "aˈlaɪn",
+      "en": "alone",
+      "ps": "adv"
+    },
+    {
+      "de": "alleinerziehend",
+      "ipa": "ˈalaɪnʔɛɐ̯ˌt͡siːənt",
+      "en": "single-parent",
+      "ps": "adj"
+    },
+    {
+      "de": "Armutsrisiko",
+      "ipa": "ˈaʁmuːt͡sˌʁiːziko",
+      "en": "poverty risk",
+      "ps": "n"
+    },
+    {
+      "de": "auch",
+      "ipa": "aʊ̯x",
+      "en": "also",
+      "ps": "adv"
+    },
+    {
+      "de": "befürworten",
+      "ipa": "bəˈfyːɐ̯ˌvɔʁtn̩",
+      "en": "advocate, support",
+      "ps": "v"
+    },
+    {
+      "de": "Beispiel",
+      "ipa": "ˈbaɪ̯ˌʃpiːl",
+      "en": "example",
+      "ps": "n"
+    },
+    {
+      "de": "bekommen",
+      "ipa": "bəˈkɔmən",
+      "en": "receive, get",
+      "ps": "v"
+    },
+    {
+      "de": "beschimpfen",
+      "ipa": "bəˈʃɪmp͡fn̩",
+      "en": "insult, scold",
+      "ps": "v"
+    },
+    {
+      "de": "Bewegung",
+      "ipa": "bəˈveːɡʊŋ",
+      "en": "movement",
+      "ps": "n"
+    },
+    {
+      "de": "bezahlen",
+      "ipa": "bəˈt͡saːlən",
+      "en": "pay",
+      "ps": "v"
+    },
+    {
+      "de": "dafür",
+      "ipa": "daˈfyːɐ̯",
+      "en": "for it, in favor",
+      "ps": "adv"
+    },
+    {
+      "de": "dagegen",
+      "ipa": "daˈɡeːɡn̩",
+      "en": "against it",
+      "ps": "adv"
+    },
+    {
+      "de": "dar",
+      "ipa": "daːɐ̯",
+      "en": "there (archaic/poetic)",
+      "ps": "adv"
+    },
+    {
+      "de": "darüber",
+      "ipa": "daˈʁyːbɐ",
+      "en": "about it, over it",
+      "ps": "adv"
+    },
+    {
+      "de": "dazu",
+      "ipa": "daˈt͡suː",
+      "en": "in addition, to it",
+      "ps": "adv"
+    },
+    {
+      "de": "doch",
+      "ipa": "dɔx",
+      "en": "however, after all",
+      "ps": "adv"
+    },
+    {
+      "de": "eher",
+      "ipa": "ˈeːɐ̯",
+      "en": "rather, sooner",
+      "ps": "adv"
+    },
+    {
+      "de": "Entscheidung",
+      "ipa": "ɛntˈʃaɪ̯dʊŋ",
+      "en": "decision",
+      "ps": "n"
+    },
+    {
+      "de": "erzählen",
+      "ipa": "ɛɐ̯ˈt͡sɛːlən",
+      "en": "tell, narrate",
+      "ps": "v"
+    },
+    {
+      "de": "falsch",
+      "ipa": "falʃ",
+      "en": "wrong, false",
+      "ps": "adj"
+    },
+    {
+      "de": "fast",
+      "ipa": "fast",
+      "en": "almost",
+      "ps": "adv"
+    },
+    {
+      "de": "Folge",
+      "ipa": "ˈfɔlɡə",
+      "en": "consequence, episode",
+      "ps": "n"
+    },
+    {
+      "de": "fordern",
+      "ipa": "ˈfɔʁdɐn",
+      "en": "demand, require",
+      "ps": "v"
+    },
+    {
+      "de": "ganz",
+      "ipa": "ɡant͡s",
+      "en": "whole, entirely",
+      "ps": "adv"
+    },
+    {
+      "de": "geben",
+      "ipa": "ˈɡeːbn̩",
+      "en": "give",
+      "ps": "v"
+    },
+    {
+      "de": "Geburt",
+      "ipa": "ɡəˈbuːɐ̯t",
+      "en": "birth",
+      "ps": "n"
+    },
+    {
+      "de": "Gegenteil",
+      "ipa": "ˈɡeːɡn̩ˌtaɪ̯l",
+      "en": "opposite",
+      "ps": "n"
+    },
+    {
+      "de": "gehören",
+      "ipa": "ɡəˈhøːʁən",
+      "en": "belong",
+      "ps": "v"
+    },
+    {
+      "de": "Geldstrafe",
+      "ipa": "ˈɡɛltˌʃtʁaːfə",
+      "en": "fine (monetary penalty)",
+      "ps": "n"
+    },
+    {
+      "de": "gerade",
+      "ipa": "ɡəˈʁaːdə",
+      "en": "just, straight",
+      "ps": "adv"
+    },
+    {
+      "de": "Grund",
+      "ipa": "ɡʁʊnt",
+      "en": "reason, ground",
+      "ps": "n"
+    },
+    {
+      "de": "Gruppe",
+      "ipa": "ˈɡʁʊpə",
+      "en": "group",
+      "ps": "n"
+    },
+    {
+      "de": "Hauptteil",
+      "ipa": "ˈhaʊ̯ptˌtaɪ̯l",
+      "en": "main part",
+      "ps": "n"
+    },
+    {
+      "de": "Haß",
+      "ipa": "has",
+      "en": "hate (old spelling)",
+      "ps": "n"
+    },
+    {
+      "de": "hoch",
+      "ipa": "hoːx",
+      "en": "high",
+      "ps": "adj"
+    },
+    {
+      "de": "insgesamt",
+      "ipa": "ɪnˈzɔmən",
+      "en": "in total, overall",
+      "ps": "adv"
+    },
+    {
+      "de": "jedoch",
+      "ipa": "ˈjeːdɔx",
+      "en": "however",
+      "ps": "adv"
+    },
+    {
+      "de": "Kind",
+      "ipa": "kɪnt",
+      "en": "child",
+      "ps": "n"
+    },
+    {
+      "de": "kinderlos",
+      "ipa": "ˈkɪndɐˌloːs",
+      "en": "childless",
+      "ps": "adj"
+    },
+    {
+      "de": "Klimawandel",
+      "ipa": "ˈkliːmaˌvandl̩",
+      "en": "climate change",
+      "ps": "n"
+    },
+    {
+      "de": "kommen",
+      "ipa": "ˈkɔmən",
+      "en": "come",
+      "ps": "v"
+    },
+    {
+      "de": "Krise",
+      "ipa": "ˈkʁiːzə",
+      "en": "crisis",
+      "ps": "n"
+    },
+    {
+      "de": "kritisieren",
+      "ipa": "kʁitiˈziːʁən",
+      "en": "criticize",
+      "ps": "v"
+    },
+    {
+      "de": "Kulturkampf",
+      "ipa": "kʊlˈtuːɐ̯ˌkampf",
+      "en": "culture war",
+      "ps": "n"
+    },
+    {
+      "de": "Land",
+      "ipa": "lant",
+      "en": "country, land",
+      "ps": "n"
+    },
+    {
+      "de": "lassen",
+      "ipa": "ˈlasn̩",
+      "en": "let, allow",
+      "ps": "v"
+    },
+    {
+      "de": "machen",
+      "ipa": "ˈmaxn̩",
+      "en": "make, do",
+      "ps": "v"
+    },
+    {
+      "de": "mehr",
+      "ipa": "meːɐ̯",
+      "en": "more",
+      "ps": "adv"
+    },
+    {
+      "de": "möglichst",
+      "ipa": "ˈmøːklɪçst",
+      "en": "as ... as possible",
+      "ps": "adv"
+    },
+    {
+      "de": "Nachwuchs",
+      "ipa": "ˈnaːxˌvuːks",
+      "en": "offspring, new generation",
+      "ps": "n"
+    },
+    {
+      "de": "nehmen",
+      "ipa": "ˈneːmən",
+      "en": "take",
+      "ps": "v"
+    },
+    {
+      "de": "nie",
+      "ipa": "niː",
+      "en": "never",
+      "ps": "adv"
+    },
+    {
+      "de": "niedrig",
+      "ipa": "ˈniːdʁɪç",
+      "en": "low",
+      "ps": "adj"
+    },
+    {
+      "de": "noch",
+      "ipa": "nɔx",
+      "en": "still, yet",
+      "ps": "adv"
+    },
+    {
+      "de": "persönlich",
+      "ipa": "pɛɐ̯ˈzøːnlɪç",
+      "en": "personal",
+      "ps": "adj"
+    },
+    {
+      "de": "Pflicht",
+      "ipa": "pflɪçt",
+      "en": "duty, obligation",
+      "ps": "n"
+    },
+    {
+      "de": "rechnen",
+      "ipa": "ˈʁɛçnən",
+      "en": "calculate, expect",
+      "ps": "v"
+    },
+    {
+      "de": "Rente",
+      "ipa": "ˈʁɛntə",
+      "en": "pension, retirement",
+      "ps": "n"
+    },
+    {
+      "de": "rund",
+      "ipa": "ʁʊnt",
+      "en": "round, approximately",
+      "ps": "adv"
+    },
+    {
+      "de": "sabotieren",
+      "ipa": "zaboˈtiːʁən",
+      "en": "sabotage",
+      "ps": "v"
+    },
+    {
+      "de": "sagen",
+      "ipa": "ˈzaːɡn̩",
+      "en": "say",
+      "ps": "v"
+    },
+    {
+      "de": "schwanger",
+      "ipa": "ˈʃvaŋɐ",
+      "en": "pregnant",
+      "ps": "adj"
+    },
+    {
+      "de": "so",
+      "ipa": "zoː",
+      "en": "so, thus",
+      "ps": "adv"
+    },
+    {
+      "de": "sogar",
+      "ipa": "zoˈɡaːɐ̯",
+      "en": "even",
+      "ps": "adv"
+    },
+    {
+      "de": "sorgen",
+      "ipa": "ˈzɔʁɡn̩",
+      "en": "worry, take care",
+      "ps": "v"
+    },
+    {
+      "de": "Soziologe",
+      "ipa": "zot͡sjoˈloːɡə",
+      "en": "sociologist (male)",
+      "ps": "n"
+    },
+    {
+      "de": "Soziologin",
+      "ipa": "zot͡sjoˈloːɡɪn",
+      "en": "sociologist (female)",
+      "ps": "n"
+    },
+    {
+      "de": "stellen",
+      "ipa": "ˈʃtɛlən",
+      "en": "place, set",
+      "ps": "v"
+    },
+    {
+      "de": "sterilisieren",
+      "ipa": "ʃteʁiliˈziːʁən",
+      "en": "sterilize",
+      "ps": "v"
+    },
+    {
+      "de": "Tatsache",
+      "ipa": "ˈtaːtˌzaxə",
+      "en": "fact",
+      "ps": "n"
+    },
+    {
+      "de": "Unsicherheit",
+      "ipa": "ˈʊnˌzɪçɐhaɪ̯t",
+      "en": "uncertainty",
+      "ps": "n"
+    },
+    {
+      "de": "Unterstützung",
+      "ipa": "ˌʊntɐˈʃtʏt͡sʊŋ",
+      "en": "support",
+      "ps": "n"
+    },
+    {
+      "de": "verantwortlich",
+      "ipa": "fɛɐ̯ˈʔantvɔʁtlɪç",
+      "en": "responsible",
+      "ps": "adj"
+    },
+    {
+      "de": "verzichten",
+      "ipa": "fɛɐ̯ˈt͡sɪçtn̩",
+      "en": "do without, renounce",
+      "ps": "v"
+    },
+    {
+      "de": "werden",
+      "ipa": "ˈveːɐ̯dn̩",
+      "en": "become, will (aux.)",
+      "ps": "v"
+    },
+    {
+      "de": "wirtschaftlich",
+      "ipa": "ˈvɪʁtʃaftlɪç",
+      "en": "economic, economical",
+      "ps": "adj"
+    },
+    {
+      "de": "Zahl",
+      "ipa": "t͡saːl",
+      "en": "number",
+      "ps": "n"
+    },
+    {
+      "de": "ähnlich",
+      "ipa": "ˈɛːnlɪç",
+      "en": "similar",
+      "ps": "adj"
+    },
+    {
+      "de": "übernehmen",
+      "ipa": "yːbɐˈneːmən",
+      "en": "take over, adopt",
+      "ps": "v"
     }
   ]
 }
