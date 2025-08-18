@@ -244,9 +244,9 @@
             pressTimer = setTimeout(() => openChatgpt(sub.de), 400);
           });
           div.addEventListener("touchend", () => clearTimeout(pressTimer));
-          div.addEventListener("mousedown", () => {
-            pressTimer = setTimeout(() => openChatgpt(sub.de), 400);
-          });
+          //div.addEventListener("mousedown", () => {
+          //  pressTimer = setTimeout(() => openChatgpt(sub.de), 400);
+          //});
           div.addEventListener("mouseup", () => clearTimeout(pressTimer));
           div.addEventListener("mouseleave", () => clearTimeout(pressTimer));
 
