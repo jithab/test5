@@ -1,33 +1,13 @@
 [
   {
-    "title": "Die Frau, die Monopoly erfand",
-    "audio": "data/Die-Frau-die-Monopoly-erfand.mp3",
-    "data": "data/Die-Frau-die-Monopoly-erfand.json"
+    "title": "Intelligent fahren: von Ameisen lernen?",
+    "audio": "data/Intelligent fahren - von Ameisen lernen.mp3",
+    "data": "data/Intelligent fahren - von Ameisen lernen.json"
   },
   {
-    "title": "Warum Deutschland offen für Englisch ist",
-    "audio": "data/Warum-Deutschland-offen-für-Englisch-ist.mp3",
-    "data": "data/Warum-Deutschland-offen-für-Englisch-ist.json"
-  },
-  {
-    "title": "Lachen verbindet: Humor und Partnerschaft",
-    "audio": "data/Lachen-verbindet-Humor-und-Partnerschaft.mp3",
-    "data": "data/Lachen-verbindet-Humor-und-Partnerschaft.json"
-  },
-  {
-    "title": "Bäume – Wunder der Natur",
-    "audio": "data/Bäume–Wunder-der-Natur.mp3",
-    "data": "data/Bäume–Wunder-der-Natur.json"
-  },
-  {
-    "title": "Was passiert, wenn wir Sprachen erlernen?",
-    "audio": "data/Was-passiert-wenn-wir-Sprachen-erlernen.mp3",
-    "data": "data/Was-passiert-wenn-wir-Sprachen-erlernen.json"
-  },
-  {
-    "title": "Insekten – kleine Helfer auf sechs Beinen",
-    "audio": "data/Insekten – kleine Helfer auf sechs Beinen.mp3",
-    "data": "data/Insekten – kleine Helfer auf sechs Beinen.json"
+    "title": "Tiere im Sport: Die Kritik wächst",
+    "audio": "data/Tiere im Sport - Die Kritik wächst.mp3",
+    "data": "data/Tiere im Sport - Die Kritik wächst.json"
   },
   {
     "title": "Kinder bekommen? Eher nicht!",
@@ -35,8 +15,33 @@
     "data": "data/Kinder bekommen Eher nicht.json"
   },
   {
-    "title": "Tiere im Sport: Die Kritik wächst",
-    "audio": "data/Tiere im Sport - Die Kritik wächst.mp3",
-    "data": "data/Tiere im Sport - Die Kritik wächst.json"
+    "title": "Insekten – kleine Helfer auf sechs Beinen",
+    "audio": "data/Insekten – kleine Helfer auf sechs Beinen.mp3",
+    "data": "data/Insekten – kleine Helfer auf sechs Beinen.json"
+  },
+  {
+    "title": "Was passiert, wenn wir Sprachen erlernen?",
+    "audio": "data/Was-passiert-wenn-wir-Sprachen-erlernen.mp3",
+    "data": "data/Was-passiert-wenn-wir-Sprachen-erlernen.json"
+  },
+  {
+    "title": "Bäume – Wunder der Natur",
+    "audio": "data/Bäume–Wunder-der-Natur.mp3",
+    "data": "data/Bäume–Wunder-der-Natur.json"
+  },
+  {
+    "title": "Lachen verbindet: Humor und Partnerschaft",
+    "audio": "data/Lachen-verbindet-Humor-und-Partnerschaft.mp3",
+    "data": "data/Lachen-verbindet-Humor-und-Partnerschaft.json"
+  },
+  {
+    "title": "Warum Deutschland offen für Englisch ist",
+    "audio": "data/Warum-Deutschland-offen-für-Englisch-ist.mp3",
+    "data": "data/Warum-Deutschland-offen-für-Englisch-ist.json"
+  },
+  {
+    "title": "Die Frau, die Monopoly erfand",
+    "audio": "data/Die-Frau-die-Monopoly-erfand.mp3",
+    "data": "data/Die-Frau-die-Monopoly-erfand.json"
   }
 ]
