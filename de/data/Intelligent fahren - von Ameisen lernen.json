@@ -5,157 +5,236 @@
   "lines": [
     {
       "start": 0.0,
-      "end": 7.8,
-      "de": "Intelligent fahren: von Ameisen lernen? Zu viele Autos, Unfälle oder häufiger",
+      "end": 4,
+      "de": "Intelligent fahren: von Ameisen lernen?",
       "en": ""
     },
     {
-      "start": 7.8,
-      "end": 14.28,
-      "de": "Spurwechsel – das führt auf den Straßen oft zu Staus. Bei Ameisen ist Stau kein",
+      "start": 4.6,
+      "end": 8.8,
+      "de": "Zu viele Autos, Unfälle oder häufiger Spurwechsel –",
       "en": ""
     },
     {
-      "start": 14.28,
-      "end": 17.76,
-      "de": "Problem. Können die Beobachtungen aus der Tierwelt",
+      "start": 8.8,
+      "end": 11.8,
+      "de": "das führt auf den Straßen oft zu Staus.",
       "en": ""
     },
     {
-      "start": 17.76,
-      "end": 21.32,
-      "de": "vielleicht für den Straßenverkehr nützlich sein?",
+      "start": 12.2,
+      "end": 15,
+      "de": "Bei Ameisen ist Stau kein Problem.",
       "en": ""
     },
     {
-      "start": 21.32,
-      "end": 26.76,
-      "de": "Staus entstehen nicht nur durch zu viele Autos, sondern auch durch ungeduldige",
+      "start": 15.7,
+      "end": 21.1,
+      "de": "Können die Beobachtungen aus der Tierwelt vielleicht für den Straßenverkehr nützlich sein?",
       "en": ""
     },
     {
-      "start": 26.76,
-      "end": 32.46,
-      "de": "Autofahrer. Ein häufiger Spurwechsel führt dazu, dass der Verkehr langsamer wird.",
+      "start": 21.8,
+      "end": 24.8,
+      "de": "Staus entstehen nicht nur durch zu viele Autos,",
       "en": ""
     },
     {
-      "start": 32.46,
-      "end": 37.5,
-      "de": "Wenn ein Autofahrer bremst, müssen auch die anderen bremsen, und das löst eine",
+      "start": 25,
+      "end": 28,
+      "de": "sondern auch durch ungeduldige Autofahrer.",
       "en": ""
     },
     {
-      "start": 37.5,
-      "end": 43.98,
-      "de": "Kettenreaktion aus. Die Folge: Es entsteht Stau. Ameisen verursachen hingegen keine",
+      "start": 28.1,
+      "end": 30.2,
+      "de": "Ein häufiger Spurwechsel führt dazu,",
       "en": ""
     },
     {
-      "start": 43.98,
-      "end": 48.42,
-      "de": "Staus, selbst wenn viele Artgenossen gleichzeitig unterwegs sind, wie eine",
+      "start": 30.6,
+      "end": 32.5,
+      "de": "dass der Verkehr langsamer wird.",
       "en": ""
     },
     {
-      "start": 48.42,
-      "end": 54.2,
-      "de": "neue Studie aus dem italienischen Trient zeigt. „Ameisen gehören zu den wenigen",
+      "start": 32.6,
+      "end": 34.6,
+      "de": "Wenn ein Autofahrer bremst,",
       "en": ""
     },
     {
-      "start": 54.2,
-      "end": 58.52,
-      "de": "Arten, die mit [...] Verkehrsströmen zurechtkommen [...] und sich dennoch nahtlos",
+      "start": 34.6,
+      "end": 36.1,
+      "de": "müssen auch die anderen bremsen,",
       "en": ""
     },
     {
-      "start": 58.52,
-      "end": 64.22,
-      "de": "und ohne Staus bewegen können“, sagt Marco Guerrieri, ein Autor der Studie. Die",
+      "start": 36.2,
+      "end": 39,
+      "de": "und das löst eine Kettenreaktion aus.",
       "en": ""
     },
     {
-      "start": 64.22,
-      "end": 69.14,
-      "de": "Forschenden fanden in einem Experiment heraus: Ameisen bewegen sich immer",
+      "start": 39.4,
+      "end": 41.6,
+      "de": "Die Folge: Es entsteht Stau.",
       "en": ""
     },
     {
-      "start": 69.14,
-      "end": 75.32,
-      "de": "perfekt synchron. Dazu legt die Ameise, die eine Kolonne anführt, eine Pheromonspur.",
+      "start": 41.9,
+      "end": 44.6,
+      "de": "Ameisen verursachen hingegen keine Staus,",
       "en": ""
     },
     {
-      "start": 75.32,
-      "end": 81.26,
-      "de": "Die anderen Ameisen folgen der Spur „mit kleinen Lücken und ohne Überholen“. Das",
+      "start": 44.8,
+      "end": 48,
+      "de": "selbst wenn viele Artgenossen gleichzeitig unterwegs sind,",
       "en": ""
     },
     {
-      "start": 81.26,
-      "end": 86.26,
-      "de": "Verhalten der Ameisen könnte in Zukunft dabei helfen, den Verkehr besser zu",
+      "start": 48,
+      "end": 52,
+      "de": "wie eine neue Studie aus dem italienischen Trient zeigt.",
       "en": ""
     },
     {
-      "start": 86.26,
-      "end": 92.02,
-      "de": "organisieren, so das Forscherteam um Guerrieri. Die Studie gibt vor allem",
+      "start": 52,
+      "end": 54.8,
+      "de": "„Ameisen gehören zu den wenigen Arten,",
       "en": ""
     },
     {
-      "start": 92.02,
-      "end": 97.5,
-      "de": "Vorschläge für das autonome Fahren. Was bei den Ameisen über die Pheromonspur",
+      "start": 54.8,
+      "end": 56.8,
+      "de": "die mit [...] Verkehrsströmen zurechtkommen [...]",
       "en": ""
     },
     {
-      "start": 97.5,
-      "end": 100.82,
-      "de": "geregelt wird, könnte bei selbstfahrenden Fahrzeugen über",
+      "start": 57.1,
+      "end": 60.4,
+      "de": "und sich dennoch nahtlos und ohne Staus bewegen können“,",
       "en": ""
     },
     {
-      "start": 100.82,
-      "end": 104.76,
-      "de": "fortschrittliche Kommunikationstechnologien gelöst werden. Mit",
+      "start": 60.5,
+      "end": 64,
+      "de": "sagt Marco Guerrieri, ein Autor der Studie.",
       "en": ""
     },
     {
-      "start": 104.76,
-      "end": 109.58,
-      "de": "diesen würden die Fahrzeuge dann mit intelligenten Straßen sowie untereinander",
+      "start": 64.2,
+      "end": 67,
+      "de": " Die Forschenden fanden in einem Experiment heraus:",
+      "en": ""
+    },
+
+    {
+      "start": 67.2,
+      "end": 70.6,
+      "de": "Ameisen bewegen sich immer perfekt synchron.",
       "en": ""
     },
     {
-      "start": 109.58,
-      "end": 115.4,
-      "de": "kommunizieren. Autonome Fahrzeuge könnten, so ein Vorschlag des Forscherteams, mit",
+      "start": 71,
+      "end": 75.6,
+      "de": "Dazu legt die Ameise, die eine Kolonne anführt, eine Pheromonspur.",
       "en": ""
     },
     {
-      "start": 115.4,
-      "end": 120.68,
-      "de": "kleinem Abstand in Kolonnen fahren und auf parallelen Fahrspuren unterwegs sein.",
+      "start": 75.8,
+      "end": 78.2,
+      "de": "Die anderen Ameisen folgen der Spur",
       "en": ""
     },
     {
-      "start": 120.68,
-      "end": 125.18,
-      "de": "Dies wäre sogar mit hoher Geschwindigkeit möglich. Laut der Studie",
+      "start": 78.2,
+      "end": 80.8,
+      "de": "„mit kleinen Lücken und ohne Überholen“.",
       "en": ""
     },
     {
-      "start": 125.18,
-      "end": 129.82,
-      "de": "könnte das nicht nur Staus vermeiden, sondern auch Emissionen reduzieren –",
+      "start": 81,
+      "end": 84.6,
+      "de": "Das Verhalten der Ameisen könnte in Zukunft dabei helfen,",
       "en": ""
     },
     {
-      "start": 129.82,
-      "end": 136.02,
+      "start": 84.7,
+      "end": 87.35,
+      "de": "den Verkehr besser zu organisieren,",
+      "en": ""
+    },
+    {
+      "start": 87.5,
+      "end": 90,
+      "de": "so das Forscherteam um Guerrieri.",
+      "en": ""
+    },
+    {
+      "start": 90.2,
+      "end": 94.4,
+      "de": "Die Studie gibt vor allem Vorschläge für das autonome Fahren.",
+      "en": ""
+    },
+    {
+      "start": 94.8,
+      "end": 98.6,
+      "de": "Was bei den Ameisen über die Pheromonspur geregelt wird,",
+      "en": ""
+    },
+    {
+      "start": 98.6,
+      "end": 104.4,
+      "de": "könnte bei selbstfahrenden Fahrzeugen über fortschrittliche Kommunikationstechnologien gelöst werden.",
+      "en": ""
+    },
+    {
+      "start": 104.6,
+      "end": 111,
+      "de": "Mit diesen würden die Fahrzeuge dann mit intelligenten Straßen sowie untereinander kommunizieren.",
+      "en": ""
+    },
+    {
+      "start": 111,
+      "end": 113,
+      "de": "Autonome Fahrzeuge könnten,",
+      "en": ""
+    },
+    {
+      "start": 113,
+      "end": 115,
+      "de": "so ein Vorschlag des Forscherteams,",
+      "en": ""
+    },
+    {
+      "start": 115,
+      "end": 121,
+      "de": "mit kleinem Abstand in Kolonnen fahren und auf parallelen Fahrspuren unterwegs sein.",
+      "en": ""
+    },
+    {
+      "start": 121.1,
+      "end": 124,
+      "de": "Dies wäre sogar mit hoher Geschwindigkeit möglich.",
+      "en": ""
+    },
+    {
+      "start": 124.4,
+      "end": 127.6,
+      "de": "Laut der Studie könnte das nicht nur Staus vermeiden,",
+      "en": ""
+    },
+    {
+      "start": 127.6,
+      "end": 130,
+      "de": "sondern auch Emissionen reduzieren –",
+      "en": ""
+    },
+    {
+      "start": 130.2,
+      "end": 136,
       "de": "der Verkehr wäre flüssiger und die Umwelt weniger belastet.",
       "en": ""
     }
