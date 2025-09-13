@@ -18,3 +18,7 @@ bash audio2vtt.sh x.mp3
 ```
 python vtt2json.py x.vtt 
 ```
+
+```
+Perform a pedagogical translation from German to English. Target language: English. Source language: German. Translation style: Calque (loan translation). Priority: Faithful to source structure. Priority: Faithful to source words. Priority: Pedagogical value for German learners. Avoid: Idiomatic English. Avoid: Natural-sounding English. Avoid: Changing word meanings. Explanation: The user is learning German and needs to see the direct correspondence between words and sentence structure. Output: Only the completed JSON object.
+```
