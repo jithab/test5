@@ -57,7 +57,7 @@ def read_vtt(file_path):
 
     return {
         "title": "<title>",
-        "author": "© <author>",
+        "author": "© Deutsche Welle",
         "author_url": "<author url>",
         "lines": entries,
         "words": [{
